@@ -74,6 +74,9 @@ def call_api(ident, oauth, count, screenName):
 	
 #Call API and print returned tweets
 def print_tweets(startingId, oauth, tweetPerCall, numberCalls, screenName):
+	
+	ident = startingId
+
 	for i in range(0, numberCalls):
 		response = call_api(ident, oauth, tweetPerCall, screenName)
 		listSize = len(response.json())
@@ -115,5 +118,5 @@ if __name__ == "__main__":
 		try:
 			print_tweets(startingId, oauth, tweetPerCall, apiCalls, screenName)
 		except TwitterError as e:
-			sys.stderr.write(e, value)
+			sys.stderr.write(e.value)
 			sys.exit(254)

@@ -2,10 +2,12 @@
 
 import sys
 import re
-import urllib.request
+import urllib2
+from urllib2 import urlopen
+from urllib2 import HTTPError
 import httplib2
 
-URIPATTERN = re.compile("http://[\S]*")
+URIPATTERN = re.compile(r'(?:http://[\S]*|https://[\S]*)')
 
 #Gets the URI from given string
 def extractURI(line):
@@ -16,12 +18,12 @@ def extractFinalURI(uri):
 	FinalURI = None
 	
 	try:
-		request = urllib.request.urlopen(httplib2.iri2uri(uri))
+		request = urlopen(httplib2.iri2uri(uri))
 		if request.getcode() == 200:
 			FinalURI = request.geturl()
-	except urlib.error.HTTPError as e:
+	except urllib2.HTTPError as e:
 		FinalURI = None
-	except urllib.error.URLError as e:
+	except urllib2.URLError as e:
 		FinalURI = None
 	except UnicodeError as e:
 		FinalURI = None
@@ -37,7 +39,7 @@ if __name__ == "__main__":
 			sys.stderr.write("Working on: " + line + '\n')
 			URIs = extractURI(line)
 			
-			for URI in URIS:
+			for URI in URIs:
 				sys.stderr.write("Trying URI: [" + URI + ']\n')
 				goodURI = extractFinalURI(URI)
 				
