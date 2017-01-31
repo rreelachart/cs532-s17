@@ -7,6 +7,8 @@ from urlparse import parse_qs
 import json
 import time
 import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 REQUEST_TOKEN_URL = "https://api.twitter.com/oauth/request_token"
 AUTHORIZE_URL = "https://api.twitter.com/authorize"
