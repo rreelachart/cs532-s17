@@ -1,0 +1,672 @@
+200
+804610398276218880:RT @EternalTodo: "Nymaim Origins, Revival and Reversing Tales" by @a0rtega Domain resolution algorithm is interesting! #Botconf16 https://t…
+803915962571431936:RT @csoghoian: New Firefox/Tor Browser 0-day vulnerability discovered in the wild (being exploited against Tor users). https://t.co/e1Yi65Y…
+803696636736180224:RT @BCNCyberSec: Attacking and protecting the kingdom @BBerastegui @ackcentsecurity https://t.co/WGedHX7i9u
+801226640634314752:RT @BlackHatEvents: UPDATE: Videos from all 121 #BHUSA 2016 presentations have been uploaded to the #BlackHat Official YouTube channel! htt…
+800598080575995904:RT @bartblaze: I've posted a quick blog post about the #Nemucod downloader spreading via Facebook: https://t.co/C1LUnM7wpT
+IOCs: https://t.…
+798792004729614336:RT @attrc: "Threat hunting"/“Proactive Defense" aren’t buzzwords or optional add-ons, they are necessities if you wish to defend against mo…
+796754303599919104:RT @iMHLv2: #PowerDuke uses PNGs w/ TEA-encrypted, reflectively loaded (memory-only) DLL backdoors https://t.co/14zjx75vt4 #DFIR
+792573730031538176:RT @attrc: My talk from @sectorca on scalable threat detection &amp; response using memory &amp; network forensics is now online: https://t.co/SOb3…
+784772050837700608:RT @botnet_hunter: MITMCanary #VB2016 slides are uploaded :)
+https://t.co/eNpXTCukXn
+783685331191226369:RT @joe4security: Introducing Pafish Macro, the Office document to check your favorite sandbox against recent VBA / Macro evasions! https:/…
+777214946593673216:RT @armitagehacker: A day in the life of a pentester: How I owned your domain in 4 hours https://t.co/95MS0ccMmw // Someone had fun.
+773764962477023232:RT @mubix: {blog} Snagging creds from locked machines - https://t.co/zqYo142tVj
+768891068272283648:RT @citizenlab: Exploit infrastructure used to target dissident impersonates @ICRC, @CNN, @BBC, and @Aljazeera official websites https://t.…
+766229973275406336:@chrissanders88 Hi, those tips applies to the NXs or only to the endpoint solutions? Thx
+765937308784812032:RT @kaspersky: #OpGhoul Targeting #MiddleEast Industrial, Engineering Organizations: https://t.co/yFKXrlqJVM via @threatpost https://t.co/f…
+765086682643398657:RT @Kennysan: Defcon preso slides from @sixhundredns and my talk here! 411: A Framework for Managing Security Alerts https://t.co/FyAWfpymBO
+762368557246144512:RT @Bry_Campbell: For those who didn't attend. All materials for #defcon  https://t.co/t6HFv4Jczo and #BlackHat2016 https://t.co/aHvk8aRfqk
+747688223879667714:RT @taosecurity: Excellent reading for those who are conducting counter-intrusion campaigns to find adversaries in their environment. https…
+742014358050504706:RT @bartblaze: Reverse-engineering DUBNIUM (~DarkHotel):
+Part I: https://t.co/oGREdsWFIG
+Part II: https://t.co/0LT1M2jFDN
+Part III: https:/…
+736946422340329472:RT @daniel_bilar: #HITB2016AMS Palo Alto PA-500 firewall analysis by @_fel1x https://t.co/VPwz8qVfSD [MIPS64 Linux 2.6.32, PanOS 6.X] https…
+728272782623178753:RT @PyroTek3: While there's a lot of focus recently on PowerShell, attackers use RDP, WMI, &amp; other tools also. Admin hygiene &amp; protection =…
+725953517584707584:RT @quequero: Office 365 authentication bypass disclosure and write-up: https://t.co/8v39qznmyu #SAML https://t.co/mckGzrqBev
+724811904657559553:RT @MichalPurzynski: A glimpse of some details of that bank heist
+
+https://t.co/S9FgNamAQr
+
+Say hello to 2016 bank robbery :)
+724010684011450369:RT @bgpmon: Quick write up of BGP hijack event today:
+Large hijack affects reachability of high traffic destinations. https://t.co/ETMXiG83…
+723307053792518144:RT @alvaro_fe: How I Hacked Facebook, and Found Someone's Backdoor Script | DEVCORE 戴夫寇爾 https://t.co/kND4U4YxmC
+722821461719785472:RT @Cyb3rOps: #Ransomware Overview
+&gt; names, extensions, patterns, decryptors
+&gt; based on @nyxbone ’s list
+https://t.co/wGosgPv4CN https://t.…
+721479746509545472:RT @roman_soft: Very interesting writeup (spanish) describing how HackingTeam was hacked (opsec tips included): https://t.co/Dm9WRsKLBn
+720876395388227584:RT @piotrkijewski: Nice set of posts on a threat hunting reference model proposal  https://t.co/8e5zcPnGNA https://t.co/O62oLdQj6c https://…
+720256887137157120:RT @SteveD3: All this hype for MitM attacks and Denial of Service? #badlock Are you serious?!
+717986013923119104:RT @attrc: - pentests only reveal how attacks *might* occur
+- real attacks have 0 scope restrictions
+- encryptd DBs are useless against rea…
+714264696623341568:RT @r00tbsd: Microsoft provided a GPO to block Macro on Office 2016 (even if the user click to execute it). More info there https://t.co/32…
+714163053420478464:RT @MalwareJake: You can't buy a threat intelligence feed, only a threat data feed. Your analysts will either turn it into intelligence or …
+712343142968774659:RT @hacks4pancakes: Er. If you aren't checking email spoofed from your CEO / equivalent's email, or outright rejecting spoofing, you probab…
+712343057627267072:RT @four: Super proud to launch Uber's unique Bug Bounty Program today, designed for researchers to go deep: https://t.co/TNA0zQmvOq
+709791538918899713:RT @Malwarebytes: #Angler #Malvertising Campaign Hits Top Publishers: @nytimes #MSN #AOL #NFL | Malwarebytes Labs  https://t.co/4nPyejLhMe …
+709658232009129984:RT @abuse_ch: TeslaCrypt is fluxing its infrastructure heavily and is sharing at least some of its IPs with Matsnu and Corebot https://t.co…
+708633500765851648:RT @dafthack: Here's an interesting path I took to getting "Domain Admin" at an org this week. #InfoSec #Hacking https://t.co/j6rlIqG8NU
+708072711474581504:RT @malware_traffic: Saw new pattern of injected script from compromised site leading to Angler EK.  Don't recall seeing this one before. h…
+708072030818734080:RT @PhysicalDrive0: CVE-2016-1010 Exploited in the Wild https://t.co/BHvRlXqEAO
+707262568792989697:RT @attrc: It seems mass infections of ransomware may finally be what gets orgs to take offline backups seriously
+706243969060102144:RT @ErrataRob: "San Francisco sure has a lot of crazy people yelling at nobody in particular, begging for money" I notice while on #RSAC sh…
+702615034300645377:RT @jaimeblascob: Stop what you are doing and go read @Novettasol report on the Lazarus group!  https://t.co/gaIar8NKhN
+702608749572329472:RT @Novettasol: Operation #Blockbuster: These Are the Cyberweapons Used to Hack Sony https://t.co/LpIumWQysB via @motherboard
+702184023368581120:RT @boblord: Ordering a company to hack one targeted system is clearly the first step to ordering them to backdoor them all. #slipperySlope…
+700062466848530433:RT @fjserna: Do you run Linux and perform DNS queries? Check this glibc RCE (CVE-2015-7547) https://t.co/yfyWogU7EH and PoC https://t.co/Fw…
+699616575884754949:RT @circl_lu: "FireEye Detection Evasion and Whitelisting of Arbitrary Malware" https://t.co/TyWBjD9htu
+699261606719594496:RT @piotrkijewski: Andromeda/Gamrue botnets always seem to be around - here is a nice overview of multiple use cases by @EternalTodo https:…
+698957518022840321:RT @matthewdunwoody: #Shmoocon talks posted, including my talk #noeasybreach with @ItsReallyNick https://t.co/St9FossEnL
+698920839207653376:RT @matthewdunwoody: I wrote up a TLDR primer on #PowerShell logging. Recommend implementing now, before an attack. https://t.co/CvsOKKrFBB…
+698233282933170176:RT @kaspersky: Evidence suggests @Sony hackers are alive &amp; well and still #hacking https://t.co/uEgsLcrOUP #infosec #TheSAS2016 https://t.c…
+697832427167866880:RT @drericcole: The goal for almost every IT department is to automate security &amp; present information in an intuitive, easy-to-use manner
+688852529061433344:RT @Magoo: Last year I wrote 13 guides on building security programs for growing startups. They're now all in one place: https://t.co/KSSWk…
+688852384240545793:RT @Magoo: Exploiting SSH UseRoaming: typo &amp; bit squatted domains, well known shared SSH hosts gone rogue or compromised... are these valid?
+688440587457028096:RT @michaelrash: Details on Great Firewall of China evasion techniques, and what they can detect (such as TLS-in-TLS web proxies): https://…
+688439286631411712:RT @MalwareJake: Trustwave is being sued for faulty IR. Too many lessons for one post. First installment of lessons learned here:
+https://t…
+687741523006492672:RT @msfriedl: Add undocumented "UseRoaming no" to ssh_config or use "-oUseRoaming=no" to prevent upcoming #openssh client bug CVE-2016-0777…
+684993767103938560:RT @DanielMiessler: [ PROJECT ] AppSensor — Bringing Intrusion Detection to the Application | https://t.co/LPt0SjgLsf #infosec @owasp https…
+684195664478208000:RT @piotrkijewski: Applying machine learning to malware analysis slowly being demystified, see clustering 101: https://t.co/DMyMRhinTI http…
+679689255900307456:RT @sawaba: I just published “Bug Bounties: the Dangers of Assumptions and Unmanaged Expectations” https://t.co/Rjw0mg5rKp
+676870626808881152:RT @taviso: Write-up of our critical remote root 0-day exploit for FireEye appliances. https://t.co/zPHkFJrvfn
+676310099833569280:RT @RSWestmoreland: A modern Ad Network is indistinguishable from Botnet C&amp;C:
+
+✅ A large fluxing CDN
+✅ Suspicious TLDs
+✅ Control data in th…
+676308058314788865:RT @FireEye: New backdoor #LATENTBOT found after being hidden since at least 2013 https://t.co/jcD8b9pzmT #infosec
+675880576818266112:RT @msftsecurity: Tracking Lateral Movement blog series https://t.co/lv5OYty6Nx
+674463434403151873:RT @citizenlab: NEW REPORT: Packrat: Seven Years of a South American Threat Actor https://t.co/j0p64G9me6 @jsrailton @headhntr @botherder @…
+673227080679714816:RT @taviso: Took all day, but @natashenka and I just got a 100% reliable FireEye remote code execution working. I'll send the vulnerability…
+671621940629651456:We're looking for security engineers to join us @ https://t.co/QA2MYqztze - Senior https://t.co/tcKPCVL8OG Graduate https://t.co/IwEOlFvzDJ
+670732200200024064:RT @majorhayden: Talking to college students about information security https://t.co/MpyIBLFVQ8 https://t.co/wepiAKUq7G
+669179252592496642:RT @EternalTodo: We (@foxit) are part of @NCCGroupplc now. A new adventure...;) https://t.co/mLBAhXghuY
+668181851333394432:RT @dildog: Developer Myth: if it was hard to write it should be hard to exploit.
+Hacker Myth: if it was easy to exploit it should be easy …
+666744732886913025:RT @virustotal: VirusTotal += Mac OS X execution... https://t.co/XdnNBbGcrj
+664478156514947072:RT @attrc: If you are in IT  / IT Security and haven't read the Phoenix Project then you need to fix that ASAP: https://t.co/gawm0dhsbq
+661596293609955328:RT @sean_a_rose: Activision acquires Candy Crush maker King Digital Entertainment for $5.9B in the largest accidental in-app purchase in hi…
+661513637396393984:RT @King_Games: We’re excited to announce our acquisition by @Activision to create a leader in interactive entertainment. Release: https://…
+658745648620154880:RT @symantec: This 11-year-old is selling cryptographically secure passwords for $2 each
+https://t.co/ndZARv0VtL https://t.co/4nfLoHgOrd
+658745571046522880:RT @bcrypt: 2015: Facebook CSO becomes Uber CSO, Yahoo CSO becomes Facebook CSO, Twitter CSO becomes Yahoo CSO. https://t.co/ti8rEoHNQv
+658091959068794880:RT @jedisct1: This intro to malware hunting is really excellent. Go watch this video if you haven’t. https://t.co/gH27f07NFQ
+658081707581640704:RT @thegrugq: The most dangerous adversaries are not those with exploits, but those with patience and determination.
+654784031465205761:RT @SophosLabs: Dridex botnet taken down, multi-million bank fraud suspect arrested http://t.co/0HHXO4zksy
+653908848164642816:We're looking for a new security engineer to join our SecOps team @ http://t.co/QA2MYqztze Any question let me know https://t.co/tcKPCVL8OG
+648045112753307648:RT @flihp: #Windows10 security features worth reading about:
+
+DeviceGuard: https://t.co/zNo48DC98m
+CredentialGuard: https://t.co/bxXmY7NqPe…
+647433915263778816:RT @YahooSecurity: Today, we open sourced Gryffin, Yahoo’s large scale web security scanning platform. https://t.co/XzZKa2xRYi  Pull reques…
+647000665827504128:RT @zcobb: More excellent mobile malware research from @LukasStefanko, my colleague @ESET http://t.co/8LiuczrDF9
+645795848060702720:RT @Reuters: Apple's iOS App Store suffers first major attack http://t.co/Jz4KBUmN0j
+644669141266202624:RT @malware_traffic: Wire Fraud Phisher attempts to phish PhishMe, instead gets phished by PhishMe http://t.co/zE1oCluL20
+644279325034807296:RT @FredericJacobs: Apple released iOS 9, here's what's new for privacy &amp; security: https://t.co/SxTRhQ4rEL
+Patched vulnerabilites: https:/…
+643679657351450624:RT @Dinosn: The book iOS App Reverse Engineering,now open-sourced on github https://t.co/guM3SaTbe8
+642106085575233536:RT @_fel1x: Slides for my @44CON talk about FireEye: https://t.co/lFXTwFagA5 #playingwithfire
+640834495743025153:RT @matalaz: The Antivirus Hacker's Handbook written by @0xeb and I is out! http://t.co/NUHRZnvHHM
+eBook version here: http://t.co/N8nAo1AI…
+640760899981053952:@boblord the .com bubble bursting, for sure
+635442826210344960:RT @PythonArsenal: mpesm - a tool to help identify multiple types of packers, cryptors, and compilers. Based on pefile, Capstone. https://t…
+631848394886094848:RT @sans_isc: The Powershell Diaries: Windows Service Accounts - Why They're Evil and Why Pentesters Love them! http://t.co/ATadnHXlza
+631103625155231744:RT @BlackHatEvents: All #BHUSA 2015 presentation materials we received are now posted here: http://t.co/e88f9sgeFC
+627471192929251328:RT @jaimeblascob: Announcing Open Threat Exchange (OTX) - Now Including Social Sharing of Threat Intelligence https://t.co/SU9DB12aZr https…
+626462422266720256:RT @bsmuir: On the eve of #Windows10 here's one for the #DFIR analysts; I put together a guide on the OS artefacts. #forensics http://t.co/…
+626461666125946880:RT @_ikki: If you're new to BlackHat, here it's my suggestion: forget the stunt hacking, focus on what matters for your professional career
+624950419773607936:RT @jhub908: Posted the next part in my series "Find A Windows Infection Quickly Part 2 - With Tools" http://t.co/Ulq0waqj37 #infosec #malw…
+624647303660503040:RT @clareseitz: Black Hat Python: Python Programming for Hackers and Pentesters #shamelessplug #sendourkidstocollege http://t.co/kE1QVg9PHI
+623266508349829120:RT @anthonykasza: Identifying malicious domains with pDNS and whois records which mimic popular brands. 
+
+https://t.co/AKJJCSCI6l
+621750280678473728:RT @DMBisson: New Configuration of Dyre Malware Targets 17 Banks in Spain http://t.co/ihFsiZNPfB @IBMSecurity #security #malware http://t.c…
+621222335408939008:RT @thezdi: 53 of the vulns patched by #Microsoft, #Adobe, and #Oracle today were through #ZDI reports. See you next month!
+621062365765861376:RT @gmillard: Microsoft Patch Tuesday fixes handful of remote code execution vulnerabilities. Review &amp; patch accordingly #infosec https://t…
+621056179909869568:RT @jleyden: There have been 11 Flash updates this year alone. Six have come outside Adobe's regular patching cycle as 0-day fixes. #PatchF…
+620648363235627008:RT @bgpmon: Using a BGP Hijack to regain access to Remote Access Tool (RAT) clients.
+http://t.co/W7ClOR69XK http://t.co/JSBlKcmiBN
+620200010894999552:RT @rfc1036: I show with #RIPEstat how an italian ISP hijacked another company's IPs to restore access to #HackingTeam C&amp;C servers http://t…
+619818634509160448:RT @irongeek_adc: Building a Comprehensive Incident Management Program
+Owen Creger for @CircleCityCon http://t.co/649Pnm8psI
+619739517331898368:RT @FireEye: FireEye Labs finds 2nd #Adobe 0day buried w/in leaked #HackingTeam data http://t.co/mk48ZAZ9fv
+619040126585466880:RT @lennyzeltser: How to examine your network's DNS activities to understand what's normal and spot anomalies - advice by @lancejssc: http:…
+619034949669228544:RT @hacks4pancakes: Yes, finally, sorry for the delay! Finally posted: ~Lesley's Rules of Security Operations~ (unabridged edition) http://…
+618682913857646592:RT @markloman: Unpatched #HackingTeam #Flash #0day is already in exploit kits Angler, Neutrino &amp; Nuclear! CVE-2015-5119 http://t.co/3ms8G7B…
+618538968171323392:RT @kylemaxwell: Nobody is solving their problems with another appliance. They solve them by growing and strengthening their teams. #DFIRSu…
+615553708617801728:RT @Cyb3rOps: Just made a cheat sheet on "How to Handle Antivirus Alerts” in order to detect attackers
+#SIEM #DFIR #SOC http://t.co/cWHH60p…
+614926500350021634:RT @thegrugq: .@matalaz hacks all the AV products, nobody cares
+NSA/GCHQ hack one AV product, everyone loses their minds! http://t.co/1uo10…
+613815295069843456:RT @CloudFlare: How to build your own public key infrastructure https://t.co/azqo0QTz4s
+613411020518871040:RT @FireEye: FireEye FaaS team worked w/ @AdobeSecurity to patch CVE-2015-3113 in Operation Clandestine Wolf. #APT3 behind attack http://t.…
+613410275891519488:RT @virusbtn: Adobe releases out-of-band security updates for Flash Player https://t.co/UwEmeQK72s CVE-2015-3113 reportedly used in the wil…
+611212217770446848:RT @piotrkijewski: Passive SSL - storing historical X.509 certificates seen per IP address for #DFIR https://t.co/FaslyxLWwv #firstcon15 (b…
+609739294618583040:RT @jaimeblascob: New blog post: Watering holes exploiting JSONP hijacking to track users in China  https://t.co/o32nWhIh43
+609330008386093056:RT @batfink577: Internet rebooted. Service restored!! #BGP #AS4788
+609298511927111680:RT @JobSnijders: global internet issues: GBLX (AS 3549) / Telekom Malaysia (AS 4788) are leaking substantial amount of routes: bgp sessions…
+608665641692876800:RT @stefant: Duqu 2.0 technical paper (PDF) and
+Indicators of Compromise (IOC) can be found here: https://t.co/t8jQI3yVgm
+606928155014766593:@sempersecurus I had serious problems with the new support system as well. It used to be very efficient.
+605413257441083392:RT @elie: Facebook introduces end-to-end encryption for notifications - http://t.co/2mLsOsAIwI #privacy #fb
+604693992735944704:RT @virtualminds_es: PanOS XML External Entity (XXE) Vulnerability https://t.co/tzxcLBlifY Thanks for the acknowledgements @PaloAltoNtwks
+602091225026531329:RT @mroesch: Personal philosophy on tech support. 
+
+Bad support makes customers your enemies, good support makes friends, great support mak…
+600550797601087488:RT @teamcymru: A curated list of awesome #malware analysis tools and resources #hacking #infosec http://t.co/num93q9UYU http://t.co/MFwBVQa…
+598966497223045121:RT @JohnLaTwC: Why poor infosec teams stay poor—beware the dangers of the Capability Chasm. http://t.co/sDlZJW0C07
+598966455028346881:RT @JohnLaTwC: Prevention is not the complement to detection. It is its guardian. Prevention creates the whitespace to respond to the most …
+596472264851365888:RT @corey_harrell: "Security Monitoring / SIEM Use-Cases"  http://t.co/CWuANQ9Iq0 &lt;- not sure why people don't use use-cases
+594584128646979584:RT @sadserver: Security by Insecurity. Leaving a system so unpatched that most attackers assume it's a honeypot and move on.
+594293531218436097:RT @inliniac: Seems we already have @PacketChaser, @lucaderi &amp; @jaimeblascob speaking for the @Suricata_IDS user conf in Barcelona: http://…
+591534981081604097:RT @taosecurity: Great quick overview of the latest open source tools for detecting and responding to enterprise intrusions. https://t.co/q…
+585058175939964928:RT @likeitcool: Nice talk about sandbox detection in BlackHat Asia 2015, "Slime - Automated Anti-Sandboxing Disarmament System": https://t.…
+583943813510668288:RT @cfragoso: "Weird Python" @ProjectHoneynet New Forensic Challenge! Test your #DFIR Skills - https://t.co/jJSwcUXYLd
+580468684377997312:RT @kafeine: Angler EK is exploiting CVE-2015-0336. Post updated. http://t.co/0E7pCVMsyS cc/thx @TimoHirvonen http://t.co/UHYA7J6adx
+580175655746310144:RT @fbOpenSource: To start off this busy week, we proudly introduce ATC - simulate different network conditions and improve your apps. http…
+575739238362300417:RT @Securelist: Inside the EquationDrug Espionage Platform - http://t.co/9qU2Jwr4qy #EquationAPT
+575738383739273216:RT @gN3mes1s: Making Finfisher Undetectable - https://t.co/344HYTzItR #av #fud #obfuscation
+570929245821788161:RT @virusbtn: Malicious DLL added to PNG image to avoid detection http://t.co/MtGBtuSpNS
+569631117105614850:RT @jcran: Powershell dumping all certs in the cert store http://t.co/AeDfgjBaDV
+565585762398519296:RT @TimoHirvonen: Go home, Angler exploit kit, you're drunk - and you forgot to obfuscate your Flash exploit. http://t.co/O1EZmlwrNq
+564493880549449728:RT @SwiftOnSecurity: System Engineer: Names servers after greek gods.
+Sr System Engineer: Names servers after the closest airport code and …
+562378152572620803:RT @BorjaMerino: Network Forensics with Tshark: Psexec intrusion http://t.co/0kCG0e4JFc
+561231023988805632:RT @jpalanco: We are releasing dinoflux! snort feed for tracking malware http://t.co/PBx88sO6Wf #snort #infosec
+559833956347297793:RT @nikhil_mitt: [Blog] Dropping infected/weaponized files using a Human Interface Device. #Kautilya 
+http://t.co/NMbpFasHgT
+559440092276981760:RT @CybercampEs: "La suerte es una consecuencia del trabajo" @fjserna,conferencia inspiracional en #CyberCampES http://t.co/mqnMSAnQar http…
+559117989174603776:RT @sempersecurus: An Overview of Exploit Packs (Update 22) Jan 2015 - http://t.co/MuJUZ5tQ11 &lt; New update of an excellent resource by Mila…
+559042797622554626:RT @TalosSecurity: Flash 0-day Exploited by Angler Exploit Kit http://t.co/QvOajOOMxh
+557816790462763010:RT @mxatone: Sysmon 2.0 is live: configuration file, driver loading, image loading, event filtering, bug fix and more! http://t.co/vmU2hjzO…
+555738764707110912:RT @omriher: I've released a new tool: CapTipper - Malicious HTTP traffic explorer tool
+http://t.co/pw9znVG38m http://t.co/ATyZjpmeY1
+555276598531063808:RT @c0wl: OSXCollector: Forensic Collection and Automated Analysis for OS X
+#dfir #mac4n6 @YelpEngineering http://t.co/6rnScNPXKp
+555276548836982784:RT @ChristiaanBeek: Deploying SIEM is not putting a box on the network. That’s only the technology part. What about people and processes?
+553968113591783425:RT @rauchg: A limited less-playable version of Minecraft (Pocket Edition) outsold the PC version by 12M copies (30M vs 18M).
+
+Mobile is eat…
+553953339902545920:RT @corey_harrell: "http://t.co/4gq0879djA - 2015-01-09 - Traffic analysis exercise"  http://t.co/DHQSCEGdqG
+553952404132352000:RT @_wirepair: let's face it, &gt; 50% of infosec loves taking a piss on other peoples code bases, but that's because they've never developed …
+552805164118474752:RT @chrissanders88: Security analysts have a lot to learn from chefs. They are the masters of configuring their environment for max efficie…
+551471619261345792:RT @grahamvsworld: When people ask me what working in security is like, I tell them that the only real leadership in the field is a celebri…
+551388527083388928:RT @edmondlau: New Blog Post: The Hidden Costs That Engineers Ignore - http://t.co/E1sTWeyDQO
+549925795779837954:RT @paulsparrows: This #Infosec year is nearly gone. If you want an overview of what's happened (so far), visit the 2014 Master Index! http…
+549321959621033985:RT @headhntr: New documents detail the NSA's cryptographic attacks on VPN, SSL, TLS, SSH, Tor et al http://t.co/tXxChNr3uS and http://t.co/…
+549252716263112704:RT @sempersecurus: "Network defenders have the toughest job in the technology world...We shouldn't glorify their opponents." - http://t.co/…
+549244627589812225:RT @philvenables: Attackers have bosses and budgets too.
+549229320229900289:RT @ChristiaanBeek: Exabgp – The BGP swiss army knife of networking https://t.co/VMUOxNQa34 - by @exabgp
+549150083393277953:RT @belogor: Cyphort Labs new blog: Analysis of the http://t.co/0edRi8JHUa infection , Angler -&gt; Bedep (fileless). http://t.co/LvarKCNEGO  …
+549106524208250880:RT @JohnLaTwC: 9. If you shame attack research, you misjudge its contribution. Offense and defense aren't peers.  Defense is offense's chil…
+549106051040428032:RT @JohnLaTwC: 1. What is the most important network security spend: Sensor appliances?  SIEM? Threat intelligence feeds? It's your analyst…
+548044806698831872:RT @GuyEndoreKaiser: Sony has a site where you can watch The Interview for $5.99 and I can't think of a single reason not to trust them wit…
+547455518701535235:RT @PCMag: Apple Pushes First Automated Security Update for Mac: http://t.co/8eSfkVduJ6 http://t.co/iYT00NxtlT
+547302054352658432:RT @SeanAMason: Reality: If you are a CISO in today's world, you are on point to fight foreign military units and organized criminal enterp…
+546958461834383360:RT @paulsparrows: 1-15 December 2014 Cyber Attacks Timeline http://t.co/6HFOtFobYP #Infosec
+546942253818982400:RT @foxit: Tens of millions of dollars, credit cards and intellectual property stolen by a new group of cyber criminals http://t.co/8sZivj2…
+546928041944178688:RT @jtorraca: So, uhh yeah, this isn’t good. Any Thunderbolt Mac can have its EFI reflashed from the external Thunderbolt port.
+
+https://t.…
+546785084989526016:RT @ioerror: Sadly our warning about someone stealing #Tor servers is coming true: https://t.co/Nm9x89qjNL Will they come for Directory Aut…
+546784505668055041:RT @ThreatConnect: Read more on @ThreatConnect #OperationPoisonedHelmand @Reuters http://t.co/X7D5Ccfjyz and full research http://t.co/Ep8Y…
+546767969016369152:RT @RecordedFuture: Breaking the Code on Russian #Malware http://t.co/7HpHUBZepM #InfoSec
+546758980039897088:RT @vibekebuan: Aftenposten journalists reveal secret surveillance of government in Oslo. Norwegian secret police playing catch up: http://…
+546525956857659392:RT @TrendLabs: What’s New in Exploit Kits in 2014: http://t.co/DOKbD2ZSPE
+546499827430072321:RT @CrySySLab: Anti #APT product test: @CrySySLab sample #BAB0 that bypassed best products is now disclosed to experts http://t.co/V8uDmJuL…
+546496311617679360:RT @dellsecureworks: The #Dyre bank #trojan has targeted 242+ financial institutions. Read our CTU's threat report: http://t.co/4on1WC9sSd
+546490886386094082:RT @circl_lu: Vinself (RAT) now with steganography http://t.co/YjI6bLbAIt
+546488446152630272:RT @xxdesmus: Hiding Malware in Plain Sight From Online Scanners http://t.co/y5jjaj8lhd
+546485606512328704:RT @kaspersky: The #Chthonic variant of the #Zeus #Trojan is targeting 150 banks in 15 countries https://t.co/n724S9CF5b http://t.co/NkFvOz…
+546485539021815808:RT @CiscoSecurity: Wiper #Malware – A Detection Deep Dive via #CiscoTalos &gt;&gt; http://t.co/BptkjmZRdA #security http://t.co/5Hcdsu8Pe8
+546480610391629824:RT @inliniac: My new post http://t.co/uVlYgY80Gt should be read with @michaelrash 's post: http://t.co/GQ5FbQ19iJ Code: https://t.co/xku2bS…
+546424715582390272:RT @USCERT_gov: TA14-353A: Targeted Destructive Malware: Original release date: December 19, 2014Systems Affected
+Microsoft ... http://t.co…
+546413711305768960:RT @mdisec: One git command may cause something bad..! ( CVE-2014-9390 Exploitation for Shell ) https://t.co/oo6JvKkqwK #gitshock http://t.…
+546399980773466114:RT @jnazario: results of scans of North Korean IP space. http://t.co/Wvl24X62t4 i did this some time ago when they popped up a /24, wish i …
+546397534344982528:RT @it4sec: Every PUSH  you take
+Every MOV you make
+Every INT you break, every RET you fake
+I'll be watching you
+#windbg
+546381802844454912:RT @checkpointsw: What is #MisfortuneCookie, and why should you be concerned? Learn more from the team that discovered it: http://t.co/PTVY…
+546009355938979840:RT @essobi: Remote command execution in NTPd.  Patch up stat folks, this looks really nasty.
+http://t.co/krH59eGPAL
+546009205426384896:RT @jaimeblascob: FBI Press Release blaming the North Koren goverment http://t.co/udU62jnXOn #sony
+545817889480404992:RT @0xdabbad00: A $60M cyber insurance policy costs $357K/yr (only interesting thing I've learned from the Sony hack)  http://t.co/kMuVJrDy…
+545652574750539777:@ICANN members compromised by a spear phishing attack, attackers had access to the Centralized Zone Data System https://t.co/P8LlK9WMVj
+545649857135116288:RT @SwiftOnSecurity: http://t.co/FcKYAC7tKl
+545648184744480770:RT @troyhunt: Now how many people think the practices we're all ridiculing Sony for are exceptional and not just the norm in large corporat…
+544648544519741441:RT @Botconf: More slides and videos uploaded to the #botconf14 website https://t.co/UG2V7GFY3J
+542497889411268608:RT @EternalTodo: Destover #Malware Now Digitally Signed by stolen #Sony Certificates (MD5: e904bf93403c0fb08b9683a9e858c73e) http://t.co/c0…
+542497033618063361:RT @arbornetworks: FBI official says 'no attribution' to North Korea in Sony hack probe (via @reuters) http://t.co/he3sKJY1co
+541646492306792448:RT @kahusecurity: Registry Dumper - Find and Dump Hidden Registry Keys:  http://t.co/7kEIER54gE
+540620138547261440:RT @YJesus: He actualizado el post sobre el ataque CryptoLock (asociado al dominio http://t.co/ziRYRsAHjg) con la info de VT http://t.co/iD…
+538009942394150913:RT @kahusecurity: Securing KeePass with a Second Factor http://t.co/yOtNG4RA8g
+195
+538009942394150913:RT @kahusecurity: Securing KeePass with a Second Factor http://t.co/yOtNG4RA8g
+537532120055705600:RT @jackcr: You will never grow the skills of your team by filling their days with meetings and projects. Allow them time to experiment and…
+536869745547812864:We're looking for two senior security engineers to join us at http://t.co/QA2MYqR4Hi
+http://t.co/WxuatgnnkT #job
+535587004952879105:RT @BorjaMerino: Detekt: Spyware detection tool https://t.co/XCwiQklYLa
+533168637046448129:RT @mikko: A Tor exit node in Russia was automatically infecting downloaded executables with the 'OnionDuke' APT malware: http://t.co/XiL37…
+533168208917053440:RT @mtmcgrew: this is awesome. collection of publicly-available documents and notes related to APT.
+
+https://t.co/2BfungzIUu
+532553413817810944:We're looking for two security engineers to protect our Kingdom.
+http://t.co/piGP1PW0EA #job
+530522502452506625:RT @bquintero: OSX WireLurker, first submission 2014-05-21 19:34:18 UTC (5 months, 2 weeks ago) https://t.co/8c4smln0FU
+529709510483804160:RT @sempersecurus: 26th Annual FIRST Conference on Computer Security Incident Handling - Papers &amp; Presentations - http://t.co/gpOWk2YpXR
+529427952946393089:RT @ax0n: #dfir A succinct, awesome rundown of Mac OS X Malware, Forensics info and IOCs:
+http://t.co/IgrXhN0sxx
+528550847077449729:RT @FiloSottile: Facebook made an impressive Tor .onion address bruteforce here and got a TLS certificate issued for it! https://facebookco…
+527150752805167105:RT @FireEye: APT28: A Window into Russia’s Cyber Espionage Operations? http://t.co/UoSFMi1ChV  #APT28 #ThreatIntel #CSO
+523864795544825856:RT @BorjaMerino: Building Ultimate Anonymous Malware Analysis and Reverse Engineering Machine https://t.co/7MS2O2kwxn
+523833941611282433:RT @aboutsecurity: And that's why most of the best security professionals I know are hardly presenting at these Cons. They're too busy doin…
+523832933673885697:RT @aboutsecurity: A call for everyone in the Security Industry: 'Rethinking the Security Con', a great post by @DaveShackelford http://t.c…
+523516113796481025:Uncovering Micro-Targeted Malvertising by @Invincea  -http://t.co/epegxGODdD
+522739972173209600:RT @mimeframe: How Facebook does Incident Response (our Breakpoint + RuxCon talk): https://t.co/2SMsqt6zer
+522726818399666176:RT @i0n1c: Vuln branding works a lot better if you are Google. Not a single report about the Drupal 7 SQL flaw mention its official name: #…
+522126615875424256:RT @taosecurity: Four ways to learn you're breached: third party, network, logs, endpoint. Sadly 2/3 of the time third party is the first n…
+522125198729179136:RT @W3nd1g04n6: If we could just go ahead and not have any more 0-days released today, that'd be great. http://t.co/XI8xLiUfQF
+522104066718334976:RT @abuse_ch: Today = 0day-day? CVE-2014-4113 (0day Privilege Escalation), CVE-2014-4148 in (0day in TrueType Font), CVE-2014-4114 (0day in…
+522101181091704834:RT @CrowdStrike: *New Post* @CrowdStrike discovers new #0day 64-bit Windows PrivEsc exploit used by #HurricanePanda. http://t.co/SEoAHIdRV4
+522100029059002369:RT @Bitquark: Analysis of the Linux backdoor used in the recent freenode IRC network compromise by @NCCGroupInfosec https://t.co/QR5HoP0DSA
+522098531117850624:RT @FireEye: Two Limited, Targeted Attacks; Two New Zero-Days http://t.co/jbLSBFhMRe #malware #0day
+522050914526715907:RT @iSIGHT_Partners: iSIGHT discovers Windows zero-day used in Russian CE campaign - coordinates with @Microsoft for patch coming 2day - ht…
+520278717961359360:RT @Portcullis: BadUSB  - Blog by Borja Ruiz-Castro https://t.co/cSSMjDMGTM
+520249362837155842:RT @virusbtn: OpenDNS researcher @anthonykasza looks at patterns in registration of DGA domains used by GameOver Zeus http://t.co/g4rqjkNVfa
+519926713665720321:RT @matthew_d_green: Teaching offense is critical as a foundation for building robust defense. What concerns me is that many view offense a…
+519578488433430528:RT @sansforensics: Blog @fireeye FireEye and OS X Support - Today, we announced support for OS X in our flagship NX product. This m... http…
+518788362359296001:RT @smoothimpact: Volatility autoruns plugin - cool work by @tomchop_ http://t.co/MtEtl6JAxT
+518400851388674048:RT @TheSafeMac: iWorm method of infection found! - http://t.co/ueDcOWvF3w
+517068656262807552:RT @piotrkijewski: Check out a new DGA classifier in R by @jayjacobs code: https://t.co/aLJVTaYeAg background: http://t.co/amL6SmRqER
+516497099601760256:RT @rcvalle: DHCP Client Bash exploit on Metasploit now https://t.co/ecbjTkQblt
+516287319100620800:RT @r_netsec: DNS: More than just names (Pentesting with DNS) - http://t.co/OrQRQCo5b0
+515546447966900225:RT @jaimeblascob: New blog post: Attackers exploiting Shell Shock (CVE-2014-6721) in the wild http://t.co/U94UXOgZM4
+514439791866572800:RT @jeremiahg: The mind of an InfoSec pro is a constant  battle to not lose the distinction of what's possible and what's probable,
+514311282036867073:RT @IBMSoftware: ALERT: Tinba #Malware Reloaded and Attacking Banks Around the World - http://t.co/EqPkGSn2rf #ibmsecurity #securityintelli…
+514310702333689857:RT @msftmmpc: Understanding Microsoft cloud protection: http://t.co/pm8Eij6eoa
+514264234537254912:RT @virusbtn: The 'Kyle and Stan' malvertising attack was found to be even larger than initially thought http://t.co/U39KlGZyMc
+512978648308404224:RT @bartblaze: Zscaler Research: Nuclear exploit kit - complete infection cycle http://t.co/wI8uONXbd2
+512974290535591936:RT @sroberts: As requested here are the slides for my #S4con talk: Building your own DFIR Sidekick. https://t.co/v2kseKuz7U Great event!
+511306186977583104:RT @piotrkijewski: A list of cyber threat intelligence feeds -http://t.co/rtx69kSuq1 but missing a lot of free feeds listed by @enisa_eu ht…
+510899780420370432:RT @kahusecurity: Detecting Phishing Sites in Your Logs:  http://t.co/bUwQXd0Lnu
+510097779071676419:RT @anton_chuvakin: What is stupider than buying a SIEM and not using it? - Signing up with an MSSP and then ignoring ALL the alerts!  #ran…
+509423119333728256:@secbydefault @yjesus Google Play reviews… http://t.co/9DO7HmVyki
+509059670565462016:RT @CiscoSecurity: “Kyle and Stan” Malvertising Network Threatens Windows and Mac Users With Mutating #Malware &gt;&gt; http://t.co/Io8XrJhqRS ht…
+508881898178084864:RT @j0hn__f: Probably one of the most comprehensive SQLI references I've come across http://t.co/ca4nfirv8F #SQLI
+508881361374314496:RT @binitamshah: RE Malware Analysis Skills : http://t.co/BYnnxSsqbl http://t.co/TpDIVYbWx5
+508273769995988993:RT @kafeine: Angler EK is now capable of "fileless" infection (no malware written on drive) http://t.co/fnmrAF87wn
+508269581136171010:RT @The_VRT: Malware Using the Registry to Store a Zeus Configuration File http://t.co/1htDJjiMKb
+508268955853524993:RT @FireEye: Forced to Adapt: XSLCmd Backdoor Now on OS X http://t.co/kLYCUlnGfG #Infosec #Malware
+507331136754688000:RT @_defcon_: 170 gigs of juicy #defcon 22 #CTF pcaps. In torrent form. Share, seed, enjoy!
+
+http://t.co/lL7JX845KK http://t.co/4B02mrirUH
+506460117014151168:@drizzt__dourden Eso estábamos comentando por aquí. Lo acaban de arreglar https://t.co/OStGmMvHoB
+506443576327561216:@zeroxten httpry -r input.pcap -b output.pcap
+506442456867815424:RT @ow: This could be the Apple iCloud flat that led to celebrity photos being leaked 
+
+- http://t.co/nWK5Os1A7M http://t.co/ZKyNakgFOA
+505401580301336576:RT @BloombergNews: BREAKING: JPMorgan hack is said to span months via multiple flaws http://t.co/iMLsTkqrCA
+505333902085730305:RT @roman_soft: Hey hackers around the world: Do you know a 300+ pages book about Spanish hacking scene was released? http://t.co/ULiEKDwAT…
+504691133356974081:RT @DarkOperator: Netflix open sources internal threat monitoring tools http://t.co/RxTVzY5CoX
+504554147778396160:RT @SophosLabs: Duping the machine – the cunning malware that throws off researchers http://t.co/DIsj257cYc
+504263821138362368:RT @jeromesegura: Sub-domain on SourceForge redirects to Flash Pack Exploit Kit https://t.co/TDQfZPS93d
+504223009260199936:RT @danielsolisagea: New job offer at Blueliv! We are looking for a Malware reverser specialist to work in our Barcelona office.... http://…
+504198142364254208:RT @_defcon_: The #defcon 22 Archive Page is live - slides and extra materials now, audio and video to come. http://t.co/cHnYpeoDJh  Pass i…
+503899804897140736:RT @matalaz: New blog post: Heuristics to detect malware distributed via Web
+http://t.co/AA3QFKFhJU
+503091155102621697:RT @martijnveken: Ducky USB - Indicators of Compromise (IOCs) by @bsmuir #dfir #digitalforensics http://t.co/ot3Q0dcYNP via @SlideShare
+502879058984988672:RT @King_Games: Hello China! @CandyCrushSaga is now on Tencent. Hope you like our sweet game! http://t.co/F27jYdvSK2
+499012538882080768:FIN Las Vegas SYN Barcelona. Coming back
+498659775769743361:RT @MrMeritology: DefCon slides: "Measuring the IQ of your Threat Intelligence Feeds" by @alexcpsec @kylemaxwell http://t.co/QdrbS34aip
+498548227004981248:RT @securityfreax: Anatomy of the #GAMMA / #Finfisher Hack | http://t.co/b3PAbk6GMl
+498154472741564416:RT @ikoniaris: Meet the Puzzle Mastermind Who Designs Def Con’s Hackable Badges | Threat Level | WIRED http://t.co/Xaa0L0e1XN
+495657618258808832:Muy buena reflexión. Todo técnico debería saber de negocio, y viceversa “@aitorciki: No hay cuchara http://t.co/DzCXuhkf9i”
+495651284645871616:RT @mrkoot: CVE-2014-3560: remote code execution in Samba 4.0.0-4.1.10 on unauthenticated nmbd NetBIOS name services http://t.co/FGgrcYpoBI…
+495187728360038400:RT @Securelist: Full analysis of Energetic Bear, Crouching Yeti #APT by @Kaspersky's Lab's Global Research and Analysis Team: https://t.co/…
+494129549912072192:RT @SeanAMason: In case you missed it: Blog post on Incident Response Metrics every #DFIR team should be measuring. http://t.co/J2vlq6tGil
+491698816761200641:RT @PatrickCMiller: Presentation on how to break Tor removed from Black Hat schedule | LIVE HACKING http://t.co/kdWD8HnbuK
+491121249146642432:@hFireF0X thanks for the link
+490823540648984577:The Eye of the Tiger - http://t.co/Zb4oxNwmLp - Report: http://t.co/rrSl0rsi7g by Cassidian Cybersecurity
+490810361256620032:RT @gamamb: Transcript of GCHQ Catalog of Exploit Tools https://t.co/SlrlRL6VHx
+490498545158729728:RT @r_netsec: [x-post from /r/physec] some pretty cool attacks on hotel safes. - http://t.co/H3Jf5h6M41
+490487113985822720:How Russian Hackers Stole the Nasdaq - http://t.co/TUzsqiEPH9
+489099941445652480:RT @abuse_ch: abuse.ch introduces SSL Blacklist (SSLBL): http://t.co/0T4z5iB467
+485127177567227905:RT @paulowoody: Dailymotion Compromised to Send Users to Sweet Orange Exploit Kit | http://t.co/qvZrQTVHcJ
+484082933800914944:RT @symantec: Microsoft Darkens 4MM Sites in Malware Fight 
+http://t.co/SWQaf5IPes @briankrebs http://t.co/zDUgvlmMvd
+484061138351841281:RT @virusbtn: Microsoft's take on the takeover of No-IP domains http://t.co/huPqnyVbcw And No-IP's response http://t.co/35mNlS1nKm
+482681988344971264:RT @virusbtn: Cunning 'EMOTET' trojan steals personal information and banking credentials by sniffing your network traffic http://t.co/NTci…
+482435116141404160:RT @FireEye: Turing Test in Reverse: New Sandbox-Evasion Techniques Seek Human Interaction #sandbox #infosec http://t.co/lOMBZ2sXUj
+481495491533090817:RT @citizenlab: Our prior research on Hacking Team here: https://t.co/79wlHVf7QG; https://t.co/Kaevaj5YK9; https://t.co/ouPzJog3fS; https:/…
+481461096453521408:RT @citizenlab: New "Police Story: Hacking Team’s Government Surveillance Malware" https://t.co/OWmWwPs1Hi @headhntr @jsrailton @botherder …
+480782910631714816:RT @lennyzeltser: Asymmetry of people's time when responding to security incidents: http://t.co/1fRKJr7cYX
+480780914130432000:@aramosf muy raro, no me queda claro si al final van contra el banco por negligencia o por lo que dicen del vínculo (artículo 120, 3º/4º)
+480324433610276864:Ten Commandments of Incident Response (For Hackers) by @hacks4pancakes - http://t.co/orEg9f5gvZ
+480142072364937216:RT @r_netsec: Active Directory - Real defense for domain admins - http://t.co/ChJqZiE3Ul
+480111186156220416:RT @virusbtn: Rather than "advanced skills, computer wizardry and a couple of 0-days", most APTs use far more mundane tricks http://t.co/sl…
+480105302864711680:RT @adorais: Cool analysis of an interesting EK redirection technique from @ekse0x http://t.co/vesZJO6uU4
+475764510700351488:RT @Shadowserver: Gameover Zeus &amp; Cryptolocker:  http://t.co/gg6OF9RJC7
+475711316871892992:RT @virusbtn: Arbor Networks whitepaper analyses the Etumbot APT backdoor http://t.co/O9YZXsHDr1
+475696116399620096:RT @virusbtn: Flash exploit CVE-2014-0515 has been added to a number of exploit kits, @kafeine reports http://t.co/cAs9siMQIU
+474670930619539456:RT @ThinkUmbrella: New on the Labs Blog: Why Using Real World Data Matters for Building Effective Security Models http://t.co/Xfggom8qAb by…
+474639016953126912:RT @symantec: Virus Bulletin : Blog - Game over for GameOver Zeus botnet? - http://t.co/Jz1qFC43j1 http://t.co/lgSbOcXKch
+473949285902344194:RT @FBI: GameOver Zeus Botnet Disrupted: Multinational effort disrupts malicious software that has stolen millions arou... http://t.co/U6dx…
+473947843216961536:RT @5ean5ullivan: How much money did GameOver ZeuS steal? http://t.co/HCbHiQzlIZ ~ $7M for one regional bank in Northern Florida. http://t.…
+473945557455470592:RT @bromium: LOL- Layers On Layers, Bypassing EPS for fun &amp; profit, slides @HITBSecConf page http://t.co/S0RQLfNk1c
+473734844544221184:RT @SwiftOnSecurity: "VirusTotal said he was a nice guy."
+472744395801133056:RT @opexxx: OFFENSIVE: Exploiting DNS servers changes BlackHat Asia 2014 #hackphisingdnsnetworkprotocol http://t.co/Fr7bee9bP9 via @SlideSh…
+472742210807803904:RT @Fortinet: What? Bublik is evolving!  http://t.co/KSWw1AVIbQ. A look at the Bublik downloader, infamous for spreading P2P Zbot and other…
+472433135452708864:RT @angelodellaera: Thug supports a Java sandbox for malicious JAR analysis here and the first results are awesome! Stay tuned! https://t.c…
+472427471422644224:RT @TekDefense: Quick post on the Memory Anlayis talk from BSidesNola
+http://t.co/dRTqx6JkNl
+471927896685416448:RT @THEdarknet: TrueCrypt - you might want to stop using it and move to BitLocker - http://t.co/5wNOD2XvEA - they just announced themselves…
+471740620470755328:RT @Renegade0x6: loving full packet capture. get malware sample before the system has the memory dumped. Make some IOC's, volatility/yara t…
+471740073911001090:RT @rootedcon: Primeros videos de Rooted CON 2014 disponibles en Youtube http://t.co/nL7DgpYLE6 #rooted2014
+471737887466455040:Not even a question, automation is key in security operations - http://t.co/q8wg5rbBNo
+471715693768232961:RT @bromium: @rik_ferguson We focused on competitive ransomware. Headline "CryptoDefense: The Ransomware Games have begun" http://t.co/vbhp…
+471715390125780993:RT @0xdabbad00: {blog} The Future of Endpoint Threat Detection and Response http://t.co/6tkZSI69BW
+471715294839590912:More QA is needed in threat intel feeds. Not acceptable a false positive that generate an alert when accessing a top 10 Alexa site…
+471347649783033856:RT @BorjaMerino: Targeted Forensics: Mapping a Process to a Malicious Command and Control https://t.co/CD3Z4PzEDk
+471237665086799873:RT @virustotal: VirusTotal Uploader for Mac OSX... http://t.co/zdu0t9rYwe
+470689627838644224:RT @chemaalonso: El lado del mal - USB Rubber Ducky: Un teclado malicioso como un pendrive http://t.co/R0XMy7oJDL #hacking }:)
+470657302518050817:RT @raulban9a: U.S. may act to keep Chinese hackers out of Def Con hacker event
+
+http://t.co/P7eTibtdcR @cyberwar
+469836371784658944:RT @iamevltwin: My slides from yesterday - Analysis and Correlation of Mac Logs http://t.co/mjKZQOQsb9 #CEICCONF #mac4n6 #DFIR
+469790708476678144:RT @cedricpernet: What do the #APT attackers do before attaking your company ? Read more on our blog - http://t.co/ToTBDrNNdL
+469589999269478400:RT @jeromesegura: Malvertising campaign on popular site leads to Silverlight exploit, Zeus Trojan http://t.co/JnvNpiSOyV  #CVE-2013-3896 #C…
+469555751011500033:RT @kaspersky: eBay has confirmed a massive leak of personal data, denied any financial data accessed.  http://t.co/4qcwvrUvwF
+469543458735394816:RT @davehull: Anomaly detection is easy. Trouble is, not all anomalies are malicious, and not all malicious acts are anomalies.
+469438770476253185:RT @virusbtn: Cutwail botnet spams out malicious PDFs http://t.co/g4kIVFe0tU with further analysis at http://t.co/3Pi9tOlLIX
+469383569283248128:RT @EternalTodo: PDF #exploit CVE-2013-2729 received via SPAM dropping ZeuS-P2P / Gameover https://t.co/ZYwvu1r6jv #malware
+468086401083641857:RT @r_netsec: How the Elderwood Platform is Fueling 2014’s Zero-Day Attacks - http://t.co/vuD6WbOGCt
+467679164859162624:RT @alexcpsec: Yay! Accepted at @_defcon_! I will treat you guys to "Secure because math: A deep dive on Machine Learning-based monitoring"
+466999152845799425:Coming back to Spain after have attended the @ProjectHoneynet workshop. These people are doing a laudable work.
+466879190810492928:RT @virusbtn: ZeuS P2P's webinjects are now targeting more than 1,500 brands from all over the world, @peterkruse reports https://t.co/5Tme…
+466241155118956544:RT @FireEye: FireEye has released a report on the activities of an Iran-based group known as the Ajax Security Team http://t.co/XEJZyK09mn …
+465951741138464768:RT @hrbrmstr: Interesting "CISO Mind Map" ::  http://t.co/9wFEt1A6kH http://t.co/kTc0vnGoTm
+460856291200884736:RT @mtmcgrew: Facebook security team dropping IOCs like they're hot. Check your network! #DFIR
+
+https://t.co/IiaLrwW7EB
+460855697224515586:RT @kaspersky: RT @Securelist: New #Flash Player #0day used in watering-hole attacks uncovered by @kaspersky AV heuristics: http://t.co/Egc…
+460446141763846144:RT @cglyer: I helped find a 0-day exploit in IE this weekend
+http://t.co/OmHsW44u9s
+460445160602890240:RT @dimitribest: New #0day #vulnerability in Internet Explorer Could Allow Remote Code Execution and exploited ITW #IE https://t.co/nTXubx9…
+460144702357270528:RT @vulp1n3: No one knows everything. Increase your humility and don't miss opportunities to learn. That other team might have something to…
+459765785859473408:RT @anton_chuvakin: Minimizing Misses in a SOC
+http://t.co/dtzgcMk0Gs &lt;- a fun read!
+459764218339028992:“@ProjectHoneynet: Only three ticket left for botnet mitigation training ! https://t.co/G3YTxfFwMc” , I will be there :)
+457283357735669760:RT @Mandiant: Attackers Exploit the Heartbleed OpenSSL Vulnerability to Circumvent Multi-factor Authentication on VPNs http://t.co/09fjvkPX…
+456494549712388096:RT @binarybits: The thing that makes password management hard is that you're making trade-offs among a lot of different low-probability cat…
+455764267426652160:RT @Xylit0l: XyliBox: #ZeusVM and #Steganography http://t.co/qRUbYdGs5b
+455115379434848256:RT @r_netsec: Windows Domain Credentials Phishing Tool - a fake windows domain login window to tried to force and trick the ... http://t.co…
+454967444487294977:RT @indutny: Just cracked @CloudFlare ’s challenge: https://t.co/8ZPSxyKF4D . I wonder when they’ll update the page.
+454556001308803072:RT @r_netsec: idb - iOS Blackbox Pentesting slides from Source Boston - http://t.co/l1a07aCoMO
+454311859102183424:RT @bojanz: @peterkruse Yep, but getting a user's plaintext password from a POST request is very likely :(
+454311820766236672:RT @peterkruse: Lets recap: To snatch a private key in 64KB RAM is still VERY theoretic in a real life attack scenario #heartbleed
+451839680716505088:RT @jedisct1: Sysdig is open source, system-level exploration. Think of it as strace + tcpdump + lsof + awesome sauce. http://t.co/kUeayBuJ…
+451837808194646016:RT @r_netsec: Data Hacking: Using IPython, Pandas, and Scikit Learn to get the most out of your security data - http://t.co/Vt9B0ZTZAy
+451627712445448192:RT @bgpmon: The Indosat hijack affected 320,349 prefixes. Most routes via AS4651 (THAI-GATEWAY) and 6939 (HE) http://t.co/bbG23jbT9T
+450533236696178688:RT @lennyzeltser: Understanding the challenges of assessing and responding to security incident alerts: http://t.co/u96QOX42UZ by @charlesh…
+449494811960434688:RT @malforsec: Great place to find Exploit Kit traffic samples: http://t.co/dwD2NmQ4lN by @malware_traffic #Malware #EK
+449491937591300096:RT @ErrataRob: We may have witnessed an NSA TAO "Shotgiant" action
+http://t.co/moKK194dzu
+449343837820157952:RT @hammem: ThreatData: Our framework for how we think about and correlate threats at Facebook http://t.co/ly24u1lNxv
+449331263355486208:RT @symantec: Emerging Threat: Operation #Windigo. More than 25,000 #Linux &amp; #UNIX servers compromised http://t.co/uU97GHWBYD
+449253329265512448:RT @octalpus: @marcusjcarey Funny you mention that. I just made a relevant observation about infosec career progression yesterday. http://t…
+449144977508270080:RT @Packetknife: False positives are absolute murder on a budding security team - they'll kill your development and metrics.
+448856823341527040:RT @dimitribest: BitGuard: a system of forced searches. Analysis of malicious #toolbars for browsers. #adware  http://t.co/wApVKmSWOy
+448630152843780096:RT @virusbtn: Microsoft issues advisory over Word zero-day; triggered when opening or previewing specially crafted RTF file https://t.co/rf…
+448627520838316033:RT @virusbtn: Internet Explorer vulnerability CVE-2014-0322 has made its way into exploit kits, @kafeine reports http://t.co/vJ48wy2sjt
+448547238894399488:At the @dc4420 meeting in London. Interesting people here :)
+444604035807854594:RT @symantec: Google Docs Users Targeted by Sophisticated Phishing Scam | http://t.co/7nxHADqtev http://t.co/eINkpeqWaN
+443811468866510848:RT @codelancer: Agent.btz:a source of inspiration? http://t.co/BEFUeD9aNP or How Turla and "worst breach of U.S.military computers in histo…
+443795730206298112:RT @csoghoian: NSA has co-opted over 140,000 infected bots by taking over their IRC command and control channel. http://t.co/S9u93ygFSz
+443529324436926464:RT @lennyzeltser: Some artifacts that digital forensics investigators have used in the past are harder to come by: http://t.co/OdiVlwf9ZT b…
+443453609607720960:RT @aboutsecurity: Practice &amp; Learn: Download @securityonion &amp; grab the #pcap samples from GitHub https://t.co/6WiucuVG2s to start working …
+443076976451272705:RT @hiddenillusion: #dfir tip - Have a Win7+ memory dump 
+&amp; need the Event logs? filescan + dumpfiles + @williballenthin 's EVTXtract https…
+442458355475685376:RT @mubix: Attacker Ghost Stories - ShmooCon 2014 Slides: http://t.co/Y1wKBk4qnB
+442457551947694080:RT @markrussinovich: Just posted a batch of Sysinternals updates, including PsExec with network encryption http://t.co/PA7k44doiy
+442456237557682176:RT @einaros: Of the 1 million top web sites, 430k support HTTPS. 60k use expired certificates. 2k certs expire within a week. 10k expire wi…
+442347869593694208:RT @Regiteric: #Suricata and Ulogd meet Logstash and Splunk https://t.co/r6m77Mjs5P #nsm #ids #logging #netfilter
+441708069454888960:RT @Irfan_Asrar: Researching SMS spammers. Look at some of the tools of them showed me they were using. #smsspam #malware #mobile http://t.…
+441683670932676608:RT @teamcymru: GnuTLS bug REALLY BAD: bypass SSL, TLS over 200 different OS's, Apps that rely on GnuTLS for SSL and TLS operations http://t…
+440611639826862080:RT @Snort: Snort 2.9.7.0 Alpha with OpenAppId, a quick introduction to getting started:  http://t.co/QPy18C7qo5
+439496882143129601:@hackerjoe btw @a0rtega and me talked about this in a conference also. May be you would find interesting the slides http://t.co/OLEnXEdUD8
+439493049073537024:@hackerjoe Superb :) http://t.co/ZonrBMv7kH
+439491083211657217:@hackerjoe will be published the slides? Many thanks
+437237033539747840:RT @jaimeblascob: New blog post: Analysis of an attack exploiting the Adobe Zero-day - CVE-2014-0502 http://t.co/YeQERJyrGw
+#Flash #0day #P…
+435519620465033216:RT @ElevenPaths: Blog Eleven Paths - Careto (The Mask), la ciber-arma (posiblemente) española tenía "fecha de caducidad" (y otras... http:/…
+435508799273971713:RT @corey_harrell: new jIIr post: Linkz 4 Mostly Malware Related Tools http://t.co/fEMAe5ktRJ &lt;- discussing various tools #malware #DFIR
+435507435135332352:RT @thegrugq: ProTip: if you’re doing analysis, you should learn how to do analysis. 
+
+http://t.co/N1v0arxmv4
+435068527050260480:RT @newsycombinator: New Linux userland rootkit with anti-debugging, new backdoors and pcap hiding http://t.co/6SI3cOEqBF
+435068069057396736:RT @dellsecureworks: The CTU releases Top Banking Botnets report.  Over 900 financial orgs. being targeted, as well as corporate finance. h…
+434867804630945792:RT @datalossdb: Important Kickstarter Security Notice - http://t.co/C3wCVTBMIw (breach of user credentials)
+434836818560049153:RT @dabeave666: "PCAP or it didn't happen".
+434425043242975232:RT @FireEye: New post: New IE Zero-Day Found in Watering Hole Attack http://t.co/ePRFhzI0qI
+434406487730192384:RT @CloudFlare: New blog post up on SSL - Introducing Strict SSL: Protecting Against a Man-in-the-Middle Attack on Origin Traffic http://t.…
+432978485972582400:RT @thegrugq: The report from Kaspersky is here: 
+
+http://t.co/nKG2R8gqge
+432974169819865088:RT @kaspersky: Researchers uncover cyber spying campaign dubbed "The Mask" http://t.co/ycUY1Q21nK via @Reuters #TheSAS2014
+426843098942291968:RT @Snort: Snort 2.9.6.0 is now available! http://t.co/XPYlS3QGSu
+426842937931366401:RT @roman_soft: I agree that current trend should be based on fast detection&amp;response more than simply prevention. Assume you'll be (or are…
+426842570384490496:RT @kahusecurity: Pinpoint Tool Released: http://t.co/mSbDOLLJ2k
+426434672802148352:RT @abuse_ch: Introducing: Feodo Tracker! http://t.co/ao0hgQXDE1
+419523787340918784:RT @mimeframe: Start 2014 with a safe Java browser plugin! Here's how we (Facebook) did it: https://t.co/3jIZasRoYJ
+419520432379658240:XSRF vulnerability in eBay - http://t.co/wwi3vV3EYN
+419181612417695745:RT @Nientenomi: Hunting #Botnets with #ZMap http://t.co/scIGZswSms #cybersecurity
+419168044263702528:RT @isssource: Security firm, FireEye, is broadening its portfolio with its $1 billion purchase of security provider Mandiant.
+http://t.co/…
+190
+419168044263702528:RT @isssource: Security firm, FireEye, is broadening its portfolio with its $1 billion purchase of security provider Mandiant.
+http://t.co/…
+419167947933110272:RT @arstechnica: Multiple gaming platforms hit with apparent DDoS attacks http://t.co/PHkgtdFvB0 by @KyleOrl
+418466966072864768:I just bought Applied Network Security Monitoring ebook, glad to see that the proceeds are donated to charities http://t.co/z13pHZtEJl
+418459330498027520:RT @hiddenillusion: New post http://t.co/v1sACRqioh &amp; tool 'AnalyzePDF' https://t.co/14eDj1atj8 #dfir
+418137844025425920:RT @chort0: So, anyone have a Yara rule that detects RC6 algorithm?
+416630273011638272:RT @alienvault: Get survival tips from security expert @cpconstantine on how to handle your first #security breach http://t.co/xHGSSCwepw
+415488653188939776:RT @securosis: New post: Security Management 2.5: Replacing Your SIEM Yet? [New Series] http://t.co/mFrk9FeN3Q
+413755980615528449:RT @ErrataRob: We demo turning off the webcam indicator light on Windows 
+http://t.co/J42xm7zd0w
+413105784223170560:RT @botherder: I uploaded a very simple Raspberry Pi configuration to create a transparent physical network tap https://t.co/SMrPOQzbUa
+412653562146344960:RT @virusbtn: Botnet secretly turns your Firefox into a hacking tool http://t.co/q0ckdG5cGg
+411869599375056896:RT @YJesus: Tech Pick of the Week: Log anomaly detection tools http://t.co/eCSTTSZxK3
+411136398386016256:RT @cryptocatapp: Cryptocat for Android's code is now released for public review. Please help us bug hunt before the app is released: https…
+410769802928865280:RT @chrissanders88: Hire analysts? I bought ArcSight! #FiveWordTechHorrors
+409767466118971393:RT @FredericJacobs: An IPv6 packet walks into a bar. Nobody talks to him. :(
+409372594895593472:RT @r_netsec: MIDAS - Intrusion Detection for Macs (by Facebook, Etsy security teams) - http://t.co/DLnZqRdPD0
+409020358088347648:@javiercao Algunos ya lo intentaron http://t.co/GR1LlzI181
+409018707705593856:RT @MicrosoftDCU: #ZeroAccess botnet, responsible for searching hijacking &amp; click fraud, disrupted in coordinated operation http://t.co/FaJ…
+409017863270567936:RT @r_netsec: BGP Hijack - All routes to Belarus and Iceland - http://t.co/2RXHM6kNxk
+408753006193434624:RT @Botconf: #Botconf most up to date list of available PDFs of talks https://t.co/GziVz3HeT1 updated progressively
+408690116925083648:RT @JC2go: It took Traity 6 months to incorporate in Spain! My own experience on 1 picture #leangov. cc @abarrera @_anapastor_ http://t.co/…
+408676186525409282:Before &amp; After Public-Key Cryptography talk by Whitfield Diffie - https://t.co/xEuSmvuNq7
+407564470102548480:RT @hackerschoice: Good resource: Crypto hardening of applications (apache, ssh, postfix, ...) - http://t.co/RKQtufxbVR (WIP) #crypto #hard…
+407504726180528128:RT @orysegal: If you haven't heard yet - Akamai &amp; Prolexic http://t.co/2pexOTgn1z
+407503519172657152:@jcanto lots of times I found security professionals that doesn't know about the intelligence interface at all
+406091766157148160:SANS resources on develop your BYOD security policy: http://t.co/qOpUJPLmje + https://t.co/i3NY5FOvFW
+406058533629992960:RT @paulowoody: New Linux worm seems to be targeting #internetofthings - read Symantec’s blog post here: http://t.co/dlvA8iKfWf #SymcSecuri…
+406051773821247488:RT @kapravel: Attacking home routers via JavaScript
+http://t.co/x3xKgtiwGh
+405728759485304832:RT @virusbtn: DDoS attack against bitcoin exchange cauced vulnerability that led to theft of almost $1m in bitcoins http://t.co/Ubs4PMeZzS
+405307668832985089:RT @HNTweets: Securing OS X at Google (video): https://t.co/nRmWOJYFJY? Comments: https://t.co/LNnUgBdRM0
+404671873084325888:RT @sempersecurus: "Linkz for Incident Response" - http://t.co/e8I8Vwa5Tg &lt; Great stuff as always from Corey.
+400647676154617856:RT @teamcymru: Fast Detection of New Malicious Domains using DNS http://t.co/qx0lihlVcz
+398924284027863042:RT @pof: Story about static analysis of 15k mobile Apps - http://t.co/t21BBBJMDJ (via @abelenko)
+398800275353661440:RT @SmeegeSec: Just released HashTag.py, a tool to parse and identify password hashes! Over 250 hash types and 100 hashcat modes. http://t.…
+397658655345999872:Utilizing DNS to Identify Malware - Nathan Magniez - http://t.co/n59NbSYEfa
+395586804113752064:RT @RSAsecurity: #IncidentResponse Teams are the new (security) black: http://t.co/s1u6EnHR9L
+395474918764470272:RT @BorjaMerino: Command-line Forensics of hacked http://t.co/NgqecemvP2 http://t.co/dgUd6AB0pa
+395471491351195648:RT @virusbtn: Delegates at last month's G20 summit given bag with USB sticks containing spyware, malicious chargers http://t.co/OUgAEIdhOA
+395119940430495744:RT @Fortinet: The Stealthy Downloader: http://t.co/LMDO1KXvGX #APTs #Malware #Phishing
+395114221509545984:RT @sucuri_security: Backdoor Evasion Using Encrypted Content http://t.co/1e44yduJwX
+394949890775990272:RT @reversemode: Just posted on @IOActive's blog "Hacking a counterfeit money detector for fun and non-profit" http://t.co/dLyEYR19we
+394933509900746752:RT @volatility: @Volatility 2.3 Released! (Official Mac OS X and Android Support) http://t.co/iJ0Tm3dOzD #DFIR
+394876391692701696:RT @lennyzeltser: Examine outbound HTTP connection patterns to differentiate between botnet and human activities: http://t.co/1XFStzprxX by…
+393712268191735808:RT @griyo666: http://t.co/cfamaF1ShN Compromise - http://t.co/OVYZC5RBx8 "...here is a link to the pcap for those of you who’d like to anal…
+393712208255123456:RT @virusbtn: More on the @php_net compromives by @jaimeblascob http://t.co/OENOVzVyor and @ryancbarnett http://t.co/ia7eiCPdi7
+393711851928043520:@jcanto politica chanante como concepto
+393709109591420928:RT @teamcymru: Hackers use botnet to scrape Google for vulnerable sites http://t.co/A0FevopV1k
+393398584143773696:RT @markrussinovich: Just released Sysinternals updates, including Sigcheck with VirusTotal integration: http://t.co/GHLENdlVON
+392601228821409792:RT @a_greenberg: Google's 'Project Shield' Will Offer Free Cyberattack Protection To Hundreds Of At-Risk Sites http://t.co/taEcSYFJ7I
+392242284429074432:RT @paulsparrows: September 2013 Cyber Attacks Statistics http://t.co/tXP3gWrkk5
+392235556933222400:RT @DSTLabs: Network Appliance Forensic Toolkit Video https://t.co/IbSQyYD5yN
+391593337943511040:RT @secbydefault: [SBd] Presentación de la jornada de Ciberdefensa en la UEM http://t.co/dUsUUUPlVT por @aramosf
+391591891193847808:RT @newsycombinator: Bitcoin heading towards $200, new bubble forming http://t.co/Bci60XtaH1
+391584355283267584:http://t.co/cqVnmz6SLl is not resolving from yesterday but still accessible from here https://91.213.203.142
+391583466934263808:RT @TheHackersNews: 100Gbps #DDoS attack against BTC China without DNS Amplification attack http://t.co/gLdI9bc2ag #Security #Bitcoin | htt…
+391579051347152896:RT @andrewsmhay: Fantastic intro to #yara [EN]  http://t.co/366L9TDIdE &amp; [ES] http://t.co/UI8ooCOad3 #malware #dfir
+391130148801495040:Tracking and Characterizing Botnets Using Automatically Generated Domains - http://t.co/Q7TO2LACFK
+391127879695998976:RT @anton_chuvakin: G+: "Anton Chuvakin describes why the success of your SIEM deployment is determined more by operational processes… http…
+391127596261728257:RT @marcusjcarey: If you have to rely solely on fancy reports/charts to communicate with management you probably suck at your job. #InfoSec
+391112234438787072:RT @r_netsec: HackinTheBox 2013 Kuala Lumpur- slides - http://t.co/u03KlQMcUZ
+391100971704938496:RT @SeanConnellyDC: I wasn't aware of recent BIND feature to block malicious DNS requests. No more home-grown blackhole scripts. http://t.c…
+390871976006656000:RT @dinodaizovi: Kevin Mandia (CEO, @Mandiant) gets personally targeted spear phishes spoofing his limo service invoice PDFs: http://t.co/w…
+390230567750746113:RT @bojanz: Great notes about reverse engineering for beginners (270 pages!): http://t.co/fDWMxztWft
+389424408064176129:RT @r_netsec: Dumping Malware Configuration Data from Memory with Volatility - http://t.co/rNUF6mlyPO
+389421386772795393:RT @DarkOperator: Reverse Engineering a D-Link Backdoor http://t.co/5BoF9jqwA8
+389137013070647296:RT @cor3dump3d: Shell is coming ...: Passive DNS with Tshark http://t.co/EkbfWWmEa7
+389085797791830016:RT @SpiderLabs: SpiderLabs Anterior&gt; Hiding Webshell Backdoor Code in Image Files http://t.co/KDyR5cuBcO #applicationsecurity
+389085620708323328:RT @renesys: Internet Paths Matter: @Google DNS performance suffers in South America due to suboptimal path http://t.co/xbDdD2X9ge
+388246480680927232:RT @botherder: Hardening Cuckoo Sandbox against VirtualBox detection http://t.co/0tu3CZMSdY
+388044846071816192:RT @santiagobassett: My #ossec and #alienvault webinar slides and video at: http://t.co/wZQPFIQRgm  and http://t.co/Q0bNTCAPO7
+387976973446037504:RT @CiscoSecurity: Making Boring Logs Interesting: http://t.co/TI2gWfZbu1 #NCSAM
+387975202602508288:RT @HNTweets: The Linux Backdoor Attempt of 2003: https://t.co/TiBStT7nKV Comments: https://t.co/MOjPuhvUTT
+387466602641629184:RT @r_netsec: Finding Visually Similar Malware among Millions of Malware - http://t.co/N0a93COHt9
+387466411888869376:RT @ikoniaris: Analyzing Internet Attacks with Honeypots http://t.co/mi4D0cAkjY
+387437750716469248:RT @ErrataRob: More fun with IDS funtime, now with DNS
+http://t.co/6ZlcJ73SYJ
+387428891813773313:RT @tgilis: BruCON 2013 videos are online !! Check out our YouTube channel .. http://t.co/51JRIwqOpm #BruCon
+387428822427381760:RT @jaimeblascob: New blog post by @a0rtega: How public tools are used by malware developers, the antivm tale http://t.co/H8qwrE91EI
+387418502598234112:RT @dguido: Russian law enforcement just took out the only crimepack author capable of developing exploits, Paunch. http://t.co/Ha5MzTr30X
+387418061533622272:RT @newsycombinator: Piercing Through WhatsApp’s Encryption https://t.co/3JYHtJBsMk
+386101926653210624:RT @gollmann: Adobe confirms security breach http://t.co/uFc6dWUO1T
+385691324365549568:RT @alexcpsec: @hrbrmstr too bad it was destroyed in the volcano of Mount Data.
+385691217268199425:RT @hrbrmstr: One SIEM to alert them all; One SIEM to find them; One SIEM to correlate all and in the packets bind them. #LordOfTheSIEMs
+385686256136355840:RT @xme: [/dev/random] What Do Attendees During a Security Conference? http://t.co/YPsxBevh8e
+385487259547361280:RT @jaimeblascob: New blog post: Identifying suspicious domains using DNS records http://t.co/W8AlKdaIn5
+385393695656144896:RT @sebastiendamaye: Extracting EXE Drop Malware http://t.co/JBsqL7KkRI via @ciscosecurity
+384756828791255040:RT @symantec: #Symantec sinkhole operation puts dent in massive ZeroAccess botnet http://t.co/z94f7OtOk2
+384622198448586753:RT @abuse_ch: Blog post: Malware bruteforcing WordPress, POP3 and FTP credentials http://t.co/rtIoaIIGG7
+384617516296704000:RT @ydklijnsma: Analysis and writeup of the Fiesta Exploit kit which now also serves @VUPEN 's #CVE-2013-2551 http://t.co/37Y9NPuDaA
+383533681190518784:RT @jaimeblascob: New blog post: Latest Internet Explorer 0day used against Taiwan targets http://t.co/E3pwg0E4PR
+383178568328433664:@Brucon streaming - http://t.co/jraisuwPgi
+382915271196831744:RT @r_netsec: IE 0-day: exploit code is now widely available (CVE-2013-3893) - http://t.co/qZHYsdy1ui
+382052386392780800:RT @noconname: We are organizing the "NcN Facebook CTF" will on Nov,1st Barcelona,Spain. pre-qualifing will be online on Sept,27st http://t…
+382052131563667456:RT @ariyahidayat: Chaos Computer Club bypassed Apple TouchID: fake finger + hi-res fingerprint photograph
+http://t.co/FYRiuOKY61
+380996344749359104:RT @teamcymru: Gang of eight arrested over £1.3million Barclays computer hijack plot in carbon copy of Santander scam  http://t.co/rmzLH4mt…
+380981987609042944:RT @paulsparrows: 1-15 September 2013 Cyber Attacks Timeline http://t.co/x9YZFADehN
+380222227222122496:RT @r_netsec: Symantec report on Hidden Lynx hacking group - http://t.co/PJQmMDHcv3
+379863486257704960:RT @cci_forensics: LOL: fakenet aware malware http://t.co/H1zFKubHOS
+379210109047410688:RT @r_netsec: Masscan: a port scanner that can achieve 25 million packets/second - http://t.co/YrBYdyuUlf
+379035817290657792:RT @reversemode: Computer hackers arrested over plot to steal millions from Santander http://t.co/049tjNjlhz "A man posing as a BT engineer…
+376324458622889984:RT @foxit: Large botnet cause of Tor network overload – http://t.co/y7CYNdgugG
+373074398817034240:RT @armbues: CC @hdmoore @DarkReading Regarding #DNS registry locks: only 433 .com domains updated to with a lock the past 12 months. Not o…
+372800917843615744:RT @maxisoler: USENIX Security '13 - Videos Available: https://t.co/3SqluvST9K | Media: https://t.co/Z71mzzpavx
+372511237487472640:RT @newsycombinator: Twitter’s whois records altered, Syrian Electronic Army takes responsibility http://t.co/NtTyLC5Ljn
+372453428708278272:RT @virusbtn: Lexsi's @tgadiolet explains how C&amp;C mechanisms have evolved to become a lot more stealthy and resilient http://t.co/vxUoO2e1SC
+372427384571457536:I hate find projects on github that don't have published the code but a README file. It's like the 'Coming soon' web pages in the 90's
+372299781743185920:RT @cristobal_rosa: Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a Month http://t.co/zRQ1myWjRp
+372266969266790400:RT @skynetbnet: FinFisher portfolio: https://t.co/MKfLCMEkYC
+"the most goverment used Intrusion tool worldwide: Backtrack" #topkek
+371286910188023808:RT @CloudFlare: CloudFlare's new WAF: compiling to Lua | CloudFlare Blog http://t.co/0D4SmUaU3V via @cloudflare
+371286814801162241:RT @CloudFlare: Heuristics and Rules: Why We Built a New Old WAF | CloudFlare Blog http://t.co/lxZZj5U5wO via @cloudflare
+371006518851678208:http://t.co/XC60UJLEXF - Get a dynamic DNS sending a HTTP request.
+370643637115170816:RT @marcusjcarey: What's more accurate the Magic Quadrant or the Magic 8-ball? #infosec
+368800773099880449:RT @noconname: Ya podéis consultar las ponencias del congreso NcN 2013 https://t.co/zUHsY6G7Ac #ncn2k13
+368484954780737536:RT @marknca: RT @pycoders: PyOhio 2013 Videos http://t.co/KzeH5gg8lG
+367655206315515905:RT @jimmyblake: Putting Threat Intelligence to Good Use  http://t.co/0NxKMczHth via @feedly
+366318477650309120:RT @anthonykasza: beginner @Bro_IDS programming http://t.co/yxg6s1zy6b incase you didn't get enough at #broexchange
+366272362871652354:Bitsquatting: DNS Hijacking without exploitation - http://t.co/LWZcf0Wphn
+366260241211469824:RT @ipaxdc: Open Source Backdoor - Copyrighted Under GNU GPL http://t.co/WYzLXo9NAq  #netsec #webmalware
+366256901576605696:@YJesus Prácticamente a diario. Ha sustituido mis mil post-its. Y con geeknote en Linux lo tengo integrado en mi flujo de trabajo habitual
+366250764626169857:RT @hrbrmstr: Just released: IP Intelligence Lookup Chrome Extension http://t.co/cIO7UxuwdI (right-click/context menu multi-source lookup)
+366219858867785728:RT @drk1wi: A simple tool to make Nmap scan a bit more challenging than it used to be :] http://t.co/kUH1I5WC
+365797182340739074:Defending networks with incomplete information by @alexcpsec - http://t.co/Z8RWkkryLD
+365396786317230080:RT @selil: Why do people who do infosec threat intelligence conflate threat (imposed) and vulnerability (exposed)? One with out the other i…
+364493921952751616:RT @nudehaberdasher: As promised, here is all our data/tools/code/paper for our car hacking research: http://t.co/ZWPWKDSV2o
+364440369519661056:RT @DidierStevens: Released Rovnix PCAP http://t.co/N9RfQqeZ9f
+364428602236231680:RT @csoghoian: IP address hardcoded into Tor exploit is in block of IPs assigned to US gov contractor SAIC. https://t.co/8xzI9AQfwe
+364427898805301248:RT @nils: Seems like the Firefox vuln used against Tor users is CVE-2013-1690 reported by me in April and fixed since June http://t.co/XAES…
+364118109122494464:RT @newsycombinator: Half of all Tor sites compromised, Freedom Hosting founder arrested http://t.co/lkiKCy0rYc
+363403857998524417:RT @joestewart71: Some new research by myself and Don Jackson: http://t.co/CPwqoQYHUt #Comfoo #APT
+363402745438412800:RT @stiennon: Wow, FireEye IPO filing. $67.2 million loss on $62.6 million revenue for 6 mo. ending June 30.  http://t.co/q4nhdnsD9L
+362513652126986240:RT @seecurity: Ah, so the Ubuntu Forums hack happened with an XSS exploit http://t.co/zTEUPMvu6z
+362508459859644416:RT @lavakumark: Just released IronWASP v0.9.6.5 with several new features and enhancements. Download from - https://t.co/oajU2EPME1
+360764672925892608:RT @qnrq: When PayPal, Visa &amp; Mastercard has blocked all real anonymity services we can easily filter good from bad by reviewing their paym…
+360090662722473986:The yin and yang of SIEM - http://t.co/OSXVslYNBJ
+360088377443368961:Measuring ArcSight ESM 6.0 - http://t.co/50KABhj2NL
+359743854406152192:RT @reversemode: Inteco y CNPIC crean en León un nuevo CERT orientado a Infraestructuras Críticas: CERT-IC http://t.co/3v4wPLGG4v
+359742636795502594:RT @ReverseICS: Hide your cell phones, @justinengler will be showing his PIN-Cracking Robot at Defcon: http://t.co/RGeeenmaXU
+359741822945337344:RT @inliniac: It will be interesting to see what Cisco will do with #snort. Whats Cisco's track record on open source?
+359740129188921344:RT @Sourcefire: Cisco Announces Agreement to Acquire Sourcefire http://t.co/jHbatVR9BL
+359419098041565185:Just released: reading The Practice of Network Security Monitoring - http://t.co/WIQkaTwSec
+359415092804194304:@pacowww Por el momento bien, me está gustando más de lo que esperaba. Tanto que igual de meter ArchLinux igual dejo el Ubuntu y todo :-/
+359363925315293184:I just received a Dell XPS 13 DE (http://t.co/4IzvCVLZb8) Pretty funny that a laptop that comes with Ubuntu has a windows key #fail
+359343400052875264:RT @newsycombinator: OVH : Security Incident http://t.co/LBmLC0mr2f
+359343175867314176:RT @secbydefault: [SbD] Zarp: Framework para Ataques de Red http://t.co/vFZKz4GRHC por José A. Guasch
+358921518811983872:RT @Dinosn: Malware Evasion Chart http://t.co/6Sg6JpAMLO
+358761209308651520:RT @newsycombinator: How Did Dropbox Scale To 175M Users? A Former Engineer Details The Early Days http://t.co/084wEGybn4
+358561257042878464:RT @TrendLabs: Detecting Targeted Attacks With SPuNge: http://t.co/pjtipwN5TD
+357534754335244289:RT @digininja: This is wrong in numerous ways! http://t.co/9Z4VZ9SrF7
+357417903416545281:GRR, not a roar, is an incident response framework focused on remote forensics by Google http://t.co/vRPRR4GeOr  Doc: http://t.co/47V1VE47PS
+357416474245218305:RT @mmorenog: Distributed Forensics and  Incident Response in the  Enterprise http://t.co/y6GjUnftqJ
+357177020255449088:@lostinsecurity La tendencia para la temporada primavera-verano es 'threat intelligence'. Bigdata ya se quedo pasado de moda.
+357161973760270338:RT @dhw: If you discuss a Microsoft 0-Day over Skype, does that count as responsible disclosure?
+356765268518776833:RT @p0bailey: If you are into NSM/IDS/IPS, don't miss The Practice of Network Security Monitoring book by @taosecurity http://t.co/OUWI4Z1x…
+356675046929989635:RT @charlesherring: Using published IOC to retroactively look at #NetFlow for breaches http://t.co/sgBuERpOUK #InfoSec #DFIR
+356674349836664832:RT @thegrugq: If you didn't document how you did it, you won't have a clue how to do it again in 6 months.
+356524970039451651:RT @quequero: TRracer - commercial spyware samples for Android, Blackberry, SymbOS, iOS: http://t.co/4iqRmQWEf6
+355863466654961664:RT @SecurityTube: Wireshark PCAP based Challenges: http://t.co/HwRDxGIt1H  Awesome! Try them out! via @LauraChappell
+354947552900157441:RT @botherder: If the disk is smaller than 50GB, this malware prints "Yeah, right, maybe 5 years ago" and quits https://t.co/dR7WvOlMaq
+354286880797376512:@jaimeblascob @bquintero que raro que respondieses precisamente tú xD
+354279080100765696:RT @sec_reactions: Checking RAW logs - by @dcamart http://t.co/PanaSHlJaV
+353912235946545152:@aanval @wolfinside @TekDefense Have thousands of "alert ip any any" kills the performance. Better use the Snort IP reputation preprocessor.
+353865770582806528:I just read Traffic Analysis with Tshark How-to by @BorjaMerino . Short book full of tricks and tips. Really useful. http://t.co/dWHQ66uwIv
+353490576135561218:RT @cmgreen: Useful URL not linked as far as I can tel from homepage: https://t.co/RU2tPtwMy9&lt;IP&gt;/information/
+353041514127032320:RT @roman_soft: "Vim as a Python IDE" http://t.co/NQwOCFsk02 -&gt; Just increasing the power of VIM :-)
+352902693024571392:RT @Queseguridad: PENETRATION TESTING PRACTICE LAB - VULNERABLE APPS / SYSTEMS MAP - http://t.co/lOMDNSVZ8f
+352763511375532033:RT @cryptocatapp: Blog Post — New Critical Vulnerability in Cryptocat: Details and more: https://t.co/Hu7WbKFSqt
+352519373853958146:RT @HollyGoMadly: Mastercard and Visa Start Banning VPN Providers | TorrentFreak https://t.co/KEGhmTnPkI via @torrentfreak
+352460613622038528:RT @silascutler: Well...That's creepy. http://t.co/fHlDpuV8Jr
+352010351119831041:Now you can bypass the Android lock-screen with Skype and after that change the PIN as I showed yesterday, http://t.co/JsV8kOd43X (video) :/
+352008945608568832:RT @mikko: Bypass the Android lock screen via Skype: http://t.co/LmibfjKfjz
+/thanks @diver_dirt
+351936234655973377:RT @richinseattle: Motorola phones send lots of sensitive data to their severs, some in the clear over http http://t.co/b6jeXlPEgp
+351811952428843008:RT @Snort: Snort 2.9.5 is now available! http://t.co/2MEdpb1ijo
+351806872774393856:PIN Analysis - http://t.co/13Jf6DnDOo
+351801208975015939:Programming the teensy is easy and quite fun :) Android lock-screen PIN bruteforce: http://t.co/2nFXKC3cRb http://t.co/JsV8kOd43X
+351757077649178624:@holesec Que casualidad, justo cuando escribías eso estaba inscibiendo. Llevaba un rato revisando los materiales.
+351736596040663040:RT @jaimeblascob: Hunting for malware with undocumented instructions http://t.co/RtZeTTDIDr
+350737683095629824:RT @Xylit0l: XyliBox: #Carberp Remote Code Execution: http://t.co/lTDZR1PZDg Where is your god now? #Vulnerability #Carpwned
+350362720383668224:RT @andreasdotorg: "Hey, Debian, we're security researchers and have 1.2k bugs, how do we file them?" http://t.co/hJmh74C9NJ
+349981252192964608:RT @securityshell: Hijacking a Facebook Account with SMS http://t.co/P8yzN0s6Yb &lt;- WOW
+349938667474780161:RT @PatrickCMiller: SSL: Intercepted today, decrypted tomorrow http://t.co/j4dUjiMoMh
+349171019304534017:@chrissanders88 awesome, here is the 'official' documentation http://t.co/pF6pDYuRCh :-)  /cc @a0rtega
+348886189534756864:@chrissanders88 @snort Check http://t.co/r8fqXchqPj
+348737935312568320:RT @kevinmitnick: Wow! Out in the nick of time. This will be very interesting to follow.
+https://t.co/gIAq1zZMX5
+348223634168492032:RT @botherder: Cuckoo Sandbox coming to #BlackHat with Web Interface, @Volatility support and more https://t.co/mTkVmcwYDf
+348179650813501441:RT @lostinsecurity: GCHQ taps fibre-optic cables for secret access to world's communications http://t.co/d2dspbMVDL
+348156925982154752:RT @newsycombinator: NeoCities: Free web sites, static HTML only, 10MB limit, anonymous, uncensored http://t.co/JIB1VLcAOb
+347829038716436481:RT @BorjaMerino: Metasploit: Man in the Middle through PPTP tunnel http://t.co/rL15SOOjab
+347777283156738048:RT @TrendLabs: #OpPetrol attacks being done through botnets: http://t.co/ex6AZTJxIA
+347476026848313344:RT @KimDotcom: VERY BAD NEWS: #Leaseweb has wiped ALL #Megaupload servers. All user data &amp; crucial evidence for our defense destroyed "with…
+347410897871978496:RT @ForbesTech: Microsoft offers to pay hackers $100,000 for finding security flaws in its software http://t.co/x5bI35Vkyh
+347410219598508032:Aplicando navaja de Occam, si yo fuese el FBI me pondría a monitorizar en los Tier-1, marcando las IP de origenpara .onion conflictivos :-/
+347405958969954305:Sobre el tema del DNS leak en Tor en el caso 'Hache', es algo bastante conocido. No significa que los (cont) http://t.co/yw3bjRpMW0

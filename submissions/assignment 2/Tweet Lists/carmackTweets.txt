@@ -1,0 +1,624 @@
+200
+826531007381794817:Jan Paul van Waveren passed away today. The best developer I ever worked with, my right hand, and a good friend. It was an honor.
+826476672920801280:@molecularmusing @LiaSae I keep arguing for rigorously defining GPU texture layouts, at least as an option with possible perf implications.
+826469505249529856:@molecularmusing @rygorous @SebAaltonen @mmalex @snemarch @LiaSae I still think that is a good model for modern dev!
+826460175091585025:@CashMashXXL No, I haven't.
+826157918877777920:@JimCrackton with only virgin credibly working towards suborbital tourism, and it largely being image for them, going slow became natural
+826147162065076224:@JimCrackton I didn't think it would be as fast as some were predicting, but 20 years is longer than I expected
+825905135704498176:@nothings @pervognsen did you consider paying for "real" professional tools? No idea if they are actually better...
+825878729121492992:@nothings @pervognsen I have to fight the urge to do retro projects on systems I wasn't originally exposed to
+825835828387729408:@pervognsen I had hacking/phreaking files from BBS, but never any good "real" programming info
+825835445493829633:@pervognsen no, I didn't. Hard for people today to appreciate how scarce info was back then; Foley&amp;Van Damn was no help for low level hacks
+825833670963519489:@iPadCaryMG we definitely intend to ship standalone VR systems, but no announced dates yet
+825833481976569856:@AaronMcom downtown was not so great, but I liked our lake house
+825833340519510017:@pervognsen Keen 1-3 used hardware panning on a single tile oversized buffer with smart tile replacement, 4-6 64k wrapped the entire buffer.
+825757682929917952:@jeffiswin @aras_p @cliffski That is definitely true.
+825721199875461121:@paniq @pervognsen yeah, but that sort of demo scene work generally translated poorly to the game development process
+825719202946416642:@pervognsen I wonder if decent general compression of the map data could have worked out better. Compression wasn't broadly understood then.
+825718689458708480:I was making a dent at 19, but in 1990, the game industry didn't have many graybeards. I Wouldn't have been so impr… https://t.co/knRp2yhqFe
+825523580611878912:@pervognsen I'm always sorry to see talent leave, but best wishes!
+825477370534457344:I dislike caller-set type tags in returned structures -- they are "stealth parameters", and an unnecessary forcing of an in-out parameter.
+825375119312814080:@beltzner No, I don't. See previous tweet.
+825354975274467328:@ruffbytes Twitter handle has a low weight in my personal filter calculation. :-)
+825354292735393792:@lbljeffmo I agree, my point is that the entire topic is so filled with minefields that it doesn't get honestly and forthrightly debated.
+825353149095481345:@lbljeffmo someone in replies just made the zero filter argument...
+825352723893731329:@FARTRON That can be a defensible position only if you are willing to drastically reduce per-capita government services. If so, ok!
+825346783761022977:@FARTRON You would allow anyone in the world to immigrate without question? Really? That is a very hard position to defend.
+825344933817098240:Any kind of an immigration filter other than a dice roll is literally discrimination. There are many options. Discriminate wisely.
+825342187659546624:@dakami Making it hard for awesome people to come to your country is Not A Good Thing.
+825339985918382082:Some filter is necessary, but I would certainly prefer it to be by some measure of value, not religion or nation of… https://t.co/3BANK5Yyzc
+825029718420303874:@tom_forsyth Rodrigues angles (in OpenCV speak) are, as you suggest, three floats with rotation being the length around normalized axis.
+825024899068465152:Is there a clever bit-packing transformation that can give a more space efficient uniform rotation parameterization than Rodrigues angles?
+824618335958622209:RT @oculus: Please welcome Hugo Barra, our new VP of VR at Facebook! https://t.co/zuYdrXkIUY https://t.co/GezeEu7QiV
+824617584112836609:@Diegobez @WackoMedia both mobile and PC are contributing tech to standalone, but it is an ARM based system.
+824420905962991616:@FioraAeterna I find it remarkable that I have not been able to infer which company you work for from any of your tech comments.
+824061377127976965:@Jaruzel I have to go back to give the next BAFTA fellowship this year..
+823959763625119744:@Jaruzel happy to in person at conferences, but I don't want people to mail me things
+823683154607095808:@the_madman @superbunnyhop nausea is due to inconsistencies between the rendered visual field and the vestibular system (view/body mismatch)
+823295027170381824:@SeamusBlackley We considered uprating it, but decided that it was a good circuit breaker for the rest of the drivetrain.
+823290657812992000:@SeamusBlackley Ha! I know that feeling. My Testarossa did that so many times we had a procedure for fixing it without dropping the engine.
+823132778111922180:@claytonbeeney I wish they were available (or open source!), but the odds are probably close to zero.
+822906853910872064:@sledgepetit I don't agree that not kicking Thiel off the FB board is evidence of supporting Trump or harming people.
+822846393572270080:All of the protests/celebrations going on are great examples of where 360 photos and videos would be much more objective than cropped photos
+822840311655395330:@Rosto75 @UnrealEngine @TimSweeneyEpic Anyone that made text games must surely be old and grey by now!
+822651515542372352:@LCTRgames They have spoiled me.  Combustion cars feel very primitive now.
+822619909230383108:RT @UnrealEngine: Epic Games’ Tim Sweeney to be honored with Lifetime Achievement Award at the 2017 Game Developers Choice Awards - https:/…
+822619606565187584:RT @natemitchell: Dear Angelica, the new VR film from Oculus Story Studio, debuts today at Sundance! https://t.co/DGwNYvOPix
+822619102728650756:GFX geeks may be bothered by the fact that the screens in the Tesla Model S have very different gamma curves.  Obvious with album covers.
+821701615639990272:@FioraAeterna my job of explaining why transparency should be avoided in VR (focus jumps) gets harder all the time
+821039955787087873:@sledgepetit @calipexo What do you base that disagreement on? The premise is that huge amounts of quantifiable things are radically better.
+821021795943940096:@sledgepetit I'm curious on what evidence you base your views that FB is harming young people and Zuck is a Trump supporter.
+821016754876977156:Progress is lighter reading than The Rational Optimist, which I have seen people abandon as "too dry".
+821015978221957120:I recommend this book: Progress: Ten Reasons to Look Forward to the Future by Johan Norberg https://t.co/wxRgzEpGZn via @amazon
+821000595855253505:@ThingsWork @DustinHLand neglecting, of course, to show it coming out of people's mouths as they exhale...
+820848663647973376:Snacking alternately on wasabi peas and dried mangos, I find that the residues combine into a sticky wasabi napalm.
+820818701725396992:RT @Vortmax: @ID_AA_Carmack Like this? https://t.co/U9SBT3C3N4
+820815940657020929:I wonder if you could make a mostly-inflatable ultralight airplane like a bounce-house.
+820632102202994689:@nothings I find myself cognizant of how much aggregate time is consumed by a random tweet, which is a little uncomfortable.
+820625060348264448:@paniq @fahickman @nothings high volume twitter users only get stochastically sampled :-)
+820623853911162880:@casseveritt I implemented some of the theoretically better approaches, and found no difference in practice; other factors seem to dominate.
+820617064687763456:@PLT_cheater @clinton_freeman @mbrcknl no, we didn't make any attempt to be scientifically accurate
+820297153256058880:@AndreElijah I haven't paid much attention yet, but I'll surely get one
+820259700621058052:@dnaltews @jeriellsworth @MagerValp @pervognsen at 500 MHz, you don't need any tile and sprite hardware!
+820248119103340544:@JBrooksBSI @therealian @robertocosta68 @YouTube applesoft is definitely a great intro to programming, and both my boys have started there.
+820247439408005120:@jeriellsworth @MagerValp @pervognsen You we're going to sneak it into some unused space in another project? That would have been great! :-)
+820104022506045441:@JBrooksBSI I think the pipeline stages on 6502 have more gate delays than a modern high GHZ CPU, so it should clock slower. Not sure.
+820103192226709504:@therealian @JBrooksBSI @robertocosta68 I am debating whether to teach my son 6502 asm; clearly not directly useful, but maybe good exercise
+820102436648054784:@burgerbecky I have heard of FPGA 6502, but has anyone actually fabbed a modern ASIC version?
+819886842304720896:@BruceHoult @pervognsen it feels like ultra-small processors may play another revolutionary role in the future as smart dust of some kind
+819872329475964928:@BruceHoult @pervognsen of course; I wasn't suggesting it was an optimal win. Wasn't ARM 1 more like 8x the transistors?
+819865971712229376:@pervognsen @nothings programming for ROM-heavy systems probably incentivized better programming style -- everything doesn't become state.
+819858429112123393:RT @Love2Code: Paper by Wu &amp; Tian on a deep neural network that plays Doom (PDF) - https://t.co/is7lKk6Yjf https://t.co/nLefoUYjmS
+819857207303016448:Related, I do sometimes think about how fast an SRAM-synchronous 6502 could be today. https://t.co/KL0fVL85px
+818652206891237376:@Kid_the_kido @gnome_dubbbzvs @romero turning to the left or right. Pitch is looking up and down.  Roll is falling onto your side.
+818096474722537472:RT @asjonish: @ID_AA_Carmack I'm sure you'll enjoy the work of Prof Akiyoshi: https://t.co/ispqQkOESd
+818096200717135877:@gnome_dubbbzvs @romero you had four degrees of freedom -- x, y, z, and yaw, but no pitch or roll. Geometry was also restricted.
+817889261101846528:Some radial gradient patterns are hard to look at without your eyes darting around.  Might be amusing to pattern hats and shirts.
+817817752937189376:@aureylian @CollectedEchoes He should have been able to try it.  They aren't Oculus employees; you could probably ask the store manager.
+817810516257054721:@fenderf4i I don't remember. :-)
+817740570479235073:@pervognsen internetworking with TCP/IP is out of print? I thought that was a great book -- I have two editions.
+817445718558392320:@sandwichmaker @mierle I have a project I want to try it on -- this is the sort of thing I am very happy is available as open source!
+817390220580683777:@dmmfix Are you physically attending classes?  How are you enjoying it?
+817390044310814720:Google's https://t.co/3D26azcbMV is a nice, modern alternative to translated FORTRAN code from the 60s.
+817388973869961216:This is pretty neat: https://t.co/5N6ZWzWVSU I usually do inefficient numerical differentiation, which I need to get past.
+817388712514428930:My lack of calculus skills makes me derivative-phobic , which is starting to matter for me in computer vision and machine learning.
+817350740226273280:@nnorm0145 @rygorous @LiaSae "purrkour" is a legit good idea!
+817033902761967616:@NikolayTsenkov Nobody optimizes mobile games to the level that many console games are, for example. There are reasons, but hope for better!
+817000418207211520:RT @dadgumjames: Programming in the 21st Century, Nov 2007 - Jan 2017. https://t.co/jSH9OGHxpp
+816987741443555328:@NikolayTsenkov even on the same hardware, the software can get MUCH better -- it is a long way from fully optimized
+816815991258681344:@GoneOffDeeper Check out the latest featured apps and the various 360 video feeds.  Face Your Fears was a big hit recently.
+816810901604999168:Very proud of all the work that has gone into this. VR software is nowhere near the quality limits yet, stay tuned! https://t.co/f3LUBASHZi
+816630507509256192:@vithren probably not directly for HMD now, but it is very good that display vendors are working on true HDR
+816477064140361728:RT @Laralyn: We need a "50 over 50" list of game devs. It's a challenging career for the long haul, and also not always great at valuing ex…
+815728564880441344:@TedMielczarek Thanks for the data point.  Did you hold a steady pace on the HM, or change pace on a schedule?
+815679329862557696:@TedMielczarek i just ran at a steady pace throughout. I was signed up for another one, but it was on the day the Facebook deal closed...
+815611964202356736:@pkhuong @pervognsen I dearly want Samsung to do that for GearVR mode
+815594984879620096:@sentient02970 set a mutual record together -- dad / son high five!
+815593801511292933:@ewg118 12 and 7
+815593621177176066:@PerlinMandleBro The mile really is about as fast as I can go, the others have headroom as Ryan catches up.
+815586770574278656:In six months my son is going to have to slow down so the old man can keep up, but it is nice to run hard together… https://t.co/c2JuU2UDAW
+815320003947827200:This is amazing!  Zero friction interface. https://t.co/y91kss0QM7
+815232517271941120:RT @kenpex: Let’s Close the Buffer Zoo https://t.co/XsxO6AkPvM
+814996823932739585:@vpostman Not sure if you are being cynical about the evolution of programing constructs or not. :-)
+814966603498463232:@HomerS66 @oculus I'm not sure; I agree with wanting more theaters!
+814886432695123968:RT @johanknorberg: Ten things that also happened in 2016. https://t.co/jcmA9gXmol
+814654346763726850:@PlayItPoolman No, do you highly recommend them?
+814159606645542912:@jcvernaleo No, the sum of them is what needs to be minimized, but I can't complain as much about bandwidth as I can about bad programming.
+814112343294611456:My mom has a note 4 for 360 photography that hadn't been updated since KitKat. 8+ steps (with two fail/retry) and HOURS to update to latest.
+814101812177465345:@frantastic_es for systems work, sure, but suboptimal for game and UI work
+813946453639004160:Deep underneath all the C++ templates, there is some pleasant C code in OpenCV.  Pretty much what I imagine the FastCV source to look like.
+813876065730850816:@jon_valdes I'm struggling to imagine someone saying / thinking that.
+813875060020682752:@keyle VS is in a class all by itself -- that install isn't a "poor architectural choice", it has to be something embarrassing broken.
+813873357607211009:If installation is taking longer than downloading, someone has made poor architectural choices. This is distressingly common.
+812650443985866752:@JBrooksBSI @6502lane complications -- page flip means no 80store, and full unwind bidirectional scroll won't fit in language card
+812648205276086272:@pixinn @JBrooksBSI @6502lane a tiny little bit; I am often tempted, but too busy
+812488715457204224:@JBrooksBSI @6502lane I have noted that it is just barely possible to scroll page flipped, vsynced 80 col at 60 fps on 1 MHz 6502.
+812146701372944384:\ now guarded about anything else the book will say.
+812146617243537409:\ always remain visible to me. Seems if this was robust, we would see gifs of the effect going by on twitter like other illusions. Makes me\
+812146373395148800:Reading Dehaene's book Consciousness and the Brain. Tried to replicate the subliminal masking experiments and failed. Single 16 ms frames \
+812109145486700544:Is there a color printing paper/ink/technology optimized for maximum diffuse / minimum specular reflection?
+812095254547398656:I think I have finally broken my bad habit of somethingMax = 99999 instead of a proper FLT_MAX / INT_MAX
+812073594599505920:@hotmultimedia @romero I don't remember...
+811741801300144128:@TimothyLottes @Jontology @ivanassen @tom_forsyth An algorithm which involves idling the GPU occasionally is a perfectly reasonable thing.
+811737482781822977:I know many disagree, but I quite like the #pragma comment(lib,&lt;file&gt;) specification in Visual C++.  More in source, less in projects.
+811716782234824704:@AllenPestaluky I don't know if that came from us, but I would generally be supportive of forcing 32 bit.
+811566237478223873:RT @OmahaMH: @ID_AA_Carmack GL_PIZZA_FAN vs GL_PIZZA_STRIP https://t.co/UHfBcFb0u1
+811377176490622976:Was moaning about setting up OpenGL for a tiny experiment project. Realized I actually didn't need shaders / etc. Old school glBegin() FTW!
+811352128224563200:@AllenPestaluky If you really want the dithering back, try a 16 bit framebuffer.  However, I would urge you to instead brighten the scene!
+811351908505899008:Alex Ross @thealexrossart made a painting for me! https://t.co/SL4NvoPAuR https://t.co/KGItDFD8iT
+811351034970767360:@AllenPestaluky looks like it went from a 16 bit to 32 bit color buffer (which is the correct thing to do)
+811299783440760832:RT @Jason_Rubin: #GearVR Winter Sale @Oculus is Live w/ new Daily Deal Every 24 Hours. Today: Dread Halls $0.99(!), Annie Amber $1.99 https…
+810872717129973763:Cold mornings bring old memories of starter fluid, batteries dead from cranking, and long warm up periods, but modern cars just don't care.
+810858503430635520:RT @mhoye: Your periodic reminder that knitting is a two-register counter machine, and is therefore Turing-complete.
+
+https://t.co/sWIWvZAp…
+810638042591543296:RT @Rocky1138: @ID_AA_Carmack Wolfenstein3D on Game Boy Color (with co-processor) https://t.co/RiOUqaD3GH
+810230235992035328:RT @JNQ_Prog: GL_CLAMP_TO_EDGE https://t.co/R0y0F8Ifjh
+810229129123688448:My traditional activity when unavoidable in department stores is examining the quality of the welds on the display fixtures.
+810179091991298051:@Kensan42 @notfonk @AdaCoreCompany I read the spec and thought it was all quite reasonable, but you need to write 10k LoC to be informed.
+809911718252019713:RT @oculus: Join Friends in VR with Oculus Rooms and Parties—Now Live for #GearVR https://t.co/yJ3hgk6q43 https://t.co/nLsvbW80V4
+809910724281729024:RT @Jason_Rubin: So happy to be working with @TurtleRock ! "Face Your Fears" is one of @oculus most successful mobile apps, TRS deserves to…
+809607497627693056:@philiprosedale ADPCM gives 4:1, would need to be a fair bit more to be worth a custom codec
+809555201241837568:RT @oculus: Welcome to the #VRWeb: The ReactVR pre-release is now live! Start experimenting with #WebVR &amp; @reactjs  https://t.co/Irahq7AQnP…
+809377169600368640:@casseveritt used to find the focus of expansion for mono visual odometry
+809148926771109888:@chikkitachekit I'm not a Python programmer, but it is generally well regarded for many tasks.
+809083652374044672:@XenoPhage @textfiles They are certainly working on it!
+808888216145326080:@TimSweeneyEpic How do you make the distinction? MIght make a fun gentleman's decade bet.
+808887464161067012:Abstract moral questions about deleting AIs have a current analog; I already feel a loss considering historic software with no known archive
+808788092505051136:RT @brendaniribe: Optimizing for success. Building the future of VR. https://t.co/jHrIYi25Jr
+808408104064823296:RT @EricLengyel: There are five days left to get FGED2 funded. Let's make this happen!
+
+https://t.co/i2SoyCcI7q
+808353735369834496:@FioraAeterna Every year now I am asked "What exciting stuff in the mobile SDK can we talk about?", and I explain that SDK are not exciting.
+808019765243482112:@torokati44 @nothings @rygorous @danluu @antumbral @fahickman the frustum planes converge to a point at the view origin
+807980949086597120:@resnate I gave @DonMacAskill all our old NeXT gear, I think he still has them. I was never a good archivist.
+807958943804833792:@nothings @rygorous @danluu @antumbral @fahickman without depth buffering, clipping against four side planes was sufficient
+807799286025089025:@antumbral @fahickman there were years of 3D demos that carefully avoided anything hitting the edges of the screen and needing clipping
+807798037842161664:@BrendanEich @victorluft I still use Racket for small things, and just last week I threatened to convert a transport to S-expressions.
+807797812700348416:@BrendanEich @victorluft My VrScript project never got to reach the public. Emphasis moved to WebVR with ... JavaScript.
+807796954411532289:RT @TheRealBuzz: RIP and Godspeed John Glenn https://t.co/v87DW3E3Ac
+807795677229187076:@BrendanEich @victorluft I started with pure R7RS scheme, but Racket was too much nicer! Unfortunately, many seemed allergic to the idea.
+807738353906946048:I find it such a pleasure to pull libraries out of a project, but this does not seem to be a widely shared feeling.
+807723200431783936:@fahickman The goofy polar coordinate calculations in original Doom were due to me still being scarred by my poor clipping in Catacombs 3D.
+807721898075295744:RT @Gameiversary: DOOM celebrates its 23rd anniversary today! @idSoftware @romero @ID_AA_Carmack https://t.co/Xl2ipJX1Cx
+807436484865359874:RT @Gameiversary: Quake II celebrates its 19th anniversary today! @idSoftware @ID_AA_Carmack https://t.co/THRU0dh2nd
+807436202517336064:@Ybalrid @TechCrunch Samsung reclaimed it, but we had already disabled VR support before they took it.
+807287208746987520:@indrora not packed into a phone
+807266243526815744:@Ayers111 @ID_R_McGregor Yes, it would help a lot in some cases.  Been asking Samsung to do that for ages, or put them all on one core.
+807262484117614592:@ID_R_McGregor I am working to bring quality up and power down at the same time.  Efforts rolling out over the coming year.
+807262037441024000:@VRG_Daryle Maybe less background crap running on your phone, but there is also a surprising amount of phone-to-phone variability in power.
+807261515753496577:@Krewell That may be a factor for why some people are buying those systems, but far more people are buying (and using!) GearVR.
+807260051723276288:@ID_R_McGregor Each gen does get better, but watching watts is here to stay.
+807257237399826432:Overheats and battery usage are top complaints by GearVR users, so regarding fancy gfx tech, correct answer is often "Can do, but not gonna"
+807037653447311360:Unsigned chars?  Too far? https://t.co/Ef6q5eVMY3
+806914414838300672:@pervognsen Anything that can be randomly accessed in say 512 byte chunks that expands into say 8192 bytes of sample data, decompress on fly
+806910715873198080:May the future AI overlords reminisce fondly on the playgrounds of their youth. https://t.co/kyZd57M1FE
+806909942703616001:There should be a block based, fast decode, fixed ratio audio compression format between ADPCM and ogg/mp3. The ASTC of audio.
+806550010875654144:@krispey @joerogan Got pushed out, unfortunately.  Not sure when I will get an all-clear.
+806485771997814784:Thinking about complexity of modern CPUs, size of code for an emulator would be an interesting metric. Contrast user mode vs full.
+806473411518222336:@raminonstuff @migueldeicaza @TimSweeneyEpic @kickstarter I haven't seen a win with visual coding, but I do hear good things about Blueprint
+806241065787269120:It would be great if every research paper had an "Amazon product page" with reviews, "readers also liked", etc.
+805905326499250176:@kenpex @rygorous That's what I was scratching my head about -- maybe I misread your point. I'd say WalMart was net good, and expect more.
+805903142617378816:@rygorous Worth considering that the same stories being applied to a lot of automation efforts today were applied to Wal-Mart 20 years ago.
+805754013870391296:@dm935 @zorinlynx just the Oculus office and visitors, not an actual event...
+805562332457893889:@sneakin yeah, racket's GC can have some pretty big hitches
+805196859371188224:Contemplating a brace style revolution at Oculus. Three years and Allman has yet to grow on me.  1TBS.
+805196019684126720:@FreneticPony I have noticed that there is a limit to the complexity of audiobooks I can process while jogging.
+805191104928694276:@zorinlynx I always take the stairs. I have the record for the "Dallas Stair Challenge" -- 46 seconds for ten flights when sprinting.
+805188068336549889:it is fairly common for something to "click" for me when I am walking down the ten flights of steps from the office at the end of the day.
+805186807142854656:@gormlai The mobile drivers are currently missing some necessary functionality for VR.  Hopefully will be in S8.
+804901882418204672:@sssmcgrath @nothings Mine shows 69% real, but audited three years ago, and I don't feel like giving it access to audit today.
+804828633772658688:RT @Gameiversary: Quake III Arena celebrates its 17th anniversary today! @idSoftware @ID_AA_Carmack https://t.co/krMS0cSVm8
+804779993922355200:RT @brendaniribe: Oculus Touch is shipping, deliveries begin Tue Dec 6! With over 50 new games at launch, the magic of hand presence in VR…
+804427910798901248:RT @oculus: Introducing the Oculus Touch Launch Window Lineup—Over 50 New Rift Titles Available December 6! https://t.co/1n6dArgp0N https:/…
+804169772682346496:@ssylvan Creeping progress can be a surprise! Tech has really come a long way.
+804116279611113472:@samophlange this is with LLDB inside AndroidStudio with tools just downloaded yesterdat
+804083465574457344:Native C++ debugging actually works today with stock Android tools on Galaxy S7.  I shall moderate my derisive opinion somewhat.
+803981365234438144:@DannyBoy111285 I didn't do it. They were character names form my D&amp;D campaign, repurposed for the game -- Nemesis was one of the PCs.
+803980092888096768:@santamariaelesa It was a compromise with cinema aspect ratios.
+803676429468602368:Gear VR Notes -- Sky Fighter Training Day https://t.co/6w7sqpzR3I
+803353442529853440:RT @TheKanter: Want to know how real GPUs work? https://t.co/wUVLhwpTQ1 .@intel is far more open about architecture than anyone else!
+803266113765339136:@nikanorovalbert That sounds reasonable. I might give Unity more pros even for C++ devs.
+802843691421466625:@Rodman1_r2 @benz145 it still works ok-ish at 4 ms, but you can definitely tell
+802843540581650432:@Rodman1_r2 @benz145 blur from going 2 ms to 3 ms persistence is more obvious than changing 15 ms to 20 ms motion to photon latency
+802648594054463488:@FamousAspect @sid_meier Oculus Connect 4!
+802648240105476096:RT @mDamonConnolly: https://t.co/7UIaJlSTdo
+
+@ID_AA_Carmack is such a legend. This is my favourite interview by miles.
+200
+802648240105476096:RT @mDamonConnolly: https://t.co/7UIaJlSTdo
+
+@ID_AA_Carmack is such a legend. This is my favourite interview by miles.
+802596374290141185:@GorgoniteMaster Yes, I used it for a long time after retiring the actual Intergraph workstations, because I liked the stereo speakers.
+801904238787960832:@taluhunusa @Doomed_Daniel @romero I hope it isn't a scam, I didn't verify in any way...
+801904040284188672:@pervognsen I remain convinced that cloud gaming has a bright future, despite latency challenges. The consumer benefits are large.
+801592278682697728:This is an interesting old paper.
+"The whole trick is to decide what variables to look at and then know how to add"
+https://t.co/eYgER6SbYI
+800884617527967744:@tom_forsyth No, it was a subtle thing with the cylindrical layer density calculation -- I had tweaked the radial density, but not vertical.
+800884371649478656:@nothings Not being able to look down at the textured floor while rotating kept you from noticing!
+800875411110363137:A bunch of images on an internal project had a 5% stretched aspect ratio for months and nobody noticed.
+800777000684163075:@mntmn @epyoncf I think that could be pretty great, and you could do it with just the touchpad.
+800775250241720320:A modern 3D game that also has an ASCII rendering mode. (BTW, I think a first person roguelike for GearVR would be… https://t.co/nQNvk6NpNR
+800773719463333888:Unreliable GPU APIs have made me overly pessimistic about things "just working"; I debate using unfamiliar POSIX APIs when I shouldn't worry
+800541168509616128:@beltzner @humphd @shaver @jamespearce "code smells" as opposed to provable bugs
+800490544766091265:RT @Code_Analysis: The Ultimate Question of Programming, Refactoring, and Everything https://t.co/xf12P3b0hp
+#programming #cpp #code #softw…
+800427567366934529:@KateKligman like report that code bears a lot of similarities to code that caused lots of security failures, even if not statically proved.
+800427230203695105:@paniq I bet there are strong correlations between some statistically observed measures of quality and things that are just considered style
+800426763012673539:@fedangelo Assume you still have cache
+800426379456049152:It seems like there should be value in applying machine learning to source code analysis; we have tons of public data with defined semantics
+799733101039587328:RT @Draggor2k: This is the greatest DooM Tribute I've seen @ID_AA_Carmack @romero @idSoftware https://t.co/3vZ83XVLef
+799732054619553792:RT @JoachimHolmer: How to fix Z-fighting #unitytips https://t.co/JXS47UDrDO
+799353014947414017:RT @oculus: The Origin of Quill and What it Can Do—Beta Available at Touch Launch! https://t.co/Njet3YxasM https://t.co/kGsKOPg8z4
+799241704188456960:Would be interesting if main memory had flash like erase perf characteristics to strongly incentivize pure functional data structure use.
+799241068151586816:Optimizing a file system for flash memory without an automatic wear leveling translation system could allow very nice version rollback.
+798901148329660416:RT @AMShea: @elonmusk @ID_AA_Carmack so you're saying Tesla autopilot sees the world like a T800?
+798900904489426945:@salem5x_x yes, of course -- save everything in the ring buffer and continue while held / until toggled
+798857496655859718:RT @SeamusBlackley: I'm having flashbacks of assembling and testing those. It's a whole crazy story. https://t.co/r6DKDrHieo
+798693434273869824:Any studies of WiFi power consumption in joules / MB on modern mobile hardware? Presumably varies a lot over connection quality.
+798545797914558464:. @atonal440 dash cams capture all sorts of crazy things, extending that to calibrated panoramic, multi-sensor capture would be next level.
+798544413051916288:\ great to be able to just tap on the dash to grab some frames whenever you see something interesting or sketchy going on.
+798544329161601025:\ cameras has some interesting aspects. Saving the footage right before an accident event would certainly be useful, but it would also be\
+798544210580209664:Hey @elonmusk : while smart cars as enablers of a distributed panopticon may be a topic best left alone, the notion of cars as panoramic\
+798516768608317444:@44thats44oars the dynamic distortion and color mapping of a projection so it looks right even when it is on a non flat, non white surface
+798515725765844992:@RiftCat @44thats44oars @dacuda I do think it can be done well with either a lot of explicit markers, or an offline room mapping step
+798515267995389952:With a couple cameras to do 3D environment mapping, a tracked CAVE projector could auto calibrate for a wide range of diffuse environments
+798378138178846721:@Jonathan_Blow @joewintergreen @kyleve but it is absolutely true that I didn't really know proper hash tables back then
+798377904417685505:@Jonathan_Blow @joewintergreen @kyleve all linear searches of little tables, because there just wasn't enough men to start getting algo wins
+798377664209817600:@Jonathan_Blow @joewintergreen @kyleve when I read Lions' Unix src book, my reaction was... that's pretty much how I would have written it.
+798375405279395840:@eschneider001 yes
+798375299608023040:@joewintergreen @kyleve @Jonathan_Blow was that a linear searches instead of hashes rant?
+798290788236955648:@damiendamien @347_Jake a lot of good food for thought, but the book feels padded out, and some parts like a dorm room philosophy discussion
+798287853469827073:I have been reading Bostrom's "Superintelligence", so it was cool to see an actual (mouse)brain slicing and digitizing machine at Texas A&amp;M.
+798270232766730240:@PixelStrikeInc Probably past time for us to do an exhaustive cross check of the current state of things.
+798269937164783616:@Jonathan_Blow @MagpieMcGraw I am consciously making an effort to change that for myself, it's like an unhealthy diet.
+798269172601892864:@PixelStrikeInc Distortion correction is all SW, but each phone / headset combo has a unique distortion map, so some could be less good.
+798223289160110080:@achille Would be interesting to know what fraction of the total cycles they are. Guessing ~1%. Larger lines not obviously a win, regardless
+798219625783640064:@ivanassen 128, I think
+798219160031346688:@achille I would be surprised if much of the modern workloads are actually cache optimized at all
+798212977300115456:Have any major CPUs gone &gt; 128 B/cache line? Interesting how close to the original VAX 512 byte VM pages and disk blocks it has gotten.
+798209181266378752:@toshok perhaps not random noise, but there isn't a lot of gainful reduction of entropy when the same thing is reiterated ad nauseum
+798207334635798528:A good chunk of my daily reading comes from Twitter links. Generally I find it worthwhile, but politics have cut signal/noise a LOT recently
+798148601381814276:@nesqinesqi RF, but not Bluetooth
+797970727404208128:@gerwindehaan yes, I have a post I need to finish about the surprising optimality of 2D UI for most VR tasks
+797909173706985472:@jgerity imagine the difference between exploring a figurine you can hold in your hand and a statue -- combo of head and hand more powerful
+797859872582811653:\ you can "hold in your hand" and poke at with your other hand while moving your head around should be a really strong improvement.
+797859615077699584:While the fuzzy notion of a cyberspace of data visualized in 3D is unlikely in a general sense, specialized visualization of data sets that\
+797182181965631489:@tom_forsyth @mechtroid @TimothyLottes No, I mean pitch / yaw 3D orientation late latching of the mouse!
+797172637285879809:@TimothyLottes are any shipping games doing late latched mouse updates? That would be great!
+796699780034494465:RT @fabynou: So close I can smell it!! https://t.co/ekTWMzJkA0
+796359877690097665:@HimAndHerTW still much to do in VR
+796084828630237184:RT @cmuratori: The full schedule for HandmadeCon 2016 is up!
+https://t.co/gE9ea1Dcb3
+796035352544747520:@NeighBeighBeigh I don't know -- I doubt it would be streamed, but if it is recorded, I'll get a link out.
+795997141592403968:RT @lowRISC: Lab explosions and accidents, many from decapping ICs https://t.co/okY1s5rxdZ
+795726307053056000:@a1k0n just the 3x3 part. Finding an optimal 3x3x3 temporal version with the same rules would be nice.
+795723144375873536:Sudoku should provide a better dither pattern than the standard ordered dither, due to having equal energy in all rows and columns.
+795652235342610432:@gamefacelabs I'll be back to give the BAFTA fellowship next year
+795273353103896576:I had a dream with terrible chromatic aberration.
+795273072681119744:@Sluggernot @racketlang the initial release of the Gear VR Social backend ran Racket, but it eventually got rewritten in C++
+795237079273897984:@sehurlburt @billautomata not dwelling on it is very likely the optimal life strategy, but that is different than denial
+795233667748687872:@billautomata @sehurlburt It is hard to defend a truly "blank slate" position with data. You can argue for low, but not 0% bio influence.
+795229906439405568:@sehurlburt @JohnEMotionFX Almost anyone can become exceptional, but talent is real, and not evenly distributed.
+795079239154405376:@BadMetaphor @sehurlburt @aaronbatilo Agree. No magic code.
+794756275435409408:@jwatte Most of the major applications would disagree with that assessment of C++
+794689286566125569:It is weird that C++ got standard threads / mutexes / etc before getting standard filesystem directory creation / walking routines.
+794666689799462912:@Itnerdarama I retain all of my convictions about software patents.
+794581604576309248:@all_VR @chetfaliszek I understand his point of view and motivations, but there are multiple reasonable strategies
+794580679514148864:@pomeranian99 all interviews need to go through media@oculus.com
+794561020064739328:I will be speaking at Texas A&amp;M November 9 at 12:30 in the https://t.co/VEer2fEkzN about evolving tradeoffs in real time rendering.
+794549114557972480:@rygorous @aras_p @LiaSae I fail this all the time. I am generally incapable of asking a question when I really don't care about the answer.
+794513096605831169:@t3m4t0h3 interactively using the REPL while programming is a huge benefit
+794340045750562816:@t3m4t0h3 I wouldn't do high performance work with it, but I enjoy writing modest progs with it.  What don't you like about it? Compared to?
+794262814663659520:@Moomoomoo1 @racketlang More the matter of not creating a project directory for ephemeral stuff
+794245513247719424:One of the things I like about the @racketlang IDE is that I can write a quick little prog without even saving the file, let alone a project
+794152002112495616:@MikePElston nothing very classic -- Foundations of neural networks, Artificial Minds, Artificial Intelligence by Copeland.
+794148555527028736:@easing not uncommon to write 1000+ line file in a day if it is well understood and not very challenging
+793807004670111745:@metoroid0 Doom 1/2 had 3D coordinates for objects and wall edges, but it was very limited and not general purpose 3D.
+793793010899169280:RT @Jason_Rubin: If you haven't yet, grab @TurtleRock's "Face Your Fears" for #GearVR and get this... https://t.co/UVToQDhLmJ
+793521482227867648:RT @OTOY: #unite16 @unity3d + #OctaneRender https://t.co/V8TZO8UuLA
+793471146926538752:Few things would benefit more from hyperlinks than the footnoted academic paper, yet it doesn't even seem like that is on the horizon.
+793416750658228224:@stephenjbrooks by default, trilinear filtering blends an aliased and a blurred mip level, so high frequency textures will still alias
+793207670035521536:Using a 1.0 lod bias for textures in an environment proved to be a very good VR trade -- less crisp, but less aliasing. Also faster.
+793103695240163332:@ejknapp Compared to me at 20, I suspect I can learn about, say, neural networks, faster today, but I would probably learn Chinese slower.
+793100637579927552:@ejknapp As I understand it, there are actual physical changes regarding neuroplasticity that do objectively decrease facets of learning.
+793064796862111744:Reading some old books on AI from the 90s; amazing how much the field has advanced. Contrast with various engineering/science/math books.
+793062976060137473:Learning brand new things may get harder as you age, but learning things that fill gaps and connect previous knowledge is wonderful.
+792876235722330112:@SamuelDPoseno possible that was added after the fact and I forgot.
+792848892614225921:@SamuelDPoseno No. We were making a completely different game, but had such difficulty with trademark searches we just said "it's Quake 2".
+792481623530872832:@FioraAeterna I thought the car would have more, but ran the numbers and that is a very accurate statement.
+792348743764807681:@rodbranagan you can email me -- johnc at Oculus. I'll be surprised if it is something we haven't already considered, but let's see!
+792160776031055872:it is amazing how much trouble I am having getting flawless fading across 3 environment types, complicated by downloading and sepculation.
+792158370186670080:@mac_pestle @sehurlburt that's what I was going to mention
+792032258739675136:RT @AcademicsSay: Peer review 2.0 | @PHDcomics https://t.co/KfXFzSPbtn https://t.co/jjzHpmadk3
+792031959316701184:RT @oculus: #GearVR Halloween Sale! Pick up five of the scariest, spookiest, and most suspenseful apps in one bundle: https://t.co/KjE9YQuT…
+791974912051154945:@chinamanblue @oculus most of the apps are free, but they might be experimenting with layouts
+791814197336117248:While every joule going into a CPU and GPU turns into heat (vs display and radio, to a degree), I had heard that CPUs are more concentrated.
+791799243434360832:I wonder how much the waste heat per joule varies across CPU / GPU / radio / etc; is power alone a good enough figure of merit for overheat?
+791769653521494016:RT @FioraAeterna: @stephentyrone @gparker "round to best effort" is totally a rounding mode
+791766908219424770:RT @Jason_Rubin: Big @Oculus #holloween2016 Sale on Spooky Rift and GearVR titles now at the Oculus Store... https://t.co/6LpAW7iud4
+791725961418903552:RT @idSoftwareTiago: https://t.co/7QVlxEjq1W well done AMD - hopefully other IHVs will follow the lead
+791662970702958593:@BC_Man If you only anti-alias silhouette edges, then wrapped textures look better, but material transitions will have hard, aliased edges.
+791662684915630080:@BC_Man A densely tessellated cylinder has a ton of edges running down it, which would cause some blurring. That is an edge (ha!) case.
+791650111533101056:@BC_Man no, MSAA has zero impact on polygon interiors. You are thinking about FXAA and various other post processes.
+791649425248563203:RT @kenpex: Over-engineering is the root of all evil https://t.co/wOMgURE8HK
+791631429843103744:@BC_Man MSAA is done by the hardware using more depth samples than color samples.
+791582545057939456:@makc3d using a time warp layer is far more important than filtering details -- 2x the pixels, no double resembling.
+791582043926765568:@MarkusN make sure you do all performance comparisons with VR developer mode OFF, because clock locking isn't reliable with it on.
+791307959133351936:RT @ZackBellGames: programmers, you better have a great excuse for not being at #HandmadeCon on november 19-20. https://t.co/Yz3SNqG5wO
+791251487334670338:@BC_Man seems a reasonable trade for a deferred renderer, but forward + MSAA should still be cheaper when appropriate
+791046959771418624:@nvining @FioraAeterna @sehurlburt @LiaSae Do you have reason to believe that? (I don't know the community, but I like their stated ideals)
+791044288532447232:@nvining @FioraAeterna @sehurlburt @LiaSae 85% handmade is "everything" to a first approximation, in contrast to the 10% in many Unity games
+790937739176706048:@casseveritt Avoid plans that involve "Everyone Does The Right Thing!", and there are plenty of paths leading to an awesome future.
+790936131286151168:@nikanorovalbert @CodeWisdom I have been saying that for ages, but I don't discount the possibility that I heard it from Steve.
+790927001704030208:Occasionally I consider machine learning algorithms in the context of proper restocking of the snacks at our office.
+790673616157323264:@antonduzenko There are reference software implementations of D3D/OGL that are useful for checking driver bugs, but that's about it.
+790596827674316800:It seems like voice recognition tech could be helpful in cleanly extracting voice from a noisy background.
+790596437524439040:@antonduzenko Yes, I wrote two generations of software renderers for feature phones -- Doom RPG, Orcs&amp;Elves, etc. I knew what to do by then.
+790571834026504192:It is interesting that the physical movement cycle time (seek time) of hard drives is close to the flicker fusion rate of the human eye.
+790531061692321792:@cmuratori it is johnc at oculus
+790530152203558913:@Alien426 unfortunately, none. I have heard that some people work that way, but apparently I don't.
+790358107327115264:@_ofalltrades @handmade_hero I am very supportive of HH. Odds not good, but non-zero...
+790326657085091840:@eggersa01 happy to in person, but I discourage people from shipping things to me.
+790261960856080384:A bunch of us from Oculus Dallas run a half Tough Mudder today.  Team VR Mudders -- Set the dirty bit!
+789631831083659264:@vulgerstal I have never been to Russia.
+789469322707996672:@won3d did you do it?
+789469174611320833:@xDirtyPunkx Yeah, I rather suspect it isn't practical.
+789458274793816064:@xDirtyPunkx the leafs can be further divided by starting point when a region contains multiple intersections
+789319237793832960:@pervognsen I have a hazy feeling that I could directly solve the visibility problem now, which would be sort of funny 20 years too late.
+789318573512458240:@54newstar I'm speaking at Texas A&amp;M next month, and I have been doing one academic talk a year lately, so maybe in 2017.
+789316570161872896:Building a good tree would be challenging, because you would need to evaluate all the 6D simplex vertexes to tell whether a region is split.
+789316321586454528:Considering a BSP tree of plucker line hyperplanes, where simple descent to a leaf tells you which triangle a ray hits.
+789315784400973824:I thought I was doing something clever with higher dimension hyperplanes, but realized I was sort of reinventing plucker coordinates.
+789311098365161472:@rygorous yes, I have wondered almost exactly that before...
+789239565340987394:RT @ovrstorystudio: Lost is now available for #GearVR on Oculus Video! Experience our short film with all new dynamic streaming and advance…
+788516787541245957:I wish there was a power equivalent of read time stamp counter -- read current stamp counter.  In a perfect world, thread isolated.
+788425293228716032:RT @KillScreen: The people trying to save programming from itself https://t.co/GLTMRK2GPf https://t.co/W1EZTvjLN2
+788171281715777537:I literally laughed out loud. https://t.co/H2kxP9C1xn
+787654695288393728:@DeatheyeHC I'm happy to sign in person, but not to take responsibility for things going through the mail.
+787437213223006209:@FioraAeterna a glass-half-empty view -- I'm still more like "computer vision is getting really good!"
+787422591648567296:@Toffeemeister I'm at 6:33, my son is at 7:15.  I only took up running at 40, when I thought I was getting too old for judo.
+787316612705624064:My 12 yo son is making such rapid progress on his running. Last time I tried to beat my mile record I threw up and still missed by 8 sec.
+787292735619203072:@Alisaxy_ @Youdaman @TimSweeneyEpic Nothing but respect for Tim since the early days.
+787142038231756800:@arthurolaya not near term, but maybe later
+787130880502267905:@arthurolaya Adding a balloon stage to a three stage rocket is not a good idea.  At all.
+787038282601287681:@pkhuong &lt;shudder&gt; why?
+786764687421472769:RT @casseveritt: James @dolesistheboss Dolan and I are now OC3 famous for our riveting talk on "Mobile SDK Update"! https://t.co/3VczfkyZ4X
+786735170690744321:RT @UploadVR: BREAKING: OTOY enables groundbreaking VR social features. via @hmltn @oculus @OTOY #VR 
+https://t.co/LIE9XGdlrI https://t.co/…
+786734709686534145:RT @xBBx: This is a fantastic piece by @technosucks that puts @WIRED in its place. @ID_AA_Carmack @idSoftware @QuakeCon @QuakeChampions @be…
+786617083173806080:@darklordjames it isn't a matter of optimizing, I am genuinely unclear how you could make it that bad. What practice would give that result?
+786608216016683008:We are all-VS2015, so I went to uninstall 2013.  It boggles my mind how an uninstall can still be hard at work ten minutes later.
+786535114486362112:@troldann @romero I had a lot of fun doing the iPhone port several years back -- game is still fun to play!
+786346049845678080:@TheNumberShop In most cases, I think it is better to fix the problem than find a good way to cover it up.
+786304079819452416:RT @sayangel: .@insitevr philosophy summed up by @ID_AA_Carmack. This is why we love mobile VR. h/t @RussellVarriale for the edit.
+https://…
+786303701833031680:@Robertsmania mine is almost spot on the 64 mm average, which I know distances me from real problems of many users.
+786303506617479168:@MakkusuAnaki It is incredibly interesting, and will change the world.  Yes, I could imagine working on it, but not in the near future.
+786219082035060740:@kmanmx you can manage quite a lot -- push everything into a single pass render using compressed textures
+786041135445581824:The book was "The Container Principle", but it is rather meh so far.
+786023460673757184:Reading a book about container ships, interesting characterization: "The Argonauts, a group of superheroes from Greek mythology"
+785954882947723264:RT @AndroidArts: Chibi #DOOM monster batch nearing full coverage. Extra variants can be made by tacking on cybernetics, or baby/bossifying.…
+785932553903497216:@tduringer @Ascension_VR @ablitter sure, no problem
+785820007582146560:@sinonmedia @therealcliffyb @romero @Schwarzenegger I never thought "fun guy" was one of my defining characteristics
+785814716132106241:RT @sydneypadua: Goodness me it's #AdaLovelaceDay !! Need a brief graphicomical introduction to Ada Lovelace? The very thing- https://t.co/…
+785808965263175680:@volgaksoy strongly recommend "cameraFromWorld" / "WorldFromCamera" naming style
+785579576017588224:ndk-build fails obscurely when there is an invisible tab after a line-continuing backslash.
+785571832808124416:RT @oculus: Oculus Touch Pre-Orders Are Now Live!  https://t.co/ZFNqLr5l3u https://t.co/XFVSRkUFmS
+785513138540077056:RT @vTimeNet: Living legend @ID_AA_Carmack's #OC3 keynote is now on YouTube. Catch his mention of vTime at 15:34! https://t.co/sH2oTeKNyv
+785325749469196288:@cgallizzi Johnc at Oculus
+785262479144169472:Cortex M0+ only has a 2 stage pipeline, but it also has an interesting feature I hadn't heard of called Bit Banding https://t.co/cfFl4eOMpP
+785262058900033536:RT @s_ck_p_co: @ID_AA_Carmack kinda relevant: Feynman on "how to be a genius" https://t.co/aSIg4fnlLO,
+785254354013999104:@rf apparently M0+ is down to a 2 stage pipeline
+785245681359261698:On modern fab tech, would a non-pipelined processor be more energy efficient per operation (but far slower), or would leakage overwhelm?
+785183146874548225:Genius characters https://t.co/w2eXj1JK0x
+784867705769779200:I will try to turn a bunch of my VR app quality comments into a blog post when I pull ahead of my workload a bit.
+784557657776590848:I hope everyone had a great OC3, see you next year!
+784485509296893952:RT @oculus: Watch the #OC3 Closing Keynote featuring @ID_AA_Carmack LIVE in virtual reality with @nextvr! Download the app now: https://t.c…
+784422816850464769:My closing keynote is at 1:30 pacific. Follow along: https://t.co/Pa1r4l7iGE
+784398364536209408:@razenax it is extrapolation rather than interpolation, but ASW uses similar concepts
+784075000126984193:Holding phone over the stereo camera rig to estimate the interaxial distance.
+784074281932103682:RT @oculus: Watch the #OC3 Opening Keynote LIVE in virtual reality with @nextvr! Grab your #GearVR and download now:  https://t.co/xofm3ttL…
+784072147786346497:Sitting next to the @nextvr rig at the OC3 keynote. I could add footnote commentary :-)
+783996883152678914:OC3: if you didn't get in to the app reviews on Wednesday, I'm happy to take a look at your app any time you see me -- I'm here to help!
+783805529743249409:@BorrowedLightVR non accelerating
+783805418011172864:Six hours later... voice holding up ok so far.
+783758970901016576:RT @wikkit: Neat seeing the hydrogen engine plume color change to white as it entrained aluminum oxides from the solid escape motor. https:…
+783712796584181760:I'm in room 210 E at OC3.  Stop by and let's talk about making good VR apps! For five hours. :-)
+783451158035607552:RT @ramez: I'm an inventor on 19 software patents. Every one is B.S. I'd be happy to see all of them struck down. https://t.co/vweketB2aH
+783449006080786433:@bai0 @oculus there are three scheduled, then it will be basically open for the rest of the day
+783448796059410433:RT @fahickman: @ID_AA_Carmack Did you know you're a tech quote in Civ 6? https://t.co/GrfUPZJfj4
+783410111410606080:RT @oculus: Oculus Connect 3 Starts Tomorrow — Schedule, Highlights, and More! https://t.co/PK95zBdJsy https://t.co/6HWeTVWhbs
+783249597451808768:I recently saw what I thought was an odd aspect ratio display, only to realize it was printed poster board. Displays have gotten quite good.
+783245463994572800:@mark_mennell now with bidirectional non-blocking IO, continuous message streams, and app feedback when the channel is congested
+783112604583653376:@magicrat_larry For world building, Minecraft has demonstrated value beyond any doubt.
+783112507795865604:@magicrat_larry I am a long-time doubter of the broad value of real time procedural rendering, considering it specialized data compression.
+199
+783112507795865604:@magicrat_larry I am a long-time doubter of the broad value of real time procedural rendering, considering it specialized data compression.
+783111953690550272:@glightgames @PalmerLuckey @MCMComicCon Not me.
+783081671457382400:@nvining @tom_forsyth had a plausible theory that if the user's seating position and screen size make the fov "close" it could be an issue.
+783033594935508992:@Darthozzan Tens to hundreds of thousands that didn't even realize it was a problem, or just didn't bother.
+783030219955240960:There are probably thousands of applications that have had to implemented buggy message queues over TCP because send/recv aren't atomic.
+782954906072133635:My 6 year old's tales from the Realm. https://t.co/1ZmgO4dk8U
+782913291685212161:@JWL1092 @daraobriain I live in Texas
+782713492973301760:@PixelStrikeInc @gearvr there are specialized "wire rendering" techniques that can make very good visuals, but can be expensive.
+782628268377726976:@pervognsen got it, thanks
+782574461283295233:@PixelStrikeInc @gearvr @oculus @connect3 have you followed https://t.co/1cNCSJXm5d
+782375341742395392:@pervognsen can you elaborate a bit?
+782240879293509632:@tonymamacos @kickstarter certainly there are design and implementation challenges that could still be improved on today
+782076016059482112:@Tj_light I wish Zenimax would release it so it could be ported to retro computers
+782075543101382656:@PixelStrikeInc @aarondeandavies @PalmerLuckey @DevRelCallum looking forward to it, see you there!
+782008933330194434:RT @Gameiversary: DOOM II celebrates its 22nd anniversary today! @idSoftware @romero @ID_AA_Carmack https://t.co/GGOdzajFO0
+781821322493956096:@casino_vr @oculus happy to look at it during OC3, or I can do a public critique when it is released
+781669751227502592:@tduringer @ablitter Sure! If you don't get an "official" spot, just walk up to me any time at the show.
+781652862669553664:OC3 will be streaming live on @Twitch and VR Streamed by @nextvr !
+781649548858884096:@ablitter I'm only doing GearVR reviews formally, but you might still catch me near a PC at some point
+781647607936319488:@ablitter I don't even know why they put a time limit on it -- I'm going to be doing "office hours" essentially the whole time.
+781646038243250176:My "keynote" is the very last thing on Friday, so it will likely be heavily influenced by the 30 hours of prior hal… https://t.co/pYSJwUH8zz
+781564293699411968:@letsgoseeraoul @reckless just the same rumors everyone else has heard...
+781560248729423872:@gemisisDev we are on it
+781559856541016064:@ICONGames I have no influence over either Lego or Doom, so I can't help...
+781506054987272192:@ICONGames A Lego Doom game with the tone of Lego Batman would be pretty great!
+781505435903721472:@romainguy @Qualcomm paging @MauriceRibble
+781467065982910464:@romainguy I mentioned this to @Qualcomm and they have proposed an extension.
+781313711440994304:That looks like fun! https://t.co/puz5nCiUk8
+781274908546502656:I wonder what effect gpu style texture tiling / swizzling applied as a pre-process would have on png image compression.
+781107479086108673:@tomglimps @OTOY That has kind of a Cray T90 vibe to it. Much more powerful, though. Amazing times we live in!
+781104025378840576:Reading article on graphene super capacitors, ad for circular plastic connectors popped up; made me powerfully wistful for rocket building.
+781083766114529280:RT @ID_R_McGregor: Wired article on early #VR feeling a bit like early mass web site dev.
+
+https://t.co/SMpY5v3luq https://t.co/LQ7YwhfOnK
+781081538616107008:@D3stroyah Yes, we have done tests with a 4K window buffer. Needs active cooling to not overheat.
+780796891134959617:@romainguy Never heard of that; interesting.
+780794959674826752:I wonder what the most spectrally pure diffuse reflectors are.
+780557457961594880:@lisperati Long haul trucking is going to be one of the first industries effected, highway conditions are generally easier.
+780500445529714688:Do any of the latest h265 / VP9 codec implementation support video streams with an actual alpha channel?
+780499349847412736:@ToJans @elonmusk they often are!
+780480738353307649:@ATcherniak that is in a category of non-fruitful thought that I specifically avoid.
+780480399663173633:Once we accept self driving cars on the road, it's only a small step to allowing them to drive as fast as they deem safe for the conditions.
+780479669313253376:@lamb_and_all It seems like the limit should be &lt;1 ms/page fault if it was all interrupt driven in the kernel.  Did it need driver threads?
+780478887180447744:@lamb_and_all Is there an English version?
+780405106374156290:@memory_dump oddly, it didn't repeat the same way on a second test, the conditions are apparently extremely sensitive
+780404992901386240:@memory_dump No, it looked like that in real life, it was freaky.  We all gathered around and poked at it until the 100 gallon tank drained.
+780382306938662913:Had this happen draining a tank at Armadillo Aerospace after a hydrostatic test. The flowing water looked like a fa… https://t.co/7E6raETa4M
+780147292904919040:@mabrowning I have only ever played pocket edition
+780116177649410048:Here is the VR panel I was on at Minecon: https://t.co/EkA2hmyniu
+779819475478519808:@nothings @Jonathan_Blow @bfod Wait, digi vid cams have a 24 fps option? That's terrible! :-)
+779795173580632064:@Coestar @BigGunn You should have said something!
+779737100207783936:@Marlamin I'm on it
+779736905386602500:@AndreElijah yes
+779728087386759168:MInecon! https://t.co/UOlixd1OMm
+779675003469991938:@tom_forsyth @FioraAeterna I still don't understand the notion of the "absolute conic" at infinity that figures out camera calibration parms
+779673232764841984:@VRforArch Absolutely! "Being there" will change the education and daily work of architects.
+779333166607630336:@dadarepublic @steam_games @SteamVR I have tons of respect for Valve!
+779291891653234688:@romainguy @aras_p We are deprecating support for Kit Kat Note 4 Real Soon Now, so I get go 3.1 only!
+779089154176978944:@Sluggernot Of course, if you just solve people's problems, you can sometimes use whatever tools you want.
+779089019162374144:@Sluggernot I'm sure there are some, and I would be happy to find out there are many, but I doubt it.
+779024470400835584:@PowerDNS_Bert Authentic; I definitely said that.
+778993485642739712:In fullscreen editor modes, scrollbars should have hot regions extending to the edges so you can just fling the cursor in one axis.
+778983609952641024:@ToJans Yes, there is a degree of inevitability about it, but I have misgivings about how marketing will harm a genuine feature.
+778981154384781312:I know many people get exactly the opposite feedback, but browsing Twitter makes me optimistic. So many smart people in the world!
+778975942467137536:@GameViking21 the ability to deliver solutions that bring value to people.  You can have lots of trick skills, but working solutions win.
+778973273178578944:@ToJans I do not support that.  "Objectively correct" should be standard; users adjust to suit in one place likely great damage in others.
+778972611170578432:@GraphineSoft Just find me there.  I still think there is a great sweet spot with real hardware demand paging of ASTC textures.
+778736070116519937:@GraphineSoft Sure, I'm going to be at the show the entire time.  I think they are setting up a room specifically for me to talk in.
+778570928749895680:RT @TomWhitwell: Ted Nelson writing in 1980. Not wrong. https://t.co/8NzvtBTSqh
+778349534443298816:@hmltn I'm working on a general mechanism for this.
+778349341316485120:@DaZombieKiller_ I would love it if @bethesda would do that! I would hope for the BREW code as well as J2ME; I thought about a IIGS port...
+778274601465880576:@hmltn @brendaniribe @PalmerLuckey @natemitchell That path got deprecated.  The platform SDK provides some of the functionality, but not all
+778200036454703104:RT @FioraAeterna: normal hardware bug: needs a nop
+better: needs multiple nops
+best: needs lotsa nops, we don't know how many. add more til…
+778031746734432256:@won3d I have only used RGBG. I hate the idea that our power starved GPU calculates multiple values that the display then mashes together.
+777258364531159040:@tivrfoa @CodeWisdom mostly Coke Zero
+777172367164399616:@DrSilikone it wouldn't be a sensible use of the limited resources -- gamma correct is very second order
+776797003544047617:@Sikthehedgehog With sRGB rendering on a Galaxy OLED phone, the checkerboard match is quite good.  Much better than my desktop monitors.
+776792807759499264:I'm having a hard time guessing a future date when apps, desktops, &amp; monitors all work in 16 bit linear color, leaving gamma issues behind.
+776792092043468800:RT @IamHappyToast: a couple of days late, but have it anyway #RoalDahl #BFG https://t.co/nPAMaTFbuV
+776614840534114304:RT @textfiles: Why the Apple II ProDOS 2.4 Release is the OS News of the Year https://t.co/fxn6Mdm3Yz https://t.co/ED10ERugJa
+776613420728672256:All the pixels were stretch-filtered slightly, which was leaving me very confused about the precise pixel centering I was trying to do.
+776613155191463936:My OpenGL window was mysteriously larger than I asked for. Reason: my DPI is set lower for my bad eyesight. Need to: https://t.co/DDltl3cMQy
+776551325983125504:I'm going to be there for the VR panel!  There will be lots of GearVR and Rifts for people to play with. https://t.co/fYqB1ruYai
+776518384355676161:RT @oculus: Oculus Fall Sale—get up to 66% off on select titles for #GearVR and #Rift! https://t.co/glYKzfLmNB https://t.co/vXcv9yx03a
+776514896007614464:I always thought "greybeard" had a positive connotation in tech. https://t.co/tXQu6mLpAA Would be happy to hire some at Oculus Dallas!
+776100309118574592:@Fulby @Arduxim Somehow you got into a weird state in the system; I'll poke them about it again. Apologies.
+776099691586998272:@pmabres SurfaceTexture -&gt; Surface, pass the surface in an intent to the other process, turn that into an ANativeWindow -&gt; EGLSurface
+776030598016098304:@B1tSmurf there are a lot of really poor Java libraries, but I don't mind the core language at all -- a fully specified C.
+775873139486056448:@DrSilikone no, I didn't understand the issue before Rage timeframe
+775810805707046917:mkfifo() to the rescue.  Always interesting to call on an ancient POSIX function I never previously had a use for.
+775806684778291200:@hmltn @backinside We have a great relationship with @Qualcomm !  How's that for a non-answer? :-)
+775806221425057792:Android making my life difficult: "startService threw exception java.lang.RuntimeException: Not allowed to write file descriptors here"
+775802710922625025:Android blends multiple image layers for the screen,worst case is huge images shrunk down (undersampled), bilinear fitlering can be 4x worse
+775724243795398656:@FioraAeterna @ssylvan Holy shit! That sounds dangerous to the hardware.
+775723576208916480:@FioraAeterna @ssylvan I had a four-core CPU workload that throttled in 60 sec with nothing else going on, should be easy to go way worse.
+775723330078842881:@FioraAeterna @ssylvan I often consider that -- peg CPUs, GPU, camera, ISP, CODEC, WiFi, GPS, DSP. I assume a could hit thermal in 10 sec.
+775722428697710592:@FioraAeterna @ssylvan "power virus test"???
+775718978492608512:@FioraAeterna By overheating, I meant "not able to run at steady state". If DVFS drops ram clock the display would fail ugly.
+775718078906642433:@FioraAeterna No idea what the cache granularity is.  Would be interesting to see the failure behavior on saturating memory bandwidth.
+775717893195444224:@FioraAeterna You could arrange a single bilinear read to be four cache lines, so 16 lines of mem bandwidth x 2560x1440 pixels x 60 hz.
+775714620707221505:I wonder if you could overheat a phone by just abusing the display hardware composer with a maximum count of bilinear undersampled layers.
+775669818217279492:RT @idSoftwareTiago: https://t.co/obnJq355zU Nice interview with computer graphics pioneer Jim Blinn - respect
+775669174680952836:@GameAndChange Happy to hear; I find Twitter participation rewarding. For any topic, I am confident someone reading is more skilled than I.
+775452366392860673:Is there already a plugin somewhere to show thumbnails for .ktx files in windows explorer?
+775325891089928194:RT @EricLengyel: Amazon is showing that my book is the #1 new release in all of software development!
+
+https://t.co/qEoB2279Sl
+775310858058469379:I hated school as a kid, but at 46, a disciplined study of multiple subjects with a mandatory exercise period sounds... kind of nice.
+775149746784641025:RT @InternDept: Our fever dream of console hardware magically getting faster as our project continues to miss deadlines has finally been re…
+775065583800950784:@codinghorror @JuhoHame in brief bursts before hitting thermal limits
+774712922157088768:RT @BillB: Baroquen: excessively complex code infested with bugs.
+774281092572393472:@noop_dev @Jonathan_Blow @won3d Ah, actually sending a 3D stream; yes, that should work on consoles, but missed frames skip back in time.
+774277998178467840:@romainguy But not 192 dynamic shadows, right?
+774270784881557505:@noop_dev @Jonathan_Blow @won3d they don't usually allow a 120 hz input signal
+774050715400450052:@Jonathan_Blow @won3d are there any for-real (not interpolated) 120 hz TVs that PS4 can drive?
+774024499532472322:The fact that there is a whole education and consulting mini industry around Gradle disturbs me.
+774024198125596673:@nairebis Yes, I agree, although you won't get the real value out of it on an orientation-only HMD.  Peering around dioramas will be great!
+774012785726369792:I made some quick notes about the app: https://t.co/VgqBx4wvVh https://t.co/AjmEK6UKfN
+773895714141110273:@DREADSPACE No, and no, at least consciously, but I was at least aware of both modules, so perhaps subconsciously.
+773874745653600256:RT @codeandrew: All those companies that sought to displace COBOL with new technologies, now owned. A lesson in tech lifecycles https://t.c…
+773874621166735360:RT @ovrstorystudio: We're honored that Henry has won an Emmy® for Outstanding Original Interactive Program! https://t.co/7lLU9C8nJ3 https:/…
+773854384123883521:I am shocked to learn Micro Focus is that big! https://t.co/t80lV4mW5q
+773722364412436480:@casseveritt Have you told your wife that you need a TIG welder for Christmas yet?
+773707748445872128:Unhappy with any package installation that adds more than one environment variable.
+773655989522272257:@Jonathan_Blows doesn't represent the full range you would want, but covers a rather large amount of common data
+773631407478321152:@sjledet My "keynote" is on the last day, but I will be talking pretty much non-stop on the floor at the show.
+773537600745320448:@dave_doomy Content designed for 1080 won't magically run the same at 4k, but you could trade away per-pixel processing and get there.
+773532334100393985:@Kinch_ahoy related -- a great many neural network algorithms work just fine with 8 bit math
+773531527787323392:RT @marcnicklas: Lecturer at R course: “Programming is like this amazing puzzle game, where the puzzles are created by your own stupidity.”…
+773528903457447938:It is interesting that both audio and video amplitudes are ok-ish when represented with a non-linear 8 bit encoding.
+773492514728710144:@D3stroyah information coming at OC3.
+773492293063933952:Yes, my family and I will take a break from our Minecraft realm to explore and judge the contest entries. https://t.co/5enMm3Ajw4
+773491228167909380:@motorsep @oculus it was always set up so every phone could use the new one, but some phones didn't get the OTA update immediately.
+773291280906395649:@blackjersey15 @motorsep @oculus Delivered FOV depends on the facial interface, so it will vary by individual. Not wider for me, either.
+773291059853963264:@blackjersey15 @motorsep @oculus Did the distortion fix eventually come through for you?
+773290497527775232:@cayucosine You should check out Madefire.  They also have standard comics, but the motion / audio books are the neat aspect.
+773188564850839552:@paulg that thought also occurs to me a lot.
+773133671662440449:RT @Dolphin_Emu: With the final game fixed, Dolphin can now boot every GameCube game! Here's how we did it
+
+https://t.co/B0pBmFOGeR https:/…
+772991187544223744:Upgrading to a new iOS device is way easier than PC, but would be great if you could just plug a cable between new and old and be done.
+772943067263348737:@dakami I don't do any generative art.
+772899879039307776:@bogglez @cicanci @Jonathan_Blow I do read them with fascination and a tiny bit of horror.
+772899654996402176:@Arc0re_1 @romero No.  We always thought console vendors would have problems with releasing code that even referenced their libraries.
+772899335788834816:@virtualdutchmen Only 1920x1080 60 fps?  That is terrible -- I would expect PC should be able to do much better. Any @nvidia Unity tools?
+772891353084600321:Out of curiosity, does anyone have benchmark numbers for the relative cost of using position independent executables (PIE) on ARM?
+772890939564044288:@virtualdutchmen Sorry, with most of my time on mobile, I'm not up on best practices for PC unity video playback.
+772850538538860545:@casseveritt it could have been a discontinuity for the GPU as well as the CPU -- at some point you break backwards compatibility.
+772835294785581057:@mmealling @wikkit @mastenspace has this been fired? What feed  / chamber pressure?
+772830874370838529:@dra1nag3 lots of people telling me I'll like the fold if I liked 14, so maybe not for you...
+772804980688367616:@axelgneiting @Jonathan_Blow of course, there was essentially a driver on the other side of the FIFO in the geometry engines
+772804735875153921:@axelgneiting @Jonathan_Blow On the original SGI hardware that it was designed for, glVertex was like four moves to a hardware FIFO.
+772654270747324416:Just finished reading "14" by Peter Clines -- I loved it! Need to let it settle a bit, but I think it is one of my favorite fiction books.
+772612490614169601:@cicanci @Jonathan_Blow rage PC says otherwise...
+772556136880934913:RT @Jonathan_Blow: implementations do not change. These questions are very important for he discipline of software engineering but I never…
+772556124692316160:RT @Jonathan_Blow: do not work, if you allow them to switch off between implementations, and the thing that really saves your bacon is that…
+772556116962181120:RT @Jonathan_Blow: Given that GPU APIs just don't work, you could presume there is nothing too special about the GPU and conclude that soft…
+772552674025897984:@lastsys I recommend that book
+772515849194176512:RT @ID_AA_Carmack: @Argoon81 quite the opposite -- I am going to be sad if opening up didn't deliver any advantage for them
+772515539281256448:@Argoon81 quite the opposite -- I am going to be sad if opening up didn't deliver any advantage for them
+772493640639782914:@basisspace @tom_forsyth @FioraAeterna new things can always be added, you just have to maintain rigorous backward compatibility
+772460183175909376:@FioraAeterna @Jonathan_Blow Ouch. I'm alternate-history-ing here, not making an actual engineering suggestion. :-)
+772458410700791808:@Jonathan_Blow @FioraAeterna and the fact that performance on PC is, for many applications (not VR!) "solved", trades get different values.
+772457125352054784:@FioraAeterna That is the meta-point -- perhaps the fast-and-loose GPU dev model isn't optimal. Again, I suspect it is, but not 100% sure.
+772456735453749252:@FioraAeterna Hopefully you start with something that doesn't completely suck, and you document thoroughly.
+772456370427666434:@FioraAeterna like x86, which turned out better than almost everyone expected
+772456248423780353:@FioraAeterna no driver at all -- essentially a compatible console with increasing perf by micro arch and process
+772455933343510532:@FioraAeterna removing the opportunity to change things in the API driver constrains the IHV development model, possibly to consumer benefit
+772455620309979139:@FioraAeterna just like there are no x86 driver bugs -- a chip that doesn't work doesn't ship (mostly).
+772455413182664705:@FioraAeterna I do think the right choice was made, but I don't think it is a complete slam-dunk, and it may need to be reevaluated sometime
+772455241300140033:@FioraAeterna peak performance would surely have suffered, but having no driver bugs could be a net typical user quality win.
+772454422186070016:@Ilseman for the win, it would have to be a full system architecture, not just the code -- threading model / dispatch, memory access, etc.
+772454150944665600:I guessed that AMDs console wins and architectural openness would have advantaged them on PC the last few years. Any objective evidence?
+772453247478927360:\ development could have looked like if it was a backwards compatible hardware architecture instead of an API compatible driver world.
+772453042025136128:X86 bucked conventional wisdom about committing to an imperfect instruction set limiting performance; interesting to consider what GPU \
+772451529685028865:This, and the previous blog at https://t.co/wgnvBRafMo are neat -- programming Intel GPUs at the instruction level. https://t.co/pIxX0yS0xk
+771752387857879040:I tilt at windmills in the name of minimalist simplicity sometimes, but it feels important to at least try.
+771751247225454592:It seems like you should be able to have powerful libraries and tools that allow applications to be actually simple, not just appear simple.
+771750752763125760:@romainguy 535 folders!
+771749509672103936:@arowx I don't think "game orientation" would benefit a programming language.
+771749108780523520:Create and run an empty activity project in Android Studio and I get a 38 MB folder with 1,175 files. We've just given up on elegance.
+771683099390255104:@chuckinator0 A math degree is a plus. I know someone that went from aerospace to web dev and was amazed at how easy it was...
+771495304218546176:@blackjersey15 Email jason.kim@oculus.com and let him know you have a phone not getting distortion with the new headset
+771494528339415041:@blackjersey15 @oculus If you don't have the right distortion file, it defaults to 90 degrees occupying the entire screen without distortion
+771494229197463552:@romainguy Can I get at that from NDK?
+771490847745384449:Does anyone have an example of sharing an EGLImage across processes in Android via file descriptors? Presumably with non-public headers...
+771490377714896896:@blackjersey15 @oculus We would like to get a logcat output if possible, so we can figure out why vrsvc isn't updating for you.
+771479689185497088:@RonaldLaffler I wrote a 68k texture mapper, but I wasn't deep into the asm like the Amiga / ST folks, so not much impact.
+771479298351902720:@blackjersey15 @oculus Reports of fix on redock, so try once more, and if still bad, email https://t.co/67L0mtyjMW at oculus with details.
+771387003673784321:@limbclock It was an Intergraph workstation keyboard with integrated stereo speakers
+771384981796958208:Sign up, answer a Quora question and tweet about it.  OH CRAP THEY ARE SENDING ME EMAIL NOTIFICATIONS ABOUT IT! &lt;frantically finds settings&gt;
+771381659639832576:I wrote a response. https://t.co/Wbylimembr
+771364421473939456:Condolences to @elonmusk and the @SpaceX team -- I can extrapolate to how you feel. https://t.co/QJ368P7ZK7
+771303749641916416:@joe_pianoman You should never reorient pitch in VR, the gravity vector should be sacrosanct. Some apps can orient screens independently.
+771303233910439936:@foobarsoft GearVR has rolling low persistence display left to right, so right eye is always 8 ms later.
+771157583050645504:It was a zero-lines-of-code day. Damn.
+771059859387133953:@mrbigrigt @joerogan Some time after Oculus Connect 3.
+770656871413796864:After manually pasting log data into Excel for so long, I finally got how to reference the data files directly and just ctrl-alt-f5 reload.
+770373865088294912:@RauhmelFoxCEO @TeenHackathon media@oculus.com is probably the right place to try. Maybe @oculus twitter or the dev message boards.
+770272825525440512:@blackjersey15 @oculus distortion files from Samsung.  Want to help us try to track it down on your device?
+770272744814424064:@blackjersey15 @oculus Using a previous device in new headset?  Is the size selector set right? We suspect some phones not getting updated \
+770099531832762370:@WillKirkpatrick I don't think there are any great books yet -- most of the older books were about systems so bad as to not be relevant.
+770099164067815426:@Freshboy250000 https://t.co/ZCzYwhFJzh
+770094343319322625:@motorsep mostly up to Samsung
+770094164092588032:@DavidBrin As hobby / lifestyle choices go, there are a lot of things worse than aiming for a degree of self reliance.
