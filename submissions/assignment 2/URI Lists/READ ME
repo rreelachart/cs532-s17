@@ -1,16 +1,7 @@
-This directory holds the collection of tweets from various sources.
+This directory holds the collection of URIs gathered from the collection of Tweets in the "Tweet Lists" directory.
 
-They were gathered by running: 
-"python getTweets.py <starting tweet ID><number of tweets per call><number of api calls><screenname to find>"
-Then redirecting the output to a text file with the ">" character.
+These lists were made by running "python getURIFromTweets.py <filename> > <filename>"
 
-All tweet collections were run with the same number of tweets per call <200) and number of api calls (3).
+All URI collections share a similar name to the tweet collections from which they were created*.
 
-The following sources were used to collect tweets:
-Guillermo del Toro
-James Gunn
-Kelly Turnbull
-Seanbaby
-John Carmack
-Red Letter Media
-Film Crit Hulk
+*The one exception is "gunURIs.txt" which has a typo in the name. It is associated with "gunnTweets.txt"
