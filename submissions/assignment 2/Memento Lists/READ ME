@@ -1,0 +1,10 @@
+In this directory is thecomplete listing of mementos for all 1000 links (finalMementoList.txt)
+
+Also included are the preceding chunks of the original 1000 links (Linksaa through Linkssae).
+
+These chunks made running "getMementos.py" easier and more manageable because I didn't
+have to run all 1000 links all at once and risk a mistake or error taking all of the work with it.
+
+Once run using the command "python getMementos.py Links__ > Links__.txt" the associated five text files were produced.
+
+Then those five text files were combined using the "cat" command into "finalMementoList.txt"
