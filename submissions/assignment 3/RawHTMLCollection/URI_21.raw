@@ -1,0 +1,1051 @@
+RAW HTML FOR: http://blogs.cisco.com/security/making-boring-logs-interesting
+<!DOCTYPE html>
+<html lang="eng-US" xmlns:nitro="https://www.bunchball.com/nitro">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Making Boring Logs Interesting</title>
+	<meta property="og:image" content="https://blogs.cisco.com/wp-content/themes/cisco_brand/images/Cisco_Logo_RGB-2color_92x52.gif"/>
+	<meta property="og:site_name" content="blogs@Cisco - Cisco Blogs"/> <meta property="og:description" content=""/>
+	<meta name="google-site-verification" content="9MlQU9MMQ1jHLMUkONKe6QzZ-ZIGRv0BCD1_rY1Zdmc" /> 
+		<meta name="bitly-verification" content="25789e2a57d8"/>
+	<meta name="accessLevel" content="GUEST, CUSTOMER, PARTNER"/>
+	<meta name="language" content="en"/>
+	<meta name="country" content="US"/>
+	<meta name="contentType" content="ciscoBlogs"/>
+			<meta name="docType" content="blogPost" />
+		<link rel="stylesheet" href="http://blogs.cisco.com/wp-content/themes/cisco_responsive/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="Cisco Blog RSS Feed" href="http://blogs.cisco.com/feed" />
+	<link rel="shortcut icon" href="http://blogs.cisco.com/wp-content/themes/cisco_responsive/favicon.ico" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<link rel='dns-prefetch' href='//www.cisco.com' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/blogs.cisco.com\/wp-includes\/js\/wp-emoji.js?ver=4.7.2","twemoji":"http:\/\/blogs.cisco.com\/wp-includes\/js\/twemoji.js?ver=4.7.2"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji4" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var stringFromCharCode = String.fromCharCode,
+			flag, flag2, technologist, technologist2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * This works because the image will be one of three things:
+				 * - Two empty squares, if the browser doesn't render emoji
+				 * - Two squares with 'U' and 'N' in them, if the browser doesn't render flag emoji
+				 * - The United Nations flag
+				 *
+				 * The first two will encode to small images (1-2KB data URLs), the third will encode
+				 * to a larger image (4-5KB data URL).
+				 */
+				context.fillText( stringFromCharCode( 55356, 56826, 55356, 56819 ), 0, 0 );
+				if ( canvas.toDataURL().length < 3000 ) {
+					return false;
+				}
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				/*
+				 * Test for rainbow flag compatibility. As the rainbow flag was added out of sequence with
+				 * the usual Unicode release cycle, some browsers support it, and some don't, even if their
+				 * Unicode support is up to date.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + rainbow emoji).
+				 */
+				context.fillText( stringFromCharCode( 55356, 57331, 65039, 8205, 55356, 57096 ), 0, 0 );
+				flag = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55356, 57331, 55356, 57096 ), 0, 0 );
+				flag2 = canvas.toDataURL();
+
+				return flag !== flag2;
+			case 'emoji4':
+				/*
+				 * Emoji 4 has the best technologists. So does WordPress!
+				 *
+				 * To test for support, try to render a new emoji (woman technologist: medium skin tone),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (woman technologist: medium skin tone + personal computer).
+				 */
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0 );
+				technologist = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 55357, 56507), 0, 0 );
+				technologist2 = canvas.toDataURL();
+
+				return technologist !== technologist2;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji4' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='css-css'  href='http://blogs.cisco.com/wp-content/plugins/bunchball/bunchball.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/normalize.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slidebarsstyle-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/slidebars.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='single-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/styles/single.css?ver=4.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/bunchball.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/jquery.cookie.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/jquery.slimscroll.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/moment.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/livestamp.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/modernizr.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/slidebars.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.lazyload.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/theme_script.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.cisco.com/assets/swa/j/blogs.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.cisco.com/web/fw/m/metrics.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.tools.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.tipTip.minified.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.sharrre.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=4.7.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.cisco.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogs.cisco.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Cisco Kicking Goals with Telstra at Sydney’s ANZ Stadium' href='http://blogs.cisco.com/emerging/cisco-kicking-goals-with-telstra-at-sydneys-anz-stadium' />
+<link rel='next' title='Top 7 Facts to Know about Cisco HD Experience Technology' href='http://blogs.cisco.com/wireless/top-7-facts-to-know-about-cisco-hd-experience-technology' />
+
+<link rel="canonical" href="http://blogs.cisco.com/security/making-boring-logs-interesting" />
+<link rel='shortlink' href='http://blogs.cisco.com/?p=128306' />
+	
+
+</head>
+<body>
+	<div id = "rewards_fix"></div>
+	<script src="//assets.bunchball.net/scripts/nitro/current/nitro.js" type="text/javascript"></script>	<script>
+		var apiKey = "6912c6c82ccc4863a0311dc8b586b8fb";
+		var userId = "anon";
+		var time = "1487271786";
+		var sig = "82e3ab093c4192632c8f6663bcc59dbc";
+		var connectionParams={};
+    		connectionParams.apiKey = apiKey ;
+    		connectionParams.timeStamp = time;
+    		connectionParams.signature = sig;
+    		connectionParams.server =  "//CiscoSupportCommunities2.nitro.bunchball.net/nitro/json/";
+    		connectionParams.userId = userId;   
+    	var nitro = new Nitro(connectionParams); 
+    	nitro.showPendingNotifications();	  
+	</script> <header class = "sb-slide">
+        <div id = "hero">
+            <div class = "top_third">
+                <div id="hamburger" class = "sb-open-left">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class = "top_third">
+                <div id = "cisco_logo">
+                    <div class="dropdown">
+                        <div class = "logo_hover"></div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href = "https://cisco.com">All of Cisco</a></li>
+                                <li><a href = "http://blogs.cisco.com">Blogs Home</a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "hero_header_text">Cisco Blogs</div>
+                <div id = "mobile_search_top">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <a class = "top_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>
+                
+                <div id = "normal_search">
+                    <div id = "normal_search_box"><form method="get" id="searchform" action="http://blogs.cisco.com/"> 
+	<input type="text" value="" 
+    	name="s" id="s"> 
+    </input>
+<input type="submit" value=" " class="searchSubmit"/>
+</form></div>
+                        <i class="fa fa-search"></i>
+                    <div class = "clear"></div>
+                </div>
+            <div class = "clear"></div>
+            <div id = "normal_menu">
+                <nav>
+  <a class = "hamburger_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>      <ul>
+                  <li><a href='http://blogs.cisco.com'><span>All Blogs</span></a></li>
+                  <li><a href='#'><span>Technologies</span></a>
+                  <ul>
+            <div class = "bordertop"></div>
+            <li><a href="http://blogs.cisco.com/analytics-automation">Analytics &amp; Automation</a></li>
+            <li><a href="http://blogs.cisco.com/cloud">Cloud</a></li>
+            <li><a href='http://blogs.cisco.com/collaboration'>Collaboration</a></li>
+            <li><a href='http://blogs.cisco.com/datacenter'>Data Center</a></li>
+            <li><a href='http://blogs.cisco.com/enterprise'>Enterprise Networks</a></li>
+            <li><a href='http://blogs.cisco.com/innovation'>Innovation</a></li>
+            <!--<li><a href='http://blogs.cisco.com/openatcisco'>Open at Cisco</a></li>-->
+            <li><a href='http://blogs.cisco.com/wireless'>Mobility</a></li>
+            <li><a href='http://blogs.cisco.com/security'>Security</a></li>
+            <li class = "sub"><a href="http://blogs.cisco.com/talos" class="nav_menu" title="">Threat Research</a></li>
+            <li><a href='http://blogs.cisco.com/smallbusiness'>Small Business</a></li>
+            <li><a href='http://blogs.cisco.com/sp'>SP360:Service Provider</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Industries</span></a>
+                    
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/education'>Education</a></li>
+            <li><a href='http://blogs.cisco.com/energy'>Energy</a></li>
+            <li><a href='http://blogs.cisco.com/financialservices'>Financial Services</a></li>
+            <li><a href='http://blogs.cisco.com/government'>Government</a></li>
+            <li><a href='http://blogs.cisco.com/healthcare'>Healthcare</a></li>
+            <li><a href='http://blogs.cisco.com/manufacturing'>Manufacturing</a></li>
+            <li><a href='http://blogs.cisco.com/retail'>Retail &amp; Hospitality</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Partners</span></a>         
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/partner'>Partner</a></li>
+          </ul>
+        </li>
+        <li><a href='#'><span>For the Tech Expert</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/getyourbuildon'>Architects &amp; Distinguished Engineers</a></li>
+            <li><a href='http://blogs.cisco.com/performance'>High Performance Computing</a></li>
+            <li><a href='http://blogs.cisco.com/ciscoit'>Inside Cisco IT</a></li>
+            <li><a href='http://blogs.cisco.com/cin'>TechWiseTV</a></li>
+          </ul>
+        </li>
+         <li><a href='#'><span>Get to Know Cisco</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/csr'>Corporate Social Responsibility</a></li>
+            <li><a href='http://blogs.cisco.com/cle'>Connected Life Exchange</a></li>
+            <li><a href='http://blogs.cisco.com/socialmedia'>Digital and Social Media</a></li>
+            <li><a href='http://blogs.cisco.com/digital'>Digital Transformation</a></li>
+            <li><a href='http://blogs.cisco.com/emerging'>Emerging Countries</a></li>
+            <li><a href='http://blogs.cisco.com/gov'>High Tech Policy</a></li>
+            <li><a href='http://blogs.cisco.com/diversity'>Inclusion and Diversity</a></li>
+            <li><a href='http://blogs.cisco.com/lifeatcisco'>Life at Cisco</a></li>
+            <li><a href='http://blogs.cisco.com/perspectives'>Perspectives</a></li>
+            <li><a href='http://blogs.cisco.com/news'>The Platform (News &amp; Exec Insights)</a></li>
+          </ul>
+        </li>
+        <li class = "countries"><a href='#'><span>Countries and Regions</span></a>
+          <ul>
+            <div class = "col_1">
+  <li><a href="https://apjc.thecisconetwork.com/">Asia Pacific</a>
+    <li><a href="http://gblogs.cisco.com/at/">Austria</a>
+  <li><span class = "sub_main">Belgium</span></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be">Dutch</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be-fr">French</a></li>
+  <li><span class = "sub_main">Canada</span></li>
+    <li class = "sub"><a href="http://canadablog.cisco.com/">English</a></li>
+    <li class = "sub"><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+  <li><a href="http://gblogs.cisco.com/fin/">Finland</a>
+  </div>
+    <div class = "col_2">
+  <li><span class = "sub_main">France</a></span>
+    <li class = "sub"><a href="http://www.cisco.com/c/m/fr_fr/socialmedia/blogs.html">Cisco France Blogs</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-reseaux/">R&#233;seaux</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-datacenter/">Data Center &amp; Cloud</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-iot/">Digital Transformation &amp; IoT</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-collaboration/">Collaboration</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-security/">S&eacute;curit&eacute;</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-sp/">Service Provider</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-smartcities/">Smart Cities</a></li>
+  
+  <li><a href="http://gblogs.cisco.com/de">Germany</a></li>
+  <li><a href="http://gblogs.cisco.com/in">India</a></li>
+  </div>
+  <div class = "col_3">
+  <li><a href="http://gblogs.cisco.com/it/">Italy</a></li>   
+  <li><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+  <li><a href="http://ciscokrblog.com/">Korea</a></li>
+  <li><span class = "sub_main">Latin America</span></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/la/">Latin America (Esp)</a></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/cansac/">Cansac</a></li> 
+  </div>
+  <div class = "col_4">  
+  <li><a href="https://ciscotechblog.nl/">Netherlands</a></li>
+  <li><a href="http://gblogs.cisco.com/no">Norway</a></li>
+  <li><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+  <li><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+  <li><a href="http://gblogs.cisco.com/ro">Romania</a></li>
+  <li><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+  <li><a href="http://gblogs.cisco.com/es">Spain</a></li>
+  <li><a href="http://gblogs.cisco.com/ch-tech/">Switzerland</a></li>
+  <li><a href="http://gblogs.cisco.com/uki/">UK &amp; Ireland</a></li>
+</div>
+<div class = "clear"></div>
+</ul>
+</li>
+      </ul>
+</nav>            </div>
+            <div id = "mobile_search">
+                <div id = "mobile_search_box">
+                    <form method="get" id="searchform" action="http://blogs.cisco.com/"> 
+	<input type="text" value="" 
+    	name="s" id="s"> 
+    </input>
+<input type="submit" value=" " class="searchSubmit"/>
+</form>                </div>
+        </div>
+        </div>  
+    </header>
+     
+         
+
+  <div id="share_bar1">
+    
+    <span class = "share_title">Share</span>
+    <div class="twitter" ><a href="https://twitter.com/intent/tweet?url=http://cs.co/9002bu3Y&text=Making Boring Logs Interesting&via=ciscosecurity">tweet</a></div>
+    <div class="facebook" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting" data-title=" "></div>
+    <div class="googleplus" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting"data-title=" "></div>
+    <div class="linkedin" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting" data-title=" "></div>
+        <div class = "share_mail"><a class="email" href="mailto:?subject=Cisco Blog: Making Boring Logs Interesting&body=I saw this post on Cisco Security blog and thought you might like to read it.%0A%0AMaking Boring Logs Interesting%0A%0Ahttp://blogs.cisco.com/security/making-boring-logs-interesting%0A%0A****Disclaimer****%0A%0ACisco is not responsible for the content of this email, and its contents do not necessarily reflect Cisco’s views or opinions. Cisco has not verified the email address or name of the sender."></a></div>
+    <div class = "clear"></div>
+  </div>
+  <script>
+    jQuery(document).ready(function($){
+
+
+
+      
+      $('.facebook').sharrre({
+        share: {
+          facebook: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('facebook');
+        }
+      });
+      $('.googleplus').sharrre({
+        share: {
+          googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        urlCurl: '/wp-content/themes/cisco_responsive/sharrre.php',
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('googlePlus');
+        }
+      });
+      $('.linkedin').sharrre({
+        share: {
+          linkedin: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('linkedin');
+        }
+      });
+
+    });
+  </script>
+  <div id="sb-site">
+<div id = "main_content">
+	
+	<div id = "blog_content">
+	<div id = "main_left">
+
+		<article id = "article_post">
+			<p class = "breadcrumb">
+			<a href=' http://blogs.cisco.com'>Cisco Blog</a> > <a href=' http://blogs.cisco.com/category/security/'>Security</a></p>				
+					<div id = "post_image"><img src = "/wp-content/uploads/category50.png">  					</div>
+  					<div id = "post_info">
+  						<span class = "post_category">
+  							Security  						</span>
+						<h1 id="post-128306" class="kindle_title title">Making Boring Logs Interesting</h1>
+						<div class="author_image"><img class = " img-circle" src = "http://blogs.cisco.com/wp-content/uploads/userphoto/1594.thumbnail.525480da68947.jpg"></div><div class="author_rewards_box">	
+			<ul class = "nitro_author128306 bunchballAwards"> 
+		<li>
+			<div class = "nitro_badge badgenitro_author128306">
+			</div>
+			<div class = "nitro_points pointsnitro_author128306">
+			</div>
+		</li>
+		<script>
+var nitroName = 'mavalite';
+var sessionKey = '';
+
+
+nitro.callAPI("method=batch.run&methodFeed=%5B%27method%3Duser.getChallengeProgress%26userId%3D" + nitroName + "%26sessionKey%3D" + sessionKey + "%27%2C%27method%3Duser.getLevel%26userIds%3D" + nitroName + "%26sessionKey%3D" + sessionKey + "%27%2C%27method%3Duser.getPointsBalance%26userId%3D" + nitroName + "%26sessionKey%3D" + sessionKey + "%27%5D",  "postBadges", "nitro_author128306");</script>
+							
+		</ul>					
+		</ul>
+	<div class = "clear"></div>
+</div><div class = "clear"></div><span class = "list_author"><a href="http://blogs.cisco.com/author/mattvalites" title="Posts by Matt Valites" rel="author">Matt Valites</a> - October 9, 2013 - 0 Comments      					</span>
+      					<br />
+      					<br />
+      										</div>
+					<div class ="clear"></div>
+					<p>In the last week alone, two investigations I have been involved with have come to a standstill due to the lack of attribution logging data. One investigation was halted due to the lack of user activity logging within an application, the other from a lack of network-based activity logs. Convincing the asset owners of the need for logging after-the-fact was easy. But ideally, this type of data would be collected before it&#8217;s needed for an investigation. Understanding what data is critical to log, engaging with the asset owners to ensure logs contain meaningful information, and preparing log data for consumption by a security monitoring organization are ultimately responsibilities of the security monitoring organization itself. Perhaps in a utopian world, asset owners will engage an InfoSec team proactively and say, &#8220;I have a new host/app. To where should I send my log data which contains attributable information for user behavior which will be useful to you for security monitoring?&#8221; In lieu of that idealism, what follows is a primer on logs as they relate to attribution in the context of security event monitoring.<span id="more-128306"></span></p>
+<h2>Know Thy Network</h2>
+<p>&nbsp;</p>
+<p>As <a href="http://blogs.cisco.com/author/jeffbollinger/" target="_blank">Jeff</a> stated in <a href="http://blogs.cisco.com/security/big-security-mining-mountains-of-log-data-to-find-bad-stuff-2/">this series&#8217; intro piece</a>, &#8220;In the log analysis world, context is truly king.&#8221; Security monitoring requires an understanding of the network being monitored and the assets on that network. Knowledge only of layer 3 data provides no information into what the network or asset is used for, to whom an escalation should be sent in the event of a security breach, or what is considered normal or anomalous behavior. In large organizations, even a well-staffed Computer Security Incident Response Team (CSIRT) cannot possibly understand the intricacies of all the applications, hosts, and networks, as well as the owners of those assets. That additional understanding &#8211; or context &#8211; helps determine what events to investigate or consider a false positive. Part of the context necessary to understand security events includes attribution, that is, associating an application, device, or network asset with an owner. While mitigation may be possible without attribution, remediation requires identifying asset owners to address the root cause of the event. Attribution, therefore, requires some method of identification. <!--more--></p>
+<p>Automatic Network Access Control (NAC) identity methods vary widely, typically controlling access to networks or information, via simple authentication, a captive portal, 2-factor token access, 802.1x, or similar technology. However, by what method can you identify an owner if you lack full or partial coverage of every environment with your NAC solution? What are some of the caveats when using manual attribution solutions? Without NAC, CSIRTs must rely on logging to acquire enough data to attribute assets generating security events.</p>
+<p>&nbsp;</p>
+<h2>So what’s in a log?</h2>
+<p>&nbsp;</p>
+<p>A log message fundamentally consists of a timestamp and an event. The syslog facility, as defined in RFC5424, includes two additional attributes: facility &#8211; which classifies the source of the message &#8211; and severity. No widely adopted standard exists for the event portion of a log message, and in practice these vary widely. Building a robust security monitoring platform requires understanding log metadata; the data about data. We’ll explore the two principal components &#8211; time and event.</p>
+<p>&nbsp;</p>
+<h2>Timestamps</h2>
+<p>&nbsp;</p>
+<p>Similar to forensic investigations, security event monitoring typically involves building accurate timelines of when events occurred leading up to, during, and after a security incident. Timeline events often comprise disparate log event sources pieced together for a holistic understanding of the incident. To have meaning as a whole, each individual event source must both sync their clocks and share a standardized timezone.</p>
+<p>The Network Time Protocol (NTP) is an industry standard for syncing clocks between networked systems, an implementation of which is included on almost any asset worth monitoring. But since NTP does not transmit timezones, assets must be individually configured with an organization’s standardized timezone. Since most timezones are defined as an offset from Coordinated Universal Time (UTC), it makes sense to standardize on UTC to avoid confusion, especially for organizations whose systems span multiple timezones. But any consistent usage of an organization’s standard timezone will work. For situations where the CSIRT has no influence on configuring a timezone standard on a collected event source, the log message&#8217;s timestamp must be converted to CSIRT&#8217;s standard prior to entry in the security monitoring infrastructure. This assumes, however, that the CSIRT knows the timestamp of the data source being collected and that the data source timestamp as configured will not change.</p>
+<p>To understand how inconsistent timezones may cause issues, consider the case where an investigator knows via web proxy logs that a host accessed a malicious website but not know if the host was infected. If the host&#8217;s IP address was from a DHCP lease pool, correlating the event with DHCP logs based on inaccurate timestamps may identify the wrong host owner, which would affect mitigation, correlation with other data sources, and remediation.</p>
+<p>&nbsp;</p>
+<h2>Log Events</h2>
+<p>&nbsp;</p>
+<p>Any system administrator knows that log messages vary greatly between event sources. But messages often contain shared attributes common across event sources such as source/destination address/port, hostname, <a href="http://en.wikipedia.org/wiki/NetBIOS" target="_blank">NetBIOS</a> name, source type, and event source. Linking data sources together &#8211; or correlating them &#8211; requires unioning or joining these shared attributes. Combining shared attributes, in turn, relies on messages being parsed and attributes identified and classified.</p>
+<p>Foresight should be given to parsing attributes of log messages as they enter the security monitoring infrastructure. Standardizing names of shared attributes allows cleaner and easier to understand correlation queries. Parsing messages into standardized attributes requires using regexes (aka <a href="http://en.wikipedia.org/wiki/Regex" target="_blank">Regular Expressions</a>). Writing regexes requires enumerating and understanding the types of different messages generated from a data source. Parsing a timestamp in one data source may require a different pattern match than another data source, based on different time format representations.</p>
+<p>&nbsp;</p>
+<h2>Attribution Caveats</h2>
+<p>&nbsp;</p>
+<p>Even when timestamps are standardized and log messages are parsed and stored, attribution issues can arise due to the nature of the data source. Two common scenarios that cause problems with attribution are the use of NAT and having overlapping IP addresses.</p>
+<p>Network Address Translations (NAT), consisting of many-to-one or IP masquerading configurations, complicate identification by only maintaining a transient state table of the NAT translations. Once the connection is torn down, unless remote logging existed, the availability of attribution data to associate the translated IP with a unique IP is lost. Note that even when logging is available, full attribution still requires associating an IP with an owner.</p>
+<p>NAT also affects application and host logs. When connections are made through a NAT to a real server, applications and hosts must be able to cite the true source of the connection, yet still route any response back through the NAT to maintain connection state. Web servers solve this dilemma with the X-Forwarded-For header. Knowing only that an event occurred from the translated address can hinder or entirely halt an incident investigation.</p>
+<p>Overlapping address spaces are likely to affect larger organizations with a decentralized network operation model like universities or conglomerate corporations. Where this situation exists, uniquely identifying an asset requires building a list of multiple data attributes of that asset. The resulting tuple can then be used as a primary key when searching other attribution data sources. Consider an example at a University, where the School of Nursing and School of Engineering both use the same internal RFC1918 addresses, but are monitored by different sensors. A unique identification key is created by pairing the RFC1918 address with the sensor address or hostname.</p>
+<p>&nbsp;</p>
+<h2>Asset Inventory Tracking</h2>
+<p>&nbsp;</p>
+<p>If the CSIRT doesn&#8217;t know everything about what is being monitored, they must engage the actual asset owners for clarity, confirmation, or remediation. But how do you associate ownership with an IP (or a tuple containing an IP and other attributes)? If one is to truly know their network, a dynamically updated asset tracking system must exist that accounts for anything on the network. Besides being easily query-able, it must answer questions such as: How is the network segmented? What hosts are in each segment and who owns them? What applications exist on the hosts and who are the owners? What is the criticality of each asset?</p>
+<p>In smaller organizations, there will ideally be a single source-of-truth for asset inventorying. In lieu of that, consideration must be given towards how the CSIRT will consume information from disparate data sources. Will data be consumed to some central location via plugins that interact with various asset inventory APIs? Will each asset system regularly dump it’s data to a common format like <em>csv</em>, to be consumed by the CSIRT? Will CSIRT members individually access the asset inventory systems directly, and if so, what determines in which inventory system a particular asset resides?</p>
+<p>&nbsp;</p>
+<h2>Tying the Room Together</h2>
+<p>&nbsp;</p>
+<p>Recall that the original problem involved a lack of attribution, and identifying an asset owner. Structuring stored log data in a standardized format, as described above, allows for easier consumption to more readily identify an escalation point. The principles of log management, as stated, can be extended to non-attribution data sources as well. In fact, without classical non-attribution security event data, there’s little to alert on and escalate anyway. Ensuring that a repeatable and well documented escalation path exists, and having both security event data to trigger alarms, and attribution data to identify the source or destination of alarms, is fundamental to security monitoring.</p>
+Tags:<br /><ul class = "tagged"><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=csirt">CSIRT</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=csirt-playbook">csirt-playbook</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=incident-response">incident response</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=logging">logging</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=logs">logs</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=ncsam">NCSAM</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=ncsam-2013">ncsam-2013</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=security-2">security</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=siem">SIEM</a></li></ul>			<div id = "comments"> 
+				<div id = "respond">
+<span class = "comment_heading">Leave a comment</span><br />
+<p class="cisco_respond">We'd love to hear from you! To earn points and badges for participating in the conversation, join <a href = "/rewards-about">Cisco Social Rewards</a>. Your comment(s) will appear instantly on the live site. Spam, promotional and derogatory comments will be removed.</p>
+
+ <p class="cisco_respond"><b>All comments in this blog are held for moderation.  Your comment will not display until it has been approved</b></p>
+				<p class = "cisco_respond">In an effort to keep conversations fresh, Cisco Blogs closes comments after 60 days. Please visit the <a href ="http://blogs.cisco.com">Cisco Blogs hub page</a> for the latest content.</p>
+		</div>
+
+
+			</div>
+		</article>
+
+	</div>
+	<div id = "main_right">
+		<ul id = "sidebar">
+
+  <li id="subscribe" class="widget">
+    <h3>Subscribe to Security:</h3>
+    <div id="subscribe_box">
+      <form id ="subscribe_form" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=CiscoBlogSecurity', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <input type="text" class="subscribe" name="email" value="Enter email address" onFocus="if(this.value == 'Enter email address') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Enter email address';}"></input>
+        <input type="hidden" value="CiscoBlogSecurity" name="uri" ></input>
+        <input type="hidden" name="loc" value="en_US"></input>
+        <input type="submit" class="subscribe_button" value="Subscribe" ></input>
+        <div class="clear"></div>
+      </form>    
+    </div>
+    <div class="clear"></div>
+    
+</li>
+
+<li id="social_widget" class="widget">
+  <h3>Connect with Security</h3>
+  <ul>
+        <li><a target='_blank' href="https://www.facebook.com/ciscosecurity?ref=nf"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_fb.png" alt="Facebook"></a></li>
+    <li><a target='_blank' href="https://twitter.com/ciscosecurity"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_tw.png" alt="Twitter"></a></li>
+    <li><a target='_blank' href="http://www.linkedin.com/company/cisco"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_li.png" alt="Linkedin"></a></li>
+    <li><a target='_blank' href="https://plus.google.com/106092229730683979920"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_gp.png" alt="Google+"></a></li>
+    <li><a target='_blank' href="https://www.slideshare.net/ciscosystems"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_ss.png" alt="Slideshare"></a></li>
+    <li><a target='_blank' href="http://youtubecisco.com/security"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_yt.png" alt="YouTube"></a></li>
+    <li><a target='_blank' href=""><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_ig.png" alt="Instagram"></a></li>
+    <li><a href="https://feeds.feedburner.com/CiscoBlogSecurity"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/rss.png" width = "24" height = "24" alt = "Rss"></a></li>
+      </ul>
+</li>
+	<li>
+		<div id = "nitroLoggedOut" class="widget">
+			<div class = "consoleTitle">
+				Cisco Social Rewards
+			</div>
+			<div class = "consoleTextNoLog">
+				Get credit for all your Cisco site participation with Social Rewards. <a href = "http://blogs.cisco.com/rewards-about">Learn More</a>			</div>
+			<a href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com" class = "joinNow">Join Today</a>
+			<div class = "consoleTextNoLog">
+				Already a member?  <a href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com" class = "already">Log In</a>
+			</div>
+			</div>	
+</li> 	<script>
+	
+	
+	nitro.callAPI("method=site.getActionFeed&apiKey=6912c6c82ccc4863a0311dc8b586b8fb&showLevelChanges=true&preferences=userFullName|profileUrl|userPhotoUrl", "newsfeed");
+	</script>
+	<li>
+		 <div id ="newsfeedWidget">
+			<div class = "newsfeed_header">
+				Latest Rewards
+				<a href = "http://blogs.cisco.com/rewards-about" class = "newsIcon"><img src = "/wp-content/plugins/bunchball/images/infoIcon.png"></a>				
+			</div>
+			<div id = "newsInnerContent">
+				<ul id = "newsfeed">	
+				</ul>
+			</div>
+		</div>
+	</li>
+
+<li id="archives" class="widget">
+  <div id = "select_content">
+    <div id = "archive_title">
+      Archives
+    </div>
+    <div id = "styled_select">
+      <select id="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+        <option value="">Select</option>
+        	<option value='http://blogs.cisco.com/archive?year=2017&#038;month=02&#038;cat=50'> February 2017 </option>
+	<option value='http://blogs.cisco.com/archive?year=2017&#038;month=01&#038;cat=50'> January 2017 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=12&#038;cat=50'> December 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=11&#038;cat=50'> November 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=10&#038;cat=50'> October 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=09&#038;cat=50'> September 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=08&#038;cat=50'> August 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=07&#038;cat=50'> July 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=06&#038;cat=50'> June 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=05&#038;cat=50'> May 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=04&#038;cat=50'> April 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=03&#038;cat=50'> March 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=02&#038;cat=50'> February 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=01&#038;cat=50'> January 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=12&#038;cat=50'> December 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=11&#038;cat=50'> November 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=10&#038;cat=50'> October 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=09&#038;cat=50'> September 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=08&#038;cat=50'> August 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=07&#038;cat=50'> July 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=06&#038;cat=50'> June 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=05&#038;cat=50'> May 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=04&#038;cat=50'> April 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=03&#038;cat=50'> March 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=02&#038;cat=50'> February 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=01&#038;cat=50'> January 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=12&#038;cat=50'> December 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=11&#038;cat=50'> November 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=10&#038;cat=50'> October 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=09&#038;cat=50'> September 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=08&#038;cat=50'> August 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=07&#038;cat=50'> July 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=06&#038;cat=50'> June 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=05&#038;cat=50'> May 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=04&#038;cat=50'> April 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=03&#038;cat=50'> March 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=02&#038;cat=50'> February 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=01&#038;cat=50'> January 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=12&#038;cat=50'> December 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=11&#038;cat=50'> November 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=10&#038;cat=50'> October 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=09&#038;cat=50'> September 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=08&#038;cat=50'> August 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=07&#038;cat=50'> July 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=06&#038;cat=50'> June 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=05&#038;cat=50'> May 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=04&#038;cat=50'> April 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=03&#038;cat=50'> March 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=02&#038;cat=50'> February 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2013&#038;month=01&#038;cat=50'> January 2013 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=12&#038;cat=50'> December 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=11&#038;cat=50'> November 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=10&#038;cat=50'> October 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=09&#038;cat=50'> September 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=08&#038;cat=50'> August 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=07&#038;cat=50'> July 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=06&#038;cat=50'> June 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=05&#038;cat=50'> May 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=04&#038;cat=50'> April 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=03&#038;cat=50'> March 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=02&#038;cat=50'> February 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2012&#038;month=01&#038;cat=50'> January 2012 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=12&#038;cat=50'> December 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=11&#038;cat=50'> November 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=10&#038;cat=50'> October 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=09&#038;cat=50'> September 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=08&#038;cat=50'> August 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=07&#038;cat=50'> July 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=06&#038;cat=50'> June 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=05&#038;cat=50'> May 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=04&#038;cat=50'> April 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=03&#038;cat=50'> March 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=02&#038;cat=50'> February 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2011&#038;month=01&#038;cat=50'> January 2011 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=12&#038;cat=50'> December 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=11&#038;cat=50'> November 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=10&#038;cat=50'> October 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=09&#038;cat=50'> September 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=08&#038;cat=50'> August 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=07&#038;cat=50'> July 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=06&#038;cat=50'> June 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=05&#038;cat=50'> May 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=04&#038;cat=50'> April 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=03&#038;cat=50'> March 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=02&#038;cat=50'> February 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2010&#038;month=01&#038;cat=50'> January 2010 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=12&#038;cat=50'> December 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=11&#038;cat=50'> November 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=10&#038;cat=50'> October 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=09&#038;cat=50'> September 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=08&#038;cat=50'> August 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=07&#038;cat=50'> July 2009 </option>
+	<option value='http://blogs.cisco.com/archive?year=2009&#038;month=06&#038;cat=50'> June 2009 </option>
+      </select>
+    </div>
+    <div class = "clear"></div>
+  </div>  
+</li>
+
+    <li id="blogroll">
+            <ul id="blogroll_links">
+          <li class="roll_heading">What We're Reading</li>
+                    <li><a href="http://www.cert.org/blogs/vuls/" target="_blank">CERT Vulnerability Analysis</a></li>
+                      <li><a href="http://blogs.technet.com/b/srd/" target="_blank">Microsoft Security Research & Defense</a></li>
+                      <li><a href="http://isc.sans.edu/index.html" target="_blank">SANS Internet Storm Center</a></li>
+                      <li><a href="http://www.schneier.com/" target="_blank">Schneier on Security</a></li>
+                  </ul>
+              <ul id="related_links">
+          <li class="roll_heading">Related Links</li>
+                    <li><a href="http://www.cisco.com/en/US/products/products_security_advisories_listing.html" target="_blank">Advisories and Responses</a></li>
+                        <li><a href="http://tools.cisco.com/security/center/cyberRiskReport.x" target="_blank">Cyber Risk Reports</a></li>
+                        <li><a href="http://tools.cisco.com/security/center/intelliPapers.x?i=55" target="_blank">Security Best Practices</a></li>
+                        <li><a href="http://tools.cisco.com/security/center/home.x" target="_blank">Security Intelligence Operations</a></li>
+                        <li><a href="http://www.cisco.com/en/US/products/hw/vpndevc/index.html" target="_blank">Security Products</a></li>
+                        <li><a href="http://tools.cisco.com/security/center/threatOutbreak.x?i=77" target="_blank">Threat Outbreak Alerts</a></li>
+                  </ul>
+          </li>
+  </ul>	</div>
+	<div class = "clear"></div>
+</div>
+</div> 
+
+
+
+
+</div>
+   
+
+<div class="sb-slidebar sb-left sb-width-custom sb-momentum-scrolling " data-sb-width="50%">
+    <nav>
+  <a class = "hamburger_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>      <ul>
+                  <li><a href='http://blogs.cisco.com'><span>All Blogs</span></a></li>
+                  <li><a href='#'><span>Technologies</span></a>
+                  <ul>
+            <div class = "bordertop"></div>
+            <li><a href="http://blogs.cisco.com/analytics-automation">Analytics &amp; Automation</a></li>
+            <li><a href="http://blogs.cisco.com/cloud">Cloud</a></li>
+            <li><a href='http://blogs.cisco.com/collaboration'>Collaboration</a></li>
+            <li><a href='http://blogs.cisco.com/datacenter'>Data Center</a></li>
+            <li><a href='http://blogs.cisco.com/enterprise'>Enterprise Networks</a></li>
+            <li><a href='http://blogs.cisco.com/innovation'>Innovation</a></li>
+            <!--<li><a href='http://blogs.cisco.com/openatcisco'>Open at Cisco</a></li>-->
+            <li><a href='http://blogs.cisco.com/wireless'>Mobility</a></li>
+            <li><a href='http://blogs.cisco.com/security'>Security</a></li>
+            <li class = "sub"><a href="http://blogs.cisco.com/talos" class="nav_menu" title="">Threat Research</a></li>
+            <li><a href='http://blogs.cisco.com/smallbusiness'>Small Business</a></li>
+            <li><a href='http://blogs.cisco.com/sp'>SP360:Service Provider</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Industries</span></a>
+                    
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/education'>Education</a></li>
+            <li><a href='http://blogs.cisco.com/energy'>Energy</a></li>
+            <li><a href='http://blogs.cisco.com/financialservices'>Financial Services</a></li>
+            <li><a href='http://blogs.cisco.com/government'>Government</a></li>
+            <li><a href='http://blogs.cisco.com/healthcare'>Healthcare</a></li>
+            <li><a href='http://blogs.cisco.com/manufacturing'>Manufacturing</a></li>
+            <li><a href='http://blogs.cisco.com/retail'>Retail &amp; Hospitality</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Partners</span></a>         
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/partner'>Partner</a></li>
+          </ul>
+        </li>
+        <li><a href='#'><span>For the Tech Expert</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/getyourbuildon'>Architects &amp; Distinguished Engineers</a></li>
+            <li><a href='http://blogs.cisco.com/performance'>High Performance Computing</a></li>
+            <li><a href='http://blogs.cisco.com/ciscoit'>Inside Cisco IT</a></li>
+            <li><a href='http://blogs.cisco.com/cin'>TechWiseTV</a></li>
+          </ul>
+        </li>
+         <li><a href='#'><span>Get to Know Cisco</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/csr'>Corporate Social Responsibility</a></li>
+            <li><a href='http://blogs.cisco.com/cle'>Connected Life Exchange</a></li>
+            <li><a href='http://blogs.cisco.com/socialmedia'>Digital and Social Media</a></li>
+            <li><a href='http://blogs.cisco.com/digital'>Digital Transformation</a></li>
+            <li><a href='http://blogs.cisco.com/emerging'>Emerging Countries</a></li>
+            <li><a href='http://blogs.cisco.com/gov'>High Tech Policy</a></li>
+            <li><a href='http://blogs.cisco.com/diversity'>Inclusion and Diversity</a></li>
+            <li><a href='http://blogs.cisco.com/lifeatcisco'>Life at Cisco</a></li>
+            <li><a href='http://blogs.cisco.com/perspectives'>Perspectives</a></li>
+            <li><a href='http://blogs.cisco.com/news'>The Platform (News &amp; Exec Insights)</a></li>
+          </ul>
+        </li>
+        <li class = "countries"><a href='#'><span>Countries and Regions</span></a>
+          <ul>
+            <div class = "col_1">
+  <li><a href="https://apjc.thecisconetwork.com/">Asia Pacific</a>
+    <li><a href="http://gblogs.cisco.com/at/">Austria</a>
+  <li><span class = "sub_main">Belgium</span></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be">Dutch</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be-fr">French</a></li>
+  <li><span class = "sub_main">Canada</span></li>
+    <li class = "sub"><a href="http://canadablog.cisco.com/">English</a></li>
+    <li class = "sub"><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+  <li><a href="http://gblogs.cisco.com/fin/">Finland</a>
+  </div>
+    <div class = "col_2">
+  <li><span class = "sub_main">France</a></span>
+    <li class = "sub"><a href="http://www.cisco.com/c/m/fr_fr/socialmedia/blogs.html">Cisco France Blogs</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-reseaux/">R&#233;seaux</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-datacenter/">Data Center &amp; Cloud</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-iot/">Digital Transformation &amp; IoT</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-collaboration/">Collaboration</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-security/">S&eacute;curit&eacute;</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-sp/">Service Provider</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-smartcities/">Smart Cities</a></li>
+  
+  <li><a href="http://gblogs.cisco.com/de">Germany</a></li>
+  <li><a href="http://gblogs.cisco.com/in">India</a></li>
+  </div>
+  <div class = "col_3">
+  <li><a href="http://gblogs.cisco.com/it/">Italy</a></li>   
+  <li><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+  <li><a href="http://ciscokrblog.com/">Korea</a></li>
+  <li><span class = "sub_main">Latin America</span></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/la/">Latin America (Esp)</a></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/cansac/">Cansac</a></li> 
+  </div>
+  <div class = "col_4">  
+  <li><a href="https://ciscotechblog.nl/">Netherlands</a></li>
+  <li><a href="http://gblogs.cisco.com/no">Norway</a></li>
+  <li><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+  <li><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+  <li><a href="http://gblogs.cisco.com/ro">Romania</a></li>
+  <li><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+  <li><a href="http://gblogs.cisco.com/es">Spain</a></li>
+  <li><a href="http://gblogs.cisco.com/ch-tech/">Switzerland</a></li>
+  <li><a href="http://gblogs.cisco.com/uki/">UK &amp; Ireland</a></li>
+</div>
+<div class = "clear"></div>
+</ul>
+</li>
+      </ul>
+</nav></div>
+<footer class = "sb-slide">
+	<section id = "footer_content">
+				<ul id = "footer_social">
+			<li class = "footer_social_title">Connect</li>
+			
+			<li><a target='_blank' href='https://www.facebook.com/ciscosecurity?ref=nf'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_fb.png" height = "25" width = "25"></a></li>
+			<li><a target='_blank' href='https://twitter.com/ciscosecurity'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_tw.png"></a></li>
+			<li><a target='_blank' href='http://www.linkedin.com/company/cisco'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_li.png"></a></li>
+			<li><a target='_blank' href='https://plus.google.com/106092229730683979920'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_gp.png"></a></li>
+			<div class = "clear"></div>
+			
+		</ul>
+
+
+		<section id="footer_new">
+			<ul>
+				<li><a href="https://www.cisco.com/web/siteassets/contacts/index.html">Contacts</a>  |  </li>
+				<li><a href="https://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb">Feedback</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/help/index.html">Help</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/sitemap/index.html">Site Map</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/terms_condition.html">Terms &amp; Conditions</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/privacy.html">Privacy Statement</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/privacy.html#cookies">Cookie Policy</a>  |  </li>
+    	 		<li><a href="https://www.cisco.com/web/siteassets/legal/trademark.html">Trademarks</a> <br /> </li>
+    	 	</ul>
+		</section>
+		<br class="clear" />
+    	<section id ="disclaimer">
+    		<b>Legal Disclaimer</b>
+			<p>Some of the individuals posting to this site, including the moderators, work for Cisco Systems. Opinions expressed here and in any corresponding comments are the personal opinions of the original authors, not of Cisco. The content is provided for informational purposes only and is not meant to be an endorsement or representation by Cisco or any other party. This site is available to the public. No information you consider confidential should be posted to this site. By posting you agree to be solely responsible for the content of all information you contribute, link to, or otherwise upload to the Website and release Cisco from any liability related to your use of the Website. You also grant to Cisco a worldwide, perpetual, irrevocable, royalty-free and fully-paid, transferable (including rights to sublicense) right to exercise all copyright, publicity, and moral rights with respect to any original content you provide. The comments are moderated. Comments will appear as soon as they are approved by the moderator.</p>
+    	</section>
+	</section>
+	<script>
+var ajaxurl = "https://blogs.cisco.com/wp-admin/admin-ajax.php";
+jQuery(document).ready(function($) {
+			
+	$('a.commentLikeButton').click(function(event){
+		var elemId = event.target.id;
+		var commentId = elemId.replace('clickLike','');	
+		
+		event.preventDefault();
+		
+		var nitroID= $(this).attr("data-nitro");
+		
+		
+		
+		var str = $(this).text();
+		if (str =='1 like') {
+			var total = str.replace('like','');
+		}
+		else {	
+			var total = str.replace('likes','');
+		}
+		if ($(this).hasClass( "commentlike")) {
+			var theTotal = parseInt(total);
+   			theTotal1 = Number(theTotal) + 1;
+   			if (theTotal1 === 1){
+   				$(this).text(theTotal+" like"); 
+   			}
+   			else {  		
+    			$(this).text(theTotal1+" likes"); 
+    		} 
+    		var data = {
+        		'action': 'addLike',
+				'commentID': commentId,
+				'total': theTotal1
+			};
+			
+			
+			$.post(ajaxurl, data, function(response) {
+				if (typeof nitroID !== 'undefined') {
+					commentLike(nitroID);
+				}			
+				commentLiked();		
+			});
+				
+    	}
+    	else{
+    		$(this).removeAttr("href");
+    		alert('You already liked this');
+    		/*var theTotal = parseInt(total);
+   			theTotal = Number(theTotal) - 1;
+   			if (theTotal == 1){
+   				$(this).text(theTotal+" like"); 
+   			}
+   			else {  			
+    			$(this).text(theTotal+" likes"); 
+    		} 
+    		var data = {
+        		'action': 'removeLike',
+				'commentID': commentId,
+				'total': theTotal
+			};
+			$.post(ajaxurl, data, function(response) {
+				alert('disliked');
+			});*/
+    	} 
+    	
+    	$(this).addClass('commentliked').removeClass('commentlike');
+	});
+});
+
+
+
+
+
+	</script>
+	
+	<script>
+		var ajaxurl = "https://blogs.cisco.com/wp-admin/admin-ajax.php";
+		
+		jQuery(document).ready(function($) {
+			var postID = 128306;
+			var orig_count = 0;
+			$(".twitter a").click(function() {
+
+				var theTotal = orig_count;
+   				var count = Number(theTotal) + 1;
+				var data = {
+        			'action': 'addtweet',
+					'postID': postID,
+					'total': count
+				};
+				$.post(ajaxurl, data, function(response){});
+			})
+		});
+	</script>
+
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/comment-reply.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/wp-embed.js?ver=4.7.2'></script>
+</footer>
+<script>//nitro.refreshNML();</script>
+
+
+
+
+</body>
+</html> 
+
+  <div id="share_bar1">
+    
+    <span class = "share_title">Share</span>
+    <div class="twitter" ><a href="https://twitter.com/intent/tweet?url=http://cs.co/9002bu3Y&text=Making Boring Logs Interesting&via=ciscosecurity">tweet</a></div>
+    <div class="facebook" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting" data-title=" "></div>
+    <div class="googleplus" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting"data-title=" "></div>
+    <div class="linkedin" data-url="http://blogs.cisco.com/security/making-boring-logs-interesting" data-title=" "></div>
+        <div class = "share_mail"><a class="email" href="mailto:?subject=Cisco Blog: Making Boring Logs Interesting&body=I saw this post on Cisco Security blog and thought you might like to read it.%0A%0AMaking Boring Logs Interesting%0A%0Ahttp://blogs.cisco.com/security/making-boring-logs-interesting%0A%0A****Disclaimer****%0A%0ACisco is not responsible for the content of this email, and its contents do not necessarily reflect Cisco’s views or opinions. Cisco has not verified the email address or name of the sender."></a></div>
+    <div class = "clear"></div>
+  </div>
+  <script>
+    jQuery(document).ready(function($){
+
+
+
+      
+      $('.facebook').sharrre({
+        share: {
+          facebook: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('facebook');
+        }
+      });
+      $('.googleplus').sharrre({
+        share: {
+          googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        urlCurl: '/wp-content/themes/cisco_responsive/sharrre.php',
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('googlePlus');
+        }
+      });
+      $('.linkedin').sharrre({
+        share: {
+          linkedin: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('linkedin');
+        }
+      });
+
+    });
+  </script>
+  

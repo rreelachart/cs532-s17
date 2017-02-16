@@ -1,0 +1,885 @@
+RAW HTML FOR: http://dyn.com/blog/internet-paths-matter-performance/
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Optimizely Syncronous Script -->
+	<script src="//cdn.optimizely.com/js/2573310155.js"></script>
+
+	<!-- Evergage Syncronous Script -->
+<script type="text/javascript">
+    var _aaq = window._aaq || (window._aaq = []);
+    _aaq.push(['setUser', window.fingerprintId], ['setCompany', 'DynCustomer']);
+</script>
+<script type="text/javascript" src="//cdn.evergage.com/beacon/dyn/dyn_end2end_production/scripts/evergage.min.js"></script>
+
+
+<script type="text/javascript">/*DO NOT ALTER *** Dyn*/(function(e){var t="1459",n=document,r,i,s={http:"http://cdn.mplxtms.com/s/MasterTMS.min.js",https:"https://secure-cdn.mplxtms.com/s/MasterTMS.min.js"},o=s[/\w+/.exec(window.location.protocol)[0]];i=n.createElement("script"),i.type="text/javascript",i.async=!0,i.src=o+"#"+t,r=n.getElementsByTagName("script")[0],r.parentNode.insertBefore(i,r),i.readyState?i.onreadystatechange=function(){if(i.readyState==="loaded"||i.readyState==="complete")i.onreadystatechange=null}:i.onload=function(){try{e()}catch(t){}}})(function(){});</script>
+<meta name="viewport" content="width=device-width"><title>Why Internet Paths Matter:  Performance | Dyn Blog</title><meta property="og:title" content="Why Internet Paths Matter:  Performance | Dyn Blog" /><meta property="og:url" content="http://dyn.com/blog/internet-paths-matter-performance/" /><meta name="url" content="http://dyn.com/blog/internet-paths-matter-performance/" /><meta property="og:description" content="Remember the Information Superhighway? It's what some folks used to call the Internet back in the 1990s. Those of us lucky enough ..." /><meta name="description" content="Remember the Information Superhighway? It's what some folks used to call the Internet back in the 1990s. Those of us lucky enough ..."><meta property="og:image" content="http://dyn.com/wp-includes/images/media/default.png" /><meta itemprop="image" content="http://dyn.com/wp-includes/images/media/default.png"><meta property="og:type" content="article" /><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" href="/wp-content/themes/dynamic/images/favicon.png" type="image/png" />
+<link rel="alternate" type="application/rss+xml" title="Dyn Blog" href="http://feeds.feedburner.com/dyn-blog" />
+<link rel="pingback" href="http://dyn.com/xmlrpc.php" />
+<link rel="stylesheet" href="/wp-content/themes/dynamic/css/dyn-uikit.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/wp-content/themes/dynamic/css/style.css?v=20151029" type="text/css" media="screen" />
+
+<meta name="google-site-verification" content="RnW8A1Yl8ouWjTDPZVEhghPmNEkYBa_aYNMg6q6kSzs" />
+<link rel="stylesheet" href="/wp-content/themes/dynamic/css/blog.css?v=12916" type="text/css" media="screen" /></head>
+<body class="single single-post postid-3790 single-format-standard" >
+
+<style>#placement-bottom{display:none !important;}
+.hubs-embedded #collection-items .tile{ margin:0 40px 40px 0 !important;}
+.product .uk-modal-dialog{background:#f1f1f1}
+.chatty img{border-radius: 0 3px 3px 0;position:absolute;left:0}
+#sidenav{margin-right:0px}
+#nav-promo{display:none}
+.count-top {width: 245px;}
+.uk-margin-medium{
+margin-top:20px;
+margin-bottom:20px !important;
+}
+.blog #nav-news, .archive #nav-news, .single #nav-news{display:none}
+.blog .nav-title {
+    margin-top: 30px;
+}
+.blog .uk-active .nav-title {
+    margin-top: 0px;
+}
+.author-bio .uk-icon-envelope {
+display:none !important;
+}
+#blog-top-nav a.uk-position-top-left{
+padding-left:5px;
+}
+#search-focus-top{
+line-height:40px;
+}
+#blog-top-nav .uk-icon-close {
+    padding: 0px 17px !important;
+}
+@media (max-width: 960px){
+.uk-block-hero {
+    padding: 100px 0px 75px;
+}
+}</style>
+	<script src="/wp-content/uploads/2016/09/bowser.min_.js"></script>
+<div data-uk-alert="" style="border-color: #ffdcdc; background: #fff1f1;margin:0;display:none" id="unsupported-browser" class="uk-alert uk-alert-danger">
+	<a class="uk-alert-close uk-close" style="color: #ff5050;" href="">
+	</a>
+	It looks like you’re using an older browser. Please update your browser if you intend to make a purchase or login to your account.
+	<a href="/browser-support/">
+		See our list of supported browsers.
+	</a>
+</div>
+<script>
+var supported_browsers = {
+  chrome: "22",
+  firefox: "27",
+  msie: "11",
+  safari: "9",
+  ios: "5",
+  android: "5"
+};
+
+function pollForjQuery () {
+  if (window.jQuery) {
+    $('#unsupported-browser').toggle(bowser.isUnsupportedBrowser(supported_browsers));
+  } else {
+    // checks for jQuery again in 50ms
+    setTimeout(pollForjQuery, 50);
+  }
+}
+pollForjQuery();
+</script>
+
+<nav id="top-nav" class="uk-navbar primary-nav">
+		<div id="top-nav-inner" class="uk-container uk-container-center">
+			<!--START LOGO -->
+			<div class="header-logo uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-6">
+				<a href="/" id="white-logo" class="uk-float-left">Dyn - Internet Performance</a><a href="#off-canvas-mobile-nav" class="icon-menu uk-navbar-toggle uk-hidden-large uk-float-right" data-uk-offcanvas></a>
+			</div>
+
+			<!-- START LEFT DROPDOWN NAV -->
+			<ul class="uk-navbar-nav uk-visible-large">
+				<!-- Start Products-->
+				<li id="product-nav" class="uk-parent" data-uk-dropdown="{justify:'#top-nav',hoverDelayIdle:'0'}"><a href="/products/">Products</a>
+				<div class="uk-dropdown uk-dropdown-navbar">
+	<div style="width:1200px" class="uk-container uk-container-center">
+		<div class="uk-grid uk-dropdown-grid uk-margin-top uk-margin-bottom">
+			<div class="uk-width-7-10">
+	<div style="border: 1px solid #d7d7d7; background: #fff; overflow: hidden; padding: 25px 25px 0px;" class="uk-panel uk-panel-box">
+  <div style="padding: 15px 25px; border-radius: 0px; margin: -26px -26px 15px;" class="uk-alert uk-margin-bottom">
+  <p style="font-size:20px;line-height:26px" class="uk-h4 uk-margin-remove">Internet Performance Management (IPM)</p>
+						<p class="uk-margin-small-top"><span class="uk-margin-bottom-remove uk-h6">The Platform:</span> Mission control for all things Internet performance <a href="/platform/" class="uk-float-right uk-button uk-button-small uk-button-primary" style="margin-top: -22px;">Explore Platform</a></p>
+					</div>
+					<div class="uk-grid uk-grid-divider uk-margin-bottom uk-margin-top">
+						<div class="uk-width-1-3">
+							<p class="uk-h6 uk-margin-small-top"><a href="/traffic-management/">DNS & Traffic Steering</a></p>
+							<ul class="uk-nav uk-nav-dropdown">
+							<li><a href="/dns-for-ipm/">DNS for Internet Performance Management</a></li>
+							<li><a href="/active-failover/">Active Failover</a></li>
+							<li><a href="/traffic-director/">Traffic Director</a></li>
+							<li><a href="/dynamic-steering/">Dynamic Steering</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-1-3">
+							<p class="uk-h6 uk-margin-small-top">Monitoring & Insights</p>
+							<ul class="uk-nav uk-nav-dropdown">
+							<li><a href="/internet-intelligence/">Internet Intelligence </a></li>
+							<li><a href="/dyn-internet-intelligence/">Internet Intelligence - Network</a></li>
+							<li><a href="/ip-transit-intelligence/">Internet Intelligence - Transit</a></li>
+							<li><a href="/dyn-internet-alerts/">Internet Alerts</a></li>
+							</ul>
+						</div>
+						<div class="uk-width-1-3">
+							<p class="uk-h6 uk-margin-small-top">IPM Solutions:</p>
+							<ul class="uk-nav uk-nav-dropdown">
+							<li><a href="/secondary-dns/">Secondary DNS</a></li>
+							<li><a href="http://dyn.com/hybrid-cloud-ipm/">Hybrid Cloud</a></li>
+							<li><a href="/cdn/">Multi-CDN Strategy</a></li>
+							<li><a href="/cloud-load-balancing/">Cloud Load-Balancing</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="uk-width-3-10">
+				<h4 class="uk-margin-small-top uk-margin-bottom-remove uk-h6"><i class="uk-margin-small-right uk-icon-home"></i>Personal & SMB:</h4>
+<hr class="uk-margin-small">
+				<ul class="uk-nav uk-nav-dropdown">
+				<li><a href="/remote-access/">Remote Access (DynDNS)</a></li>
+				<li><a href="/managed-dns/">Managed DNS</a></li>
+				<li><a href="/domain-registration/">Domain Registration</a></li>
+				</ul>
+                                <h4 class="uk-margin-top uk-h6  uk-margin-small-bottom"><i class="uk-margin-small-right uk-icon-paper-plane"></i>Message Management:</h4>
+<hr class="uk-margin-small uk-margin-bottom">
+<a class="uk-margin-top" href="/email/">Explore Dyn Email services<i class="uk-icon-arrow-circle-o-right uk-margin-small-left"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+				</li>
+				<!--End Products-->
+				<!-- Start Resources-->
+				<li data-uk-dropdown="{justify:'#top-nav',hoverDelayIdle:'0'}" class="uk-parent" id="resources-nav"> <a href="http://hub.dyn.com">Resources</a>
+				<div class="uk-dropdown uk-dropdown-navbar">
+				  <div style="width:1200px" class="uk-container uk-container-center">
+				    <div class="uk-grid uk-dropdown-grid uk-grid-divider uk-margin-top uk-margin-bottom">
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Resource Center</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="http://hub.dyn.com/whitepapers-ebooks">Whitepapers & eBooks</a></li>
+				          <li><a href="http://hub.dyn.com/case-studies">Case Studies</a></li>
+				          <li><a href="http://hub.dyn.com/webinars">Webinars</a></li>
+				          <li><a href="http://hub.dyn.com/all-videos">Videos</a></li>
+				          <li><a href="http://hub.dyn.com/analyst-research-reports">Analyst Reports</a></li>
+				        </ul>
+				        <p><a href="http://hub.dyn.com/h/" class="dyn-blue">See all Dyn Content Hub topics <i class="uk-icon-caret-right"></i></a></p>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Blogs Topics</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="http://dyn.com/blog/category/news/">Company News</a></li>
+				          <li><a href="http://dyn.com/blog/category/tech/">Tech</a></li>
+				          <li><a href="http://dyn.com/blog/category/stories/">Stories</a></li>
+                                          <li><a href="http://dyn.com/blog/category/research/">Research</a></li>
+				        </ul>
+				        <p class="uk-h4">SDK's & APIs</p>
+				        <p>Our SDKs and APIs are the key to getting your developers started with our services.</p>
+				        <p><a href="https://help.dyn.com/developers/" class="dyn-blue">Development Resources <i class="uk-icon-caret-right"></i></a></p>
+				      </div>
+				      <div class="uk-width-2-4">
+				        <div class="uk-grid uk-grid-match" data-uk-grid-match="{target:'.uk-panel'}" >
+				          <div class="uk-width-1-2">
+				            <div class="uk-panel uk-panel-box white-bg">
+<div class="uk-panel-teaser"><img alt="Dyn partners with Wiley to create Internet Performance for Dummies guide" src="/wp-content/uploads/2016/01/ip4d.jpg"></div>
+<p class="uk-h4">Internet Performance for Dummies</p>
+<p>To help untangle the “web” of confusion, we partnered with Wiley to create the Internet Performance for Dummies guide.</p>
+<p><a href="http://hub.dyn.com/h/i/134450372-internet-performance-for-dummies" class="optly-resources-promo-left" data="Nav Promo: IPM Dummies Guide">Read More</a></p>
+</div>
+				          </div>
+				          <div class="uk-width-1-2">
+				            <div class="uk-panel uk-panel-box white-bg">
+				              <div class="uk-panel-teaser"> <img alt="A Baker's Dozen - 2016 Edition" src="http://dyn.com/wp-content/uploads/2016/04/bakersdozen-nav.jpg"> </div>
+				              <p class="uk-h4">A Baker's Dozen - 2016 Edition</p>
+				              <p>Our year-end review of how the Internet providers at the top of our Internet Intelligence – Transit global rankings fared over the previous year.</p>
+				              <p><a href="http://dyn.com/blog/a-bakers-dozen-2016-edition/" class="optly-resources-promo-right" data="Nav Promo: Baker's Dozen 2015">Read More</a></p>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</li>
+				<!--End Resources-->
+				<!-- Start Support-->
+				<li data-uk-dropdown="{justify:'#top-nav'}" class="uk-parent" id="support-nav"> <a href="http://help.dyn.com/">Support</a>
+				<div class="uk-dropdown uk-dropdown-navbar">
+				  <div style="width:1200px" class="uk-container uk-container-center">
+				    <div class="uk-grid uk-dropdown-grid uk-grid-divider uk-margin-top uk-margin-bottom">
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Product Help</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="https://help.dyn.com/dns-knowledge-base/">Managed DNS</a></li>
+				          <li><a href="https://help.dyn.com/standard-dns/">Standard DNS</a></li>
+				          <li><a href="https://help.dyn.com/remote-access/">Remote Access</a></li>
+				          <li><a href="https://help.dyn.com/domain-registration/">Domain Registration</a></li>
+				          <li><a href="https://help.dyn.com/email-knowledge-base/">Email Delivery</a></li>
+				          <li><a href="https://help.dyn.com/internet-intelligence/">Internet Intelligence</a></li>
+				          <li><a href="https://help.dyn.com/update-clients/">Updater Clients</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Support Resources</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="https://help.dyn.com/">Dyn Help Center</a></li>
+				          <li><a href="http://www.dyncommunity.com/">Dyn User Community</a></li>
+				          <li><a href="https://dynstatus.com/">Dyn Status Updates</a></li>
+				          <li><a href="https://help.dyn.com/developers/">Developer Documentation</a></li>
+				          <li><a href="https://help.dyn.com/billing/">Billing FAQs</a></li>
+				          <li><a href="http://dyn.com/updater/">Updater Client Downloads</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Dyn Services</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="/services/">Support</a></li>
+				          <li><a href="/services/#wrap-4">Professional Services</a></li>
+				          <li><a href="/services/#wrap-5">Training</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Contact Sales</p>
+<p><strong>U.S.</strong> +1-888-840-3258</p>
+<p><strong>EMEA</strong> +44-127-325-7289</p>
+<p><strong>Singapore</strong>  +65 6818 6153</p>
+<p><a class="uk-button uk-button-callout" href="/about/contact-us/">Speak With An Expert</a></p>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</li>
+				<!--End Support-->
+				<!-- Start Company-->
+				<li data-uk-dropdown="{justify:'#top-nav'}" class="uk-parent" id="company-nav"> <a href="/about/">Company</a>
+				<div class="uk-dropdown uk-dropdown-navbar">
+				  <div style="width:1200px" class="uk-container uk-container-center">
+				    <div class="uk-grid uk-dropdown-grid uk-grid-divider uk-margin-top uk-margin-bottom">
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Company</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="/about/">About Dyn</a></li>
+				          <li><a href="/about/careers/">Career Opportunities</a></li>
+				          <li><a href="/about/board-of-directors-leadership/">Board of Directors</a></li>
+				          <li><a href="/about/leadership-team/">Leadership Team</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Relationships</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="/customers-employees-community/">Customers, Employees, Community</a></li>
+				          <li><a href="/about/clients/">Customer Success Stories</a></li>
+				          <li><a href="/about/partners/">Partners</a></li>
+				          <li><a href="/about/customer-advisory-board/">Customer Advisory Board</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				        <p class="uk-h4">Happenings</p>
+				        <ul class="uk-nav uk-nav-dropdown">
+				          <li><a href="/about/events/">Events & Appearances</a></li>
+				          <li><a href="/about/press/">Press Releases & Communications</a></li>
+				          <li><a href="/about/in-the-news/">In The News</a></li>
+				          <li><a href="/about/awards-and-honors/">Awards & Honors</a></li>
+				        </ul>
+				      </div>
+				      <div class="uk-width-1-4">
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				</li>
+				<!--End Company-->
+			</ul>
+			<!-- START RIGHT SMALL NAV -->
+			<ul class="uk-navbar-nav uk-visible-large uk-navbar-flip">
+				<li id="new-search">
+					<form class="uk-search uk-margin-left" action="/" __bizdiag="115" __biza="WJ__">
+						<input type="text" autocomplete="off" id="s" name="s" value="" placeholder="Search Dyn" class="uk-search-field">
+						<div aria-expanded="false" class="uk-dropdown uk-dropdown-navbar uk-dropdown-search"></div>
+					</form>
+				</li>
+				<!--End Search-->
+				<!--Start Signin-->
+				<li class="uk-parent" data-uk-dropdown="" id="signin-nav">
+					<a class="optly-sign-in" href="http://account.dyn.com/entrance/">
+						<i class="uk-icon-user"></i> Sign In <i class="uk-icon-caret-down"></i>
+					</a>
+					<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-flip">
+	<p class="uk-h4">Personal Portal</p>
+  <ul class="uk-nav uk-nav-dropdown uk-text-left">
+    <li><a class="optly-my-dyn-dns" href="http://account.dyn.com/entrance/">My DynDNS Account</a></li>
+  </ul>
+  <hr>
+  <p class="uk-h4 uk-margin-top">Product Portals</p>
+  <ul class="uk-nav uk-nav-dropdown uk-text-left">
+    <li><a class="optly-managed-dns" href="https://portal.dynect.net/login/">Managed DNS</a></li>
+    <li><a class="optly-email-delivery" href="https://portal.dynect.net/login/">Email Delivery</a></li>
+    <li><a class="optly-internet-intelligence" href="https://ii.dynect.net/login/">Internet Intelligence</a></li>
+    <li><a class="optly-ii-network" href="https://dii.dyn.com/dii/">II - Network</a></li>
+    <li><a class="optly-ii-transit" href="https://mi.renesys.com/mi/">II - Transit</a></li>
+  </ul>
+</div>
+				</li>
+				<!--End Signin-->
+			</ul>
+		</div>
+	</nav>
+	<div id="nav-promo">
+		<div class="uk-container uk-container-center uk-text-center">
+			<p class="uk-margin-small-top uk-margin-small-bottom">Managed DNS: Fast, reliable DNS without breaking the bank. <em>Get your first 7 days <strong>FREE</strong> today!</em> <a href="/managed-dns-express-free-month/?via=top-nav" class="black-link uk-margin-left" id="promo-link">Get it now <i class="uk-icon-chevron-circle-right"></i></a></p>
+		</div>
+	</div>
+	<div id="off-canvas-mobile-nav" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+     <a href="https://account.dyn.com/entrance/" class="uk-button uk-button-callout uk-margin-top uk-margin-right uk-margin-left uk-display-block">Sign In</a>
+ <form class="uk-search" method="get" id="search" action="/" __biza="WJ__">
+        <input class="uk-search-field" type="text" placeholder="Search Dyn" value="" name="s" id="s">
+    </form>
+    <ul class="offnav uk-nav">
+
+  <li class="uk-parent uk-nav-offcanvas"><p class="uk-h4 uk-margin-left dyn-yellow">Products</p>
+       <ul class="uk-nav-sub" id="products-mobile">
+           <li class="uk-nav-header uk-padding-remove">Internet Intelligence</li>
+           <li><a href="/internet-intelligence/">Internet Intelligence</a></li>
+           <li><a href="/dyn-internet-intelligence/">Internet Intelligence - Network</a></li>
+           <li><a href="/ip-transit-intelligence/">Internet Intelligence - Transit</a></li>
+           <li><a href="/dyn-internet-alerts/">Internet Alerts</a></li>       
+           <li class="uk-nav-header uk-padding-remove">Traffic Management</li>
+           <li><a href="/managed-dns/">Managed DNS</a></li>
+           <li><a href="/active-failover/">Active Failover</a></li>
+           <li><a href="/traffic-director/">Traffic Director</a></li>
+           <li class="uk-nav-header uk-padding-remove">Domain Services</li>
+           <li><a href="/remote-access/">Remote Access (DynDNS)</a></li>
+           <li><a href="/domain-registration/">Domain Registration</a></li>
+           <li class="uk-nav-header uk-padding-remove">Message Management</li>
+           <li><a href="/email-delivery/">Email Delivery</a></li>
+           <li><a href="/reputation-management/">Reputation Management</a></li>      
+           </ul>
+   </li>
+<hr>
+      <li class="uk-parent uk-nav-offcanvas"><p class="uk-h4 uk-margin-left dyn-yellow">Resources</p>
+       <ul class="uk-nav-sub">
+           <li><a href="http://hub.dyn.com/h/">Content Hub</a></li>
+           <li><a href="http://research.dyn.com/">Dyn Research</a></li>
+           <li><a href="https://help.dyn.com/developers/">SDK's & APIs</a></li>
+	   </ul>
+   </li>
+   <hr>
+    <li class="uk-parent uk-nav-offcanvas"><p class="uk-h4 uk-margin-left dyn-yellow">Support</p>
+       <ul class="uk-nav-sub">
+           <li class="uk-nav-header uk-padding-remove">Product Help</li>
+           <li><a href="https://help.dyn.com/">Dyn Help Center</a></li>
+	   <li><a href="http://www.dyncommunity.com/">Dyn User Community</a></li>
+	   <li><a href="https://dynstatus.com/">Dyn Status Updates</a></li>
+	   <li><a href="https://help.dyn.com/developers/">Developer Documentation</a></li>
+	   <li><a href="https://help.dyn.com/billing/">Billing FAQs</a></li>
+	   <li><a href="http://dyn.com/updater/">Updater Client Downloads</a></li>
+           <li class="uk-nav-header uk-padding-remove">Contact Sales</li>
+           <li class="white">U.S. +1-888-840-3258</li>
+           <li class="white">EMEA +44-127-325-7289</li>
+           <li class="white">Sydney +61-2-8019-7113</li>
+           <li class="white">Singapore +65 6818 6153</li>
+           <li><a href="/about/contact-us/">Speak With An Expert</a></li>
+	   </ul>
+   </li>
+ <hr>
+   <li class="uk-parent uk-nav-offcanvas"><p class="uk-h4 uk-margin-left dyn-yellow">Company</p>
+       <ul class="uk-nav-sub">
+           <li><a href="/about/">About</a></li>
+           <li><a href="/about/events/">Events</a></li>
+           <li><a href="/about/press/">Press</a></li>
+           <li><a href="/about/partners/">Partners</a></li>
+           <li><a href="/about/clients/">Customers</a></li>           
+           <li><a href="/about/careers/">Careers</a></li>   
+	   </ul>
+   </li>
+  </li>
+</ul>
+</div>
+</div><nav id="blog-top-nav" class="uk-position-absolute-alt uk-width-1-1 uk-navbar blog-nav" data-uk-sticky="{top:-600, animation: 'uk-animation-slide-top',clsactive:'uk-active blog-nav-active'}">
+    <div class=" uk-text-center">
+        <ul class="uk-navbar-nav">
+                <li class="uk-parent" aria-haspopup="true" aria-expanded="false" data-uk-dropdown="{mode:'click'}">
+                <a class="uk-position-top-left"><i class="uk-icon-th uk-icon-small uk-text-muted "></i></a>
+                <a class="uk-position-top-left"><i class="uk-icon-close uk-icon-small"></i></a>
+                <div id="floating-nav" class="uk-dropdown uk-dropdown-navbar uk-dropdown-bottom" aria-hidden="true" tabindex="">
+                    <ul class="uk-nav uk-nav-navbar">
+                        <li class="uk-nav-header uk-text-spaced">Blog Categories</li>
+                        <li><a href="http://dyn.com/blog/">All Categories</a></li><li><a href="http://dyn.com/blog/category/news/">News</a></li><li><a href="http://dyn.com/blog/category/tech/">Tech</a></li><li><a href="http://dyn.com/blog/category/stories/">Stories</a></li><li><a href="http://dyn.com/blog/category/research/">Research</a></li>                    </ul>
+                </div>
+            </li>
+        </ul>
+
+        <div class="nav-title uk-display-inline-block uk-text-spaced-large">
+            <a href="/blog"class="uk-h6 uk-text-large uk-text-muted uk-margin-remove"><strong>vantage</strong>Point<sup class="uk-text-small" style="margin-right:-10px"></sup></a>
+                        <p class="uk-text-small uk-text-muted uk-margin-remove uk-text-uppercase">In: <a href="http://dyn.com/blog/category/research/" rel="category tag">Research</a>          </p>
+                    </div>
+        <ul class="uk-navbar-nav uk-navbar-flip">
+                    <p id="nav-social" class="uk-hidden-small uk-text-muted">
+            <a id="tw_share" class="uk-icon-twitter uk-icon-hover" href="https://twitter.com/share?url=http://dyn.com/blog/internet-paths-matter-performance/&via=dyn&text=Why Internet Paths Matter:  Performance"></a>
+            <a id="fb_share" class="uk-icon-facebook uk-icon-hover" href="http://www.facebook.com/sharer.php?u=http://dyn.com/blog/internet-paths-matter-performance/" target="_blank"></a>
+            <a id="li_share" class="uk-icon-linkedin uk-icon-hover" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dyn.com/blog/internet-paths-matter-performance/" class="uk-icon-linkedin uk-icon-hover"></a>
+            <a id="go_share" class="uk-icon-google-plus uk-icon-hover" href="https://plus.google.com/share?url=http://dyn.com/blog/internet-paths-matter-performance/"></a>
+            <a class="uk-icon-envelope uk-icon-hover" href="mailto:?subject=Why Internet Paths Matter:  Performance&body=http://dyn.com/blog/internet-paths-matter-performance/"></a>
+            <!--<a href="#my-id" class="uk-icon-rss uk-icon-hover" data-uk-modal></a>-->
+          </p>
+            <li style="z-index:9999;">
+              <span class="top_searchicon" href="">
+                <i class="uk-icon-search uk-icon-search-top uk-icon-small uk-text-muted"></i>
+                <i class="uk-icon-close uk-icon-small uk-text-muted"></i>
+              </span>
+            </li>
+            <div class="top_blog_search">
+              <form class="uk-search uk-margin-left uk-align-left uk-margin-bottom-remove" action="/" __bizdiag="115" __biza="WJ__">
+<i class="uk-icon-search uk-icon-small uk-text-muted"></i>
+                            <input id="search-focus-top" type="text" autocomplete="off" id="s" name="s" value="" placeholder="Search articles" class="uk-search-field">
+                            <input type="hidden" name="post_type" value="post">
+                            <div aria-expanded="false" class="uk-dropdown uk-dropdown-navbar uk-dropdown-search"></div>
+                    </form>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<div id="my-id" class="uk-modal">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <div class="uk-container uk-margin-large-top uk-margin-large-bottom">
+          <h2 class="uk-text-center"> Internet Performance Delivered right to your inbox</h2>
+        </div>
+    </div>
+</div>
+<section id="hero" class="category-research uk-cover-background uk-block-hero uk-text-center uk-position-relative background-screen" style="background-image:url('/wp-content/themes/dynamic/images/dyn-fallback.png')">
+    <div class="uk-container uk-container-center uk-position-relative uk-width-large-2-3">
+        <h1 class="uk-text-contrast uk-margin-bottom" itemprop="name">Why Internet Paths Matter:  Performance</h1>
+
+        <h3 class="uk-article-meta uk-text-contrast uk-text-large uk-margin-medium-bottom">
+					<span class="uk-hidden-small">
+						<a href="http://dyn.com/blog/category/research/" rel="category tag">Research</a>            <span class="dyn-yellow uk-margin-small-left uk-margin-small-right"> // </span>
+					</span>
+            Oct 9, 2013    <span class="dyn-yellow uk-margin-small-left uk-margin-small-right"> // </span><a href="http://dyn.com/blog/author/earl/">Earl Zmijewski</a>
+          </h3>
+            </div>
+</section>
+		<script>
+		(function() {
+	    var jqLoadTimer = 10,
+	        runAfterJqueryLoaded = function _runAfterJqueryLoaded() {
+	            jqLoadTimer *= 2;
+	            if (!window.jQuery) {
+	                setTimeout(_runAfterJqueryLoaded, jqLoadTimer);
+	            } else {
+	                jQuery(document).ready(function() {
+										//handle clicking button to open/close the search div
+											jQuery('.top_searchicon, .searchicon').on('click touchstart', (function(e) {
+													e.preventDefault();
+													var $el = jQuery(this).toggleClass('active');
+													var targetClass = $el.is('.searchicon') ? '.blog_search' : '.top_blog_search';
+													jQuery(targetClass).toggleClass('active');
+											}));
+
+											//auto focus on search active
+											jQuery('.uk-icon-search-top, .uk-icon-search-bottom').click(function(){
+												var $el = jQuery(this);
+												var targetClass = $el.is('.uk-icon-search-bottom') ? '#search-focus-bottom' : '#search-focus-top';
+												jQuery(targetClass).focus();
+											});
+
+											//Facebook jquery for share this
+	                    (function(d, s, id) {
+	                        var js, fjs = d.getElementsByTagName(s)[0];
+	                        if (d.getElementById(id)) return;
+	                        js = d.createElement(s);
+	                        js.id = id;
+	                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+	                        fjs.parentNode.insertBefore(js, fjs);
+	                    }(document, 'script', 'facebook-jssdk'));
+
+											//Open share in smalle seperate window
+	                    jQuery('#fb_share, #tw_share, #li_share, #go_share').click(function(event) {
+	                        event.preventDefault();
+	                        window.open(jQuery(this).attr("href"), "popupWindow", "width=600,height=400,scrollbars=yes");
+	                    });
+	                }); //end doc ready
+	            }
+	        };
+	    runAfterJqueryLoaded();
+	}());
+
+		</script>
+		
+
+<span itemscope itemtype="http://schema.org/Article">
+<meta itemprop="articleBody" content="Remember the Information Superhighway? It's what some folks used to call the Internet back in the 1990s. Those of us lucky enough to have access from home were using dial-up modems that were over 1,000 times slower than the cable modem I'm using right now. Nothing very Super about that and the Internet has never remotely resembled a Highway. For example, suppose you wanted to drive from Chicago to New York as quickly as possible. Would you ever go via Texas? Or suppose you only wanted to travel from one part of Singapore to another. Would you first get on a boat to California, only to immediately sail back to a different part of the city? No, you wouldn't, but this sort of thing happens all the time with your Internet traffic on the Information Superhighway we use today. (See this presentation or this blog for a few more examples.)
+
+The highway analogy immediately breaks down since the Internet consists entirely of private roads (i.e., cables). Yes, there are cables between Chicago and New York, but you might not be able to use them since your provider and its various partners don't have the appropriate access. So maybe you take the scenic route via Texas or Los Angeles. Yet unless you happen to live in a country that restricts Internet access, you can pretty much get to anywhere you want to go, which is a very good thing. However, your traffic might just flow via very long and circuitous paths, a fact that has serious implications for both performance and security. In this blog, we focus on the performance issues around having your traffic travel half way around the world to get down the street. In a subsequent post, we'll look at the issue of security and how errant paths can be exploited.
+
+Why does "local" Internet traffic bounce around the world?
+
+Keep in mind that moving traffic around on the Internet is a business, and an extremely competitive low-margin one at that. In this environment, Internet service providers are always seeking to reduce their costs, which can mean trying to keep traffic on their own networks (rather than passing it off to another provider) or avoiding some other provider entirely (by not interconnecting with them and negotiating a business relationship). It's all about money and that doesn't necessarily translate into the best user experience. In addition, configuring routing on the Internet is a very complex, error-prone process. Since ISPs are not necessarily paying attention to performance, suboptimal paths can exist for months or years before anyone notices.
+
+However, content providers do care about performance and will often host their content in data centers around the world in an attempt to reduce latencies to their customers. One technique that is used is called anycast, where the same IP addresses (prefixes) are hosted and announced from multiple locations with the hope that users end up at the closest data center. But it is really just a hope. Despite the hype around this and other approaches, all they really do is increase your odds of getting better performance by increasing the number of choices. Whether you do or not depends on your provider, the providers used by the data centers involved, the relationships between these providers (if any) and how they have chosen to route their traffic.
+In other words, it's the paths between you and the content you are trying to reach that matter in the end, both for performance and security.
+So my traffic can really leave the country when the content is hosted down the street?
+
+Absolutely. Let's look at a couple of examples. Readers of this blog are certainly familiar with DNS and the importance of the root name servers. While there are 13 IP addresses associated with the root name servers, they are actually located in hundreds of locations around the world. The most prolific is the L-root run by ICANN, with 146 locations, two of which are in Los Angeles. The following graphic shows recent paths from each of our Los Angeles data centers to the L-root. From one LA data center, we get to an L-root instance in LA in under 1ms. From the other, queries to the L-root take over 150ms and are answered from Dundee, Scotland!
+
+
+
+What is going on here? In the first case, our local provider elects to hand off our request to another carrier, one that serves an L-root location in Los Angeles. DNS requests via this path are handled quickly and efficiently. In the second case, our local provider (a different one) directly services an L-root location, but this one happens to be Dundee, Scotland. Rather than pass our traffic to a competitor, this carrier keeps our request local to its own network. In general, this is not a bad idea as interconnects between providers can often be congested. However, in this case, our DNS queries are serviced more than 8,000 kilometers away, introducing needless delay. If the Internet had been designed for performance, this would never happen.
+
+Since DNS performance is critical to user experience, let's consider one more example. This time we'll look at Google's public DNS servers from South America, globally accessible at 8.8.8.8 and 8.8.4.4. While Google claims to have a strong presence in the region, starting in mid-September, we noticed quite poor performance to both IP addresses from a number of our locations on the continent. We traced that back to an internal routing change at Google that appears to now be redirecting South American DNS queries to the US — at least from our locations and via our providers. Obviously, this is less than ideal from a performance standpoint as shown below.
+
+
+
+
+
+
+
+
+So can anyone host content effectively in this environment?
+
+Yes, with the correct tools. The first thing to realize is that no one — not even Google — can afford to have data centers everywhere, buying Internet transit from everyone. If you are hosting content on the Internet, you have to first decide on your target markets and then locate the major providers in those markets. If you already have customers, your task is somewhat easier as you can mine your own logs for their IP addresses and then figure out where they are. With knowledge of your existing or potential customers, the structure of the Internet and the business relationships that exist between providers, you can plan and implement your hosting strategy. But as the previous example shows, the Internet is a very dynamic place and there is no substitute for regular monitoring to ensure that your services are meeting your performance expectations from your target markets.
+
+As a final example, let's look at global latency measurements into two networks, one hosting a Google DNS server (8.8.8.0/24) and the other hosting various subdomains of Microsoft's Bing (204.79.197.0/24). In the following graphic (click on maps to enlarge), we display the minimum latency observed from over a hundred Renesys data centers to these networks over one recent 24-hour period. As would be expected, both Google and Microsoft perform quite well from Europe and the US, but there are stark differences in other parts of the world. From Chennai, India, we recorded a minimum latency of 4ms for Google, whereas Microsoft clocked in at 290ms. The situation was reversed in Sao Paulo, Brazil with Google at 200ms and Microsoft at 2ms.
+
+
+
+
+
+
+
+
+Keep in mind that these measurements were taken from Renesys data centers in these cities. As with the L-root example, measurements taken from another data center in the same city using different providers could yield very different results. The point of this example is simply to show that even the largest players in the market can have poor performance in some locations via some providers. No one can be everywhere. However, if you identify your target market (or have us assist you in the process), we can certainly help you monitor performance, as well as make informed provider and routing choices. Better yet, we can even put our own probes into your network for additional insights. This is part of what makes us a Gartner 2013 Cool Vendor.">
+<meta itemprop="url" content="http://dyn.com/blog/internet-paths-matter-performance/">
+<style>.entry-content .post::before {content: "R";}</style>
+
+<section class="uk-block-large">
+    <article class="uk-container uk-container-center entry-content">
+        <div class="uk-width-large-4-5 uk-container-center post-3790 post type-post status-publish format-standard has-post-thumbnail hentry category-research tag-anycast tag-dns tag-economics tag-engineering tag-internet tag-latency tag-paths tag-performance tag-security" id="post-3790">
+            <p>Remember the <a href="http://en.wikipedia.org/wiki/Information_superhighway">Information Superhighway</a>? It&#8217;s what some folks used to call the Internet back in the 1990s. Those of us lucky enough to have access from home were using <a href="http://blog.hostgator.com/~/tmp/wp-uploads/2013/08/From-dial-up-to-light-speed.png">dial-up modems</a> that were over 1,000 times slower than the cable modem I&#8217;m using right now. Nothing very <em>Super</em> about that and the Internet has never remotely resembled a <em>Highway</em>. For example, suppose you wanted to drive from Chicago to New York as quickly as possible. Would you ever go via Texas? Or suppose you only wanted to travel from one part of Singapore to another. Would you first get on a boat to California, only to immediately sail back to a different part of the city? No, you wouldn&#8217;t, but this sort of thing happens all the time with your Internet traffic on the Information Superhighway we use today. (See <a href="http://research.dyn.com/wp-content/uploads/2013/09/SubmarineNetworksWorld2013_Madory.pdf">this presentation</a> or this <a href="http://www.renesys.com/2011/10/pinning-down-latency-in-the-mi/">blog</a> for a few more examples.)</p>
+<p>The highway analogy immediately breaks down since the Internet consists entirely of <em>private</em> roads (i.e., cables). Yes, there are cables between Chicago and New York, but you might not be able to use them since your provider and its various partners don&#8217;t have the appropriate access. So maybe you take the scenic route via Texas or Los Angeles. Yet unless you happen to live in a <a href="http://www.huffingtonpost.com/2012/12/14/internet-restrictions-in-other-countries_n_2299267.html">country that restricts Internet access</a>, you can pretty much get to anywhere you want to go, which is a very good thing. However, your traffic might just flow via very long and circuitous paths, a fact that has serious implications for <em>both performance and security</em>. In this blog, we focus on the performance issues around having your traffic travel half way around the world to get down the street. In a subsequent post, we&#8217;ll look at the issue of security and how errant paths can be exploited.</p>
+<p><strong>Why does &#8220;local&#8221; Internet traffic bounce around the world?</strong></p>
+<p>Keep in mind that moving traffic around on the Internet is a business, and an extremely competitive low-margin one at that. In this environment, Internet service providers are always seeking to reduce their costs, which can mean trying to keep traffic on their own networks (rather than passing it off to another provider) or avoiding some other provider entirely (by not interconnecting with them and negotiating a business relationship). It&#8217;s all about money and that doesn&#8217;t necessarily translate into the best user experience. In addition, configuring routing on the Internet is a very complex, error-prone process. Since ISPs are not necessarily paying attention to performance, suboptimal paths can exist for months or years before anyone notices.</p>
+<p>However, content providers <em>do care</em> about performance and will often host their content in data centers around the world in an attempt to reduce latencies to their customers. One technique that is used is called <a href="http://research.dyn.com/wp-content/uploads/2013/10/NANOG59_Anycast.pdf">anycast</a>, where the same IP addresses (prefixes) are hosted and announced from multiple locations with the hope that users end up at the closest data center. But it is really just a hope. Despite the hype around this and other approaches, all they really do is increase your odds of getting better performance by increasing the number of choices. Whether you do or not depends on your provider, the providers used by the data centers involved, the relationships between these providers (if any) and how they have chosen to route their traffic.</p>
+<blockquote><p>In other words, it&#8217;s the paths between you and the content you are trying to reach that matter in the end, both for performance and security.</p></blockquote>
+<p><strong>So my traffic can really leave the country when the content is hosted down the street?</strong></p>
+<p>Absolutely. Let&#8217;s look at a couple of examples. Readers of this blog are certainly familiar with DNS and the importance of the <a href="http://en.wikipedia.org/wiki/Root_name_server">root name servers</a>. While there are 13 IP addresses associated with the root name servers, they are actually located in <a href="http://www.root-servers.org/">hundreds of locations</a> around the world. The most prolific is the <a href="http://dns.icann.org/lroot/locations/">L-root</a> run by <a>ICANN</a>, with 146 locations, two of which are in Los Angeles. The following graphic shows recent paths from each of our Los Angeles data centers to the L-root. From one LA data center, we get to an L-root instance in LA in under 1ms. From the other, queries to the L-root take over 150ms and are answered from Dundee, Scotland!</p>
+<p><a href="http://research.dyn.com/wp-content/uploads/2013/10/L-root-paths1.png"><img class="aligncenter size-large wp-image-3823" src="http://research.dyn.com/wp-content/uploads/2013/10/L-root-paths1-1024x299.png" alt="L-root-paths" width="1024" height="299" /></a></p>
+<p>What is going on here? In the first case, our local provider elects to hand off our request to another carrier, one that serves an L-root location in Los Angeles. DNS requests via this path are handled quickly and efficiently. In the second case, our local provider (a different one) directly services an L-root location, but this one happens to be Dundee, Scotland. Rather than pass our traffic to a competitor, this carrier keeps our request local to its own network. In general, this is not a bad idea as interconnects between providers can often be congested. However, in this case, our DNS queries are serviced more than 8,000 kilometers away, introducing needless delay. If the Internet had been designed for performance, this would never happen.</p>
+<p>Since DNS performance is critical to user experience, let&#8217;s consider one more example. This time we&#8217;ll look at Google&#8217;s <a href="https://developers.google.com/speed/public-dns/docs/performance">public DNS servers</a> from South America, globally accessible at 8.8.8.8 and 8.8.4.4. While Google claims to have a <a href="http://googleblog.blogspot.com/2012/02/google-public-dns-70-billion-requests.html">strong presence in the region</a>, starting in mid-September, we noticed quite poor performance to both IP addresses from a number of our locations on the continent. We traced that back to an <a href="http://research.dyn.com/wp-content/uploads/2013/10/NANOG59_Anycast.pdf">internal routing</a> change at Google that appears to now be redirecting South American DNS queries to the US — at least from our locations and via our providers. Obviously, this is less than ideal from a performance standpoint as shown below.</p>
+<table cellpadding="10">
+<tbody>
+<tr>
+<td><a href="http://research.dyn.com/wp-content/uploads/2013/10/8.8.8.8.latam_1.png"><img class="aligncenter size-medium wp-image-3828" src="http://research.dyn.com/wp-content/uploads/2013/10/8.8.8.8.latam_1-300x257.png" alt="8.8.8.8.latam" width="300" height="257" /></a></td>
+<td><a href="http://research.dyn.com/wp-content/uploads/2013/10/8.8.4.4.latam_1.png"><img class="aligncenter size-medium wp-image-3831" src="http://research.dyn.com/wp-content/uploads/2013/10/8.8.4.4.latam_1-300x257.png" alt="8.8.4.4.latam" width="300" height="257" /></a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>So can anyone host content effectively in this environment?</strong></p>
+<p>Yes, with the correct tools. The first thing to realize is that no one — not even Google — can afford to have data centers everywhere, buying Internet transit from everyone. If you are hosting content on the Internet, you have to first decide on your target markets and then locate the major providers in those markets. If you already have customers, your task is somewhat easier as you can mine your own logs for their IP addresses and then figure out where they are. With knowledge of your existing or potential customers, the structure of the Internet and the business relationships that exist between providers, you can plan and implement your hosting strategy. But as the previous example shows, the Internet is a very dynamic place and there is no substitute for regular monitoring to ensure that your services are meeting your performance expectations from your target markets.</p>
+<p>As a final example, let&#8217;s look at global latency measurements into two networks, one hosting a Google DNS server (8.8.8.0/24) and the other hosting various subdomains of Microsoft&#8217;s Bing (204.79.197.0/24). In the following graphic (click on maps to enlarge), we display the <em>minimum latency</em> observed from over a hundred Renesys data centers to these networks over one recent 24-hour period. As would be expected, both Google and Microsoft perform quite well from Europe and the US, but there are stark differences in other parts of the world. From Chennai, India, we recorded a minimum latency of 4ms for Google, whereas Microsoft clocked in at 290ms. The situation was reversed in Sao Paulo, Brazil with Google at 200ms and Microsoft at 2ms.</p>
+<table cellpadding="10">
+<tbody>
+<tr>
+<td><a href="http://research.dyn.com/wp-content/uploads/2013/10/Google.png"><img class="aligncenter size-medium wp-image-3817" src="http://research.dyn.com/wp-content/uploads/2013/10/Google-300x195.png" alt="Google" width="300" height="195" /></a></td>
+<td><a href="http://research.dyn.com/wp-content/uploads/2013/10/Microsoft.png"><img class="aligncenter size-medium wp-image-3818" src="http://research.dyn.com/wp-content/uploads/2013/10/Microsoft-300x195.png" alt="Microsoft" width="300" height="195" /></a></td>
+</tr>
+</tbody>
+</table>
+<p>Keep in mind that these measurements were taken from Renesys data centers in these cities. As with the L-root example, measurements taken from another data center in the same city using different providers could yield very different results. The point of this example is simply to show that even the largest players in the market can have poor performance in some locations via some providers. No one can be everywhere. However, if you identify your target market (or have us assist you in the process), we can certainly help you monitor performance, as well as make informed provider and routing choices. Better yet, we can even put our own probes into your network for additional insights. This is part of what makes us a <a href="http://blogs.gartner.com/jonah-kowall/2013/04/15/time-to-be-cool-devops-and-apm-research-published/">Gartner 2013 Cool Vendor</a>.</p>
+                    </div>
+        <hr class="uk-margin-large" style="border-color:#fff;">
+        <p class="uk-h6 uk-text-bold uk-text-center uk-margin-medium-bottom uk-text-spaced uk-text-muted">Share Now</p>
+                <p id="social" class="uk-text-center">
+          <a id="tw_share" class="uk-icon-twitter uk-icon-small" href="https://twitter.com/share?url=http://dyn.com/blog/internet-paths-matter-performance/&via=dyn&text=Why Internet Paths Matter:  Performance"></a>
+          <a id="fb_share" class="uk-icon-facebook uk-icon-small" ref="http://www.facebook.com/sharer.php?u=http://dyn.com/blog/internet-paths-matter-performance/?>" target="_blank"></a>
+          <a id="li_share" class="uk-icon-linkedin uk-icon-small" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://dyn.com/blog/internet-paths-matter-performance/"></a>
+          <a id="go_share" class="uk-icon-google-plus uk-icon-small" href="https://plus.google.com/share?url=http://dyn.com/blog/internet-paths-matter-performance/"></a>
+          <a class="uk-icon-envelope uk-icon-small uk-margin-large-right" href="mailto:?subject=Why Internet Paths Matter:  Performance&body=http://dyn.com/blog/internet-paths-matter-performance/"></a>
+          <!--<a href="#my-id" class="uk-icon-rss uk-icon-small uk-margin-large-right" data-uk-modal></a>-->
+        </p>
+    </article>
+    
+    <div class="uk-container uk-container-center uk-margin-large-bottom uk-margin-medium-top">
+      
+<div id="disqus_thread">
+            <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="post pingback">
+        <p>Pingback: <a href='http://www.renesys.com/2013/10/subsea-cables-add-resilience/' rel='external nofollow' class='url'>Submarine Cables Add Resilience But Paths Still Matter - Renesys</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://blog.buysellbandwidth.com/to-bypass-usa-first-you-need-to-embrace-usa/' rel='external nofollow' class='url'>To Bypass USA, First You Need to Embrace USA | Blog &#8211; BuySellBandwidth</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-10498">
+        <div id="dsq-comment-header-10498" class="dsq-comment-header">
+            <cite id="dsq-cite-10498">
+                <span id="dsq-author-user-10498">BuySellBandwidth</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-10498" class="dsq-comment-body">
+            <div id="dsq-comment-message-10498" class="dsq-comment-message"><p>I hope the governments of the world who are plotting to build cables bypassing the US read this article so they understand the difference between a physical path and actual routing.  More on my blog at http://bit.ly/1g3Wzzl</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="post pingback">
+        <p>Pingback: <a href='http://fistfulofeuros.net/afoe/the-ft-could-not-be-more-wrong-about-brazil-and-the-internet/' rel='external nofollow' class='url'>The FT could not be more wrong about Brazil and the Internet. | A Fistful Of Euros</a>()</p>
+    </li>
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-10500">
+        <div id="dsq-comment-header-10500" class="dsq-comment-header">
+            <cite id="dsq-cite-10500">
+                <a id="dsq-author-user-10500" href="http://www.ivpcapital.com/" target="_blank" rel="nofollow">Infostack</a>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-10500" class="dsq-comment-body">
+            <div id="dsq-comment-message-10500" class="dsq-comment-message"><p>Will Renesys be partaking or chiming in on interconnection and peering issues in the FCC IP Transition trials.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+var disqus_url = 'http://dyn.com/blog/internet-paths-matter-performance/';
+var disqus_identifier = '3790 http://www.renesys.com/?p=3790';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'dyn';
+var disqus_title = "Why Internet Paths Matter:  Performance";
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=3790';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
+};
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+
+    </div>
+
+    </section>
+
+<section id="author" class="uk-block-large" style="background-color:#fafafa">
+
+    <div id="author_info" class="uk-container uk-container-center uk-grid">
+      <div id="author_img" class="uk-width-large-1-6 uk-width-1-1"><img itemprop="image" width="105"class="uk-align-right uk-border-circle author" src="http://dyn.com/wp-content/uploads/2016/04/ez.png" /></div>        <div class="uk-width-large-5-6 uk-width-1-1">
+          <a class="uk-h3" href="http://dyn.com/blog/author/earl/">Whois: Earl Zmijewski</a>
+                        <p>Earl leads a peerless team of data scientists who are committed to analyzing Dyn’s vast Internet Performance data resources and applying their expertise to continually improve upon Dyn’s products and services.</p>
+                </div>
+    </div>
+</section>
+
+<section class="uk-block" style="background-color:#f1f1f1">
+
+  <div class="related-panels uk-container uk-container-center">
+      <div id="related-panels">
+          <p class="uk-h2 uk-text-center uk-margin-medium-bottom">Related Posts</p>
+          <div class="uk-grid uk-grid-medium blog-panels" data-uk-grid-match="{target:'.uk-panel'}">
+              <div class="uk-width-1-1 uk-width-large-1-3">
+<div id="post-53306" class="uk-panel uk-panel-box uk-panel-box-secondary uk-text-center uk-margin-large-bottom post-53306 post type-post status-publish format-standard has-post-thumbnail hentry category-research tag-bakers-dozen tag-business tag-economics tag-emergiing-markets tag-internet tag-nsp tag-rankings tag-tier-1">
+<a href="http://dyn.com/blog/a-bakers-dozen-2016-edition/"><div class="uk-panel-teaser uk-cover-background uk-position-relative background-screen" style="background-image:url(http://dyn.com/wp-content/uploads/2016/04/bakersdozen-dyn.jpg);"></div></a><hr class="uk-spacer-rule"></hr>
+<p class="uk-h6 uk-margin-small-bottom uk-text-spaced post-categories">
+<a href="http://dyn.com/blog/category/research/" rel="category tag">Research</a></p>
+<p class="uk-text-small uk-margin-small-top author-meta">Feb 15, 2017    <span class="dyn-yellow uk-margin-small-left uk-margin-small-right"> // </span><a href="http://dyn.com/blog/author/ezmijewski/">Earl Zmijewski</a>
+  </span></p>
+<h2 class="uk-width-4-5 uk-container-center uk-margin-top uk-margin-bottom">A Baker&#8217;s Dozen, 2016 Edition</h2>
+<a id="panel-read-more" href="http://dyn.com/blog/a-bakers-dozen-2016-edition/" class="uk-margin-bottom uk-display-inline-block">Read More</a>
+</div>
+</div><div class="uk-width-1-1 uk-width-large-1-3">
+<div id="post-53466" class="uk-panel uk-panel-box uk-panel-box-secondary uk-text-center uk-margin-large-bottom post-53466 post type-post status-publish format-standard has-post-thumbnail hentry category-research tag-iraq tag-shutdowns tag-syria">
+<a href="http://dyn.com/blog/iraq-downs-internet-to-combat-cheating-again/"><div class="uk-panel-teaser uk-cover-background uk-position-relative background-screen" style="background-image:url(http://dyn.com/wp-content/uploads/2017/02/Iraq-cheating-exams.jpg);"></div></a><hr class="uk-spacer-rule"></hr>
+<p class="uk-h6 uk-margin-small-bottom uk-text-spaced post-categories">
+<a href="http://dyn.com/blog/category/research/" rel="category tag">Research</a></p>
+<p class="uk-text-small uk-margin-small-top author-meta">Feb 6, 2017    <span class="dyn-yellow uk-margin-small-left uk-margin-small-right"> // </span><a href="http://dyn.com/blog/author/dmadory/">Doug Madory</a>
+  </span></p>
+<h2 class="uk-width-4-5 uk-container-center uk-margin-top uk-margin-bottom">Iraq Downs Internet To Combat Cheating&#8230;Again!</h2>
+<a id="panel-read-more" href="http://dyn.com/blog/iraq-downs-internet-to-combat-cheating-again/" class="uk-margin-bottom uk-display-inline-block">Read More</a>
+</div>
+</div><div class="uk-width-1-1 uk-width-large-1-3">
+<div id="post-53314" class="uk-panel uk-panel-box uk-panel-box-secondary uk-text-center uk-margin-large-bottom post-53314 post type-post status-publish format-standard has-post-thumbnail hentry category-research tag-cable tag-cuba tag-india tag-internet tag-internet-intelligence tag-outage tag-vietnam">
+<a href="http://dyn.com/blog/cuba-up-vietnam-down-recent-subsea-cable-developments/"><div class="uk-panel-teaser uk-cover-background uk-position-relative background-screen" style="background-image:url(http://dyn.com/wp-content/uploads/2017/01/67_SubmarineCables2_1280x720.jpg);"></div></a><hr class="uk-spacer-rule"></hr>
+<p class="uk-h6 uk-margin-small-bottom uk-text-spaced post-categories">
+<a href="http://dyn.com/blog/category/research/" rel="category tag">Research</a></p>
+<p class="uk-text-small uk-margin-small-top author-meta">Jan 23, 2017    <span class="dyn-yellow uk-margin-small-left uk-margin-small-right"> // </span><a href="http://dyn.com/blog/author/dmadory/">Doug Madory</a>
+  </span></p>
+<h2 class="uk-width-4-5 uk-container-center uk-margin-top uk-margin-bottom">Cuba Up, Vietnam Down: Recent Subsea Cable Developments</h2>
+<a id="panel-read-more" href="http://dyn.com/blog/cuba-up-vietnam-down-recent-subsea-cable-developments/" class="uk-margin-bottom uk-display-inline-block">Read More</a>
+</div>
+</div>          </div>
+      </div>
+  </div>
+</section>
+</span>
+
+</div><!-- end content -->
+
+
+<div class="footer">
+	<div class="uk-container uk-container-center">
+		<div class="uk-grid" data-uk-grid-margin>
+			<div class="uk-width-small-1-1 uk-width-large-2-5">
+					<h5 class="white">Connect with Us!</h5>
+<a href="http://twitter.com/Dyn" class="uk-icon-button uk-icon-twitter"></a>
+<a href="http://www.facebook.com/Dyn" class="uk-icon-button uk-icon-facebook"></a>
+<a href="http://www.linkedin.com/company/dyn" class="uk-icon-button uk-icon-linkedin"></a>
+<a href="http://www.youtube.com/dyninc" class="uk-icon-button uk-icon-youtube"></a>
+<g:plusone annotation="none" class="uk-icon-button uk-icon-google-plus"></g:plusone>
+</div> 
+                    
+<div class="uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-5">
+<h4 class="dyn-yellow">Company</h4>
+<ul class="uk-list uk-list-space">
+<li><a href="/about/">About</a></li>
+<li><a href="/about/careers/">Careers</a></li>
+<li><a href="/clients/">Customers</a></li>
+<li><a href="/about/partners/">Partners</a></li>
+<li><a href="/about/events/">Events</a></li>
+</ul>
+</div>
+
+<div class="uk-width-small-1-1 uk-width-medium-1-3 uk-width-large-1-5">
+<h4 class="dyn-yellow">Products</h4>
+<ul class="uk-list uk-list-space">
+<li><a href="/internet-intelligence/">Internet Intelligence</a></li>
+<li><a href="/traffic-director/">Traffic Director</a></li>
+<li><a href="/managed-dns/">Managed DNS</a></li>
+<li><a href="/remote-access/">Remote Access (DynDNS)</a></li>
+<li><a href="/email-delivery/">Email Delivery</a></li>
+</ul>
+</div>
+
+<div class="uk-width-small-1-1  uk-width-medium-1-3 uk-width-large-1-5">
+<h4 class="dyn-yellow">Resources</h4>
+<ul class="uk-list uk-list-space">
+<li><a href="http://hub.dyn.com/">Content Hub</a></li>
+ <li><a href="http://help.dyn.com/">Support Knowledgebase</a></li>
+<li><a href="/developers/">Developer Center</a></li>
+<li><a href="http://www.dynstatus.com">Dyn Status</a></li>
+<li><a href="http://www.dyndnscommunity.com">Dyn Community Forum</a></li>
+</ul>
+</div>
+</div>
+                    
+<div class="uk-grid" id="four-contacts" data-uk-grid-margin>
+<div class="uk-width-small-1-1 uk-width-large-1-1">
+<h3 class="dyn-yellow">Contact Dyn</h3>
+</div>
+                    
+<div class=" uk-width-small-1-1 uk-width-large-1-3"><h5 class="white">Global HQ:</h5> 150 Dow Street – Tower Two<br>Manchester, NH, USA 03101 <br>Office: +1-603-668-4998<br>Sales: +1-888-840-3258<br><a href="http://help.dyn.com/" class="uk-margin-small-top footer-contact">Contact Customer Support</a>
+</div>
+                    
+<div class="uk-width-small-1-1 uk-width-large-1-3"><h5 class="white">EMEA Regional HQ:</h5> Queensberry House<br>103-109 Queens Rd<br>Brighton, UK BN1 3XF<br>Sales: +44-127-325-7289<br><a href="http://help.dyn.com/" class="uk-margin-small-top footer-contact">Contact Customer Support</a>
+</div>
+
+<div class="uk-width-small-1-1 uk-width-large-1-3"><h5 class="white">Asia Pacific Office:</h5>Level 39 Marina Bay Financial Centre Tower 2<br>10 Marina Boulevard Singapore 018983<br>Sales: +65-6818-6153<br><a href="http://help.dyn.com/" class="uk-margin-small-top footer-contact">Contact Customer Support</a>
+</div>         
+</div>
+                
+<div class="uk-grid uk-text-center" data-uk-grid-margin>
+<p class="uk-width-1-1">150 Dow St., Manchester, NH 03101  |  <a href="/legal/">Legal Notices</a> — <a href="/legal/dyn-privacy-policy/">Privacy Policy</a> — <a href="/reporting-abuse/">Reporting Abuse</a></p>
+<p class="uk-text-small uk-width-1-1">Copyright © 2017, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.</p>
+</div>
+</div>
+</div></div>
+<div class="foot-wrap-search">
+	<div class="uk-container uk-container-center">
+		<div class="uk-width-small-1-1 uk-width-large-1-1">
+			<form class="uk-search" method="get" id="search" action="/" __biza="WJ__">
+    			<input class="uk-search-field" type="text" placeholder="Search Dyn" value="" name="s" id="s">
+				</form>
+        </div>
+    </div>
+</div>
+
+    
+<!-- JQuery Script -->
+
+<script src="/wp-content/themes/dynamic/js/jquery.js"></script>
+<script src="/wp-content/themes/dynamic/js/uikit.js?v=20150911"></script>
+<script src="/wp-content/themes/dynamic/js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="/wp-content/themes/dynamic/js/scroll.js"></script>
+<script type="text/javascript">/*<![CDATA[*/var jQl={q:[],dq:[],ready:function(a){typeof a=="function"&&jQl.q.push(a);return jQl},unq:function(){for(var a=0;a<jQl.q.length;a++)jQl.q[a]();jQl.q=[]},bId:null,boot:function(a){typeof window.jQuery.fn=="undefined"?jQl.bId||(jQl.bId=setInterval(function(){jQl.boot(a)},25)):(jQl.bId&&clearInterval(jQl.bId),jQl.bId=0,jQl.unqjQdep(),$(jQl.unq()),typeof a=="function"&&a())},booted:function(){return jQl.bId===0},loadjQ:function(a,b){setTimeout(function(){var b=document.createElement("script");b.src=a,document.getElementsByTagName("head")[0].appendChild(b)},1),jQl.boot(b)},loadjQdep:function(a){jQl.loadxhr(a,jQl.qdep)},qdep:function(a){a&&(typeof window.jQuery.fn!="undefined"&&!jQl.dq.length?jQl.rs(a):jQl.dq.push(a))},unqjQdep:function(){if(typeof window.jQuery.fn=="undefined")setTimeout(jQl.unqjQdep,50);else{for(var a=0;a<jQl.dq.length;a++)jQl.rs(jQl.dq[a]);jQl.dq=[]}},rs:function(a){var b=document.createElement("script");document.getElementsByTagName("head")[0].appendChild(b),b.text=a},loadxhr:function(a,b){var c;c=jQl.getxo(),c.onreadystatechange=function(){c.readyState!=4||200!=c.status||b(c.responseText,a)};try{c.open("GET",a,!0),c.send("")}catch(d){}},getxo:function(){var a=!1;try{a=new XMLHttpRequest}catch(b){for(var c=["MSXML2.XMLHTTP.5.0","MSXML2.XMLHTTP.4.0","MSXML2.XMLHTTP.3.0","MSXML2.XMLHTTP","Microsoft.XMLHTTP"],d=0;d<c.length;++d){try{a=new ActiveXObject(c[d])}catch(e){continue}break}}finally{return a}}};if(typeof window.jQuery=="undefined")var $=jQl.ready,jQuery=$;jQl.loadjQdep("/wp-content/themes/dynamic/js/main-02.min.js?v=20131007"),jQl.loadjQdep("/wp-content/themes/dynamic/js/site-scripts.js")/*]]>*/</script>
+
+        <script type="text/javascript">
+        // <![CDATA[
+        var disqus_shortname = 'dyn';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1 && nodes[i].parentNode.tagName == 'A') {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('data-dsqidentifier'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) { url = url[0]; }
+                    else { url = url[1]; }
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+        // ]]>
+        </script>
+        
+<script src="/wp-content/themes/dynamic/js/dynevents.min.js?v=20140106" type="text/javascript"></script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M7FCP7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-M7FCP7');</script>
+<!-- End Google Tag Manager -->
+</body>
+
+</html>

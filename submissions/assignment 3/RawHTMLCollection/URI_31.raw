@@ -1,0 +1,386 @@
+RAW HTML FOR: http://datadrivensecurity.info/blog/posts/2014/Sep/dga-part1/
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="theme-color" content="#94bd5a"/>
+    <title>Building a DGA Classifier: Part 1, Data Preparation</title>
+
+    <link rel="stylesheet" href="http://datadrivensecurity.info/blog/theme/css/main.css">
+    <link rel="stylesheet" href="http://datadrivensecurity.info/blog/theme/css/pygment_trac.css">
+		
+		<!-- Computer Modern Bright -->
+		<link rel="stylesheet" href="/fonts/Bright/cmun-bright.css"></link>
+		<!-- Computer Modern Bright Semibold-->
+		<link rel="stylesheet" href="/fonts/Bright Semibold/cmun-bright-semibold.css"></link>
+		<!-- Computer Modern Classical Serif Italic-->
+		<link rel="stylesheet" href="/fonts/Classical Serif Italic/cmun-classical-serif-italic.css"></link>
+		<!-- Computer Modern Concrete-->
+		<link rel="stylesheet" href="/fonts/Concrete/cmun-concrete.css"></link>
+		<!-- Computer Modern Sans-->
+		<link rel="stylesheet" href="/fonts/Sans/cmun-sans.css"></link>
+		<!-- Computer Modern Sans Demi-Condensed-->
+		<link rel="stylesheet" href="/fonts/Sans Demi-Condensed/cmun-sans-demicondensed.css"></link>
+		<!-- Computer Modern Serif-->
+		<link rel="stylesheet" href="/fonts/Serif/cmun-serif.css"></link>
+		<!-- Computer Modern Serif Slanted-->
+		<link rel="stylesheet" href="/fonts/Serif Slanted/cmun-serif-slanted.css"></link>
+		<!-- Computer Modern Typewriter-->
+		<link rel="stylesheet" href="/fonts/Typewriter/cmun-typewriter.css"></link>
+		<!-- Computer Modern Typewriter Light-->
+		<link rel="stylesheet" href="/fonts/Typewriter Light/cmun-typewriter-light.css"></link>
+		<!-- Computer Modern Typewriter Variable-->
+		<link rel="stylesheet" href="/fonts/Typewriter Variable/cmun-typewriter-variable.css"></link>
+		<!-- Computer Modern Upright Italic-->
+		<link rel="stylesheet" href="/fonts/Upright Italic/cmun-upright-italic.css"></link>
+    
+    <link rel="stylesheet" href="/blog/extra/magnific-popup.css"></link>
+    
+		<script type="text/javascript" charset="utf8" src="/js/vendor/d3.v3.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/js/vendor/topojson.v1.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/js/vendor/d3.tip.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/js/vendor/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/js/vendor/jquery.tinysort.min.js"></script>
+		<script type="text/javascript" charset="utf8" src="/blog/extra/magnific.js"></script>
+    
+
+    <script>
+    $(document).ready(function() {
+      $('.mag').magnificPopup({ 
+        type: 'image'
+      });
+    });
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><img src="" class="grv-img"/></div>
+        <!-- <div class="title"><a href="http://datadrivensecurity.info/blog/">Data Driven Security </a></div> -->
+        <div class="title"><a href="http://datadrivensecurity.info/blog/"><img alt="Data Driven Security" height="269" width="269" src="/blog/images/dds-header-image.png"/> </a></div>
+        <div class="sub-title"></div>
+
+<p>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/about-dds.html">About&nbsp;<span class="caps">DDS</span></a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/dds-dataset-collection.html"><span class="caps">DDS</span> Dataset&nbsp;Collection</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/license.html">License/Use</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/musings.html">Book Reviews and&nbsp;Interviews</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/resources.html">Resources</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/subscribe.html">Subscribe&nbsp;(Newsletter)</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/the-book-and-podcast.html"><span class="caps">DDS</span>: The Book and&nbsp;Podcast</a></div>
+    <div class="view"><a href="http://datadrivensecurity.info/blog/pages/topic-request.html">Topic&nbsp;Request</a></div>
+  <div class="view"><a href="http://datadrivensecurity.info/blog/archives.html">Archives</a></div>
+</p>
+
+<!-- Social links -->
+<div class="social">
+<h4>Follow DDS</h4>
+<ul>
+    <li><a href="http://twitter.com/ddsecblog">ddsecblog</a></li>
+    <li><a href="http://twitter.com/ddsecbook">ddsecbook</a></li>
+    <li><a href="http://twitter.com/ddsecpodcast">ddsecpodcast</a></li>
+    <li><a href="http://twitter.com/jayjacobs">jayjacobs</a></li>
+    <li><a href="http://twitter.com/hrbrmstr">hrbrmstr</a></li>
+    <li><a href="http://datadrivensecurity.info/blog/feeds/all.atom.xml">Blog RSS</a></li>
+    <li><a href="http://github.com/hrbrmstr">hrbrmstr</a></li>
+    <li><a href="http://github.com/jayjacobs">jayjacobs</a></li>
+    <li><a href="https://plus.google.com/+DatadrivensecurityInfo1">+dds</a></li>
+</ul>
+</div>
+<!-- blogroll links 
+<br style="clear:both"/>
+<div class="links">
+<h4>Blogroll</h4>
+<ul>
+    <li><a href="http://rud.is/b">Bob's blog</a></li>
+    <li><a href="http://beechplane.wordpress.com/">Jay's blog</a></li>
+</ul>
+</div>
+-->
+      </header>
+      <section>
+
+<meta property="og:title" content="Building a DGA Classifier: Part 1, Data Preparation"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="http://datadrivensecurity.info/blog/images/dds-header-image.png"/>
+<meta property="og:url" content="http://datadrivensecurity.info/blog/posts/2014/Sep/dga-part1/" />
+<meta property="og:description" content="This will be a three-part blog series on building a DGA classifier and will be split into three logical phases of building a classifier: 1) Data preparation (this) 2) Feature engineering and 3) Model selection. And before I get too far into this, I want to give a huge thank ..." />
+<meta property="og:site_name" content="Data Driven Security" />
+<meta property="og:article:author" content="“Jay Jacobs (@jayjacobs)"" />
+<meta property="og:article:published_time" content="2014-09-30T11:02:20" />
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@ddsecblog">
+<meta name="twitter:title" content="Building a DGA Classifier: Part 1, Data Preparation"/>
+<meta name="twitter:description" content="This will be a three-part blog series on building a DGA classifier and will be split into three logical phases of building a classifier: 1) Data preparation (this) 2) Feature engineering and 3) Model selection. And before I get too far into this, I want to give a huge thank ... "/>
+<meta name="twitter:creator" content="@ddsecblog">
+<meta name="twitter:image:src" content="http://datadrivensecurity.info/blog/images/dds-header-image.png">
+<meta name="twitter:domain" content="datadrivensecurity.info">
+
+
+<section id="content" class="body">
+  <article>
+      <div class="article-title">
+        Building a <span class="caps">DGA</span> Classifier: Part 1, Data&nbsp;Preparation
+      </div>
+
+    <div class="entry-content">
+<p>
+<small>
+By “Jay Jacobs (@jayjacobs)"<br/><abbr class="published" title="2014-09-30T11:02:20">
+  Tue 30 September 2014
+</abbr> | 
+  tags: 
+    <a href="http://datadrivensecurity.info/blog/tag/blog.html">blog</a>, 
+    <a href="http://datadrivensecurity.info/blog/tag/r.html">r</a>, 
+    <a href="http://datadrivensecurity.info/blog/tag/rstats.html">rstats</a>, 
+ -- (<a href="http://datadrivensecurity.info/blog/posts/2014/Sep/dga-part1/" rel="bookmark">permalink</a>)
+</small>
+</p>      <p>This will be a three-part blog series on building a <span class="caps">DGA</span> classifier and
+will be split into three logical phases of building a classifier: 1)
+Data preparation (this) 2) Feature engineering and 3) Model selection.
+And before I get too far into this, I want to give a huge thank you to
+Click Security for releasing a <a href="https://github.com/ClickSecurity/data_hacking/tree/master/dga_detection"><span class="caps">DGA</span>
+classifier</a>
+in python as part of their very nice <a href="https://github.com/ClickSecurity/data_hacking">Data Hacking github
+repo</a>. If you would
+rather see how a classifer is build in python, they did a great job of
+laying out the steps in the code and an in depth ipython notebook.
+Initially I didn&#8217;t deviate much from their work, but as I rolled around
+in the data I was experimenting with several different features only to
+end up reducing my feature set down to a relatively simple set of&nbsp;3.</p>
+<p>The <span class="caps">DGA</span> package and sample data is available from the <a href="https://github.com/jayjacobs/dga"><span class="caps">DGA</span> github
+repository</a>.</p>
+<h3 id="a-little-background-on-dga">A little background on&nbsp;<span class="caps">DGA</span></h3>
+<p><span class="caps">DGA</span> stands for <strong>Domain Generating Algorithm</strong> and these algorithms are
+part of the evolution of malware communications. In the beginning
+malware would be hardcoded with <span class="caps">IP</span> address(es) or domain names and the
+botnet could be disrupted by going after whatever was hardcoded. The
+purpose of the <span class="caps">DGA</span> is to be deterministic, yet generate a whole lot of
+random (hard to guess) domains, of which the bot maintainer only has to
+register one (or a handful) to enable the malware to phone home. If the
+domain or <span class="caps">IP</span> is taken down, a new name from the algorithm can be used by
+the botnet maintainer with a new <span class="caps">IP</span> address and the botnet&nbsp;maintained.</p>
+<p>The purpose of building a <span class="caps">DGA</span> classifier isn&#8217;t specifically for
+takedowns of botnets, but to discover and detect the use on our network
+or services. If we can you have a list of domains resolved and accessed
+at your organization, it is possible now to see which of those are
+potentially generated and used by&nbsp;malware.</p>
+<h3 id="and-where-we-are-headed">And where we are&nbsp;headed</h3>
+<p>My goal was to create a <span class="caps">DGA</span> classifier that was first and foremost easy
+to use. So I created a package that could be loaded and used in other
+code without having to think about the machine learning behind the
+classifier. Hopefully it doesn&#8217;t get any easier than&nbsp;this:</p>
+<p>Install the&nbsp;package:</p>
+<div class="highlight"><pre>devtools<span class="o">::</span>install<span class="p">(</span><span class="s">&quot;jayjacobs/dga&quot;</span><span class="p">)</span>
+
+library<span class="p">(</span>dga<span class="p">)</span>
+
+<span class="c1"># known good domains:</span>
+good <span class="o">&lt;-</span> c<span class="p">(</span><span class="s">&quot;facebook.com&quot;</span><span class="p">,</span> <span class="s">&quot;google.com&quot;</span><span class="p">,</span> <span class="s">&quot;sina.com.cn&quot;</span><span class="p">,</span> 
+          <span class="s">&quot;twitter.com&quot;</span><span class="p">,</span> <span class="s">&quot;yandex.ru&quot;</span><span class="p">,</span> <span class="s">&quot;msn.com&quot;</span><span class="p">)</span>
+<span class="c1"># <span class="caps">DGA</span> domains generated by cryptolocker</span>
+bad <span class="o">&lt;-</span> c<span class="p">(</span><span class="s">&quot;kqcrotywqigo.ru&quot;</span><span class="p">,</span> <span class="s">&quot;rlvukicfjceajm.ru&quot;</span><span class="p">,</span> <span class="s">&quot;ibxaoddvcped.ru&quot;</span><span class="p">,</span> 
+         <span class="s">&quot;tntuqxxbvxytpif.ru&quot;</span><span class="p">,</span> <span class="s">&quot;heksblnvanyeug.ru&quot;</span><span class="p">,</span> <span class="s">&quot;kbmqwdsrfzfqpdp.ru&quot;</span><span class="p">)</span>
+
+<span class="c1"># classify the domains as either &quot;legit&quot; or &quot;dga&quot;</span>
+dgaPredict<span class="p">(</span>c<span class="p">(</span>good<span class="p">,</span> bad<span class="p">))</span>
+
+<span class="c1">##               name class prob</span>
+<span class="c1">## 1         facebook legit 1.00</span>
+<span class="c1">## 2           google legit 1.00</span>
+<span class="c1">## 3             sina legit 1.00</span>
+<span class="c1">## 4          twitter legit 1.00</span>
+<span class="c1">## 5           yandex legit 1.00</span>
+<span class="c1">## 6              msn legit 1.00</span>
+<span class="c1">## 7     kqcrotywqigo   dga 1.00</span>
+<span class="c1">## 8   rlvukicfjceajm   dga 1.00</span>
+<span class="c1">## 9     ibxaoddvcped   dga 1.00</span>
+<span class="c1">## 10 tntuqxxbvxytpif   dga 1.00</span>
+<span class="c1">## 11  heksblnvanyeug   dga 0.98</span>
+<span class="c1">## 12 kbmqwdsrfzfqpdp   dga 1.00</span>
+</pre></div>
+
+
+<p>The function returns the domain name it extracted from the names, the
+classification assigned and the probability the classifier used to
+classify. You can see from the output, that all of these domains were
+clearly classified (with high&nbsp;probability).</p>
+<p>So that&#8217;s what these posts are going to walk through&#8230; what steps did
+we go through to answer the deceptively simple question of &#8220;<em>Is this
+domain legitimate or generating by an algorithm?</em>&#8221;</p>
+<h1 id="getting-and-cleaning-the-data">Getting and Cleaning the&nbsp;Data</h1>
+<p>The first major step in any classifer is getting training data. If that
+term is new to you, think of training data like the answer key to a
+test. We want the list of the questions (domain/host names) and the
+associated answer (whether each is &#8220;legit&#8221; or &#8220;dga&#8221;). This is also
+called &#8220;supervised&#8221; data, &#8220;labeled&#8221; data or &#8220;ground truth&#8221; data. In some
+cases (seems like most cases in infosec), establishing reliable training
+data is a huge challenge, but in this case we&#8217;re lucky. All we need is a
+list of good/legitimate domains and a second list of domains generated
+by an algorithm and we should be able to get that. In the <a href="https://github.com/ClickSecurity/data_hacking/tree/master/dga_detection/data">example from
+click
+security</a>,
+they offer several data sets that we could copy, but we&#8217;ll seek out our
+own list because classifiers like this are very sensitive to the choices
+you make when gathering the training&nbsp;data.</p>
+<h3 id="alexa">Alexa</h3>
+<p>For samples of legitimate domains, an obvious choice is to go to the
+Alexa list of top web sites. But it&#8217;s not ready for our use as is. If
+you grab the <a href="http://s3.amazonaws.com/alexa-static/top-1m.csv.zip">top 1 Million Alexa
+domains</a> and parse
+it, you&#8217;ll find just over 11 thousand are full URLs and not just
+domains, and there are thousands of domains with subdomains that don&#8217;t
+help us (we are only classifying on domains here). So after I remove the
+URLs, de-duplicated the domains and clean it up, I end up with the Alexa
+top&nbsp;965,843.</p>
+<h3 id="real-world-data-from-opendns"><span class="dquo">&#8220;</span>Real World&#8221; Data from&nbsp;OpenDNS</h3>
+<p>After reading the post from Frank Denis at OpenDNS titled <a href="http://labs.opendns.com/2014/06/05/two-new-public-domain-lists-security-researchers/">&#8220;Why Using
+Real World Data Matters For Building Effective Security
+Models&#8221;</a>,
+I grabbed their <a href="https://github.com/opendns/public-domain-lists/blob/master/opendns-top-domains.txt">10,000 Top
+Domains</a>
+and their <a href="https://github.com/opendns/public-domain-lists/blob/master/opendns-random-domains.txt">10,000 Random
+samples</a>.
+If we compare that to the top Alexa domains, 6,901 of the top ten
+thousand are in the alexa data and 893 of the random domains are in the
+Alexa data. I will clean that up as I make the final training data&nbsp;set.</p>
+<h3 id="dga-domains"><span class="caps">DGA</span>&nbsp;domains</h3>
+<p>The Click Security version wasn&#8217;t very clear in where they got their bad
+domains so I decided to collect my own and this was rather fun. Because
+I work with some interesting characters (who know interesting
+characters), I was able to collect several data sets from recent
+botnets: &#8220;Cryptolocker&#8221;, two seperate &#8220;Game-Over Zues&#8221; algorithms, and
+an anonymous collection of malicious (and algorithmically generated)
+domains. In the end, I was able to collect 73,598 algorithmically
+generated&nbsp;domains.</p>
+<h1 id="creating-the-labeled-data-set">Creating the labeled data&nbsp;set</h1>
+<p>Once we clean up the various sources we want a simple, labeled data set
+consisting of five columns: the full domain, the 2nd-level domain,
+top-level domain, the main class, which is either legitimate (&#8220;legit&#8221;)
+or from a domain generating algorithm (&#8220;dga&#8221;) and finally a subclass
+(either the specific botnet or legit source). I have quite a bit of data
+here and I will use all of the data in the final model (assuming I have
+enough memory to process it). However this much data will create a lot
+of waiting for you and some rather large files to be posting in a blog.
+So, the dataset I&#8217;m making available is 10,000 domains. The &#8220;legit&#8221;
+domains are composed of the top 1,000 alexa domains, along with 4k
+randomly sampled alexa and opendns domains. The &#8220;dga&#8221; domains are
+randomly sampled from the 70,000+ domains I have in my collection.
+Working with a total of 10,000 samples should be enough to get some good
+results while reducing the processing times in the next two parts. This
+is a sample of the data in the <code>sampledga</code> data set available in the <span class="caps">DGA</span>&nbsp;package.</p>
+<div class="highlight"><pre>library<span class="p">(</span>dga<span class="p">)</span>
+data<span class="p">(</span>sampledga<span class="p">)</span>
+set.seed<span class="p">(</span><span class="m">2</span><span class="p">)</span>
+rbind<span class="p">(</span>head<span class="p">(</span>sampledga<span class="p">,</span> <span class="m">5</span><span class="p">),</span> 
+      sampledga<span class="p">[</span>sample<span class="p">(</span>which<span class="p">(</span>sampledga<span class="o">$</span>subclass<span class="o">==</span><span class="s">&quot;opendns&quot;</span><span class="p">),</span> <span class="m">5</span><span class="p">),</span> <span class="p">],</span>
+      sampledga<span class="p">[</span>sample<span class="p">(</span>which<span class="p">(</span>sampledga<span class="o">$</span>subclass<span class="o">==</span><span class="s">&quot;cryptolocker&quot;</span><span class="p">),</span> <span class="m">5</span><span class="p">),</span> <span class="p">])</span>
+
+<span class="c1">##                        host           domain tld class     subclass</span>
+<span class="c1">## 1                google.com           google com legit        alexa</span>
+<span class="c1">## 2              facebook.com         facebook com legit        alexa</span>
+<span class="c1">## 3               youtube.com          youtube com legit        alexa</span>
+<span class="c1">## 4                 yahoo.com            yahoo com legit        alexa</span>
+<span class="c1">## 5                 baidu.com            baidu com legit        alexa</span>
+<span class="c1">## 976585           xt12365.cn          xt12365  cn legit      opendns</span>
+<span class="c1">## 967852          adobesc.com          adobesc com legit      opendns</span>
+<span class="c1">## 980838           lotustv.cc          lotustv  cc legit      opendns</span>
+<span class="c1">## 981307 hqcowichanvalley.com hqcowichanvalley com legit      opendns</span>
+<span class="c1">## 983055            online.ms           online  ms legit      opendns</span>
+<span class="c1">## 25721     brclxtulykdemb.ru   brclxtulykdemb  ru   dga cryptolocker</span>
+<span class="c1">## 24225     sdixbryxaxqrmf.ru   sdixbryxaxqrmf  ru   dga cryptolocker</span>
+<span class="c1">## 25479     syipowvqvktasf.ru   syipowvqvktasf  ru   dga cryptolocker</span>
+<span class="c1">## 15776    chaksikvqltbdeo.ru  chaksikvqltbdeo  ru   dga cryptolocker</span>
+<span class="c1">## 7948        jpmwlfhrjbly.ru     jpmwlfhrjbly  ru   dga cryptolocker</span>
+</pre></div>
+
+
+<p>The sample data is available in the <a href="https://github.com/jayjacobs/dga/tree/master/data"><span class="caps">DGA</span> github
+repository</a> and stay
+tuned for the next part as I get into &#8220;feature&nbsp;engineering&#8221;.</p>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="ddsecblog">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    </div><!-- /.entry-content -->
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'datadrivensecurity'; // required: replace example with your forum shortname
+        var disqus_identifier = "posts/2014/Sep/dga-part1/";
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </article>
+</section>
+      </section>
+      <footer>
+        <!-- p><small>&copy; Data Driven Security &mdash; Theme based on <a href="https://github.com/orderedlist">Sundown</a></small></p -->
+      </footer>
+    </div>
+    <!-- Scale fix -->
+    <script>
+      var metas = document.getElementsByTagName('meta');
+      var i;
+      
+      if (navigator.userAgent.match(/iPhone/i)) {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+          }
+        }
+      
+        document.addEventListener("gesturestart", gestureStart, false);
+      }
+
+      function gestureStart() {
+        for (i=0; i<metas.length; i++) {
+          if (metas[i].name == "viewport") {
+            metas[i].content = "width=device-width, minimum-scale=0.25, maximum-scale=1.6";
+          }
+        }
+      }
+    </script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-79740-6', 'datadrivensecurity.info');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+		<!-- Piwik -->
+		<script type="text/javascript"> 
+		  var _paq = _paq || [];
+		  _paq.push(['trackPageView']);
+		  _paq.push(['enableLinkTracking']);
+		  (function() {
+		    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://rud.is/piwik//";
+		    _paq.push(['setTrackerUrl', u+'piwik.php']);
+		    _paq.push(['setSiteId', 1]);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+		    g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+		  })();
+
+		</script>
+		<noscript><p><img src="http://rud.is/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+		<!-- End Piwik Code -->
+		
+		
+  </body>
+</html>

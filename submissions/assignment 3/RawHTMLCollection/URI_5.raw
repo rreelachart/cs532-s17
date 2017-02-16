@@ -1,0 +1,831 @@
+RAW HTML FOR: http://ascii.textfiles.com/archives/5054
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Why the Apple II ProDOS 2.4 Release is the OS News of the Year &laquo; ASCII by Jason Scott</title>
+		<link rel="stylesheet" href="http://ascii.textfiles.com/wp-content/themes/terminally/style.css" type="text/css" media="screen" />
+		<link rel="pingback" href="http://ascii.textfiles.com/xmlrpc.php" />
+				<!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+		<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s.gravatar.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="ASCII by Jason Scott &raquo; Feed" href="http://ascii.textfiles.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="ASCII by Jason Scott &raquo; Comments Feed" href="http://ascii.textfiles.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="ASCII by Jason Scott &raquo; Why the Apple II ProDOS 2.4 Release is the OS News of the Year Comments Feed" href="http://ascii.textfiles.com/archives/5054/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/ascii.textfiles.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<!-- `sharedaddy` is included in the concatenated jetpack.css -->
+<link rel='stylesheet' id='social-logos-css'  href='http://ascii.textfiles.com/wp-content/plugins/jetpack/_inc/social-logos/social-logos.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://ascii.textfiles.com/wp-content/plugins/jetpack/css/jetpack.css?ver=4.6' type='text/css' media='all' />
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://ascii.textfiles.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://ascii.textfiles.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://ascii.textfiles.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Who&#8217;s Going to be the Hip Hop Hero' href='http://ascii.textfiles.com/archives/5049' />
+<link rel='next' title='The Festival Floppies' href='http://ascii.textfiles.com/archives/5063' />
+<meta name="generator" content="WordPress 4.7.2" />
+<link rel="canonical" href="http://ascii.textfiles.com/archives/5054" />
+<link rel='shortlink' href='http://wp.me/poroN-1jw' />
+<link rel="alternate" type="application/json+oembed" href="http://ascii.textfiles.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054" />
+<link rel="alternate" type="text/xml+oembed" href="http://ascii.textfiles.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054&#038;format=xml" />
+<STYLE TYPE="text/css">
+ .herpderp { float: right; text-transform: uppercase;
+             font-size: 7pt; font-weight: bold; }
+</STYLE>
+
+<link rel='dns-prefetch' href='//v0.wordpress.com'>
+<link rel='dns-prefetch' href='//jetpack.wordpress.com'>
+<link rel='dns-prefetch' href='//s0.wp.com'>
+<link rel='dns-prefetch' href='//s1.wp.com'>
+<link rel='dns-prefetch' href='//s2.wp.com'>
+<link rel='dns-prefetch' href='//public-api.wordpress.com'>
+<link rel='dns-prefetch' href='//0.gravatar.com'>
+<link rel='dns-prefetch' href='//1.gravatar.com'>
+<link rel='dns-prefetch' href='//2.gravatar.com'>
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Why the Apple II ProDOS 2.4 Release is the OS News of the Year" />
+<meta property="og:url" content="http://ascii.textfiles.com/archives/5054" />
+<meta property="og:description" content="In September of 2016, a talented programmer released his own cooked update to a major company&#8217;s legacy operating system, purely because it needed to be done. A raft of new features, wrap-in p…" />
+<meta property="article:published_time" content="2016-09-16T01:11:37+00:00" />
+<meta property="article:modified_time" content="2016-09-16T01:11:37+00:00" />
+<meta property="og:site_name" content="ASCII by Jason Scott" />
+<meta property="og:image" content="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-1024x723.png" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@textfiles" />
+	</head>
+
+	<body class="post-template-default single single-post postid-5054 single-format-standard has_sidebar">
+	
+  		<header class="header">
+  			<h1><a href="http://ascii.textfiles.com/">ASCII by Jason Scott</a></h1>
+  			<p>Jason Scott&#039;s Weblog</p>
+  		</header>
+  		
+	  <div id="wrapper">
+
+  		<section class="content">
+	
+			<article class="post-5054 post type-post status-publish format-standard hentry category-computer-history" id="post-5054">
+				
+				<header>
+				  <h1>Why the Apple II ProDOS 2.4 Release is the OS News of the Year &mdash; <time>September 16, 2016</time></h1>
+		    	</header>
+		
+				<section>
+		
+				<p><a href="https://archive.org/details/ProDOS_2_4"><img data-attachment-id="5056" data-permalink="http://ascii.textfiles.com/archives/5054/prodos-2-4-splash" data-orig-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash.png" data-orig-size="1354,890" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="prodos-2-4-splash" data-image-description="" data-medium-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-300x197.png" data-large-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-1024x673.png" class="aligncenter size-large wp-image-5056" src="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-1024x673.png" alt="prodos-2-4-splash" width="550" height="361" srcset="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-1024x673.png 1024w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-300x197.png 300w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash-768x505.png 768w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Splash.png 1354w" sizes="(max-width: 550px) 100vw, 550px" /></a></p>
+<p>In September of 2016, a <a href="https://twitter.com/jbrooksbsi">talented programmer</a> released his own cooked update to a major company&#8217;s <a href="https://en.wikipedia.org/wiki/Apple_ProDOS">legacy operating system</a>, purely because it needed to be done. A raft of new features, wrap-in programs, and bugfixes were included in this release, which I stress was done as a hobby project.</p>
+<p>The project is understatement itself, simply called <strong>Prodos 2.4</strong>. It updates ProDOS, the last version of which, 2.0.3, was released in 1993.</p>
+<p>You can download it, or boot it in an emulator on the webpage, <a href="https://archive.org/details/ProDOS_2_4">here</a>.</p>
+<p>As an update unto itself, this item is a wonder &#8211; compatibility has been repaired for the entire Apple II line, from the first Apple II through to the Apple IIgs, as well as cases of various versions of 6502 CPUs (like the <a href="https://en.wikipedia.org/wiki/WDC_65C02">65C02</a>) or cases where newer cards have been installed in the Apple IIs for <a href="http://dreher.net/?s=projects/CFforAppleII&amp;c=projects/CFforAppleII/main.php">USB-connected/emulated drives</a>. Important utilities related to disk transfer, disk inspection, and program selection have joined the image. The footprint is smaller, and it runs faster than its predecessor (a wonder in any case of OS upgrades).</p>
+<p>The entire list of improvements, additions and fixes <a href="https://archive.org/details/ProDOS_2_4">is on the Internet Archive page</a> I put up.</p>
+<p><img data-attachment-id="5057" data-permalink="http://ascii.textfiles.com/archives/5054/prodos-2-4-bitsy-boot" data-orig-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot.png" data-orig-size="1310,908" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="prodos-2-4-bitsy-boot" data-image-description="" data-medium-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-300x208.png" data-large-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-1024x710.png" class="aligncenter size-large wp-image-5057" src="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-1024x710.png" alt="prodos-2-4-bitsy-boot" width="550" height="381" srcset="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-1024x710.png 1024w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-300x208.png 300w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot-768x532.png 768w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Boot.png 1310w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<p>The reason I call this the most important operating system update of the year is multi-fold.</p>
+<p>First, the pure unique experience of a <em>23-year-gap between upgrades</em><em> </em>means that you can see a rare example of what happens when a computer environment just sits tight for decades, with many eyes on it and many notes about how the experience can be improved, followed by someone driven enough to go through methodically and implement all those requests. The inclusion of the utilities on the disk means we also have the benefit of all the after-market improvements in functionality that the continuing users of the environment needed, all time-tested, and all wrapped in without disturbing the size of the operating system programs itself. It&#8217;s like a gold-star hall of fame of Apple II utilities packed into the OS they were inspired by.</p>
+<p>This choreographed waltz of new and old is unique in itself.</p>
+<p>Next is that this is an operating system upgrade <em>free of commercial and marketing constraints and drives</em>. Compared with, say, an iOS upgrade that trumpets the addition of a search function or blares out a proud announcement that they broke maps because Google kissed another boy at recess. Or Windows 10, the 1968 Democratic Convention Riot of Operating Systems, which was designed from the ground up to be compatible with a variety of mobile/tablet products that are on the way out, and which were shoved down the throats of current users with a cajoling, insulting methodology with misleading opt-out routes and freakier and freakier fake-countdowns.</p>
+<p>The current mainstream OS environment is, frankly, horrifying, and to see a pure note, a trumpet of clear-minded attention to efficiency, functionality and improvement, stands in testament to the fact that it <em>is </em>still possible to achieve this, albeit a smaller, slower-moving target. Either way, it&#8217;s an inspiration.</p>
+<p><img data-attachment-id="5058" data-permalink="http://ascii.textfiles.com/archives/5054/prodos-2-4-bitsy-bye" data-orig-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye.png" data-orig-size="1288,910" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="prodos-2-4-bitsy-bye" data-image-description="" data-medium-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-300x212.png" data-large-file="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-1024x723.png" class="aligncenter size-large wp-image-5058" src="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-1024x723.png" alt="prodos-2-4-bitsy-bye" width="550" height="388" srcset="http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-1024x723.png 1024w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-300x212.png 300w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye-768x543.png 768w, http://ascii.textfiles.com/wp-content/uploads/2016/09/ProDOS-2.4-Bitsy-Bye.png 1288w" sizes="(max-width: 550px) 100vw, 550px" /></p>
+<p>Last of all, this upgrade is a valentine not just to the community who makes use of this platform, but to the ideas of hacker improvement calling back decades before 1993. The amount of people this upgrade benefits is relatively small in the world &#8211; the number of folks still using Apple IIs is tiny enough that nearly everybody doing so either knows each other, or knows someone who knows everyone else. It is not a route to fame, or a resume point to get snapped up by a start-up, or a game of one-upsmanship shoddily slapped together to prove a point or drop a &#8220;beta&#8221; onto the end as a fig leaf against what could best be called a lab experiment gone off in the fridge. It is done for the sake of what it is &#8211; a tool that has been polished and made anew, so the near-extinct audience for it works to the best of their ability with a machine that, itself, is thought of as the last mass-marketed computer designed by a single individual.</p>
+<p>That&#8217;s a very special day indeed, and I doubt the remainder of 2016 will top it, any more than I think the first 9 months have.</p>
+<p><strong>Thanks to <a href="https://twitter.com/jbrooksbsi">John Brooks</a> for the inspiration this release provides. </strong></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-email"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="http://ascii.textfiles.com/archives/5054?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-5054" class="share-facebook sd-button share-icon" href="http://ascii.textfiles.com/archives/5054?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-end"></li><li class="share-reddit"><a rel="nofollow" data-shared="" class="share-reddit sd-button share-icon" href="http://ascii.textfiles.com/archives/5054?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-5054" class="share-twitter sd-button share-icon" href="http://ascii.textfiles.com/archives/5054?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div>
+					<hr class="clearfix" />
+
+        			</p>
+			        <p class="post_categories"><mark>Categorised as:</mark> <a href="http://ascii.textfiles.com/archives/category/computer-history" rel="category tag">computer history</a> </p>
+					    				  				
+					<hr class="clearfix" />
+
+			        
+				</section>
+
+			</article>
+
+			
+<!-- You can start editing here. -->
+
+  <section class="comments">
+
+    <header>
+      <h2>19 Comments </h2>
+    </header>
+
+    <ol class="commentlist">
+      		<li class="comment even thread-even depth-1 parent" id="comment-582494">
+				<div id="div-comment-582494" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=70&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='http://mamedev.emulab.it/fsanches/' rel='external nofollow' class='url'>Felipe C. da S. Sanches</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582494">
+			September 16, 2016 at 2:41 am</a>		</div>
+
+		<span class='herpc'><p>He missed the opportunity to dedicate it to the Apple IIGS 30th anniversary that was just yesterday, 2016-SEPTEMBER-15 ! (well&#8230; a few hours ago)</p>
+<p><a href="https://groups.google.com/forum/#!topic/comp.sys.apple2/W-lEsvY5WAo" rel="nofollow">https://groups.google.com/forum/#!topic/comp.sys.apple2/W-lEsvY5WAo</a></p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582494#respond' onclick='return addComment.moveForm( "div-comment-582494", "582494", "respond", "5054" )' aria-label='Reply to Felipe C. da S. Sanches'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2 parent" id="comment-582497">
+				<div id="div-comment-582497" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/85fddcf6bd4ad4607d15f1910bc763c8?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/85fddcf6bd4ad4607d15f1910bc763c8?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">rotsky</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582497">
+			September 16, 2016 at 9:56 am</a>		</div>
+
+		<span class='herpc'><p>No, the opportunity wasn&#8217;t missed &#8211; it&#8217;s mentioned in the README file on the disk.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582497#respond' onclick='return addComment.moveForm( "div-comment-582497", "582497", "respond", "5054" )' aria-label='Reply to rotsky'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3" id="comment-582505">
+				<div id="div-comment-582505" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=70&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='http://mamedev.emulab.it/fsanches/' rel='external nofollow' class='url'>Felipe C. da S. Sanches</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582505">
+			September 16, 2016 at 7:47 pm</a>		</div>
+
+		<span class='herpc'><p>cool! 😀</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582505#respond' onclick='return addComment.moveForm( "div-comment-582505", "582505", "respond", "5054" )' aria-label='Reply to Felipe C. da S. Sanches'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-582495">
+				<div id="div-comment-582495" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://hackaday.com/2016/09/16/a-new-os-for-apple-ii-computers/' rel='external nofollow' class='url'>A New OS For Apple II Computers | Hackaday</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582495">
+			September 16, 2016 at 8:01 am</a>		</div>
+
+		<span class='herpc'><p>[&#8230;] development in the Apple ][ ecosystem in recent memory, and will remain so for at least a decade. The only person who still uses an Apple ][ as a daily driver agrees, and ProDOS 2.4 is now enshrined in The Archive for all [&#8230;]</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582495#respond' onclick='return addComment.moveForm( "div-comment-582495", "582495", "respond", "5054" )' aria-label='Reply to A New OS For Apple II Computers | Hackaday'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-even depth-1" id="comment-582496">
+				<div id="div-comment-582496" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://hackerworld.co/a-new-os-for-apple-ii-computers' rel='external nofollow' class='url'>A New OS For Apple II Computers | HackerWorld</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582496">
+			September 16, 2016 at 9:14 am</a>		</div>
+
+		<span class='herpc'><p>[&#8230;] development in the Apple ][ ecosystem in recent memory, and will remain so for at least a decade. The only person who still uses an Apple ][ as a daily driver agrees, and ProDOS 2.4 is now enshrined in The Archive for all [&#8230;]</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582496#respond' onclick='return addComment.moveForm( "div-comment-582496", "582496", "respond", "5054" )' aria-label='Reply to A New OS For Apple II Computers | HackerWorld'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-582498">
+				<div id="div-comment-582498" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/c89b099840ab00dbc66415d44c7b4fcf?s=70&#038;d=mm&#038;r=x' srcset='http://0.gravatar.com/avatar/c89b099840ab00dbc66415d44c7b4fcf?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">mikebarela</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582498">
+			September 16, 2016 at 10:54 am</a>		</div>
+
+		<span class='herpc'><p>4 8 15 16 23 42 execute﻿</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582498#respond' onclick='return addComment.moveForm( "div-comment-582498", "582498", "respond", "5054" )' aria-label='Reply to mikebarela'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-582499">
+				<div id="div-comment-582499" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b65b8243db221357835e9669160df090?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/b65b8243db221357835e9669160df090?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">Dan</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582499">
+			September 16, 2016 at 11:51 am</a>		</div>
+
+		<span class='herpc'><p>Good lord.  I love the old Apple II line, and think this is great.  But your shrill harping about the current state of the OS market is going to be a huge turn off to a lot of the people who come here to see this.  You should have kept the politics out of this &#8220;pure note, a trumpet of clear-minded attention to efficiency, functionality and improvement&#8221;.  You&#8217;re taking something fantastic and tying it to the anchor of your agenda.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582499#respond' onclick='return addComment.moveForm( "div-comment-582499", "582499", "respond", "5054" )' aria-label='Reply to Dan'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2 parent" id="comment-582519">
+				<div id="div-comment-582519" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/bb4a8d557fe0e52da11f6b54efa9205e?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/bb4a8d557fe0e52da11f6b54efa9205e?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">Darren</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582519">
+			September 19, 2016 at 2:59 pm</a>		</div>
+
+		<span class='herpc'><p>With all due respect I didn&#8217;t read any &#8220;shrill harping&#8221;.  While the desktop environment is obviously a more complicated situation than back in the Apple ][ days, most can agree that there&#8217;s a fair amount of bloat, inefficiency, poor UI considerations and blatant self-interest at the cost of UX built into most modern software design that there simply wasn&#8217;t room to implement in those days.  </p>
+<p>For that, one may appreciate the software of its&#8217; day for what it was: as economical, tight and relatively clean as possible, out of necessity.  </p>
+<p>It&#8217;s no sin to long for that kind of simplicity.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582519#respond' onclick='return addComment.moveForm( "div-comment-582519", "582519", "respond", "5054" )' aria-label='Reply to Darren'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3" id="comment-582520">
+				<div id="div-comment-582520" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b65b8243db221357835e9669160df090?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/b65b8243db221357835e9669160df090?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">Dan</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582520">
+			September 19, 2016 at 4:15 pm</a>		</div>
+
+		<span class='herpc'><p>I don&#8217;t see where it was necessary to slam iOS or Windows in that way.  ProDOS is an artifact of a different time, and not subject to the same pressures as iOS and Windows (or even Linux).  Make all of those swipes (&#8220;trumpets&#8221;, &#8220;blares&#8221;, &#8220;1968 Democratic Convention Riot of Operating Systems&#8221;, &#8220;shoved down the throats&#8221;) at the other OSes is just tying the ProDOS update to a specific political agenda, which it really had no connection with.  Let the ProDOS update stand on its own&#8230;it&#8217;s a great accomplishment and should be lauded on its own merits.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582520#respond' onclick='return addComment.moveForm( "div-comment-582520", "582520", "respond", "5054" )' aria-label='Reply to Dan'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-582500">
+				<div id="div-comment-582500" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/ee0665e26dfbeb8c438f79375e6ad1e6?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/ee0665e26dfbeb8c438f79375e6ad1e6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='https://plus.google.com/+PedroCaetano' rel='external nofollow' class='url'>Pedro Caetano</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582500">
+			September 16, 2016 at 12:01 pm</a>		</div>
+
+		<span class='herpc'><p>Hi</p>
+<p>kudos to jbrooksbsi, that is some unconditional love to an ancient platform!</p>
+<p>@Felipe if you had read the VIEW.README you would know this release was dedicated yo the 30th anniversary&#8230;</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582500#respond' onclick='return addComment.moveForm( "div-comment-582500", "582500", "respond", "5054" )' aria-label='Reply to Pedro Caetano'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-2 parent" id="comment-582506">
+				<div id="div-comment-582506" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=70&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='http://mamedev.emulab.it/fsanches/' rel='external nofollow' class='url'>Felipe C. da S. Sanches</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582506">
+			September 16, 2016 at 7:50 pm</a>		</div>
+
+		<span class='herpc'><p>Yeah, someone told me that later. That&#8217;s cool indeed 🙂</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582506#respond' onclick='return addComment.moveForm( "div-comment-582506", "582506", "respond", "5054" )' aria-label='Reply to Felipe C. da S. Sanches'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-3" id="comment-582507">
+				<div id="div-comment-582507" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=70&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/74168c14af498f2ac5d758482b6da3d6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='http://mamedev.emulab.it/fsanches/' rel='external nofollow' class='url'>Felipe C. da S. Sanches</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582507">
+			September 16, 2016 at 7:55 pm</a>		</div>
+
+		<span class='herpc'><p>&#8230;and I also just saw it myself right now by running the emscripten build hosted at the internet archive. 🙂</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582507#respond' onclick='return addComment.moveForm( "div-comment-582507", "582507", "respond", "5054" )' aria-label='Reply to Felipe C. da S. Sanches'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-582501">
+				<div id="div-comment-582501" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/8f6f95c4bd64d5f10dfddfdcd03c19d6?s=70&#038;d=mm&#038;r=x' srcset='http://2.gravatar.com/avatar/8f6f95c4bd64d5f10dfddfdcd03c19d6?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">rdenatale</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582501">
+			September 16, 2016 at 1:08 pm</a>		</div>
+
+		<span class='herpc'><p>I&#8217;m tempted to bring out the old Apple ][ and try this, but I&#8217;m confused about how I&#8217;d make a physical floppy disk from the disk image.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582501#respond' onclick='return addComment.moveForm( "div-comment-582501", "582501", "respond", "5054" )' aria-label='Reply to rdenatale'>Reply</a></div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-582508">
+				<div id="div-comment-582508" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/7256875299019f82ca27f96cd29cdd8f?s=70&#038;d=mm&#038;r=x' srcset='http://1.gravatar.com/avatar/7256875299019f82ca27f96cd29cdd8f?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">Pt0maine</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582508">
+			September 16, 2016 at 8:23 pm</a>		</div>
+
+		<span class='herpc'><p>1) Buy an Apple CFFA 3000 card:<br />
+<a href="https://www.youtube.com/watch?v=2q113bbwR5A" rel="nofollow">https://www.youtube.com/watch?v=2q113bbwR5A</a></p>
+<p>2) Use a null modem cable with ADTPro:<br />
+<a href="http://adtpro.sourceforge.net/connectionsserial.html" rel="nofollow">http://adtpro.sourceforge.net/connectionsserial.html</a></p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582508#respond' onclick='return addComment.moveForm( "div-comment-582508", "582508", "respond", "5054" )' aria-label='Reply to Pt0maine'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="pingback even thread-odd thread-alt depth-1" id="comment-582502">
+				<div id="div-comment-582502" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://www.retrocomputaria.com.br/2016/09/16/lancamento-do-dia-prodos-2-4-para-apple-ii/' rel='external nofollow' class='url'>Lançamento do dia: ProDOS 2.4 para Apple II | Retrocomputaria</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582502">
+			September 16, 2016 at 1:08 pm</a>		</div>
+
+		<span class='herpc'><p>[&#8230;] E, para uma rasgada declaração de amor a tudo que é retro e old-school hacker, leia: Por Que o Lançamento do ProDOS 2.4 É A Notícia do Ano em Sistemas Operacionais. [&#8230;]</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582502#respond' onclick='return addComment.moveForm( "div-comment-582502", "582502", "respond", "5054" )' aria-label='Reply to Lançamento do dia: ProDOS 2.4 para Apple II | Retrocomputaria'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-582503">
+				<div id="div-comment-582503" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/3caecffb9389900a648b5fa5b53e7e56?s=70&#038;d=mm&#038;r=x' srcset='http://0.gravatar.com/avatar/3caecffb9389900a648b5fa5b53e7e56?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">JP</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582503">
+			September 16, 2016 at 1:28 pm</a>		</div>
+
+		<span class='herpc'><p>Great article. I feel that nowadays every update made to an OS, has to be as noisy (I swear there must be a better adjective) as it can. A point which you made very clear in this brief article.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582503#respond' onclick='return addComment.moveForm( "div-comment-582503", "582503", "respond", "5054" )' aria-label='Reply to JP'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-582509">
+				<div id="div-comment-582509" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/9a658fedf6d936bcf1d9d5019ffd5ef2?s=70&#038;d=mm&#038;r=x' srcset='http://0.gravatar.com/avatar/9a658fedf6d936bcf1d9d5019ffd5ef2?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn"><a href='http://Barneystonesoftware.com' rel='external nofollow' class='url'>Barney Stone</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582509">
+			September 16, 2016 at 9:02 pm</a>		</div>
+
+		<span class='herpc'><p>Brilliant! Long live the Apple ][! I&#8217;ve often wondered how many of the major developers of the whole PC industry got their start on an Apple ][, where it was easy to get into the guts and out how these things really worked.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582509#respond' onclick='return addComment.moveForm( "div-comment-582509", "582509", "respond", "5054" )' aria-label='Reply to Barney Stone'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-582514">
+				<div id="div-comment-582514" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/0d5140b0911f899bcdd255d638c1df5b?s=70&#038;d=mm&#038;r=x' srcset='http://0.gravatar.com/avatar/0d5140b0911f899bcdd255d638c1df5b?s=140&amp;d=mm&amp;r=x 2x' class='avatar avatar-70 photo' height='70' width='70' />			<cite class="fn">Ian</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582514">
+			September 18, 2016 at 9:57 am</a>		</div>
+
+		<span class='herpc'><p>Wow! Stunning. Every single problem I had is solved. Brilliant work. Thank you.</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582514#respond' onclick='return addComment.moveForm( "div-comment-582514", "582514", "respond", "5054" )' aria-label='Reply to Ian'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="pingback even thread-odd thread-alt depth-1" id="comment-582521">
+				<div id="div-comment-582521" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='https://boot13.com/patches-and-updates/how-to-make-an-operating-system-better/' rel='external nofollow' class='url'>How to make an operating system better | boot13</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://ascii.textfiles.com/archives/5054#comment-582521">
+			September 19, 2016 at 5:05 pm</a>		</div>
+
+		<span class='herpc'><p>[&#8230;] reported by Jason Scott on his ASCII blog, ProDOS 2.4 was a labour of love for its developer. He [&#8230;]</p>
+</span>
+		<div class="reply"><a rel='nofollow' class='comment-reply-link' href='http://ascii.textfiles.com/archives/5054?replytocom=582521#respond' onclick='return addComment.moveForm( "div-comment-582521", "582521", "respond", "5054" )' aria-label='Reply to How to make an operating system better | boot13'>Reply</a></div>
+				</div>
+		</li><!-- #comment-## -->
+    </ol>
+
+    <div class="navigation">
+      <div class="alignleft"></div>
+      <div class="alignright"></div>
+    </div>
+
+    
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/archives/5054#respond" style="display:none;">Cancel reply</a></small></h3>
+			<form id="commentform" class="comment-form">
+				<iframe src="https://jetpack.wordpress.com/jetpack-comment/?blogid=5825197&#038;postid=5054&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=mystery&#038;greeting=Leave+a+Reply&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en_US&#038;jetpack_version=4.6&#038;sig=36d81f8a0443343875f8f299a55a2e40b7470acf#parent=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054" allowtransparency="false" style="width:100%; height: 430px;border:0;" frameBorder="0" scrolling="no" name="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+			</form>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+		    <hr class="clearfix" />
+</section>
+
+
+	
+
+  		</section>
+
+			<nav>	
+		<ul>
+			<aside id="text-299698551" class="widget widget_text">			<div class="textwidget"><small>Jason Scott's weblog of computer history, punditry and trivia, from the creator of the <a href="http://www.bbsdocumentary.com">BBS Documentary</a>, <a href="http://www.getlamp.com">GET LAMP</a>, and proprietor of the <a href="http://www.textfiles.com">textfiles.com</a> family of sites. Available to chit-chat at <a href="mailto:jason@textfiles.com">jason@textfiles.com</a>.</small>
+<p></div>
+		</aside><aside id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://ascii.textfiles.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></aside><aside id="text-299787601" class="widget widget_text">			<div class="textwidget"><p><center><a href="http://ascii.textfiles.com/about"><img src="http://ascii.textfiles.com/images/sjshot1.jpg"></a><a href="http://ascii.textfiles.com/speaking"><img src="http://ascii.textfiles.com/wp-content/uploads/2010/11/speaking.png" alt="Jason's Presentations"></a><a href="http://www.bbsdocumentary.com"><img src="http://ascii.textfiles.com/wp-content/uploads/2010/11/bbsdoc-212x300.jpg" alt="The BBS Documentary"></a><a href="http://www.archiveteam.org"><img src="http://ascii.textfiles.com/wp-content/uploads/2010/11/archiveteamlogo.jpg" alt="The Archive Team"></a><a href="http://www.getlamp.com"><img src="http://ascii.textfiles.com/wp-content/uploads/2010/11/package1s.jpg" alt="GET LAMP"><a/></center></div>
+		</aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<header><h3 class="widgettitle">Recent Posts</h3></header>		<ul>
+					<li>
+				<a href="http://ascii.textfiles.com/archives/5117">Now That&#8217;s What I Call Script-Assisted-Classified Pattern Recognized Music</a>
+						</li>
+					<li>
+				<a href="http://ascii.textfiles.com/archives/5110">Back That Thing Up</a>
+						</li>
+					<li>
+				<a href="http://ascii.textfiles.com/archives/5097">In Which I Tell You It&#8217;s A Good Idea To Support a Magazine-Scanning Patreon</a>
+						</li>
+					<li>
+				<a href="http://ascii.textfiles.com/archives/5089">A Simple Explanation: VLC.js</a>
+						</li>
+					<li>
+				<a href="http://ascii.textfiles.com/archives/5084">A Simple Request: VLC.js</a>
+						</li>
+				</ul>
+		</aside>		<aside id="archives-2" class="widget widget_archive"><header><h3 class="widgettitle">Archives</h3></header>		<ul>
+			<li><a href='http://ascii.textfiles.com/archives/date/2016/12'>December 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/11'>November 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/09'>September 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/08'>August 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/06'>June 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/05'>May 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/03'>March 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/02'>February 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2016/01'>January 2016</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/11'>November 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/09'>September 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/08'>August 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/07'>July 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/05'>May 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/04'>April 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/02'>February 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2015/01'>January 2015</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/12'>December 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/11'>November 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/10'>October 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/09'>September 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/08'>August 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/07'>July 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/06'>June 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/05'>May 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/04'>April 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2014/01'>January 2014</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/12'>December 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/11'>November 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/10'>October 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/09'>September 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/08'>August 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/07'>July 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/05'>May 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/04'>April 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/03'>March 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2013/01'>January 2013</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/12'>December 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/11'>November 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/10'>October 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/09'>September 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/07'>July 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/06'>June 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/05'>May 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/04'>April 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/03'>March 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2012/01'>January 2012</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/12'>December 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/11'>November 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/10'>October 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/09'>September 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/08'>August 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/07'>July 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/06'>June 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/05'>May 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/04'>April 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/03'>March 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/02'>February 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2011/01'>January 2011</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/12'>December 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/11'>November 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/10'>October 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/09'>September 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/08'>August 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/07'>July 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/05'>May 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/04'>April 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/02'>February 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2010/01'>January 2010</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/12'>December 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/11'>November 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/10'>October 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/09'>September 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/08'>August 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/07'>July 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/06'>June 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/05'>May 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/04'>April 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/03'>March 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/02'>February 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2009/01'>January 2009</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/12'>December 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/11'>November 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/10'>October 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/09'>September 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/08'>August 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/07'>July 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/06'>June 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/05'>May 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/04'>April 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/03'>March 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/02'>February 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2008/01'>January 2008</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/12'>December 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/11'>November 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/10'>October 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/09'>September 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/08'>August 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/07'>July 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/06'>June 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/05'>May 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/04'>April 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/03'>March 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/02'>February 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2007/01'>January 2007</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/12'>December 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/11'>November 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/10'>October 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/09'>September 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/08'>August 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/07'>July 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/06'>June 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/05'>May 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/04'>April 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/03'>March 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/02'>February 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2006/01'>January 2006</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/12'>December 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/11'>November 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/10'>October 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/09'>September 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/08'>August 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/07'>July 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/06'>June 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/05'>May 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/04'>April 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/03'>March 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/02'>February 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2005/01'>January 2005</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/12'>December 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/11'>November 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/10'>October 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/09'>September 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/08'>August 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/07'>July 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/06'>June 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/05'>May 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/04'>April 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/03'>March 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/02'>February 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2004/01'>January 2004</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2003/12'>December 2003</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2003/11'>November 2003</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2003/10'>October 2003</a></li>
+	<li><a href='http://ascii.textfiles.com/archives/date/2000/05'>May 2000</a></li>
+		</ul>
+		</aside>		</ul>
+	</nav>
+	  </div>
+
+  		<footer>
+  			<p>
+  				&copy; 2017 ASCII by Jason Scott | powered by <a href="http://wordpress.org/">WordPress</a><br />
+  				<a href="http://ascii.textfiles.com/feed">Entries (RSS)</a>	and <a href="http://ascii.textfiles.com/comments/feed">Comments (RSS)</a>.
+  			</p>
+  		</footer>
+
+  			<div style="display:none">
+	<div class="grofile-hash-map-74168c14af498f2ac5d758482b6da3d6">
+	</div>
+	<div class="grofile-hash-map-85fddcf6bd4ad4607d15f1910bc763c8">
+	</div>
+	<div class="grofile-hash-map-c89b099840ab00dbc66415d44c7b4fcf">
+	</div>
+	<div class="grofile-hash-map-b65b8243db221357835e9669160df090">
+	</div>
+	<div class="grofile-hash-map-bb4a8d557fe0e52da11f6b54efa9205e">
+	</div>
+	<div class="grofile-hash-map-ee0665e26dfbeb8c438f79375e6ad1e6">
+	</div>
+	<div class="grofile-hash-map-8f6f95c4bd64d5f10dfddfdcd03c19d6">
+	</div>
+	<div class="grofile-hash-map-7256875299019f82ca27f96cd29cdd8f">
+	</div>
+	<div class="grofile-hash-map-3caecffb9389900a648b5fa5b53e7e56">
+	</div>
+	<div class="grofile-hash-map-9a658fedf6d936bcf1d9d5019ffd5ef2">
+	</div>
+	<div class="grofile-hash-map-0d5140b0911f899bcdd255d638c1df5b">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"http:\/\/ascii.textfiles.com\/archives\/5054":5054};
+	</script>
+	<div id="sharing_email" style="display: none;">
+		<form action="/archives/5054" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" />
+			<script>jQuery( document ).ready( function(){ document.getElementById('jetpack-source_f_name').value = '' });</script>
+			
+			<img style="float: right; display: none" class="loading" src="http://ascii.textfiles.com/wp-content/plugins/jetpack/modules/sharedaddy/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<!-- `jetpack-carousel` is included in the concatenated jetpack.css -->
+<!--[if lte IE 8]>
+<link rel='stylesheet' id='jetpack-carousel-ie8fix-css'  href='http://ascii.textfiles.com/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel-ie8fix.css?ver=20121024' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-includes/js/comment-reply.min.js?ver=4.7.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Derpfault = {"herp":null};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/herp-derp/herpderp.js'></script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201707'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2017Febaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/jetpack/_inc/spin.js?ver=1.3'></script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/jetpack/_inc/jquery.spin.js?ver=1.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"http:\/\/ascii.textfiles.com\/wp-admin\/admin-ajax.php","nonce":"a0a7937831","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","comment_registration":"0","require_name_email":"1","login_url":"http:\/\/ascii.textfiles.com\/wp-login.php?redirect_to=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054","blog_id":"1","local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/jetpack/modules/carousel/jetpack-carousel.js?ver=20160325'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://ascii.textfiles.com/wp-content/plugins/jetpack/modules/sharedaddy/sharing.js?ver=4.6'></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=5825197&postid=5054&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=4.6&sig=36d81f8a0443343875f8f299a55a2e40b7470acf#parent=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "https://jetpack.wordpress.com/jetpack-comment/?blogid=5825197&postid=5054&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=mystery&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en_US&jetpack_version=4.6&sig=36d81f8a0443343875f8f299a55a2e40b7470acf#parent=http%3A%2F%2Fascii.textfiles.com%2Farchives%2F5054";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "https:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "https:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</script>
+
+	<script type='text/javascript' src='https://stats.wp.com/e-201707.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.6',blog:'5825197',post:'5054',tz:'0',srv:'ascii.textfiles.com'} ]);
+	_stq.push([ 'clickTrackerInit', '5825197', '5054' ]);
+</script>
+
+	</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 2563/2696 objects using disk
+Page Caching using disk: enhanced
+
+ Served from: ascii.textfiles.com @ 2017-02-16 17:50:30 by W3 Total Cache -->

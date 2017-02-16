@@ -1,0 +1,189 @@
+RAW HTML FOR: http://0xdabbad00.com/2014/05/27/the-future-of-endpoint-threat-detection-and-response/
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+        <title>0xdabbad00 - The Future of Endpoint Threat Detection and Response</title>
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" type='text/css' href="/css/syntax.css">
+        <link rel="stylesheet" type='text/css' href="/css/lato.css">
+        <link rel="stylesheet" type='text/css' href="/css/bootstrap.css">
+        <link rel="stylesheet" type='text/css' href="/css/main.css">
+
+    </head>
+    <body>
+
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#toggler">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="toggler">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                          <a class="sitename" href="http://0xdabbad00.com/">0xdabbad00</a>
+                        </li>
+                        <li>
+                            <a class="extra" href="/archives/">archives</a>
+                        </li>
+                        <li>
+                          <a href="/projects/">projects</a>
+                        </li>
+                        <li>
+                          <a href="/about/">about</a>
+                        </li>
+                        <li>
+                          <a link rel="alternate" type="application/rss+xml" title="0xdabbad00" href="http://0xdabbad00.com/feed.xml">rss</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <!-- Page Content -->
+        <div class="content-section-a">
+          <div class="content">
+    <div class="post-title">
+        <h2>The Future of Endpoint Threat Detection and Response</h2>
+        <p class="meta">27 May 2014</p>
+    </div>
+    <div class="post">
+        <p>The current direction of the infosec industry, with regards to malware prevention and detection, is using two very similar technologies (with horrible acronyms).  These are:
+<ul>
+<li><b>Advanced Threat Protection (ATP)</b> which includes products like FireEye, Palo Alto&#39;s Wild Fire, LastLine, and <a href="http://www.cuckoosandbox.org/">Cuckoo Sandbox</a>.  These &quot;detonate&quot; samples in &quot;sandboxes&quot; (virtual machines).
+<li><b>Endpoint Threat Detection &amp; Response (ETDR)</b>, which was coined by Gartner&#39;s Anton Chuvakin (<a href="http://blogs.gartner.com/anton-chuvakin/2013/07/26/named-endpoint-threat-detection-response/#comments">here</a>), and includes Mandiant&#39;s MIR, CarbonBlack, CounterTack&#39;s Sentinel, CrowdStrike&#39;s Falcon, and Immunity&#39;s <a href="http://immunityproducts.blogspot.com/2014/04/revamping-el-jefe.html">El Jefe</a>.  These can be further categorized:
+    <ul>
+    <li>Tools that do scans, such as Mandiant&#39;s MIR.  This tells you what exists at the time of the scan, which are &quot;<b>stateful properties</b>&quot;.
+    <li>Tools that do real-time monitoring, such as CarbonBlack, CounterTack, and El Jefe. These tell you what is happening as it happens (with perhaps a few minutes of delay.  These are referred to as &quot;<b>events</b>&quot;.  These are the newer products.
+    </ul>
+</ul></p>
+
+<p>To explain why these product lines are similar, let&#39;s examine how they work.  </p>
+
+<h3>How ATP works</h3>
+
+<ol>
+<li>Acquire sample files: Pull them off the wire as they cross the network, extract them from email attachments, and maybe grab them from host systems.
+<li>Automatically spin up a virtualized environment for these to run in, send the sample to it, and execute it or open the file.  In the case of Cuckoo, most people use VirtualBox, but VMWare, Qemu, and other solutions are possible.
+<li><b>Monitor</b>: Record what the sample does for a few minutes, and send these results back to the server.
+<li><b>Analyze</b>: Check these results using various signatures, such as "Did Adobe Reader spawn a new process?" (which indicates it was exploited), or "Did a mutex that starts with '_AVIRA_'  get created?" which indicates Zeus.  More examples of these types of signatures can be seen in Cuckoo's <a href="https://github.com/cuckoobox/community/tree/master/modules/signatures">community repository</a>.  Generate alerts if needed.
+<li><b>UI</b>: Provide a nice way of reviewing the data collected.
+</ol>
+
+<p><br></p>
+
+<h3>How ETDR works</h3>
+
+<ol>
+<li>Install an agent on all host systems.
+<li><b>Monitor</b>: Record what happens on those hosts, such as what processes were created, and send these results back to a server.
+<li><b>Analyze</b>: Check these results using various signatures.
+<li><b>UI</b>: Provide a nice way of reviewing the data collected.
+</ol>
+
+<p><br></p>
+
+<h3>Blended solution</h3>
+
+<p>The last 3 bullets in each of those lists are the same, as I believe they are based on similar technology.  Each category has pros and cons though, for example ETDR products can not do heavy monitoring because that would impact the performance of the hosts.  As such, some ETDR products are tied into ATP products in order to provide further analysis.  For example, El Jefe identifies new processes and can collect samples of those executables which can then be sent to Cuckoo Sandbox to explain what that executable does.</p>
+
+<p>These products will continue to merge, due to the following pros and cons of each product.
+<table>
+<tr><th>ATP<th>ETDR
+<tr>
+    <td bgcolor="#FF8080">Blind to some ways malware can be delivered to hosts because they largely rely on monitoring network traffic.  They will not detect malware from HTTPS sites or physical media without agents running on the host, which brings them towards ETDR territory.
+    <td bgcolor="#99FF99">Sees every sample the host tries to execute.
+<tr>
+    <td bgcolor="#FF8080">Samples may not run correctly in the virtualized environment.
+    <td bgcolor="#99FF99">Sees how samples really run on a live host with real network connectivity.
+<tr>
+    <td bgcolor="#99FF99">Can be slow and thorough in the analysis by monitoring everything.
+    <td bgcolor="#FF8080">Can not monitor as much because it can not affect the performance of the host.
+<tr>
+    <td bgcolor="#99FF99">Can identify malicious samples and prevent them from running on hosts before they cause damage.
+    <td bgcolor="#FF8080">Will largely be reactive.  Detects incident and allows for more efficient incident response by identifying which hosts were affected by a sample.
+</table></p>
+
+<h3>Benefits</h3>
+
+<p>This new generation of products (in comparison to the AV and Personal Security Products of the previous generation) are differentied by their <b>centralized &quot;brains&quot; and enterprise focus</b>.</p>
+
+<p>AV&#39;s biggest problem is that any malware author can easy download and install every AV product and test their samples against it.  If it gets caught, they make changes until it isn&#39;t caught, and then can send the sample off to targets while happily content in the knowledge that no AV product will catch it.  </p>
+
+<p>With this new generation of products, the signatures are largely going to be unknown to the attackers.  These products, and the Threat Intelligence feeds they use, cost money.  An attacker doesn&#39;t know what signatures the target might be using.  When the attackers do get caught, they don&#39;t know why.  <b>That&#39;s why these products are more effective</b>.</p>
+
+<p>Unfortunately, the home user and small business is being left out in the cold for advanced protection now.  Currently, these products require a security team, or at least one human, to review their alerts, which of course a small business doesn&#39;t have.  As these products mature and become more automated, the addressable market should expand.  They could also expand into these markets via managed service offerings (the security company monitors the data collected), as these companies easily benefit from economies of scale, and they become more powerful with the more data they have.</p>
+
+<p>It&#39;s also important to point out that this next generation of products has a much <b>smaller attack surface</b>.  As opposed to trying to parse things to identify what they &quot;are&quot;, these products simply monitor to see what they &quot;do&quot;.  The ETDRs must have minimal functionality in order to be performant, and there is no benefit in exploiting the ATP&#39;s because those are virtualized, throw-away environments.  These are almost all new companies (at least for the ETDRs), with new code, and hopefully better secure development practices.  The AV industry has numerous bugs in their products, as shown most recently by Joxean Koret at SYSCAN 2014 in his presentation <a href="http://mincore.c9x.org/breaking_av_software.pdf">Breaking Antivirus Software</a>.  The cobbler&#39;s children have always been barefoot.</p>
+
+<h3>Weaknesses</h3>
+
+<h4>ATP Weaknesses</h4>
+
+<p>The greatest weakness on the ATP side is that malware will recognize it is being executed in a monitored environment and will disable itself.  Or alternatively, the malware will be DRM&#39;d to only run on the intended target.  These faults are well-known and have, for example, been described in the Black Hat US 2012 presentation <a href="https://media.blackhat.com/bh-us-12/Briefings/Song/BH_US_12_Song_Royal_Flowers_Automated_Slides.pdf">Flowers for Automated Malware Analysis</a> by Chengyu Song and Paul Royal.  FireEye even has a paper describing how most sandboxes are bypassed on their own site called <a href="http://www.fireeye.com/resources/pdfs/fireeye-hot-knives-through-butter.pdf">Hot Knives Through Butter: Evading File-based Sandboxes</a>.</p>
+
+<h4>ETDR Weaknesses</h4>
+
+<p>For the ETDRs, attackers will either maintain a presence entirely in memory to avoid being noticed, or try to bounce up to kernel space where the attacker will be on equal footing with the monitoring and can bypass whatever techniques are being used there.</p>
+
+<p>Another option would be for the attacker to find ways to disable the products.  It is difficult for an admin to tell the difference between a machine that has been powered off, versus one that is no longer responding because an attacker has taken control of it.  These products may need to get tied into the firewalls so the firewall will disable any traffic from a host who&#39;s agent is not at least sending heart beats.  However, the attacker could instead neuter the product so it still sends heart beats, but it no longer monitors properly.</p>
+
+<p>Because these products are monitoring and not blocking actions, and because they likely will cache and package up multiple results at once to send home, a smart attacker may be able to time his actions to race against this heart beat.  He will try to wait for the latest heart beat, then do some malicious actions which would generate alerts once the server analyzes them, but these actions are meant to deny that heart beat, and any future ones, from being sent.</p>
+
+<h3>Signatures</h3>
+
+<p>The signatures for these products are similar and many of these companies provide Threat Intelligence (TI) feeds which are basically the signatures that can be applied to competing products or to firewalls.  My next post will try to make sense of some of the standards available.</p>
+
+    </div>
+
+    <hr>
+
+    <!-- Pagination links -->
+    <div class="pagination">
+    
+    <span class="page-nav-item">
+        <a rel="next" href="/2014/05/28/endpoint-threat-detection-standards/" title="View Endpoint Threat Detection Standards">&larr; Endpoint Threat Detection Standards </a>
+    </span>
+    
+
+    
+    <span class="page-nav-item">
+        | <a rel="prev" href="/2014/02/27/emet-5.0-review/" title="View EMET 5.0 Review">EMET 5.0 Review &rarr;</a>
+    </span>
+    
+    </div>
+
+</div>
+
+
+
+
+        </div>
+
+          <div class="footer">
+          </div>
+        </div>
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="/js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    </body>
+</html>

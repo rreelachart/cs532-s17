@@ -1,0 +1,3709 @@
+RAW HTML FOR: http://journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://journeyintoir.blogspot.co.uk/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Journey Into Incident Response - Atom" href="http://journeyintoir.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Journey Into Incident Response - RSS" href="http://journeyintoir.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Journey Into Incident Response - Atom" href="https://www.blogger.com/feeds/4080617372940068027/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Journey Into Incident Response - Atom" href="http://journeyintoir.blogspot.com/feeds/8460246076225689314/comments/default" />
+<meta content='http://journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html' property='og:url'/>
+<meta content='Linkz for Incident Response' property='og:title'/>
+<meta content='Due to changes with my employer last Spring my new responsibilities include all things involving incident response. I won’t go into details ...' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Journey Into Incident Response: Linkz for Incident Response</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/124887373-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4080617372940068027&amp;zx=8619c3e3-7edb-407d-b5ec-8b6f4cfed44a' />
+<style id='page-skin-1' type='text/css'><!--
+/* -----------------------------------------------
+Blogger Template Style
+Name:     iNove
+Designer: mg12
+Updated by: http://www.blogcrowds.com
+Support:    http://www.blogcrowds.com
+----------------------------------------------- */
+#navbar-iframe {
+height:0px;
+visibility:hidden;
+display:none;
+}
+/* static START */
+* {
+margin:0;
+padding:0;
+}
+abbr[title], acronym[title] {
+border-bottom:thin dotted;
+cursor:help;
+}
+body {
+background:#BEC3C6 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/bg.jpg) repeat-x;
+color:#555;
+font-family:Verdana,"BitStream vera Sans",Helvetica,Sans-serif;
+font-size:12px;
+}
+h1, h2, h3, h4, h5, h6 {
+font-weight:bold;
+letter-spacing:-0.05em;
+font-family:Arial;
+}
+h1 {font-size:200%;}
+h2 {font-size:170%;}
+h3 {font-size:150%;}
+h4 {font-size:130%;}
+h5 {font-size:110%;}
+h6 {font-size:100%;}
+img {
+border:0;
+}
+img.sided {
+background:#FFF;
+border:1px solid #CCC;
+padding:3px;
+}
+small {
+font-size:10px;
+}
+a:hover img.sided {
+border-color:#A6A6A6;
+}
+a {
+color:#2970A6;
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+}
+.wp-caption {
+background:#F7F7F7;
+border:1px solid #CCC;
+padding:5px 0;
+margin-bottom:5px;
+text-align:center;
+}
+.wp-caption img {
+margin:0 5px;
+}
+.wp-caption-text {
+text-align:center;
+padding:0 5px !important;
+padding:3px 5px 0;
+}
+*+html .wp-caption-text {
+padding:3px 5px 0 !important;
+}
+.post .content .wp-caption p {
+margin:0;
+}
+blockquote, pre {
+background:#F4F5F7 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/blockquote.gif) 3px 3px no-repeat;
+border:1px dashed #CCC;
+padding:8px 12px 8px 36px;
+margin:5px 0;
+}
+.more-link {
+font-size:11px;
+}
+.alignleft {
+float:left;
+text-align:left;
+margin-right:10px;
+}
+.alignright {
+float:right;
+text-align:right;
+margin-left:10px;
+}
+.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.floatleft {
+float:left;
+}
+.floatright {
+float:right;
+}
+.left {
+float:left;
+margin-right:10px;
+}
+.right {
+float:right;
+margin-left:10px;
+}
+.fixed, .clear {
+clear:both;
+}
+input.textfield,
+textarea {
+background:#FFF url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/textfield.gif) top repeat-x;
+border:1px solid #A6A6A6;
+padding:2px 1px;
+font-size:12px;
+}
+.boxcaption {
+background:#E3E4E6 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 0 0 no-repeat;
+padding:6px 12px;
+border-bottom:1px solid #CCC;
+}
+.boxcaption h3 {
+font-size:12px;
+font-family:Verdana,"BitStream vera Sans";
+letter-spacing:0em;
+}
+.box {
+background:#F4F5F7 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 100% 100% no-repeat;
+padding:8px 12px;
+margin-bottom:10px;
+}
+.messagebox,
+.errorbox {
+background:#EDEFF0 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/messagebox.gif) no-repeat;
+padding:0 12px;
+height:27px;
+line-height:27px;
+font-size:11px;
+}
+.w3c {
+color:#080;
+font-size:10px;
+}
+/* static END */
+/* layout START */
+#wrap {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/light.gif) center top no-repeat;
+padding:20px 0;
+}
+#container {
+margin:0 auto;
+width:936px;
+}
+/* layout END */
+/* header START */
+#header {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/header.jpg) 0 0 no-repeat;
+height:90px;
+border-bottom:1px solid #A6A6A6;
+}
+#caption {
+padding:25px 30px 0;
+}
+#title a {
+text-decoration:none;
+color:#FFF;
+height:30px;
+display:block;
+font-family:"Trajan Pro";
+letter-spacing:0;
+}
+/* image blog title */
+/*
+#title a {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/title.gif) no-repeat;
+text-decoration:none;
+color:#FFF;
+width:250px;
+height:30px;
+text-indent:-999em;
+display:block;
+}
+*/
+#tagline {
+color:#FFF;
+border-top:1px solid #FFF;
+text-decoration:none;
+font-size:10px;
+float:left;
+padding:0 3px;
+}
+#header .banner {
+float:right;
+padding:15px 15px 0;
+color:#999;
+}
+/* header END */
+/* navigation START */
+#navigation {
+background:#FFF;
+border-bottom:1px solid #A6A6A6;
+}
+#menus li {
+display:inline;
+list-style:none;
+}
+#menus li a {
+background:transparent url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/menu.gif) no-repeat;
+display:block;
+color:#382E1F;
+height:31px;
+line-height:31px;
+padding:0 20px;
+margin-left:-10px;
+text-decoration:none;
+font-size:11px;
+float:left;
+z-index:1;
+}
+#menus li a:hover,
+#menus li a.current {
+background-position:0 -31px;
+}
+#menus li.current_page_item a,
+#menus li.current-cat a {
+background-position:0 -62px;
+}
+#menus li a.home {
+background-position:0 -93px;
+width:45px;
+padding:0;
+margin-left:0;
+text-indent:-999em;
+}
+#menus li a.home:hover {
+background-position:0 -124px;
+}
+#menus li.current_page_item a.home {
+background-position:0 -155px;
+}
+#menus li a.lastmenu:hover {
+background-position:0 0;
+cursor:default;
+}
+#searchbox {
+background: url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/searchbox.gif) no-repeat;
+width:209px;
+height:23px;
+display:block;
+float:right;
+margin-top:4px;
+margin-right:10px !important;
+margin-right:5px;
+padding:2px;
+}
+#searchbox .textfield {
+background:none;
+border:0px;
+width:185px;
+float:left;
+margin-right:2px;
+padding-left:2px;
+}
+#searchbox .button {
+background:none;
+border:0px;
+width:18px;
+height:18px;
+cursor:pointer;
+float:left;
+margin-top:1px;
+}
+#searchbox .searchtip {
+color:#999;
+}
+/* navigation END */
+/* submenu START */
+#menus li ul {
+display:none;
+background:#F4F5F7;
+border:solid #A6A6A6;
+border-width:1px 1px 0;
+line-height:0;
+position:absolute;
+z-index:1;
+}
+#menus li li {
+float:none;
+margin:0;
+padding:0;
+list-style:none;
+}
+#menus li li a {
+float:none;
+padding:7px 18px 7px 10px;
+text-decoration:none;
+border-bottom:1px solid #DDD;
+margin:0;
+background-image:none;
+height:auto;
+line-height:145%;
+color:#999;
+display:block;
+width:175px;
+}
+#menus li li a.last {
+border-color:#A6A6A6;
+}
+#menus li li a:hover,
+#menus li li a.current {
+background-color:#EDEFF0;
+color:#382E1F;
+}
+#menus li li a.subtitle,
+#menus li li a.subtitle:hover {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/arrow.gif);
+background-position:right;
+background-repeat:no-repeat;
+}
+/* submenu END */
+/* content START */
+#content {
+background:#FFF url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/sidesep.gif) right repeat-y;
+min-height:400px;
+}
+/* content END */
+/* main START */
+#main {
+background:#FFF url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/main_shadow.gif) top repeat-x;
+width:605px;
+padding:13px 15px 15px;
+float:left;
+overflow:hidden;
+}
+#notice {
+color:#080;
+}
+#notice a {
+text-decoration:underline;
+}
+.post {
+padding-bottom:5px !important;
+padding-bottom:15px;
+}
+*+html .post {
+padding-bottom:15px !important;
+}
+.post h2 {
+display:block;
+margin-top:10px;
+border-bottom:1px solid #CCC;
+padding:0 5px 3px;
+font-size:16px;
+font-family:Verdana,"BitStream vera Sans";
+}
+.post h2 a.title {
+text-decoration:none;
+color:#4C4C4C;
+}
+.post h2 a.title:hover {
+color:#2970A6;
+}
+.post h2 .act a {
+font-weight:normal;
+}
+.post .info {
+margin:5px;
+}
+.post .info span.first {
+margin-left:0;
+}
+.post .date,
+.post .author,
+.post .editpost,
+.post .comments,
+.post .addcomment,
+.post .addlink,
+.post .editlinks {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) no-repeat;
+padding-left:22px;
+height:16px;
+line-height:16px;
+display:block;
+font-size:11px;
+}
+.post .tags,
+.post .categories {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) no-repeat;
+width:16px;
+height:16px;
+line-height:16px;
+display:block;
+text-indent:-999em;
+}
+.post .under span.tags,
+.post .under span.categories {
+margin-right:6px;
+}
+.post .act {
+height:16px;
+float:right;
+}
+.post .act span {
+float:left;
+margin-left:15px;
+}
+.post .tags {
+background-position:0 -400px;
+}
+.post .categories {
+background-position:0 -480px;
+}
+.post .date {
+background-position:0 -48px;
+margin-right:15px;
+float:left;
+}
+.post .author {
+background-position:0 0;
+float:left;
+}
+.post .editpost {
+background-position:0 -64px;
+margin-left:15px;
+float:right;
+}
+.post .comments {
+background-position:0 -96px;
+float:right;
+}
+.post .addcomment {
+background-position:0 -112px;
+margin-left:15px;
+float:right;
+}
+.post .addlink {
+background-position:0 -176px;
+}
+.post .editlinks {
+background-position:0 -192px;
+}
+.post .content {
+margin:0 0 10px 0;
+padding:5px 0 0 5px;
+line-height:145%;
+overflow:hidden;
+}
+.post .content p {
+margin-bottom:10px;
+}
+.post .under {
+height:16px;
+line-height:16px;
+font-size:11px;
+margin-bottom:10px;
+}
+.post .under span {
+float:left;
+margin-right:15px;
+}
+.post .content h4 {
+color:#080;
+margin-bottom:10px;
+}
+.post .content img {
+max-width:600px;
+}
+.post .content ul,
+.post .content ol {
+list-style:none;
+padding-bottom:10px;
+}
+.post .content ul li,
+.post .content ol li {
+list-style-position:inside;
+padding-left:20px;
+}
+.post .content table {
+background:#FFF;
+border:2px solid #CCC;
+border-collapse:collapse;
+margin:5px 0 10px;
+}
+.post .content th,
+.post .content td {
+border:1px solid #CCC;
+padding:3px 10px;
+text-align:left;
+vertical-align:top;
+}
+.post .content tr.even td {
+background:#F7F7F7;
+}
+.post .content th {
+background:#EDEFF0;
+}
+.post .content .boxcaption {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/postbox.gif);
+}
+.post .content .box {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/postbox.gif);
+}
+#postpath {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -320px no-repeat;
+line-height:16px;
+margin:5px 0;
+padding-left:22px;
+}
+#pagenavi,
+#postnavi {
+border-top:1px solid #CCC;
+margin:10px -5px 0;
+padding:10px 5px 0;
+}
+#pagenavi {
+font-size:11px;
+}
+#pagenavi .newer a,
+#postnavi .prev a {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -224px no-repeat;
+padding-left:22px;
+float:left;
+height:16px;
+line-height:16px;
+}
+#pagenavi .older a,
+#postnavi .next a {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 100% -240px no-repeat;
+padding-right:22px;
+float:right;
+height:16px;
+line-height:16px;
+}
+/* main END */
+/* sidebar START */
+#sidebar {
+background:#F7F7F7 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/sidebar_shadow.gif) top repeat-x;
+width:300px;
+float:right;
+font-size:95%;
+line-height:145%;
+overflow:hidden;
+padding-top:8px;
+}
+#sidebar li {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -560px no-repeat;
+padding-left:22px;
+list-style:none;
+margin-top:5px;
+/*font-size:95%;*/
+}
+#sidebar .content,
+#sidebar li {
+font-size:12px;
+}
+#centersidebar,
+#northsidebar .widget,
+#southsidebar .widget {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/widgetsep.png) bottom no-repeat;
+padding:10px 15px 16px;
+}
+#centersidebar {
+padding-bottom:6px;
+}
+#northsidebar,
+#southsidebar {
+font-size:95%;
+}
+#northsidebar .widget h2,
+#southsidebar .widget h2 {
+margin-bottom:10px;
+}
+#northsidebar .widget .content p,
+#southsidebar .widget .content p {
+margin-bottom:10px;
+}
+#westsidebar {
+width:121px;
+float:left;
+padding-right:5px;
+font-size:95%;
+overflow:hidden;
+}
+#eastsidebar {
+width:129px;
+float:right;
+font-size:95%;
+overflow:hidden;
+}
+#westsidebar h3,
+#eastsidebar h3 {
+margin-bottom:5px;
+}
+#westsidebar .widget,
+#eastsidebar .widget {
+margin-bottom:15px;
+}
+#sidebar .widget_feeds {
+padding:5px 15px 15px;
+}
+#sidebar #feedrss,
+#sidebar #feedemail {
+height:25px;
+line-height:25px;
+display:block;
+padding:5px 5px 5px 36px;
+float:left;
+text-decoration:none;
+}
+#sidebar #feedrss {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/feeds.gif) 5px 5px no-repeat;
+}
+#sidebar #feedemail {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/feeds.gif) 5px -45px no-repeat;
+margin-left:15px;
+}
+#subscribe ul {
+display:none;
+position:absolute;
+background:#F4F5F7;
+border:1px solid #B7B7B7;
+width:180px;
+padding:5px;
+}
+#subscribe li {
+background:transparent;
+list-style:none;
+float:left;
+margin:0;
+padding:0;
+display:block;
+}
+#subscribe li a span {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/readers.gif) no-repeat;
+height:20px;
+width:80px;
+display:block;
+text-indent:-999em;
+}
+#subscribe li#google_reader a span {
+background-position:0 0;
+}
+#subscribe li#youdao_reader a span {
+background-position:0 -20px;
+}
+#subscribe li#xianguo_reader a span {
+background-position:0 -40px;
+}
+#subscribe li#zhuaxia_reader a span {
+background-position:0 -60px;
+}
+#subscribe li#yahoo_reader a span {
+background-position:0 -80px;
+}
+#subscribe li#newsgator_reader a span {
+background-position:0 -100px;
+}
+#subscribe li#bloglines_reader a span {
+background-position:0 -120px;
+}
+#subscribe li#inezha_reader a span {
+background-position:0 -140px;
+}
+#subscribe li a {
+display:block;
+padding:5px;
+text-decoration:none;
+width:80px;
+font-size:12px;
+}
+#subscribe li a:hover {
+background:#EEDDCC;
+}
+#tag_cloud a {
+line-height:130%;
+}
+/* sidebar END */
+/* footer START */
+#footer {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/footer.jpg) 0 0 no-repeat;
+display:block;
+height:88px;
+border-top:1px solid #CCC;
+font-size:11px;
+line-height:145%;
+width:100%;
+}
+#footer a {
+color:#2A2A2A;
+}
+#copyright {
+margin-top:12px;
+margin-left:20px;
+}
+#themeinfo {
+margin-left:20px;
+}
+a#powered {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/wp-logo.png) no-repeat;
+display:block;
+width:92px;
+height:57px;
+float:left;
+margin:0 10px 0 5px;
+text-indent:-999em;
+}
+a#gotop {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -304px no-repeat;
+float:right;
+height:16px;
+line-height:18px;
+display:block;
+padding-left:16px;
+margin:5px 15px 0 0 !important;
+margin:5px 8px 0 0;
+text-decoration:none;
+}
+/* footer END */
+/* comment START */
+#commentlist {
+background:#FCFCFC;
+border-top:1px solid #CCC;
+border-bottom:1px solid #CCC;
+margin:0 -15px;
+padding:0 15px;
+}
+#commentlist ol,
+#commentlist li {
+list-style:none;
+}
+#cmtswitcher {
+background:#FFF;
+font-size:10px;
+padding-top:5px;
+}
+#cmtswitcher a.tab,
+#cmtswitcher a.curtab {
+padding:5px 10px;
+margin-bottom:-1px;
+display:block;
+float:right;
+color:#555;
+text-decoration:none;
+}
+#cmtswitcher a.tab {
+border:1px solid #FFF;
+border-bottom-color:#CCC;
+}
+#cmtswitcher a.curtab {
+background:#FCFCFC;
+border:1px solid #CCC;
+border-bottom-color:#FCFCFC;
+}
+#cmtswitcher .addcomment,
+#cmtswitcher .addtrackback {
+padding-left:22px;
+height:16px;
+line-height:16px;
+display:block;
+font-size:11px;
+float:left;
+margin-right:15px;
+margin-top:4px !important;
+margin-top:3px;
+}
+#cmtswitcher .addcomment {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -112px no-repeat;
+}
+#cmtswitcher .addtrackback {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -144px no-repeat;
+}
+#thecomments,
+#thetrackbacks {
+padding-bottom:15px;
+list-style:none;
+}
+#thecomments .comment,
+#thecomments .messagebox {
+margin-top:15px;
+}
+.comment .author {
+float:left;
+width:81px;
+text-align:center;
+}
+.comment .pic {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/commentpoint.png) 100% 33% no-repeat;
+padding-right:14px;
+margin-top:10px;
+}
+.comment .name {
+width:67px;
+padding-right:14px;
+font-weight:bold;
+overflow:hidden;
+}
+.comment .avatar {
+padding:1px;
+border:1px solid #999;
+}
+.comment .info {
+background:#EDEFF0 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/comment.gif) 0 0 no-repeat;
+float:left;
+padding:10px 15px 0;
+width:494px;
+}
+.comment .date,
+.trackback .date {
+float:left;
+font-size:10px;
+}
+.comment .act,
+.trackback .act {
+float:right;
+font-size:10px;
+}
+.comment .content {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/comment.gif) 100% 100% no-repeat;
+margin:0 -15px;
+padding:0 15px 10px;
+line-height:145%;
+}
+.comment .content p {
+margin-top:10px;
+}
+.comment .content blockquote p {
+margin-top:0;
+margin-bottom:10px;
+}
+.admincomment .author {
+float:right;
+}
+.admincomment .pic {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/commentpoint.png) 0% 33% no-repeat;
+padding-right:0;
+padding-left:14px;
+}
+.admincomment .name {
+padding-right:0;
+padding-left:14px;
+}
+.admincomment .info {
+float:right;
+}
+#comment_login {
+margin-top:15px;
+}
+#thetrackbacks {
+display:none;
+}
+#thetrackbacks li {
+margin-top:15px;
+}
+.trackback {
+background:#EDEFF0 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 0 0 no-repeat;
+padding:10px 15px 0;
+width:575px;
+}
+.trackback .title {
+background:#EDEFF0 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 100% 100% no-repeat;
+padding:10px 15px !important;
+padding:0 15px 10px;
+width:575px;
+margin:0 -15px;
+}
+#respond {
+padding:10px 0 0;
+font-size:11px;
+}
+#respond .row {
+margin-bottom:5px;
+}
+#respond .textfield {
+width:200px;
+}
+#emoticon {
+float:right;
+margin-top:1px;
+margin-right:10px;
+}
+#comment {
+width:601px;
+}
+#commentnavi {
+background:#EDEFF0 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 0 0 no-repeat;
+padding:10px 15px;
+font-size:11px;
+}
+#commentnavi a.page-numbers {
+padding:5px 7px;
+text-decoration:none;
+border:1px solid #EDEFF0;
+margin:0 -2px;
+}
+#commentnavi a.page-numbers:hover {
+background:#F7F7F7;
+border:1px solid #CCC;
+text-decoration:none;
+}
+#commentnavi span.pages {
+padding:0 7px 0 22px;
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -272px no-repeat;
+height:16px;
+line-height:16px;
+float:left;
+}
+#commentnavi span.current {
+background:#F7F7F7;
+padding:5px 7px;
+border:1px solid #F7F7F7;
+font-weight:bold;
+margin:0 -2px;
+}
+#commentnavi #commentpager {
+line-height:16px;
+}
+#submitbox a.feed {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -256px no-repeat;
+padding-left:22px;
+height:16px;
+line-height:16px;
+display:block;
+float:left;
+}
+#submitbox #submit {
+padding:3px 6px;
+background:#B4D666;
+border-top:1px solid #B4D666;
+border-right:1px solid #81B840;
+border-bottom:1px solid #81B840;
+border-left:1px solid #B4D666;
+color:#2970A6;
+font-size:11px;
+cursor:pointer;
+}
+#submitbox #submit:hover {
+background:#98C64C;
+border-top:1px solid #76B33A;
+border-right:1px solid #98C64C;
+border-bottom:1px solid #98C64C;
+border-left:1px solid #76B33A;
+color:#074A7E;
+}
+#submitbox .submitbutton {
+float:right;
+}
+#cp_post_id {
+display:none;
+}
+/* comment END */
+/* calendar START */
+.widget_calendar h3 {
+display:none;
+}
+#wp-calendar {
+width:100%;
+}
+#wp-calendar #today {
+background:#E6E6E6;
+}
+#wp-calendar tbody a {
+font-weight:bold;
+}
+#wp-calendar caption {
+font-family:Arial;
+font-weight:bold;
+letter-spacing:-0.05em;
+font-size:150%;
+text-align:left;
+padding-bottom:5px;
+}
+#wp-calendar th,
+#wp-calendar td {
+text-align:center;
+}
+#wp-calendar tbody td {
+border:1px solid #CCC;
+}
+#wp-calendar tbody td.pad {
+border:0 none;
+}
+#wp-calendar th {
+background:#999;
+color:#FFF;
+}
+#wp-calendar td#prev {
+text-align:left;
+padding-top:5px;
+}
+#wp-calendar td#next {
+text-align:right;
+padding-top:5px;
+}
+/* calendar END */
+/* linkcat START */
+.post .content .linkcat ul li {
+list-style:none;
+float:left;
+width:25%;
+padding:2px 0;
+overflow:hidden;
+}
+.post .content .linkcat ul li a {
+background:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -160px no-repeat;
+padding-left:22px;
+height:16px;
+line-height:16px;
+}
+/* linkcat END */
+/* related posts START */
+/* when related posts with title */
+#related_posts {
+padding-bottom:10px;
+}
+#related_posts h3 {
+background:#E3E4E6 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 0 0 no-repeat;
+font-size:12px;
+padding:6px 12px;
+font-family:Verdana,"BitStream vera Sans",Arial,Helvetica,Sans-serif;
+letter-spacing:0em;
+border-bottom:1px solid #CCC;
+}
+#related_posts ul {
+background:#F4F5F7 url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box.gif) 100% 100% no-repeat;
+padding:3px 12px 8px;
+}
+#related_posts ul li {
+list-style:none;
+padding:3px 5px;
+border-bottom:1px solid #E3E4E6;
+line-height:18px;
+}
+#related_posts .count {
+font-size:10px;
+}
+#related_posts .excerpt {
+color:#999;
+font-size:11px;
+display:block;
+}
+/* when related posts without title */
+/*
+#related_posts {
+padding-top:3px;
+padding-bottom:8px;
+}
+#related_posts ul li {
+list-style:none;
+padding:3px 5px;
+border-bottom:1px solid #E3E4E6;
+line-height:18px;
+}
+*/
+/* related posts END */
+/* one-column START */
+.one-column #content {
+background:#FFF;
+}
+.one-column #main {
+width:906px;
+}
+.one-column #comment {
+width:902px;
+}
+.one-column .trackback,
+.one-column .trackback .title {
+width:876px;
+}
+.one-column .comment .info {
+width:795px;
+}
+.one-column .comment .info,
+.one-column .comment .content {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/comment_1col.gif);
+}
+.one-column .boxcaption,
+.one-column .box,
+.one-column .trackback,
+.one-column .trackback .title,
+.one-column #commentnavi,
+.one-column #related_posts h3,
+.one-column #related_posts ul {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/box_1col.gif);
+}
+.one-column .messagebox,
+.one-column .errorbox {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/messagebox_1col.gif);
+}
+.one-column .post .content .boxcaption,
+.one-column .post .content .box {
+background-image:url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/postbox_1col.gif);
+}
+/* one-column END */
+/* thread twitter START */
+.post .twitter-tweedles {
+background:#E2F2FB;
+border:1px dashed #3FCDEB;
+padding:10px 0 0;
+}
+.twitter ul {
+margin:0 12px 0 10px !important;
+margin:0 10px;
+}
+.post .content .twitter ul li {
+background:#FCFCFC;
+padding:0;
+float:left;
+list-style:none;
+list-style-position:outside;
+border:solid #CCC;
+border-width:1px !important;
+border-width:1px 0;
+width:100%;
+padding-top:10px;
+margin-bottom:10px;
+}
+.twitter img {
+float:left;
+padding:0 10px 0 0;
+margin:0 0 10px 10px;
+}
+.twitter_source {
+color:#999;
+font-family:georgia;
+font-style:italic;
+font-size:10px;
+}
+.twitter_source a {
+color:#999;
+}
+.twitter_text {
+margin-bottom:5px;
+display:block;
+padding-left:70px;
+padding-right:10px;
+}
+.twitter_reply {
+background: url(http://s61.photobucket.com/albums/h59/c_stavanger/inove/icons.gif) 0 -112px no-repeat;
+padding-left:22px;
+padding-right:10px;
+height:16px;
+line-height:16px;
+display:block;
+font-size:11px;
+float:right;
+}
+.twitter .twitter_pagebar {
+padding:0 10px;
+font-size:11px;
+}
+.twitter .twitter_pagebar a {
+background:#D1EAF9;
+padding:2px 5px;
+border:1px solid #D1EAF9;
+}
+.twitter .twitter_pagebar a:hover {
+border:1px dashed #3FCDEB;
+text-decoration:none;
+}
+.twitter .twitter_pagebar strong {
+background:#A6D0E7;
+padding:2px 5px;
+border:1px solid #A6D0E7;
+}
+.post .content .thread_twitter_power_by {
+display:block;
+background:#D1EAF9;
+border-top:1px dashed #3FCDEB;
+margin-bottom:0;
+padding:5px 10px;
+}
+.twitter .navigation {
+padding:10px 5px;
+}
+#thread_twitter .loading {
+padding:0 10px;
+font-size:11px;
+}
+/* thread twitter END */
+.author .name{
+font-size:.9em;
+overflow:hidden;
+margin:0 0 5px 0;
+}
+
+--></style>
+<script type="text/javascript">function a(){var b=window.location.href,c=b.split("?");switch(c.length){case 1:return b+"?m=1";case 2:return 0<=c[1].search("(^|&)m=")?null:b+"&m=1";default:return null}}var d=navigator.userAgent;if(-1!=d.indexOf("Mobile")&&-1!=d.indexOf("WebKit")&&-1==d.indexOf("iPad")||-1!=d.indexOf("Opera Mini")||-1!=d.indexOf("IEMobile")){var e=a();e&&window.location.replace(e)};
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d4080617372940068027\x26blogName\x3dJourney+Into+Incident+Response\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dBLUE\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://journeyintoir.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://journeyintoir.blogspot.com/\x26targetPostID\x3d8460246076225689314\x26blogPostOrPageUrl\x3dhttp://journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html\x26vt\x3d-6043491732724256069',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id='wrap'><div id='container'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header'>
+<div class='header section' id='caption'><div class='widget Header' data-version='1' id='Header1'>
+<h1 id='title'>
+<a href='http://journeyintoir.blogspot.co.uk/'>Journey Into Incident Response</a>
+</h1>
+<div id='tagline'>
+Holding the Line
+</div>
+</div></div>
+<div class='fixed'></div>
+</div>
+<div id='navigation'>
+<div id='menus'>
+<li class='current_page_item'><a class='home' href='http://journeyintoir.blogspot.co.uk/' title='Home'>Home</a></li>
+<li class='page_item page-item-2'><a href='http://journeyintoir.blogspot.com/p/about.html' title='About'>About</a></li>
+<li class='page_item page-item-3'><a href='http://journeyintoir.blogspot.com/p/journey-into-ir-methodology.html' title='Journey into IR Methodology'>Journey into IR Methodology</a></li>
+<li class='current_page_item'><a href='https://cse.google.com/cse/publicurl?cx=011905220571137173365:7eskxxzhjj8' title='Digital Forensics Search'>Digital Forensics Search</a></li>
+<li class='current_page_item'><a href='https://cse.google.com/cse/publicurl?cx=011905220571137173365:3dje3l3s8wk' title='Vulnerability Search'>Vulnerability Search</a></li>
+<li class='current_page_item'><a href='https://cse.google.com/cse/publicurl?cx=011905220571137173365:eo5wzloxe_m' title='Active Threat Search'>Active Threat Search</a></li>
+<li class='current_page_item'><a href='https://cse.google.com/cse/home?cx=011750002002865445766:pc60zx1rliu' title='Malware Analysis Search'>Malware Analysis Search</a></li>
+</div>
+<div id='searcbox'>
+<!-- google search form here if you like -->
+</div>
+<div class='fixed'></div>
+</div>
+<div id='content'>
+<div id='crosscol-wrapper' style='text-align:center'>
+<div class='crosscol no-items section' id='crosscol'></div>
+</div>
+<div id='main-wrapper'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+<div class='post'>
+<a name='8460246076225689314'></a>
+<h2 class='post-title entry-title'>
+<a href='http://journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html'>Linkz for Incident Response</a>
+</h2>
+<div class='post-header-line-1'></div>
+<div class='info'>
+<span class='date'>Wednesday, November 20, 2013</span>
+<span class='author'>
+Posted by
+<span class='fn'>Corey Harrell</span>
+</span>
+<span class='comments'>
+</span>
+<div class='fixed'></div>
+</div>
+<div class='content'>
+<span style="font-family: Verdana, sans-serif;">Due
+to changes with my employer last Spring my new responsibilities include all
+things involving incident response. I won&#8217;t go into details about what I&#8217;m doing for
+my employer but I wanted to share some linkz I came across. Similar to my
+responsibilities, these linkz include all things involving incident response.
+Enjoy &#8230;.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Incident
+Response Fundamentals</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">What
+better way to start out an Incident Response Linkz post than by providing
+series discussing incident response fundamentals. Securosis wrote an Incident
+Response Fundamental series about incident response. The topics covered include:</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">-
+Introduction, Data Collection/Monitoring Infrastructure<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Incident Command Principles<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Roles and Organizational Structure<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Response Infrastructure and Preparatory Steps<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Before the Attack<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Trigger, Escalate, and Size up<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Contain, Investigate, and Mitigate<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+-
+Mop up, Analyze, and QA</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">The
+links to all these articles can be found on the </span><a href="https://securosis.com/blog/incident-response-fundamentals-index-of-posts"><span style="font-family: Verdana, sans-serif;">Incident
+Response Fundamentals: Index of Posts</span></a><span style="font-family: Verdana, sans-serif;">. Please note some of the links are
+broken on the index page and I did find a quick work around. When you see this
+go to the next article in the series since the first paragraph properly links
+to the previous article.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Doing Incident
+Response Faster</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Building
+on their fundamental series Securosis released the </span><a href="https://securosis.com/Research/Publication/react-faster-and-better-new-approaches-for-advanced-incident-response"><span style="font-family: Verdana, sans-serif;">React
+Faster and Better: New Approaches for Advanced Incident Response paper</span></a><span style="font-family: Verdana, sans-serif;">.
+Despite being a few years old, the information is still relevant today. To
+illustrate the paper&#8217;s focus I&#8217;ll quote from the Introduction article in their
+fundamentals series:</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">&#8220;We
+need to change our definition of success from stopping an attack (which would
+be nice, but isn&#8217;t always practical) to reacting faster and better to attacks,
+and containing the damage.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">We&#8217;re
+not saying you should give up on trying to prevent attacks &#8211; but place as much
+(or more) emphasis on detecting, responding to, and mitigating them.&#8221;</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">The
+ </span><a href="https://securosis.com/Research/Publication/react-faster-and-better-new-approaches-for-advanced-incident-response"><span style="font-family: Verdana, sans-serif;">React Faster and Better: New Approaches for Advanced Incident Response</span></a><span style="font-family: Verdana, sans-serif;">&nbsp;paper discusses how they think you can perform incident response faster and
+better. </span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Incident
+Response's Evolution</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Anton
+Chuvakin tackled incident response as a research project. He wrote a paper on
+the subject that is only available with a Gartner subscription. However, he was
+frequently blogging about his research and thoughts along the way. The one
+thing I noticed in his research that aligns with some of the other links I'm
+sharing. Incident response has been evolving into a continuous process. It involves
+constantly monitoring to detect compromises, triaging alerts, responding to
+incidents, and improving detection using the discovered indicators. As Anton
+mentioned in his Death of a Straight Line article, it's no longer a linear
+process with a start and finish. It now resembles having multiple loops going
+on at the same time. Below are a few of his blog posts</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">On
+Importance of Incident Response</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/07/15/on-importance-of-incident-response/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/07/15/on-importance-of-incident-response/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/07/15/on-importance-of-incident-response/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Incident
+Response: The Death of a Straight Line</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/06/05/incident-response-the-death-of-a-straight-line/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/06/05/incident-response-the-death-of-a-straight-line/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/06/05/incident-response-the-death-of-a-straight-line/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">On
+Three IR Gaps</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/08/20/on-three-ir-gaps/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/08/20/on-three-ir-gaps/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/08/20/on-three-ir-gaps/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Incident
+Plan vs Incident Planning?</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/07/23/incident-plan-vs-incident-planning/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/07/23/incident-plan-vs-incident-planning/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/07/23/incident-plan-vs-incident-planning/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Top-shelf
+Incident Response vs Barely There Incident Response</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/08/09/top-shelf-incident-response-vs-barely-there-incident-response/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/08/09/top-shelf-incident-response-vs-barely-there-incident-response/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/08/09/top-shelf-incident-response-vs-barely-there-incident-response/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Fusion
+of Incident Response and Security Monitoring?</span><br />
+<a href="http://blogs.gartner.com/anton-chuvakin/2013/08/15/fusion-of-incident-response-and-security-monitoring/"></a><a href="http://blogs.gartner.com/anton-chuvakin/2013/08/15/fusion-of-incident-response-and-security-monitoring/"><span style="font-family: Verdana, sans-serif;">http://blogs.gartner.com/anton-chuvakin/2013/08/15/fusion-of-incident-response-and-security-monitoring/</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Integrating SIEM
+with Incident Response</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">The AlienVault </span><a href="http://www.alienvault.com/open-threat-exchange/blog/siem-for-itil-mature-incident-response-part-1"><span style="font-family: Verdana, sans-serif;">SIEM
+for ITIL-Mature Incident Response (Part 1) paper</span></a><span style="font-family: Verdana, sans-serif;"> touches on how you can use
+a SIEM and log correlation to accomplish various things. One of which is to &#8220;develop
+an Incident Response process that includes a significant portion of repeatable,
+measurable and instructable processes.&#8221; The paper lays the groundwork &#8211;such as
+covering incident response implementations and it not being tech support &#8211; for
+the second part of the paper.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">I found their second paper -
+</span><a href="http://www.alienvault.com/open-threat-exchange/blog/siem-for-itil-mature-incident-response-part-2"><span style="font-family: Verdana, sans-serif;">SIEM
+for ITIL-Mature Incident Response (Part 2)</span></a><span style="font-family: Verdana, sans-serif;"> &nbsp;- to be the more interesting of the two. The
+paper goes into detail about evolving incident response into a mature service
+model. It accomplishes this by applying the five states of capability to the
+incident response process. The descriptions are accompanied by diagrams to
+better illustrate the activities and workflow for each stage.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Practical
+Plans for Incident Response</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">The next link isn&#8217;t to a resource freely available on the Internet
+but an outstanding book about incident response. There is a lot of information
+about the incident response process as well as technical information about
+carrying out the process. However, there is very little information about
+incident response plans an organization can leverage for their internal IR
+process. The book </span><a href="http://www.amazon.com/Computer-Incident-Response-Planning-Handbook/dp/007179039X/"><span style="font-family: Verdana, sans-serif;">The
+Computer Incident Response Planning Handbook: Executable Plans for Protecting
+Information at Risk</span></a><span style="font-family: Verdana, sans-serif;"> is loaded with practical information to help build or
+improve your incident response plans. I plan to do a proper book review at some
+point but I wanted to at least mention it in this linkz edition.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Integrating
+Malware Analysis with Malware Response</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Securosis
+Malware Analysis Quant research is a very interesting project. The purpose of
+the project in their words was to &#8220;designed Malware Analysis Quant to
+kick-start development of a refined and unbiased metrics model for confirming
+infection from malicious software, analyzing the malware, and then detecting
+and identifying proliferation within an organization.&#8221; Now setting the metrics
+stuff aside the reason I really like the paper is because of the process it
+outlines. It discusses confirming an infection, analyzing the malware, and then
+identifying other systems (malware proliferation). When looking at all of the
+literature available about incident response the one area lacking is practical
+information one can use to scope an incident. This paper provides some good
+information about the options for scoping a malware incident.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Malware
+Analysis Quant [Final Paper]</span><br />
+<a href="https://securosis.com/blog/malware-analysis-quant-final-paper"></a><a href="https://securosis.com/blog/malware-analysis-quant-final-paper"><span style="font-family: Verdana, sans-serif;">https://securosis.com/blog/malware-analysis-quant-final-paper</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Link
+to the Final Paper</span><br />
+<a href="https://securosis.com/assets/library/reports/Securosis-MAQuant-v1.4_FINAL.pdf"></a><a href="https://securosis.com/assets/library/reports/Securosis-MAQuant-v1.4_FINAL.pdf"><span style="font-family: Verdana, sans-serif;">https://securosis.com/assets/library/reports/Securosis-MAQuant-v1.4_FINAL.pdf</span></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><a href="http://www.blogger.com/null"></a><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Responding
+to Malware Infected Systems</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Claus Valca over at grand stream dreams put together an
+outstanding post about malware response; the post is </span><a href="http://grandstreamdreams.blogspot.com/2013/11/anti-malware-response-go-kit.html"><span style="font-family: Verdana, sans-serif;">Anti-Malware
+Response &#8220;Go-Kit&#8221;</span></a><span style="font-family: Verdana, sans-serif;">. Claus goes into detail about the process he uses when
+responding to an infected system. The thing I really like about this post is he
+discusses the process and tools he uses. I enjoy seeing how others approach the
+same issue since I can learn a thing or two. To top it off the post contains a
+wealth of great links to articles and tools. This is one article you will want
+to take the time to read.</span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;"><strong><u>Memory Forensics
+to the Rescue</u></strong></span><br />
+<span style="font-family: Verdana, sans-serif;"></span><br />
+<span style="font-family: Verdana, sans-serif;">Rounding
+out this linkz post is an excellent write-up by Harlan Carvey. In his post </span><a href="http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html"><span style="font-family: Verdana, sans-serif;">Sniper
+Forensics, Memory Analysis, and Malware Detection</span></a><span style="font-family: Verdana, sans-serif;"> Harlan goes into detail
+about a recent examination he performed. He was faced with an IDS alert and a
+laptop. By using a focused approach, converting a hibernation file into raw
+image, and performing memory forensics he was able to solve the case. Similar to
+Claus, this is another great post highlighting how someone addressed an issue
+with available tools. I see so much value in sharing this kind of information
+because not only do I learn but I can improve my own process. You&#8217;ll definitely
+want to check out this write-up.<o:p></o:p></span><br />
+<span style="font-family: Verdana, sans-serif;">
+
+</span>
+<div style='clear: both;'></div>
+</div>
+<div class='under'>
+<span class='categories'>Labels:</span>
+<span>
+<a href='http://journeyintoir.blogspot.co.uk/search/label/IR' rel='tag'>IR</a>,
+<a href='http://journeyintoir.blogspot.co.uk/search/label/links' rel='tag'>links</a>
+</span>
+</div>
+</div>
+<div id='comments'>
+<div id='cmtswitcher'>
+<a class='curtab' id='commenttab'>Comments</a>
+<span class='addcomment'><a href='#respond'>Leave a comment</a></span>
+<div class='fixed'></div>
+</div>
+<div id='commentlist'>
+<a name='comments'></a>
+<ol id='thecomments'>
+<li class='comment regularcomment'>
+<div class='author'>
+<div class='pic'>
+</div>
+<div class='name'>
+<a href='http://ae.linkedin.com/in/tameribrahimonline/' rel='nofollow'>Tamer Ibrahim</a>
+</div>
+</div>
+<div class='info'>
+<div class='date'>
+<a href='http://journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?showComment=1385010675492#c1420259336507910114' title='comment permalink'>
+November 21, 2013 at 12:11 AM
+</a>
+<a name='c1420259336507910114'></a>
+</div>
+<div class='act'>
+</div>
+<div class='fixed'></div>
+<div class='content'>
+<p>Hi, thanks for sharing the linkz,<br />There is one article about &quot;Handling Destructive Malware&quot; summarizing planning, containment and recovery.<br />https://www.us-cert.gov/ncas/tips/ST13-003</p>
+<span class='item-control blog-admin pid-69020429'>
+<a href='https://www.blogger.com/delete-comment.g?blogID=4080617372940068027&postID=1420259336507910114' title='Delete Comment'>
+<img src='http://www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</div>
+</div>
+<div class='fixed'></div>
+</li>
+</ol>
+<p class='comment-footer'>
+<div class='comment-form' id='respond' style='margin:10px 0 0 85px'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=4080617372940068027&postID=8460246076225689314' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1003877814-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html', '14381295648779572428');
+    </script>
+</div>
+</p>
+</div>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://journeyintoir.blogspot.co.uk/2013/12/revealing-recentfilecachebcf-file.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://journeyintoir.blogspot.co.uk/2013/10/re-introducing-vulnerability-search.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://journeyintoir.blogspot.co.uk/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://journeyintoir.blogspot.com/feeds/8460246076225689314/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+</div></div>
+</div>
+<div id='sidebar'>
+<div class='sidebar section' id='northsidebar'><div class='widget Image' data-version='1' id='Image1'>
+<div class='widget-content'>
+<img alt='' height='153' id='Image1_img' src='http://4.bp.blogspot.com/-ObtAmQUeH_k/TeuVhtwModI/AAAAAAAAAUk/F0Nc6irh5eg/s1600/BlackSmall-270x153.png' width='270'/>
+<br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Image1"));' target='configImage1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Subscribe' data-version='1' id='Subscribe1'>
+<div style='white-space:nowrap'>
+<h2 class='title'>Subscribe To jIIr</h2>
+<div class='widget-content'>
+<div class='subscribe-wrapper subscribe-type-POST'>
+<div class='subscribe expanded subscribe-type-POST' id='SW_READER_LIST_Subscribe1POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fjourneyintoir.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=http%3A%2F%2Fjourneyintoir.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://journeyintoir.blogspot.com/feeds/posts/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+                  Atom
+                </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div class='subscribe-wrapper subscribe-type-PER_POST'>
+<div class='subscribe expanded subscribe-type-PER_POST' id='SW_READER_LIST_Subscribe1PER_POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fjourneyintoir.blogspot.com%2Ffeeds%2F8460246076225689314%2Fcomments%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=http%3A%2F%2Fjourneyintoir.blogspot.com%2Ffeeds%2F8460246076225689314%2Fcomments%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://journeyintoir.blogspot.com/feeds/8460246076225689314/comments/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+                  Atom
+                </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe1PER_POST' onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe1PER_POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div style='clear:both'></div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=Subscribe&widgetId=Subscribe1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe1"));' target='configSubscribe1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget FollowByEmail' data-version='1' id='FollowByEmail1'>
+<h2 class='title'>Follow jIIr by Email</h2>
+<div class='widget-content'>
+<div class='follow-by-email-inner'>
+<form action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("https://feedburner.google.com/fb/a/mailverify?uri=jIIr", "popupwindow", "scrollbars=yes,width=550,height=520"); return true' target='popupwindow'>
+<table width='100%'>
+<tr>
+<td>
+<input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+</td>
+<td width='64px'>
+<input class='follow-by-email-submit' type='submit' value='Submit'/>
+</td>
+</tr>
+</table>
+<input name='uri' type='hidden' value='jIIr'/>
+<input name='loc' type='hidden' value='en_US'/>
+</form>
+</div>
+</div>
+<span class='item-control blog-admin'>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=FollowByEmail&widgetId=FollowByEmail1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("FollowByEmail1"));' target='configFollowByEmail1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</span>
+</div><div class='widget LinkList' data-version='1' id='LinkList1'>
+<h2>jIIr Tools Download Locations</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='https://drive.google.com/folderview?id=0BwsuIHubBoklemxMY2d1M3ctanc&usp=sharing'>auto_rip</a></li>
+<li><a href='https://drive.google.com/folderview?id=0BwsuIHubBoklVE5uRkhZOW01S1U&usp=sharing'>tr3secure_collection_script</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget PopularPosts' data-version='1' id='PopularPosts1'>
+<h2>Most Read jIIr Posts</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2013/12/revealing-program-compatibility.html'>Revealing Program Compatibility Assistant HKCU AppCompatFlags Registry Keys</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2013/01/re-introducing-usnjrnl.html'>Re-Introducing $UsnJrnl</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2013/12/revealing-recentfilecachebcf-file.html'>Revealing the RecentFileCache.bcf File</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2014/06/improving-your-malware-forensics-skills.html'>Improving Your Malware Forensics Skills</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2011/04/introducing-digital-forensics-search.html'>Introducing the Digital Forensics Search</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2015/01/triaging-system-infected-with-poweliks.html'>Triaging a System Infected with Poweliks</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2012/07/malware-root-cause-analysis.html'>Malware Root Cause Analysis</a>
+</li>
+<li>
+<a href='http://journeyintoir.blogspot.co.uk/2013/09/tr3secure-data-collection-script.html'>Tr3Secure Data Collection Script Reloaded</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target='configPopularPosts1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogSearch' data-version='1' id='BlogSearch1'>
+<h2 class='title'>Search jIIr</h2>
+<div class='widget-content'>
+<div id='BlogSearch1_form'>
+<form action='http://journeyintoir.blogspot.co.uk/search' class='gsc-search-box'>
+<table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+<tbody>
+<tr>
+<td class='gsc-input'>
+<input autocomplete='off' class='gsc-input' name='q' size='10' title='search' type='text' value=''/>
+</td>
+<td class='gsc-search-button'>
+<input class='gsc-search-button' title='search' type='submit' value='Search'/>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=BlogSearch&widgetId=BlogSearch1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogSearch1"));' target='configBlogSearch1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1483246800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2017-01-01T00:00:00-05:00&amp;updated-max=2018-01-01T00:00:00-05:00&amp;max-results=1'>2017</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1483246800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2017_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1451624400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2016-01-01T00:00:00-05:00&amp;updated-max=2017-01-01T00:00:00-05:00&amp;max-results=5'>2016</a>
+<span class='post-count' dir='ltr'>(5)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1462075200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2016_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1459483200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2016_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1454302800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2016_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1451624400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2016_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1420088400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2015-01-01T00:00:00-05:00&amp;updated-max=2016-01-01T00:00:00-05:00&amp;max-results=19'>2015</a>
+<span class='post-count' dir='ltr'>(19)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1448946000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1446350400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1438401600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1435723200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1433131200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1430452800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1427860800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1425186000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1422766800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1420088400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2015_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1388552400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2014-01-01T00:00:00-05:00&amp;updated-max=2015-01-01T00:00:00-05:00&amp;max-results=27'>2014</a>
+<span class='post-count' dir='ltr'>(27)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1417410000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1414814400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1412136000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1409544000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1406865600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1404187200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1401595200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1398916800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1396324800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1393650000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1391230800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1388552400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2014_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=close&toggle=YEARLY-1357016400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy toggle-open'>&#9660; </span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2013-01-01T00:00:00-05:00&amp;updated-max=2014-01-01T00:00:00-05:00&amp;max-results=22'>2013</a>
+<span class='post-count' dir='ltr'>(22)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1385874000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate expanded'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=close&toggle=MONTHLY-1383278400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy toggle-open'>&#9660; </span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html'>Linkz for Incident Response</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1380600000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1378008000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1372651200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1367380800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1364788800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1362114000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1359694800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1357016400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2013_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1325394000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2012-01-01T00:00:00-05:00&amp;updated-max=2013-01-01T00:00:00-05:00&amp;max-results=38'>2012</a>
+<span class='post-count' dir='ltr'>(38)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1354338000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1351742400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1349064000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1346472000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1343793600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1341115200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1338523200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1335844800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1333252800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1330578000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1328072400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1325394000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2012_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1293858000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2011-01-01T00:00:00-05:00&amp;updated-max=2012-01-01T00:00:00-05:00&amp;max-results=41'>2011</a>
+<span class='post-count' dir='ltr'>(41)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1322715600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1320120000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1317441600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1314849600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1312171200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1309492800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1306900800000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1304222400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1301630400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1298955600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1296536400000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1293858000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2011_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=YEARLY-1262322000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/search?updated-min=2010-01-01T00:00:00-05:00&amp;updated-max=2011-01-01T00:00:00-05:00&amp;max-results=17'>2010</a>
+<span class='post-count' dir='ltr'>(17)</span>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1291179600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2010_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1288584000000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2010_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1285905600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2010_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1283313600000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2010_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul>
+<li class='archivedate collapsed'>
+<a class='toggle' href='//journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html?widgetType=BlogArchive&widgetId=BlogArchive1&action=toggle&dir=open&toggle=MONTHLY-1280635200000&toggleopen=MONTHLY-1383278400000'>
+<span class='zippy'>
+
+              &#9658;
+            
+</span>
+</a>
+<a class='post-count-link' href='http://journeyintoir.blogspot.co.uk/2010_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' data-version='1' id='Label1'>
+<h2>jIIr's Labels</h2>
+<div class='widget-content cloud-label-widget-content'>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/malware'>malware</a>
+</span>
+<span class='label-size label-size-5'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/exploits'>exploits</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/timeline'>timeline</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/attack%20vectors'>attack vectors</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/malware%20analysis'>malware analysis</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/script'>script</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/tools'>tools</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/triage'>triage</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/links'>links</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/advice'>advice</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/regripper'>regripper</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/volume%20shadow%20copies'>volume shadow copies</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/IR'>IR</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/examination%20steps'>examination steps</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/java'>java</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/program%20execution'>program execution</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/drive-by'>drive-by</a>
+</span>
+<span class='label-size label-size-4'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/prefetch'>prefetch</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/book%20review'>book review</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/registry'>registry</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/delivery%20artifacts'>delivery artifacts</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/detection'>detection</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/tr3secure'>tr3secure</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/NTFS'>NTFS</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/adobe'>adobe</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/fraud'>fraud</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/memory%20analysis'>memory analysis</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/IDS'>IDS</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/Practical'>Practical</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/SIEM'>SIEM</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/digital%20forensics%20search'>digital forensics search</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/hcp'>hcp</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/investigation%20process'>investigation process</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/malvertizing'>malvertizing</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/metadata'>metadata</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/shortcut%20files'>shortcut files</a>
+</span>
+<span class='label-size label-size-3'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/timestomping'>timestomping</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/EEDI'>EEDI</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/Google'>Google</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/autorun'>autorun</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/education'>education</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/jumplists'>jumplists</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/perl'>perl</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/process%20hollowing'>process hollowing</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/readiness'>readiness</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/antiforensics'>antiforensics</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/antivirus'>antivirus</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/scams'>scams</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/sharing'>sharing</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/training'>training</a>
+</span>
+<span class='label-size label-size-2'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/uac'>uac</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/Cuckoo'>Cuckoo</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/OSINT'>OSINT</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/autoplay'>autoplay</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/categories'>categories</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/chain%20of%20evidence'>chain of evidence</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/conferences'>conferences</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/email'>email</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/encase'>encase</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/feedreader'>feedreader</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/kinect'>kinect</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/microsoft%20office'>microsoft office</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/pfic'>pfic</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/random'>random</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/request-tracker'>request-tracker</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/search%20poisoning'>search poisoning</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/spam'>spam</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/testing'>testing</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/threat%20intelligence'>threat intelligence</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/web'>web</a>
+</span>
+<span class='label-size label-size-1'>
+<a dir='ltr' href='http://journeyintoir.blogspot.co.uk/search/label/xbox'>xbox</a>
+</span>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Stats' data-version='1' id='Stats1'>
+<h2>Total Pageviews</h2>
+<div class='widget-content'>
+<div id='Stats1_content' style='display: none;'>
+<span class='counter-wrapper text-counter-wrapper' id='Stats1_totalCount'>
+</span>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=Stats&widgetId=Stats1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Stats1"));' target='configStats1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div><div class='widget BlogList' data-version='1' id='BlogList1'>
+<h2 class='title'>Blogs I Follow</h2>
+<div class='widget-content'>
+<div class='blog-list-container' id='BlogList1_container'>
+<ul id='BlogList1_blogs'>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/9sV1c2Zltq_tC7-kv-NQDPf7qKw7FOkrkpE0SFv2bgkdasGYLOe9z4cgBKidx3317W-RZtnCGg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='https://blog.sucuri.net' target='_blank'>
+Sucuri Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='https://blog.sucuri.net/2017/02/new-guide-fix-hacked-magento-sites.html' target='_blank'>
+New Guide on How to Fix Hacked Magento Sites</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+[image: New Guide on How to Fix Hacked Magento Sites]
+
+Ecommerce refers to websites that involve online purchases. This 
+functionality sparks new challenges,...
+</span>
+<div class='item-time'>
+1 day ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/RBHekIWnubzdkdM5zucoJSnI5ZZVoATGweb2qQHKrJiPLt0o4mchY29WLLYupKDf8Gc6982VnQ=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.hecfblog.com/' target='_blank'>
+Hacking Exposed Computer Forensics Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.hecfblog.com/2017/02/sops-in-dfir.html' target='_blank'>
+SOPs in DFIR</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+Hello Reader,
+      It's been awhile! Sorry I haven't written sooner. Things are great 
+here at camp aka G-C Partners where the nerds run the show. 2 years a...
+</span>
+<div class='item-time'>
+1 day ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/t8sXKRICMvERjyaGFCI-NUQ7PDykxPDQvjuAiIbZ0sASPJYr0D7T36RAcsnMsP800_pl7YKd_VTQ-w=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.trendmicro.com' target='_blank'>
+Trend Micro Simply Security</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blog.trendmicro.com/bad-choices-exposed-data/' target='_blank'>
+Bad Choices, Exposed Data</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+Our researchers produce a lot of really interesting material. This week, 
+they published a paper called, &#8220;U.S. Cities Exposed In Shodan.&#8221; The 
+research looks...
+</span>
+<div class='item-time'>
+1 day ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/1Sg_u1fIQG_ng4IKJx9u4csV4nGmFTZ93SznYKjLgKtOn13XQPddZqc9Jn2vA8rQ-nz2-yONdZMS=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.darknet.org.uk' target='_blank'>
+Darknet - The Darkside</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://feedproxy.google.com/~r/darknethackers/~3/hIv8MSR20dY/' target='_blank'>
+Why Are Hackers Winning The Security Game?</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+A lot of people and companies get complacent and don&#8217;t believe the hackers 
+are winning, but trust me they are. So we have to ask, why are hackers 
+winning t...
+</span>
+<div class='item-time'>
+1 day ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/xLiAXtN3bWAXCt-HGfKlf3fbkm1MyjO7qxsE9SqM6VejTb_g_8kyG7awvcd6fk9ehKwU=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='https://zeltser.com' target='_blank'>
+Lenny Zeltser on Information Security</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='https://zeltser.com/joining-minerva-labs/' target='_blank'>
+Joining Minerva Labs to Keep Malware in Check</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+As much as I look forward to change sometimes, I am often hesitant to 
+forego the familiar despite recognizing the risks of becoming too 
+comfortable in the ...
+</span>
+<div class='item-time'>
+6 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/587Z1F1H4JW8-mkco9YHvm9zY7sWQnuh3YXLtz5vcHw=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='/community/metasploit/blog' target='_blank'>
+Metasploit</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='/community/metasploit/blog/2017/02/09/metasploit-framework-valentines-update' target='_blank'>
+Metasploit Framework Valentines Update</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+
+[image: Metasploit Heart (1).png]Valentines day is just around the corner! 
+What could be a nicer gift for your sweetie than a bundle of new Metasploit 
+Fr...
+</span>
+<div class='item-time'>
+6 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh4.googleusercontent.com/proxy/eRzvnv83KqIPKbSshdMlaPD07HWA6ZRNgUmakL8U0s_--lkJgeMd8c0xkvoQ77MDnUoRJSrfNootx8f1Sw=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://windowsir.blogspot.com/' target='_blank'>
+Windows Incident Response</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://windowsir.blogspot.com/2017/02/updates-links.html' target='_blank'>
+Updates, Links</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+*VSCs*
+Not long ago, I blogged about a means for accessing files within VSCs, 
+which was based on a tweet that I had seen.  However, I could not get the 
+met...
+</span>
+<div class='item-time'>
+1 week ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/ccHhGuz7WRfmFUVvsSKMTJnFP2VkBWLr9YiwR1PA7IoFZyQGYniWMqfStcXUMJ9DOmmjgdOsmew=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blogs.gartner.com/anton-chuvakin' target='_blank'>
+Anton Chuvakin</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blogs.gartner.com/anton-chuvakin/2017/02/02/my-top-7-popular-gartner-blog-posts-for-january-2017/' target='_blank'>
+My Top 7 Popular Gartner Blog Posts for January 2017</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+Most popular blog posts from my Gartner blog during the past month are: Our 
+&#8220;Comparison of Endpoint Detection and Response Technologies and Solutions&#8221; 
+Pape...
+</span>
+<div class='item-time'>
+1 week ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh4.googleusercontent.com/proxy/suEMLZwCiGcPWAGtItugLznBtil9RGnDzRkGL_biEejeFJVIg1h0F4lntJw_wGJ7KVnYsJewUw=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.hexacorn.com/blog' target='_blank'>
+Hexacorn Ltd</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.hexacorn.com/blog/2017/01/29/beyond-good-ol-run-key-part-59/' target='_blank'>
+Beyond good ol&#8217; Run key, Part 59</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+In my last post I talked about Bluetooth. I have a mixed luck testing 
+anything related to this technology&#8230; You see, there is that one more 
+potential persis...
+</span>
+<div class='item-time'>
+2 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/MWDvTqpeNmgLndgaJ4U7RtAet8G00RuaGRYUhjd2sp8JMpxDIdW5Tlf0fZUaKJLKAKNFax7OAhBVeLeBIQ2vMS6uPM3d=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='https://itauditsecurity.wordpress.com' target='_blank'>
+ITauditSecurity</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='https://itauditsecurity.wordpress.com/2017/01/17/do-you-have-user-ids-hidden-in-the-cloud/' target='_blank'>
+Do you have User IDs Hidden in the Cloud?</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+It&#8217;s 10 o&#8217;clock in the cloud. Do you know where all your user IDs are? Are 
+some hidden in the cloud? Cloud security if often cloudy because it&#8217;s not 
+on pre...
+</span>
+<div class='item-time'>
+4 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/R9B3y5heW6FuKu8dtGs6r0HR_psIbBB2N5uCaUdIG6LKGWX7hG0xK-2Yxi0WHeXyOVthG_Phy01LgEdNviav4hc=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://digital-forensics.sans.org/blog' target='_blank'>
+SANS Digital Forensics and Incident Response Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://digital-forensics.sans.org/blog/2017/01/17/the-cloud-is-evil' target='_blank'>
+"The Cloud is Evil..."</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+So: Is The Cloud Evil? I contend that it has been, and remains so, for 
+reasons detailed below. However, I have modified my opinion somewhat, based 
+on what ...
+</span>
+<div class='item-time'>
+4 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/GKb-KdD2ZeJQS5G1qjNMNfzkZOP1flY9ABt6GcnrtbkQgnt7aeK-yJlliN4J5T13-kHGGg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://seanmason.com' target='_blank'>
+InfoSec Insights</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://seanmason.com/2017/01/11/2017-rsa-conference-expo-passes/' target='_blank'>
+2017 RSA Conference Expo Passes</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+Having attended the RSA Conference for a couple of years now, I&#8217;ve always 
+wondered- &#8220;Why don&#8217;t more folks come out and both enjoy themselves and 
+learn, for...
+</span>
+<div class='item-time'>
+5 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh3.googleusercontent.com/proxy/UZOf8YNsAaLc804OsKK_3yuIjf3_E0f6Afqma3opfdLAYMwk6At8wwNvaNVTRjH6urI6IIO2QtUkZJlTBg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.swiftforensics.com/' target='_blank'>
+Yogesh Khatri's forensic blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.swiftforensics.com/2017/01/flexing-sql-muscle-for-parsing-ms-db-on.html' target='_blank'>
+Flexing SQL muscle for parsing an MS db on OSX</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+This post is about using recursive SQL queries (or rather a single 
+recursive query) to parse the MicrosoftRegistrationDB.reg file created by 
+Microsoft offi...
+</span>
+<div class='item-time'>
+1 month ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh4.googleusercontent.com/proxy/eai15WPS99nUcmtCUKyXj2Dul1JaFO3BGf2INGcn1reCxlWamyYnJ3V9Bsg7vwf_qQNNbdUt2js-ZCSgP2c60ZKIVg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://cheeky4n6monkey.blogspot.com/' target='_blank'>
+Cheeky4n6Monkey - Learning About Digital Forensics</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://cheeky4n6monkey.blogspot.com/2017/01/monkey-plays-lan-turtle.html' target='_blank'>
+Monkey Plays (LAN) Turtle</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+*OMG! Sooo Turtle-y!*
+The *Hak5* *LAN Turtle* recently plodded across our desk so we decided to 
+poke it with a stick and see how effective it is in capturi...
+</span>
+<div class='item-time'>
+1 month ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/Fek3ZIYx5i5ULaoA16V5O7M8I2L9RfXJyEiSpPQ4Ddf_tnCmhV6rnecTDzEPuu1-6O3qn-5qitecLhilbFzyMzzVCg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://volatility-labs.blogspot.com/' target='_blank'>
+Volatility Labs</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://volatility-labs.blogspot.com/2016/12/the-release-of-volatility-26.html' target='_blank'>
+The Release of Volatility 2.6</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+This release improves support for Windows 10 and adds support for Windows 
+Server 2016, Mac OS Sierra 10.12, and Linux with KASLR kernels. A lot of 
+bug fixe...
+</span>
+<div class='item-time'>
+1 month ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/0u0GbibftzSSPZg7rmcrNjAB99_VaNMYPpLPKJOf64MOwJKscf_rHvkC7y80BjfKqUSvHMRmovt2nOazpAIB5WOg=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://detect-respond.blogspot.com/' target='_blank'>
+Enterprise Detection & Response</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://detect-respond.blogspot.com/2016/11/hunting-for-malware-critical-process.html' target='_blank'>
+Hunting for Malware Critical Process Impersonation</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+A popular technique for hiding malware running on Windows systems is to 
+give it a name that's confusingly similar to a legitimate Windows process, 
+preferab...
+</span>
+<div class='item-time'>
+2 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/FJP1K9wCjsm9hJFh-7Dyu-lcc0IgsfVxKFtwmGhJNrhp-EQ6-TO0Igx_CyRZ9P61YLEt-KlYFqmway2Mc7dPD_8VBUIl=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://grandstreamdreams.blogspot.com/' target='_blank'>
+grand stream dreams</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://grandstreamdreams.blogspot.com/2016/09/fix-easyworship-2009-issues-with-new.html' target='_blank'>
+Fix EasyWorship 2009 issues with new SongSelect site</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+
+We continue to use an older version (EasyWorship 2009) of EasyWorship for 
+our church service projection screen management.
+
+We&#8217;ve tried the newer EasyWors...
+</span>
+<div class='item-time'>
+4 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh6.googleusercontent.com/proxy/Ggqd0ureLm4jOpWSDxRTSUD4xKizXwGJUoyLPiofrlwYtGUfPdYPuiWM2D5VaJkVPQ6nougGYX3n=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.kiddaland.net/' target='_blank'>
+All things time related....</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blog.kiddaland.net/2016/09/plaso-user-survey-2016.html' target='_blank'>
+Plaso User Survey 2016</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+Happy weekend everyone! If you're looking to wind down from the work week, 
+we have some great suggestions. 
+
+First of all, you can check out this great Gná...
+</span>
+<div class='item-time'>
+4 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh4.googleusercontent.com/proxy/t1JZLLrL7mOmlU28ca949n--UFuniyAYptoIjFLsEjAgr64LID4sSWr68TFa9Vq48eohjC4yRwtaPRDK6XYWvA=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://contagiodump.blogspot.com/' target='_blank'>
+contagio</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://contagiodump.blogspot.com/2016/08/linuxagent-malware-sample-data-stealer.html' target='_blank'>
+Linux.Agent malware sample - data stealer</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+
+*Research: SentinelOne, Tim Strazzere Hiding in plain sight?*
+Sample credit: Tim Strazzere
+
+
+List of files
+
+9f7ead4a7e9412225be540c30e04bf98dbd69f62b891087...
+</span>
+<div class='item-time'>
+5 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+<img data-lateloadsrc='https://lh5.googleusercontent.com/proxy/DXgBQnvI05_JwQPfHZXfc4Rjby4ec04tt3QwIbrXNnAkoyJt2aP84U_sk7OCLAb6Ci8Wfp1o=s0-d' height='16' width='16'/>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.fireeye.com/blog/threat-research.html' target='_blank'>
+FireEye Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html' target='_blank'>
+Greater Visibility Through PowerShell Logging</a>
+</span>
+
+                      -
+                    
+<span class='item-snippet'>
+
+
+*UPDATE (Feb. 29): This post has been updated with new configuration 
+recommendations due to the Feb. 24 rerelease of PowerShell 5, and now 
+includes a lin...
+</span>
+<div class='item-time'>
+1 year ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=4080617372940068027&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=northsidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogList1"));' target='configBlogList1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div></div></div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>&#160;</div>
+</div>
+<!-- end content-wrapper -->
+<div id='footer'>
+<div class='footer no-items section' id='foot'></div>
+<a href='http://wordpress.org/' id='powered'>WordPress</a>
+<div id='copyright'>
+			Copyright 2010-2015
+		</div>
+</div><!-- footer END -->
+</div></div>
+<!-- end outer-wrapper -->
+<script type='text/javascript'>
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17852199-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<!-- 'It is your responsibility to notify your visitors about cookies used on your blog. See http://www.blogger.com/go/cookiechoices for more details.' -->
+<script src="/js/cookiechoices.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.',
+        (window.cookieOptions && cookieOptions.close) || 'Got it',
+        (window.cookieOptions && cookieOptions.learn) || 'Learn More',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
+
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1016236460-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY6h28NiuWjqb67LDTxjUNtA8Dic5w:1487271670984';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4080617372940068027','//journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html','4080617372940068027');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '4080617372940068027', 'bloggerUrl': 'https://www.blogger.com', 'title': 'Journey Into Incident Response', 'pageType': 'item', 'postId': '8460246076225689314', 'url': 'http://journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html', 'canonicalUrl': 'http://journeyintoir.blogspot.com/2013/11/linkz-for-incident-response.html', 'homepageUrl': 'http://journeyintoir.blogspot.co.uk/', 'searchUrl': 'http://journeyintoir.blogspot.co.uk/search', 'canonicalHomepageUrl': 'http://journeyintoir.blogspot.com/', 'blogspotFaviconUrl': 'http://journeyintoir.blogspot.co.uk/favicon.ico', 'hasCustomDomain': false, 'enabledCommentProfileImages': false, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'useUniversalAnalytics': false, 'pageName': 'Linkz for Incident Response', 'pageTitle': 'Journey Into Incident Response: Linkz for Incident Response', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Journey Into Incident Response - Atom\x22 href\x3d\x22http://journeyintoir.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Journey Into Incident Response - RSS\x22 href\x3d\x22http://journeyintoir.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Journey Into Incident Response - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4080617372940068027/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Journey Into Incident Response - Atom\x22 href\x3d\x22http://journeyintoir.blogspot.com/feeds/8460246076225689314/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'mobileHeadScript': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/eff5653f58240139', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Share to Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}}}, {'name': 'features', 'data': {'enhancedSourcesets': 'false', 'unsupported_browser_message': 'false'}}, {'name': 'messages', 'data': {'linkCopiedToClipboard': 'Link copied to clipboard!', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Linkz for Incident Response', 'description': 'Due to changes with my employer last Spring my new responsibilities include all things involving incident response. I won&#8217;t go into details ...', 'url': 'http://journeyintoir.blogspot.co.uk/2013/11/linkz-for-incident-response.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isSearch': false, 'isLabelSearch': false, 'postId': 8460246076225689314}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'caption', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '8460246076225689314', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1130279207-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'northsidebar', null, document.getElementById('Image1'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe1', 'northsidebar', null, document.getElementById('Subscribe1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail1', 'northsidebar', null, document.getElementById('FollowByEmail1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'northsidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'northsidebar', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'northsidebar', null, document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'northsidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'northsidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_StatsView', new _WidgetInfo('Stats1', 'northsidebar', null, document.getElementById('Stats1'), {'title': 'Total Pageviews', 'showGraphicalCounter': false, 'showAnimatedCounter': false, 'showSparkline': false, 'statsUrl': '//journeyintoir.blogspot.co.uk/b/stats?style\x3dBLACK_TRANSPARENT\x26timeRange\x3dALL_TIME\x26token\x3dySgESloBAAA.G4ljUZW659sQ14Aygi2vGtNcoxCL-GaxWmCP8KojCAc.G5Iv00nkwkLAEULxs-i9rg'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'northsidebar', null, document.getElementById('BlogList1'), {'numItemsToShow': 0, 'totalItems': 20}, 'displayModeFull'));
+</script>
+</body>
+</html>

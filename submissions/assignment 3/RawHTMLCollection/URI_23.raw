@@ -1,0 +1,1270 @@
+RAW HTML FOR: http://blogs.cisco.com/security/talos/kyle-and-stan
+<!DOCTYPE html>
+<html lang="eng-US" xmlns:nitro="https://www.bunchball.com/nitro">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware</title>
+	<meta property="og:image" content="https://blogs.cisco.com/wp-content/themes/cisco_brand/images/Cisco_Logo_RGB-2color_92x52.gif"/>
+	<meta property="og:site_name" content="blogs@Cisco - Cisco Blogs"/> <meta property="og:description" content=""/>
+	<meta name="google-site-verification" content="9MlQU9MMQ1jHLMUkONKe6QzZ-ZIGRv0BCD1_rY1Zdmc" /> 
+		<meta name="bitly-verification" content="25789e2a57d8"/>
+	<meta name="accessLevel" content="GUEST, CUSTOMER, PARTNER"/>
+	<meta name="language" content="en"/>
+	<meta name="country" content="US"/>
+	<meta name="contentType" content="ciscoBlogs"/>
+			<meta name="docType" content="blogPost" />
+		<link rel="stylesheet" href="http://blogs.cisco.com/wp-content/themes/cisco_responsive/style.css" type="text/css" media="screen" />
+	<link rel="alternate" type="application/rss+xml" title="Cisco Blog RSS Feed" href="http://blogs.cisco.com/feed" />
+	<link rel="shortcut icon" href="http://blogs.cisco.com/wp-content/themes/cisco_responsive/favicon.ico" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<link rel='dns-prefetch' href='//www.cisco.com' />
+<link rel='dns-prefetch' href='//platform.twitter.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Cisco Blog &raquo; Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware Comments Feed" href="http://blogs.cisco.com/security/talos/kyle-and-stan/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"wpemoji":"http:\/\/blogs.cisco.com\/wp-includes\/js\/wp-emoji.js?ver=4.7.2","twemoji":"http:\/\/blogs.cisco.com\/wp-includes\/js\/twemoji.js?ver=4.7.2"}};
+			( function( window, document, settings ) {
+	var src, ready, ii, tests;
+
+	/*
+	 * Create a canvas element for testing native browser support
+	 * of emoji.
+	 */
+	var canvas = document.createElement( 'canvas' );
+	var context = canvas.getContext && canvas.getContext( '2d' );
+
+	/**
+	 * Detect if the browser supports rendering emoji or flag emoji. Flag emoji are a single glyph
+	 * made of two characters, so some browsers (notably, Firefox OS X) don't support them.
+	 *
+	 * @since 4.2.0
+	 *
+	 * @param type {String} Whether to test for support of "flag" or "emoji4" emoji.
+	 * @return {Boolean} True if the browser can render emoji, false if it cannot.
+	 */
+	function browserSupportsEmoji( type ) {
+		var stringFromCharCode = String.fromCharCode,
+			flag, flag2, technologist, technologist2;
+
+		if ( ! context || ! context.fillText ) {
+			return false;
+		}
+
+		// Cleanup from previous test.
+		context.clearRect( 0, 0, canvas.width, canvas.height );
+
+		/*
+		 * Chrome on OS X added native emoji rendering in M41. Unfortunately,
+		 * it doesn't work when the font is bolder than 500 weight. So, we
+		 * check for bold rendering support to avoid invisible emoji in Chrome.
+		 */
+		context.textBaseline = 'top';
+		context.font = '600 32px Arial';
+
+		switch ( type ) {
+			case 'flag':
+				/*
+				 * This works because the image will be one of three things:
+				 * - Two empty squares, if the browser doesn't render emoji
+				 * - Two squares with 'U' and 'N' in them, if the browser doesn't render flag emoji
+				 * - The United Nations flag
+				 *
+				 * The first two will encode to small images (1-2KB data URLs), the third will encode
+				 * to a larger image (4-5KB data URL).
+				 */
+				context.fillText( stringFromCharCode( 55356, 56826, 55356, 56819 ), 0, 0 );
+				if ( canvas.toDataURL().length < 3000 ) {
+					return false;
+				}
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				/*
+				 * Test for rainbow flag compatibility. As the rainbow flag was added out of sequence with
+				 * the usual Unicode release cycle, some browsers support it, and some don't, even if their
+				 * Unicode support is up to date.
+				 *
+				 * To test for support, we try to render it, and compare the rendering to how it would look if
+				 * the browser doesn't render it correctly (white flag emoji + rainbow emoji).
+				 */
+				context.fillText( stringFromCharCode( 55356, 57331, 65039, 8205, 55356, 57096 ), 0, 0 );
+				flag = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55356, 57331, 55356, 57096 ), 0, 0 );
+				flag2 = canvas.toDataURL();
+
+				return flag !== flag2;
+			case 'emoji4':
+				/*
+				 * Emoji 4 has the best technologists. So does WordPress!
+				 *
+				 * To test for support, try to render a new emoji (woman technologist: medium skin tone),
+				 * then compare it to how it would look if the browser doesn't render it correctly
+				 * (woman technologist: medium skin tone + personal computer).
+				 */
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 8205, 55357, 56507), 0, 0 );
+				technologist = canvas.toDataURL();
+
+				context.clearRect( 0, 0, canvas.width, canvas.height );
+
+				context.fillText( stringFromCharCode( 55357, 56425, 55356, 57341, 55357, 56507), 0, 0 );
+				technologist2 = canvas.toDataURL();
+
+				return technologist !== technologist2;
+		}
+
+		return false;
+	}
+
+	function addScript( src ) {
+		var script = document.createElement( 'script' );
+
+		script.src = src;
+		script.defer = script.type = 'text/javascript';
+		document.getElementsByTagName( 'head' )[0].appendChild( script );
+	}
+
+	tests = Array( 'flag', 'emoji4' );
+
+	settings.supports = {
+		everything: true,
+		everythingExceptFlag: true
+	};
+
+	for( ii = 0; ii < tests.length; ii++ ) {
+		settings.supports[ tests[ ii ] ] = browserSupportsEmoji( tests[ ii ] );
+
+		settings.supports.everything = settings.supports.everything && settings.supports[ tests[ ii ] ];
+
+		if ( 'flag' !== tests[ ii ] ) {
+			settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && settings.supports[ tests[ ii ] ];
+		}
+	}
+
+	settings.supports.everythingExceptFlag = settings.supports.everythingExceptFlag && ! settings.supports.flag;
+
+	settings.DOMReady = false;
+	settings.readyCallback = function() {
+		settings.DOMReady = true;
+	};
+
+	if ( ! settings.supports.everything ) {
+		ready = function() {
+			settings.readyCallback();
+		};
+
+		if ( document.addEventListener ) {
+			document.addEventListener( 'DOMContentLoaded', ready, false );
+			window.addEventListener( 'load', ready, false );
+		} else {
+			window.attachEvent( 'onload', ready );
+			document.attachEvent( 'onreadystatechange', function() {
+				if ( 'complete' === document.readyState ) {
+					settings.readyCallback();
+				}
+			} );
+		}
+
+		src = settings.source || {};
+
+		if ( src.concatemoji ) {
+			addScript( src.concatemoji );
+		} else if ( src.wpemoji && src.twemoji ) {
+			addScript( src.twemoji );
+			addScript( src.wpemoji );
+		}
+	}
+
+} )( window, document, window._wpemojiSettings );
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='css-css'  href='http://blogs.cisco.com/wp-content/plugins/bunchball/bunchball.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='normalize-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/normalize.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='slidebarsstyle-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/slidebars.css?ver=4.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='single-css'  href='http://blogs.cisco.com/wp-content/themes/cisco_responsive/styles/talos_single.css?ver=4.7.2' type='text/css' media='all' />
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/jquery/jquery-migrate.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/bunchball.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/jquery.cookie.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/jquery.slimscroll.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/moment.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/plugins/bunchball/livestamp.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/modernizr.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/slidebars.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.lazyload.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/theme_script.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.cisco.com/assets/swa/j/blogs.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://www.cisco.com/web/fw/m/metrics.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.tools.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.tipTip.minified.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-content/themes/cisco_responsive/js/jquery.sharrre.min.js?ver=4.7.2'></script>
+<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=4.7.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.cisco.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogs.cisco.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Unsung heros: MPI run time environments' href='http://blogs.cisco.com/performance/unsung-heros-mpi-run-time-environments' />
+<link rel='next' title='Cisco Storage Networking market share edged up to #1 – Dell’Oro Report' href='http://blogs.cisco.com/datacenter/cisco-storage-networking-market-share-edged-up-to-1-delloro-report' />
+
+<link rel="canonical" href="http://blogs.cisco.com/security/talos/kyle-and-stan" />
+<link rel='shortlink' href='http://blogs.cisco.com/?p=151920' />
+	
+
+</head>
+<body>
+	<div id = "rewards_fix"></div>
+	<script src="//assets.bunchball.net/scripts/nitro/current/nitro.js" type="text/javascript"></script>	<script>
+		var apiKey = "6912c6c82ccc4863a0311dc8b586b8fb";
+		var userId = "anon";
+		var time = "1487271802";
+		var sig = "0efde22c7647ed51f31c403b73d2c153";
+		var connectionParams={};
+    		connectionParams.apiKey = apiKey ;
+    		connectionParams.timeStamp = time;
+    		connectionParams.signature = sig;
+    		connectionParams.server =  "//CiscoSupportCommunities2.nitro.bunchball.net/nitro/json/";
+    		connectionParams.userId = userId;   
+    	var nitro = new Nitro(connectionParams); 
+    	nitro.showPendingNotifications();	  
+	</script> <header class = "sb-slide">
+        <div id = "hero">
+            <div class = "top_third">
+                <div id="hamburger" class = "sb-open-left">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+            <div class = "top_third">
+                <div id = "cisco_logo">
+                    <div class="dropdown">
+                        <div class = "logo_hover"></div>
+                        <div class="dropdown-content">
+                            <ul>
+                                <li><a href = "https://cisco.com">All of Cisco</a></li>
+                                <li><a href = "http://blogs.cisco.com">Blogs Home</a></li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "hero_header_text">Cisco Blogs</div>
+                <div id = "mobile_search_top">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <a class = "top_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>
+                
+                <div id = "normal_search">
+                    <div id = "normal_search_box"><form method="get" id="searchform" action="http://blogs.cisco.com/"> 
+	<input type="text" value="" 
+    	name="s" id="s"> 
+    </input>
+<input type="submit" value=" " class="searchSubmit"/>
+</form></div>
+                        <i class="fa fa-search"></i>
+                    <div class = "clear"></div>
+                </div>
+            <div class = "clear"></div>
+            <div id = "normal_menu">
+                <nav>
+  <a class = "hamburger_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>      <ul>
+                  <li><a href='http://blogs.cisco.com'><span>All Blogs</span></a></li>
+                  <li><a href='#'><span>Technologies</span></a>
+                  <ul>
+            <div class = "bordertop"></div>
+            <li><a href="http://blogs.cisco.com/analytics-automation">Analytics &amp; Automation</a></li>
+            <li><a href="http://blogs.cisco.com/cloud">Cloud</a></li>
+            <li><a href='http://blogs.cisco.com/collaboration'>Collaboration</a></li>
+            <li><a href='http://blogs.cisco.com/datacenter'>Data Center</a></li>
+            <li><a href='http://blogs.cisco.com/enterprise'>Enterprise Networks</a></li>
+            <li><a href='http://blogs.cisco.com/innovation'>Innovation</a></li>
+            <!--<li><a href='http://blogs.cisco.com/openatcisco'>Open at Cisco</a></li>-->
+            <li><a href='http://blogs.cisco.com/wireless'>Mobility</a></li>
+            <li><a href='http://blogs.cisco.com/security'>Security</a></li>
+            <li class = "sub"><a href="http://blogs.cisco.com/talos" class="nav_menu" title="">Threat Research</a></li>
+            <li><a href='http://blogs.cisco.com/smallbusiness'>Small Business</a></li>
+            <li><a href='http://blogs.cisco.com/sp'>SP360:Service Provider</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Industries</span></a>
+                    
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/education'>Education</a></li>
+            <li><a href='http://blogs.cisco.com/energy'>Energy</a></li>
+            <li><a href='http://blogs.cisco.com/financialservices'>Financial Services</a></li>
+            <li><a href='http://blogs.cisco.com/government'>Government</a></li>
+            <li><a href='http://blogs.cisco.com/healthcare'>Healthcare</a></li>
+            <li><a href='http://blogs.cisco.com/manufacturing'>Manufacturing</a></li>
+            <li><a href='http://blogs.cisco.com/retail'>Retail &amp; Hospitality</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Partners</span></a>         
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/partner'>Partner</a></li>
+          </ul>
+        </li>
+        <li><a href='#'><span>For the Tech Expert</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/getyourbuildon'>Architects &amp; Distinguished Engineers</a></li>
+            <li><a href='http://blogs.cisco.com/performance'>High Performance Computing</a></li>
+            <li><a href='http://blogs.cisco.com/ciscoit'>Inside Cisco IT</a></li>
+            <li><a href='http://blogs.cisco.com/cin'>TechWiseTV</a></li>
+          </ul>
+        </li>
+         <li><a href='#'><span>Get to Know Cisco</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/csr'>Corporate Social Responsibility</a></li>
+            <li><a href='http://blogs.cisco.com/cle'>Connected Life Exchange</a></li>
+            <li><a href='http://blogs.cisco.com/socialmedia'>Digital and Social Media</a></li>
+            <li><a href='http://blogs.cisco.com/digital'>Digital Transformation</a></li>
+            <li><a href='http://blogs.cisco.com/emerging'>Emerging Countries</a></li>
+            <li><a href='http://blogs.cisco.com/gov'>High Tech Policy</a></li>
+            <li><a href='http://blogs.cisco.com/diversity'>Inclusion and Diversity</a></li>
+            <li><a href='http://blogs.cisco.com/lifeatcisco'>Life at Cisco</a></li>
+            <li><a href='http://blogs.cisco.com/perspectives'>Perspectives</a></li>
+            <li><a href='http://blogs.cisco.com/news'>The Platform (News &amp; Exec Insights)</a></li>
+          </ul>
+        </li>
+        <li class = "countries"><a href='#'><span>Countries and Regions</span></a>
+          <ul>
+            <div class = "col_1">
+  <li><a href="https://apjc.thecisconetwork.com/">Asia Pacific</a>
+    <li><a href="http://gblogs.cisco.com/at/">Austria</a>
+  <li><span class = "sub_main">Belgium</span></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be">Dutch</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be-fr">French</a></li>
+  <li><span class = "sub_main">Canada</span></li>
+    <li class = "sub"><a href="http://canadablog.cisco.com/">English</a></li>
+    <li class = "sub"><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+  <li><a href="http://gblogs.cisco.com/fin/">Finland</a>
+  </div>
+    <div class = "col_2">
+  <li><span class = "sub_main">France</a></span>
+    <li class = "sub"><a href="http://www.cisco.com/c/m/fr_fr/socialmedia/blogs.html">Cisco France Blogs</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-reseaux/">R&#233;seaux</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-datacenter/">Data Center &amp; Cloud</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-iot/">Digital Transformation &amp; IoT</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-collaboration/">Collaboration</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-security/">S&eacute;curit&eacute;</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-sp/">Service Provider</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-smartcities/">Smart Cities</a></li>
+  
+  <li><a href="http://gblogs.cisco.com/de">Germany</a></li>
+  <li><a href="http://gblogs.cisco.com/in">India</a></li>
+  </div>
+  <div class = "col_3">
+  <li><a href="http://gblogs.cisco.com/it/">Italy</a></li>   
+  <li><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+  <li><a href="http://ciscokrblog.com/">Korea</a></li>
+  <li><span class = "sub_main">Latin America</span></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/la/">Latin America (Esp)</a></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/cansac/">Cansac</a></li> 
+  </div>
+  <div class = "col_4">  
+  <li><a href="https://ciscotechblog.nl/">Netherlands</a></li>
+  <li><a href="http://gblogs.cisco.com/no">Norway</a></li>
+  <li><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+  <li><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+  <li><a href="http://gblogs.cisco.com/ro">Romania</a></li>
+  <li><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+  <li><a href="http://gblogs.cisco.com/es">Spain</a></li>
+  <li><a href="http://gblogs.cisco.com/ch-tech/">Switzerland</a></li>
+  <li><a href="http://gblogs.cisco.com/uki/">UK &amp; Ireland</a></li>
+</div>
+<div class = "clear"></div>
+</ul>
+</li>
+      </ul>
+</nav>            </div>
+            <div id = "mobile_search">
+                <div id = "mobile_search_box">
+                    <form method="get" id="searchform" action="http://blogs.cisco.com/"> 
+	<input type="text" value="" 
+    	name="s" id="s"> 
+    </input>
+<input type="submit" value=" " class="searchSubmit"/>
+</form>                </div>
+        </div>
+        </div>  
+    </header>
+     
+         
+
+  <div id="share_bar1">
+    
+    <span class = "share_title">Share</span>
+    <div class="twitter" ><a href="https://twitter.com/intent/tweet?url=http://bit.ly/1G2UuCQ&text=Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware&via=ciscosecurity">tweet</a></div>
+    <div class="facebook" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan" data-title=" "></div>
+    <div class="googleplus" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan"data-title=" "></div>
+    <div class="linkedin" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan" data-title=" "></div>
+        <div class = "share_mail"><a class="email" href="mailto:?subject=Cisco Blog: Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware&body=I saw this post on Cisco Threat Research blog and thought you might like to read it.%0A%0AThreat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware%0A%0Ahttp://blogs.cisco.com/security/talos/kyle-and-stan%0A%0A****Disclaimer****%0A%0ACisco is not responsible for the content of this email, and its contents do not necessarily reflect Cisco’s views or opinions. Cisco has not verified the email address or name of the sender."></a></div>
+    <div class = "clear"></div>
+  </div>
+  <script>
+    jQuery(document).ready(function($){
+
+
+
+      
+      $('.facebook').sharrre({
+        share: {
+          facebook: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('facebook');
+        }
+      });
+      $('.googleplus').sharrre({
+        share: {
+          googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        urlCurl: '/wp-content/themes/cisco_responsive/sharrre.php',
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('googlePlus');
+        }
+      });
+      $('.linkedin').sharrre({
+        share: {
+          linkedin: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('linkedin');
+        }
+      });
+
+    });
+  </script>
+  <div id="sb-site">
+<div id = "main_content">
+	
+	<div id = "blog_content">
+	<div id = "main_left">
+
+		<article id = "article_post">
+			<p class = "breadcrumb">
+			<a href=' http://blogs.cisco.com'>Cisco Blog</a> > <a href=' http://blogs.cisco.com/category/talos/'>Threat Research</a></p>  					<div id = "post_info">
+  						<span class = "post_category">
+  							Threat Research  						</span>
+						<h1 id="post-151920" class="kindle_title title">Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware</h1>
+						<div class="author_image"><img class = " img-circle" src = "http://blogs.cisco.com/wp-content/uploads/userphoto/1694.thumbnail.52e6e5251f5fc.jpg"></div><div class = "list_author"><a href="http://blogs.cisco.com/author/arminpelkmann" title="Posts by Armin Pelkmann" rel="author">Armin Pelkmann</a> - September 8, 2014 - 4 Comments      					</div>
+      					<div class = "clear"></div>
+      					
+					</div>
+					
+					<p><em>This post was authored by Shaun Hurley, David McDaniel and Armin Pelkmann.</em></p>
+<p><em>Update 2014-09-22: Updates on this threat can be found <a href="http://blogs.cisco.com/security/kyle-and-stan-9x/">here</a></em></p>
+<p><strong><strong></strong><img class=" wp-image-151924 alignright" alt="img_Metrics" src="http://blogs.cisco.com/wp-content/uploads/img_Metrics1.png" width="151" height="224" srcset="http://blogs.cisco.com/wp-content/uploads/img_Metrics1.png 420w, http://blogs.cisco.com/wp-content/uploads/img_Metrics1-300x444.png 300w" sizes="(max-width: 151px) 100vw, 151px" />Have you visited amazon.com, ads.yahoo.com, www.winrar.com, youtube.com, or any of the 74 domains listed below lately? If the answer is yes, then you may have been a victim to the &#8220;Kyle and Stan&#8221; Malvertising Network that distributes sophisticated, mutating malware for Windows and even Macs.</strong></p>
+<blockquote class="alignleft" style="padding-right: 10px; margin: 0px; margin-right: 10px;"><p><strong>Table of contents</strong></p>
+<p><a href="http://blogs.cisco.com/security/kyle-and-stan/#nutshell">Attack in a Nutshell</a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#timeline">Timeline </a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#technical">Technical Breakdown</a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#revmac">Reversing of the Mac Malware </a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#revwin">Reversing of the Windows Malware </a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#ioc">IOCs</a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#Conclusion">Conclusion </a><br />
+<a href="http://blogs.cisco.com/security/kyle-and-stan/#protection">Protecting Users Against These Threats</a></p></blockquote>
+<p><em>Malvertising</em> is a short form for &#8220;malicious advertising.&#8221; The idea is very simple: use online advertising to spread malware. <span id="more-151920"></span>This attack form is not new, but extremely effective. The world of online ads has only a few major players that are supplying ads to thousands of websites. If an attacker can get one of those major advertisement networks to display an advertisement with a malicious payload just for a few minutes without being detected, then countless machines can be infected by such an attack.</p>
+<p>Talos Security Research has uncovered a major network that is doing exactly this. Due to the naming scheme of hundreds of their sub-domains e.g. &#8220;stan.mxp2099.com&#8221; and &#8220;kyle.mxp2038.com,&#8221; we nicknamed that malvertising group &#8220;Kyle and Stan.&#8221;</p>
+<p>&nbsp;</p>
+<h2 id="nutshell">Attack in a Nutshell</h2>
+<p>The attack has a lot of variations, but always follows these steps:</p>
+<ol>
+<li>You visit a website with the malicious advertisement</li>
+<li>You get redirected to a different website that redirects you based on user agent. We observed that Windows and Mac users get redirected to different malware in order to infect both operating systems</li>
+<li>The final page starts the download of a malicious file</li>
+</ol>
+<p>&nbsp;</p>
+<div id="attachment_151931" style="width: 560px" class="wp-caption aligncenter"><img class="size-large wp-image-151931 " alt="Example Attack Sequence" src="http://blogs.cisco.com/wp-content/uploads/img_Flow-550x556.png" width="550" height="556" srcset="http://blogs.cisco.com/wp-content/uploads/img_Flow-550x556.png 550w, http://blogs.cisco.com/wp-content/uploads/img_Flow-300x303.png 300w, http://blogs.cisco.com/wp-content/uploads/img_Flow.png 1482w" sizes="(max-width: 550px) 100vw, 550px" /><p class="wp-caption-text">Example Attack Sequence</p></div>
+<p>&nbsp;</p>
+<p>Once the victim gets redirected to the final URL, the website automatically starts the download of a unique piece of malware for every user. The file is a bundle of legitimate software, like a media-player, and compiles malware and a unique-to-every-user configuration into the downloaded file. The attackers are purely relying on social engineering techniques, in order to get the user to install the software package. No drive-by exploits are being used thus far. The impressive thing is that we are seeing this technique not only work for Windows, but for Mac operating systems alike. Please visit the Reversing chapters below for a detailed breakdown of the Windows and Mac malware.</p>
+<p>&nbsp;</p>
+<h2 id="timeline">Timeline and Size of the &#8220;Kyle and Stan&#8221; Group</h2>
+<p>The graphic below illustrates the activity observed since Talos began tracking &#8220;Kyle and Stan&#8221; network. The first hits on our sensors were detected on May 5th. The graphic is using the logarithmic scale, due to the huge changes in activity of the network. The biggest activities were registered in mid June and early July, but attacks are still ongoing.</p>
+<div id="attachment_151936" style="width: 635px" class="wp-caption aligncenter"><a href="http://blogs.cisco.com/wp-content/uploads/img_connections1.png"><img class=" wp-image-151936   " alt="Observed connections to the &quot;Kyle and Stan&quot; Network on a log scale." src="http://blogs.cisco.com/wp-content/uploads/img_connections1.png" width="625" height="82" srcset="http://blogs.cisco.com/wp-content/uploads/img_connections1.png 1928w, http://blogs.cisco.com/wp-content/uploads/img_connections1-300x39.png 300w, http://blogs.cisco.com/wp-content/uploads/img_connections1-550x71.png 550w" sizes="(max-width: 625px) 100vw, 625px" /></a><p class="wp-caption-text">Observed connections to the &#8220;Kyle and Stan&#8221; Network on a log scale.</p></div>
+<p>The size of the &#8220;Kyle and Stan&#8221; network is hard to judge. In our research we have found <strong>700+ domains that are part of their network</strong>. This by all means is most likely just the tip of the iceberg. This assumption is supported by the strict name-patterns of found domains. The process could be automated, which makes it very easy to register massive amounts of extra domains. Overall we observed a total of <strong>9541 connections</strong> to the malicious domains over the course of our investigation. A full list of the found domains can be downloaded in the <strong>IOC Section</strong>.</p>
+<p>&nbsp;</p>
+<h3>Full List of Domains Referring to the &#8220;Kyle and Stan&#8221; Network</h3>
+<p>Our data indicates that all of the domains below have at different times displayed malicious advertisement that can be linked to the &#8220;Kyle and Stan&#8221; group. The list contains a few very popular domains including <strong>amazon.com, ads.yahoo.com, www.winrar.com, </strong>and<strong> youtube.com</strong>, which allows the attackers to reach huge numbers of potential victims:</p>
+<p><code><br />
+6nbzz.watch-now.awardcrowd.eu<br />
+7ruzz.globalrewards.samplestation.eu<br />
+ads.yahoo.com<br />
+amazon.com<br />
+br5zz.watch-now.awardcrowd.eu<br />
+bvp.burstmedia.com<br />
+cdn.sharedaddomain.com<br />
+clkmon.com<br />
+cr2.gogorithm.com<br />
+grooveshark.audio-updates.com<br />
+gslbeacon.lijit.com<br />
+javaapx.com<br />
+javaupdating.com<br />
+johzz.watchnow.rewardbasket.eu<br />
+jvupdater.com<br />
+n11.adshostnet.com<br />
+serve.adsxgm.com<br />
+w0tzz.watchnow.rewardbasket.eu<br />
+www.alldldsoft.com<br />
+www.allsoftdll.com<br />
+www.allsoftpc.com<br />
+www.carefulclick.com<br />
+www.ddlsoftdirect.com<br />
+www.directdls.com<br />
+www.directsoftddl.com<br />
+www.dllfinalsoft.com<br />
+www.dllsoftultimate.com<br />
+www.dllultimatesoft.com<br />
+www.dlsofteclipse.com<br />
+www.downti.com<br />
+www.dwnllistsoft.com<br />
+www.dwnlsoft.com<br />
+www.dwnlultimatesoft.com<br />
+www.filenaut.com<br />
+www.filenetix.com<br />
+www.files101.com<br />
+www.filesbunker.com<br />
+www.filesonar.com<br />
+www.freeunlimitedvideos.com<br />
+www.getmplayer.com<br />
+www.getsoftdll.com<br />
+www.installrecommended.com<br />
+www.latestplayerplugin.com<br />
+www.lpdownclsva007.com<br />
+www.lpdownclsva011.com<br />
+www.mediaplayerinstaller.com<br />
+www.mediaplayertotal.com<br />
+www.moresoftdll.com<br />
+www.mysoftdll.com<br />
+www.newboxdl.com<br />
+www.newplayerupdate.com<br />
+www.pcsoftultimate.com<br />
+www.pitisoft.com<br />
+www.popdls.com<br />
+www.proplayersetup.com<br />
+www.recommendedfiles1.com<br />
+www.recommendedupdate.com<br />
+www.recommendedupdate14.com<br />
+www.softmediaplayer.com<br />
+www.softnewdll.com<br />
+www.softplayerdownload.com<br />
+www.softultimatedwnl.com<br />
+www.thelatestsoft.com<br />
+www.thesoftdll.com<br />
+www.totalsoftdll.com<br />
+www.totalsoftpc.com<br />
+www.ultimateplayersetup.com<br />
+www.ultimatevideoplayer.com<br />
+www.updatedrelease.com<br />
+www.updateneeded.com<br />
+www.winrar.com<br />
+www1.mediaplayernew.com<br />
+www1.updateplugins.com<br />
+youtube.com<br />
+</code></p>
+<h2 id="technical">Technical Breakdown of the Attack</h2>
+<p>The nickname &#8220;Kyle and Stan&#8221; comes from the the naming scheme these attackers are using for their domains to distribute the major part of their malware. All the domains directly associated to the attackers are hosted by amazon and use a whois privacy protection service to keep the identity protected (e.g. mxp111.com@whoisprivacycontact.com). Most of the 700+ domains follow the naming scheme of:</p>
+<p><strong>kyle.mxp(1-4 digits).com</strong> or <strong>stan.mxp(1-4 digits).com</strong></p>
+<p>There are also specialized domains in the &#8220;Kyle and Stan&#8221; network that seem to handle the redirecting and act as landing pages. What is special about the attack is that they are targeting Windows and Mac computers alike. Also each malware is unique each time, which makes the detection harder, as the checksums are different each time.</p>
+<p>&nbsp;</p>
+<h2 id="revmac">Reversing of the Mac Malware</h2>
+<div id="attachment_151963" style="width: 664px" class="wp-caption alignnone"><a href="http://blogs.cisco.com/wp-content/uploads/img_windows.png"><img class=" wp-image-151963" alt="img_windows" src="http://blogs.cisco.com/wp-content/uploads/img_windows.png" width="654" height="594" srcset="http://blogs.cisco.com/wp-content/uploads/img_windows.png 818w, http://blogs.cisco.com/wp-content/uploads/img_windows-300x272.png 300w" sizes="(max-width: 654px) 100vw, 654px" /></a><p class="wp-caption-text">Browser Hijacker VSearch</p></div>
+<p><span style="line-height: 1.5em;"> </span></p>
+<p>The Mac OS Malware is the legitimate application <strong>MPlayerX bundled with</strong> two well-known adware/browser hijackers: <strong>Conduit</strong> and <strong>VSearch</strong>. Talos reversed two samples of this malware:</p>
+<ul>
+<li>Sample 1
+<ul>
+<li>MD5: 537a3542c238877629b24195ab8e4ab4</li>
+<li>SHA-256: 8A9CD910DE0349A1FD67D535E7AB6815E30544DD77D479A07932ECCB3F56E66E</li>
+</ul>
+</li>
+<li>Sample 2
+<ul>
+<li>MD5: 0F055F734D211C699A0E9A3418B73514</li>
+<li>SHA-256: 89A6827698BDFF134A2400EE5DB7E4B17256693A27107166EBA973E5B340D8CF</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<p>The hashes are different due to the way the each DMG file was constructed. There is no functional difference between these two files. The user has the option to install Conduit. The VSearch installation is not optional. Here is the command that is used:</p>
+<p>&nbsp;</p>
+<p><code><i>MPlayerX.app/Contents/Resources/VSInstaller.app/Contents/MacOS/VSInstaller</i><i>auth 13 –agreetolicens</i></code></p>
+<p>&nbsp;</p>
+<p>The Vsearch installer downloads an updated version and installs the files. The following files are created:</p>
+<ul>
+<li>VSearchAgent.app →  /Library/Application Support/VSearch/Agent</li>
+<li>VSearchPlugIn.bundle →  /System/Library/Frameworks/VSearch.framework/Versions/A/
+<ul>
+<li><code>VsearchLoader.bundle</code></li>
+<li><code>DP.plist</code></li>
+<li><code>libVSearchLoader.dylib</code></li>
+<li><code>libVSearchLoader.dylib </code></li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h3>Vsearch Persistence</h3>
+<p>A launcher is added to maintain persistence between reboots. The following commands are used to add the launcher:</p>
+<p><code>/bin/launchctl load -F /Library/LaunchDaemons/com.vsearch.daemon.plist</code></p>
+<p><code>/bin/launchctl start com.vsearch.daemon</code></p>
+<p>&nbsp;</p>
+<h3>URL Requests</h3>
+<p>The following GET requests are made to &#8216;dfwu1013.info &#8216; to download and install Vsearch.</p>
+<p><code>GET /vsearch/installer?dp=DP2152&amp;sdp=0001&amp;f=99&amp;id=12EC363D-6EEE-4D82-A953-D4B04492687E&amp;v=1000010 HTTP/1.1</code></p>
+<p><code>GET /vsearch/installer?dp=DP2152&amp;sdp=0001&amp;f=00&amp;id=12EC363D-6EEE-4D82-A953-D4B04492687E&amp;v=1000010 HTTP/1.1</code></p>
+<p>&nbsp;</p>
+<h2 id="revwin">Reversing of the Windows Malware</h2>
+<p>Upon further analysis of the Windows sample, it became clear that we found an adware/spyware dropper that has an interesting way of retrieving its various payloads through a GET request. The dropper is a 32 bit executable written in C++.</p>
+<p dir="ltr">MD5: 602c94e82c83bbaea1abdea420e0b939</p>
+<p dir="ltr">SHA-256: ee87af42dda91f6ed6ccedcd20736cb1d00a96f26138c0c6698c9837c1525dee</p>
+<p>The GET request is at first glance a seemingly random URI and begins the installation of several common Spyware/Adware applications. The adware bundle locations are retrieved in the server response and later executed.</p>
+<p>&nbsp;</p>
+<div id="attachment_151966" style="width: 609px" class="wp-caption alignnone"><a href="http://blogs.cisco.com/wp-content/uploads/img_win_1.png"><img class=" wp-image-151966  " alt="img_win_1" src="http://blogs.cisco.com/wp-content/uploads/img_win_1.png" width="599" height="394" srcset="http://blogs.cisco.com/wp-content/uploads/img_win_1.png 1248w, http://blogs.cisco.com/wp-content/uploads/img_win_1-300x197.png 300w, http://blogs.cisco.com/wp-content/uploads/img_win_1-550x362.png 550w" sizes="(max-width: 599px) 100vw, 599px" /></a><p class="wp-caption-text">The installer window presented to the user after it “checks your system”</p></div>
+<div id="attachment_151967" style="width: 610px" class="wp-caption alignnone"><a href="http://blogs.cisco.com/wp-content/uploads/img_win_2.png"><img class=" wp-image-151967  " alt="img_win_2" src="http://blogs.cisco.com/wp-content/uploads/img_win_2.png" width="600" height="461" srcset="http://blogs.cisco.com/wp-content/uploads/img_win_2.png 1250w, http://blogs.cisco.com/wp-content/uploads/img_win_2-300x230.png 300w, http://blogs.cisco.com/wp-content/uploads/img_win_2-550x422.png 550w" sizes="(max-width: 600px) 100vw, 600px" /></a><p class="wp-caption-text">The initial GET request sent upon execution. Followed by the response with what the dropper should download</p></div>
+<p dir="ltr"><span style="line-height: 1.5em;"> </span>The initial dropper uses a sophisticated technique called <strong>“Dynamic Forking”</strong> also known as <strong>“Process Hollowing</strong>.<strong>”</strong> Dynamic forking, is a technique that allows to execute an image within another process&#8217;s address space. The following chapter analyzes the technique in detail.</p>
+<h3 dir="ltr">Dynamic Forking 101</h3>
+<p>&nbsp;</p>
+<h4 dir="ltr">1. Create a SUSPENDED Process</h4>
+<p dir="ltr">Create the host process (this dropper) again, but in a SUSPENDED state</p>
+<div dir="ltr"></div>
+<div dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_1.png"><img class="alignnone  wp-image-151942" alt="fork101_1" src="http://blogs.cisco.com/wp-content/uploads/fork101_1.png" width="592" height="202" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_1.png 1542w, http://blogs.cisco.com/wp-content/uploads/fork101_1-300x102.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_1-550x187.png 550w" sizes="(max-width: 592px) 100vw, 592px" /></a></div>
+<div dir="ltr"></div>
+<h4 dir="ltr">2. Get Thread Context</h4>
+<p dir="ltr">Obtain the thread context of the new process using GetThreadContext()</p>
+<ul>
+<li>CONTEXT-&gt;EAX points to what will be the entry point of the executable</li>
+<li>CONTEXT-&gt;EBX points to the PEB</li>
+</ul>
+<p><a href="http://blogs.cisco.com/wp-content/uploads/fork101_2.png"><img class="alignnone  wp-image-151943" alt="fork101_2" src="http://blogs.cisco.com/wp-content/uploads/fork101_2.png" width="592" height="242" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_2.png 1542w, http://blogs.cisco.com/wp-content/uploads/fork101_2-300x122.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_2-550x224.png 550w" sizes="(max-width: 592px) 100vw, 592px" /></a></p>
+<p>&nbsp;</p>
+<h4 dir="ltr">3. Get Base Address of Child Executable</h4>
+<p dir="ltr">Get the base address of the new executable using the PEB ([ebx + 8])</p>
+<p dir="ltr"><span style="line-height: 1.5em;"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_4.png"><img class="alignnone  wp-image-151945" alt="fork101_4" src="http://blogs.cisco.com/wp-content/uploads/fork101_4.png" width="594" height="132" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_4.png 1548w, http://blogs.cisco.com/wp-content/uploads/fork101_4-300x66.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_4-550x122.png 550w" sizes="(max-width: 594px) 100vw, 594px" /></a> </span></p>
+<h4 dir="ltr">4. Read [and Decrypt] New Executable into Memory</h4>
+<p dir="ltr">This particular sample stores the child executable encrypted in the resource section. It uses and XOR decryption routine with this key:</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_5.png"><img class="alignnone  wp-image-151946" alt="fork101_5" src="http://blogs.cisco.com/wp-content/uploads/fork101_5.png" width="601" height="30" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_5.png 1252w, http://blogs.cisco.com/wp-content/uploads/fork101_5-300x14.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_5-550x27.png 550w" sizes="(max-width: 601px) 100vw, 601px" /></a></p>
+<p dir="ltr">It uses that key with the following pseudocode:</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_6.png"><img class="alignnone  wp-image-151947" alt="fork101_6" src="http://blogs.cisco.com/wp-content/uploads/fork101_6.png" width="601" height="40" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_6.png 1252w, http://blogs.cisco.com/wp-content/uploads/fork101_6-300x20.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_6-550x36.png 550w" sizes="(max-width: 601px) 100vw, 601px" /></a></p>
+<p dir="ltr">Other samples that I found use the same routine but with a different key.</p>
+<p dir="ltr">For example, one of the encoded buffers is located in the static dropper .rsrc section. To the left is the encoded version with the decoded version to the right. Notice that this decodes to the file magic of a PE32:</p>
+<p dir="ltr">This decoded buffer is then saved and stored for later.</p>
+<p> <a href="http://blogs.cisco.com/wp-content/uploads/fork101_7.png"><img class="alignnone  wp-image-151948" alt="fork101_7" src="http://blogs.cisco.com/wp-content/uploads/fork101_7.png" width="600" height="163" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_7.png 1250w, http://blogs.cisco.com/wp-content/uploads/fork101_7-300x81.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_7-550x149.png 550w" sizes="(max-width: 600px) 100vw, 600px" /></a></p>
+<h4 dir="ltr">5. Unmap the Image, Reallocate Space, &amp; Write the New Executable</h4>
+<p dir="ltr">If the decoded/new executable doesn’t have the same base address or is a larger size than the host process, unmap the host process’s image using ZwUnmapViewOfSection and re-allocate that space.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_for_5.png"><img class="alignnone  wp-image-151949" alt="fork101_for_5" src="http://blogs.cisco.com/wp-content/uploads/fork101_for_5.png" width="603" height="322" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_for_5.png 1572w, http://blogs.cisco.com/wp-content/uploads/fork101_for_5-300x159.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_for_5-550x293.png 550w" sizes="(max-width: 603px) 100vw, 603px" /></a></p>
+<h4 dir="ltr">6. Set Thread Context and Resume</h4>
+<p dir="ltr">Write the new entry point to EAX (in the CONTEXT structure obtained earlier). If the base address is different, it would be important to write that to the structure as well. Afterwards, use SetThreadContext() to apply the changes using the modified CONTEXT structure.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_for_6.png"><img class="alignnone  wp-image-151950" alt="fork101_for_6" src="http://blogs.cisco.com/wp-content/uploads/fork101_for_6.png" width="626" height="387" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_for_6.png 782w, http://blogs.cisco.com/wp-content/uploads/fork101_for_6-300x185.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_for_6-550x340.png 550w" sizes="(max-width: 626px) 100vw, 626px" /></a></p>
+<h4 dir="ltr">Attaching to the Child Executable</h4>
+<p dir="ltr">In order to debug the child executable, a little math is needed. You have (at least) two options, both require determining what bytes will be copied to the Entry Point (EP) of the child executable before the thread is resumed.</p>
+<ul>
+<li dir="ltr">Set the EP bytes to CC (int 3) and set your Just-in-Time Debugger to catch the exception.</li>
+<li dir="ltr">Set the EP bytes to an infinite loop (EB FE) and just allow the parent process to gracefully exit before attaching. I chose this method.</li>
+</ul>
+<p>&nbsp;</p>
+<p dir="ltr">The EP of the child will be EAX in the CONTEXT structure set in the child executable using SetThreadContext(). Since we also know where the bytes that occupy that space come from (the decryption routine from earlier), simply get the offset of EAX from the base address of the child executable and add that to the base address of the memory that is copied there:</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_for_child.png"><img class="alignnone  wp-image-151951" alt="fork101_for_child" src="http://blogs.cisco.com/wp-content/uploads/fork101_for_child.png" width="562" height="284" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_for_child.png 780w, http://blogs.cisco.com/wp-content/uploads/fork101_for_child-300x151.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_for_child-550x278.png 550w" sizes="(max-width: 562px) 100vw, 562px" /></a></p>
+<p dir="ltr">Once the process has resumed, the child process should be executing at around 100% of CPU time.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_for_child1b.png"><img class="alignnone  wp-image-151973" alt="fork101_for_child1b" src="http://blogs.cisco.com/wp-content/uploads/fork101_for_child1b.png" width="539" height="38" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_for_child1b.png 1248w, http://blogs.cisco.com/wp-content/uploads/fork101_for_child1b-300x21.png 300w, http://blogs.cisco.com/wp-content/uploads/fork101_for_child1b-550x38.png 550w" sizes="(max-width: 539px) 100vw, 539px" /></a></p>
+<p dir="ltr">Replace the original bytes and continue on.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/fork101_for_child2.png"><img class="alignnone  wp-image-151952" alt="fork101_for_child2" src="http://blogs.cisco.com/wp-content/uploads/fork101_for_child2.png" width="568" height="106" srcset="http://blogs.cisco.com/wp-content/uploads/fork101_for_child2.png 789w, http://blogs.cisco.com/wp-content/uploads/fork101_for_child2-300x55.png 300w" sizes="(max-width: 568px) 100vw, 568px" /></a></p>
+<h3 dir="ltr">Intercepting the GET Request Construction with JavaScript Injection</h3>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_1.png"><img class=" wp-image-151985 alignleft" alt="js_interception_add_1" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_1.png" width="254" height="86" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_1.png 528w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_1-300x102.png 300w" sizes="(max-width: 254px) 100vw, 254px" /></a>After the first installation screen, a child process is spawned, which then creates a window containing a message claiming to check the system, while also utilizing hidden web browser functionality. This window loads an HTML file containing 6,900 lines of obfuscated JavaScript. This JavaScript contains two well-known libraries: <strong>CryptoJS</strong> and <strong>jQuery</strong>. The file is located in the child executable statically, but it does not run on its own, the JavaScript is called from elsewhere in the binary.</p>
+<p dir="ltr">Determining if the JavaScript in the static executable is the same Script that is eventually gets executed, can be accomplished by injecting custom JavaScript. It must be done in a way that doesn’t affect the size of the HTML document. One way to do this is to inject our own code into comment sections.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_1.png"><img class="alignnone  wp-image-151953" alt="js_interception_1" src="http://blogs.cisco.com/wp-content/uploads/js_interception_1.png" width="622" height="96" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_1.png 777w, http://blogs.cisco.com/wp-content/uploads/js_interception_1-300x46.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_1-550x84.png 550w" sizes="(max-width: 622px) 100vw, 622px" /></a></p>
+<p dir="ltr">I have just enough room to replace that with this code which should open a new browser window populated with whatever code is on the page. Note that I had to delay the execution of the JavaScript so that the entire page was loaded.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_2.png"><img class="alignnone  wp-image-151954" alt="js_interception_2" src="http://blogs.cisco.com/wp-content/uploads/js_interception_2.png" width="617" height="22" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_2.png 771w, http://blogs.cisco.com/wp-content/uploads/js_interception_2-300x10.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_2-550x19.png 550w" sizes="(max-width: 617px) 100vw, 617px" /></a></p>
+<p dir="ltr">Which is easy to do in Windbg.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_3.png"><img class="alignnone  wp-image-151955" alt="js_interception_3" src="http://blogs.cisco.com/wp-content/uploads/js_interception_3.png" width="623" height="96" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_3.png 779w, http://blogs.cisco.com/wp-content/uploads/js_interception_3-300x46.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_3-550x84.png 550w" sizes="(max-width: 623px) 100vw, 623px" /></a></p>
+<p dir="ltr">Now just let the program execute to completion. It may say that an error occurred if a proper response is not received, it doesn’t matter. Click the OK button and a new window should pop up containing the full HTML document used in this embedded window 🙂</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_2.png"><img class="alignnone  wp-image-151986" alt="js_interception_add_2" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_2.png" width="599" height="362" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_2.png 1248w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_2-300x181.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_2-550x332.png 550w" sizes="(max-width: 599px) 100vw, 599px" /></a></p>
+<p dir="ltr">It is indeed the same JavaScript from the static child executable. After a bit of de-obfuscation and testing, 2 key functions were found.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_4.png"><img class="alignnone  wp-image-151956" alt="js_interception_4" src="http://blogs.cisco.com/wp-content/uploads/js_interception_4.png" width="624" height="317" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_4.png 780w, http://blogs.cisco.com/wp-content/uploads/js_interception_4-300x152.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_4-550x279.png 550w" sizes="(max-width: 624px) 100vw, 624px" /></a></p>
+<p>To determine how (and if) the cryptString() function was used, simply employ the same technique above to overwrite the return call in the “cryptString()” function and the function declaration of the “deCryptString()” function. Since we don’t care about the malware being able to decrypt anything at this point, overwriting it for testing purposes doesn’t matter here. Plus, it keeps the JavaScript section the exact same size (make sure to zero out any unused bytes that occupy the leftover space in this function to avoid an exception).</p>
+<p><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_5.png"><img class=" wp-image-151957 " title="The injected code is in Red" alt="js_interception_5" src="http://blogs.cisco.com/wp-content/uploads/js_interception_5.png" width="628" height="348" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_5.png 785w, http://blogs.cisco.com/wp-content/uploads/js_interception_5-300x166.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_5-550x304.png 550w" sizes="(max-width: 628px) 100vw, 628px" /></a></p>
+<p dir="ltr">Search for the location in memory and overwrite it with a helpful alert box.</p>
+<p> <a href="http://blogs.cisco.com/wp-content/uploads/js_interception_6.png"><img class="alignnone  wp-image-151958" alt="js_interception_6" src="http://blogs.cisco.com/wp-content/uploads/js_interception_6.png" width="629" height="97" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_6.png 786w, http://blogs.cisco.com/wp-content/uploads/js_interception_6-300x46.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_6-550x84.png 550w" sizes="(max-width: 629px) 100vw, 629px" /></a></p>
+<p dir="ltr">Bingo</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_3.png"><img class="alignnone  wp-image-151987" alt="js_interception_add_3" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_3.png" width="599" height="158" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_3.png 1248w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_3-300x79.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_3-550x145.png 550w" sizes="(max-width: 599px) 100vw, 599px" /></a></p>
+<p dir="ltr">Clicking OK will initiate the GET request, since we left this function effectively in tact.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_4.png"><img class="alignnone  wp-image-151988" alt="js_interception_add_4" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_4.png" width="599" height="142" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_4.png 1248w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_4-300x71.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_4-550x130.png 550w" sizes="(max-width: 599px) 100vw, 599px" /></a></p>
+<p dir="ltr">It is now clear how the GET request is generated locally using CryptoJS’ AES w/ CBC functionality. Also note that the key and IV is randomly generated. To test this theory, simply import the HTML into a local document and run the deCryptString() function previously overwritten with the URI.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_5.png"><img class="alignnone  wp-image-151989" alt="js_interception_add_5" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_5.png" width="596" height="58" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_5.png 1552w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_5-300x29.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_5-550x53.png 550w" sizes="(max-width: 596px) 100vw, 596px" /></a></p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_7.png"><img class="alignnone  wp-image-151959" alt="js_interception_7" src="http://blogs.cisco.com/wp-content/uploads/js_interception_7.png" width="559" height="49" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_7.png 777w, http://blogs.cisco.com/wp-content/uploads/js_interception_7-300x26.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_7-550x48.png 550w" sizes="(max-width: 559px) 100vw, 559px" /></a></p>
+<p dir="ltr">The URI is successfully decrypted and displayed.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_6.png"><img class="alignnone  wp-image-151990" alt="js_interception_add_6" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_6.png" width="546" height="302" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_6.png 910w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_6-300x166.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_6-550x304.png 550w" sizes="(max-width: 546px) 100vw, 546px" /></a></p>
+<p dir="ltr">The path is built inside of the getData() function. It will at least contain “/stan/api_war/” and is constructed as follows:</p>
+<p> <a href="http://blogs.cisco.com/wp-content/uploads/js_interception_8.png"><img class="alignnone  wp-image-151960" alt="js_interception_8" src="http://blogs.cisco.com/wp-content/uploads/js_interception_8.png" width="623" height="43" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_8.png 779w, http://blogs.cisco.com/wp-content/uploads/js_interception_8-300x20.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_8-550x38.png 550w" sizes="(max-width: 623px) 100vw, 623px" /></a></p>
+<p dir="ltr">When used with this URI, we can determine its meaning. Note that Region and Browser fetching was unsuccessful on this particular machine. However, I have seen this work on other machines. For example, Google Chrome shows as “?browser=ch”.</p>
+<p dir="ltr"><a href="http://blogs.cisco.com/wp-content/uploads/js_interception_add_7.png"><img class="alignnone  wp-image-151991" alt="js_interception_add_7" src="http://blogs.cisco.com/wp-content/uploads/js_interception_add_7.png" width="547" height="44" srcset="http://blogs.cisco.com/wp-content/uploads/js_interception_add_7.png 1518w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_7-300x24.png 300w, http://blogs.cisco.com/wp-content/uploads/js_interception_add_7-550x44.png 550w" sizes="(max-width: 547px) 100vw, 547px" /></a></p>
+<h2 dir="ltr" id="ioc">IOCs</h2>
+<p>Here you can find the full list of domains associated to the &#8220;Kyle and Stan&#8221; Network: <a href="http://blogs.cisco.com/wp-content/uploads/IOC_Kyle_and_Stan.txt">IOC_Kyle_and_Stan</a></p>
+<p dir="ltr">Windows Malware:</p>
+<ul>
+<li>MD5: 602c94e82c83bbaea1abdea420e0b939</li>
+<li>SHA-256: ee87af42dda91f6ed6ccedcd20736cb1d00a96f26138c0c6698c9837c1525dee</li>
+</ul>
+<p>Mac Malware:</p>
+<ul>
+<li>Sample 1
+<ul>
+<li>MD5: 537a3542c238877629b24195ab8e4ab4</li>
+<li>SHA-256: 8A9CD910DE0349A1FD67D535E7AB6815E30544DD77D479A07932ECCB3F56E66E</li>
+</ul>
+</li>
+<li>Sample 2
+<ul>
+<li>MD5: 0F055F734D211C699A0E9A3418B73514</li>
+<li>SHA-256: 89A6827698BDFF134A2400EE5DB7E4B17256693A27107166EBA973E5B340D8CF</li>
+</ul>
+</li>
+</ul>
+<p>&nbsp;</p>
+<h2 id="Conclusion">Conclusion</h2>
+<p>The &#8220;Kyle and Stan&#8221; network is a highly sophisticated Malvertising Network. It leverages the enormous reach of well-placed malicious advertisements on very well-known websites, in order to potentially reach millions of users. The goal is to infect Windows and Mac users alike with spyware, adware, and browser hijackers. It is not too far fetched that other kinds of malware are being used as well. The malware droppers employ clever techniques and encryption to always have unique checksums to avoid detection. Over 700  domains of the &#8220;Kyle and Stan&#8221; network have been unveiled by this investigation. It is very likely that there are even more domains part of the group behind this. The large number of domains allows the attackers to use a certain domain just for a very short time, burn it and move on to use another one for future attacks. This helps avoiding reputation and blacklist based security solutions. All in all we are facing a very robust and well-engineered malware delivery network that won&#8217;t be taken down until the minds behind this are identified.</p>
+<p>&nbsp;</p>
+<h2 id="protection">Protecting Users Against These Threats</h2>
+<p><img class=" wp-image-151934 alignleft" alt="img_products" src="http://blogs.cisco.com/wp-content/uploads/img_products.png" width="239" height="205" srcset="http://blogs.cisco.com/wp-content/uploads/img_products.png 602w, http://blogs.cisco.com/wp-content/uploads/img_products-300x257.png 300w, http://blogs.cisco.com/wp-content/uploads/img_products-550x471.png 550w" sizes="(max-width: 239px) 100vw, 239px" />Advanced Malware Protection (<a href="http://www.cisco.com/c/en/us/support/security/amp-firepower-software-license/tsd-products-support-series-home.html">AMP</a>) is well suited to detect and block this type of  malware.</p>
+<p><a href="http://www.cisco.com/c/en/us/products/security/cloud-web-security/index.html">CWS</a> or <a href="http://www.cisco.com/c/en/us/products/security/web-security-appliance/index.html">WSA</a> web scanning will prevent access to the websites of the &#8220;Kyle and Stan&#8221; network.</p>
+<p>The Network Security protection of <a href="http://www.cisco.com/c/en/us/products/security/intrusion-prevention-system-ips/index.html">IPS</a> and <a href="http://www.cisco.com/c/en/us/products/security/asa-next-generation-firewall-services/index.html">NGFW</a> have up-to-date signatures and will block this threat.</p>
+<p><a href="http://www.cisco.com/c/en/us/products/security/email-security-appliance/index.html">ESA</a> is not applicable for this attack, because the threat is not using email.</p>
+Tags:<br /><ul class = "tagged"><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=adware">adware</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=amp">AMP</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=cisco-security">Cisco Security</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=cws">CWS</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=esa">esa</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=hacking">hacking</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=kyle">kyle</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=kyle-and-stan">kyle and stan</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=malicious-advertisment">malicious advertisment</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=malvertising">malvertising</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=malware">malware</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=reversing">reversing</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=security-2">security</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=spyware">spyware</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=stan">stan</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=talos2">Talos</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=threat">threat</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=threat-spotlight">threat spotlight</a></li><li><a class = "post_tags" href="http://blogs.cisco.com/?tag=wsa">wsa</a></li></ul>			<div id = "comments"> 
+				<div id = "respond">
+<span class = "comment_heading">Leave a comment</span><br />
+<p class="cisco_respond">We'd love to hear from you! To earn points and badges for participating in the conversation, join <a href = "/rewards-about">Cisco Social Rewards</a>. Your comment(s) will appear instantly on the live site. Spam, promotional and derogatory comments will be removed.</p>
+
+				<p class = "cisco_respond">In an effort to keep conversations fresh, Cisco Blogs closes comments after 60 days. Please visit the <a href ="http://blogs.cisco.com">Cisco Blogs hub page</a> for the latest content.</p>
+			<p><span class = "comment_heading">4 Comments</span></p>
+		<ol class="commentlist" id="thecomments">
+				
+			<li>
+			<div id="comment-2125839">
+				<div class="comment_image">
+					<img class = "img-circle img-noname" src = 'http://blogs.cisco.com/wp-content/uploads/nitro_image/empty.jpg'  width = "56" height = "56">
+				</div>
+				<div class="comment_act">
+					<div class="comment_user_info">
+						<span class="fn">
+						Ms. G						</span>
+						<br />
+						<span class="comment-meta commentmetadata">September 14, 2014 at 1:45 pm</span>
+						
+					</div>
+				<div class="comment_text">
+				<p>eagerly awaiting any legitimate cleaner tool for Mac. much appreciated. I got attacked1</p>				</div>
+				<div class = "roblike">
+					<a  href = "#" id = "clickLike2125839" class = "commentLikeButton commentlike" data-nitro = >0 likes</a>				</div>
+				<div class="reply">
+									</div>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</li>
+		<ul class="children">
+
+			<li>
+			<div id="comment-2126349">
+				<div class="comment_image">
+					<img class = "img-circle img-noname" src = 'http://blogs.cisco.com/wp-content/uploads/nitro_image/empty.jpg'  width = "56" height = "56">
+				</div>
+				<div class="comment_act">
+					<div class="comment_user_info">
+						<span class="fn">
+						<a href='http://blogs.cisco.com/security/' rel='external nofollow' class='url'>Armin Pelkmann</a>						</span>
+						<br />
+						<span class="comment-meta commentmetadata">September 15, 2014 at 12:43 pm</span>
+						
+					</div>
+				<div class="comment_text">
+				<p>You can use Clam AV for MacOS. Good luck cleaning up your system.</p>				</div>
+				<div class = "roblike">
+					<a  href = "#" id = "clickLike2126349" class = "commentLikeButton commentlike" data-nitro = >0 likes</a>				</div>
+				<div class="reply">
+									</div>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</li>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+
+			<li class="comment byuser comment-author-arminpelkmann bypostauthor even thread-even depth-1" id="li-comment-2129547">
+				<div id="comment-2129547">
+					<div class="comment_image">
+						<img class = "img-circle" src = "http://blogs.cisco.com/wp-content/uploads/userphoto/1694.thumbnail.52e6e5251f5fc.jpg">					</div>
+					<div class="comment_act">
+						<div class="comment_user_info">
+							<span class="fn"><a href = 'http://blogs.cisco.com/author/arminpelkmann'>Armin Pelkmann</a></span>
+							<br />
+							<span class="comment-meta commentmetadata">September 22, 2014 at 7:58 am</span>
+			
+						</div>
+						<div class="comment_text">
+							<p>We published an update to this attack.
+Ongoing research now reveals the real size of the attackers’ network is 9 times larger than reported in our first blog. For more details, read the Kyle and Stan Blog.
+
+http://blogs.cisco.com/security/kyle-and-stan-9x/</p>						</div>
+						<div class = "roblike">
+					<a  href = "#" id = "clickLike2129547" class = "commentLikeButton commentlike" data-nitro = >0 likes</a>				</div>
+						<div class="reply">
+													</div>
+						
+					</div>
+					<div class="clear"></div>
+				</div>
+			</li>
+			</li><!-- #comment-## -->
+
+			<li>
+			<div id="comment-2129947">
+				<div class="comment_image">
+					<img class = "img-circle img-noname" src = 'http://blogs.cisco.com/wp-content/uploads/nitro_image/empty.jpg'  width = "56" height = "56">
+				</div>
+				<div class="comment_act">
+					<div class="comment_user_info">
+						<span class="fn">
+						Kailash Pandey						</span>
+						<br />
+						<span class="comment-meta commentmetadata">September 23, 2014 at 6:57 am</span>
+						
+					</div>
+				<div class="comment_text">
+				<p>Thank you so much for posting such a detailed investigation.
+Please keep posted.</p>				</div>
+				<div class = "roblike">
+					<a  href = "#" id = "clickLike2129947" class = "commentLikeButton commentlike" data-nitro = >0 likes</a>				</div>
+				<div class="reply">
+									</div>
+				
+				<div class="clear"></div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		</li>
+		</li><!-- #comment-## -->
+			</ol>
+	</div>
+
+
+			</div>
+		</article>
+
+	</div>
+	<div id = "main_right">
+		<ul id = "sidebar">
+  <li id="subscribe" class="widget">
+    <h3>Subscribe to Threat Research:</h3>
+    <div id="subscribe_box">
+      <form id ="subscribe_form" action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=CiscoBlogThreatResearch', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+        <input type="text" class="subscribe" name="email" value="Enter email address" onFocus="if(this.value == 'Enter email address') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Enter email address';}"></input>
+        <input type="hidden" value="CiscoBlogThreatResearch" name="uri" ></input>
+        <input type="hidden" name="loc" value="en_US"></input>
+        <input type="submit" class="subscribe_button" value="Subscribe" ></input>
+        <div class="clear"></div>
+      </form>    
+    </div>
+    <div class="clear"></div>
+    
+</li>
+
+<li id="social_widget" class="widget">
+  <h3>Connect with Threat Research</h3>
+  <ul>
+          <li><a target='_blank' href="https://www.facebook.com/ciscosecurity?ref=nf"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_fb.png" alt="Facebook"></a></li>
+      <li><a target='_blank' href="https://twitter.com/ciscosecurity"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_tw.png" alt="Twitter"></a></li>
+      <li><a target='_blank' href="http://youtubecisco.com/security"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/follow_yt.png" alt="YouTube"></a></li><li><a href="http://feeds.feedburner.com/CiscoBlogThreatResearch"><img src="http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/rss.png" width = "24" height = "24" alt = "Rss"></a></li>
+  </ul>
+</li>
+
+<li id="archives" class="widget">
+  <div id = "select_content">
+    <div id = "archive_title">
+      Archives
+    </div>
+    <div id = "styled_select">
+      <select id="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+        <option value="">Select</option>
+        	<option value='http://blogs.cisco.com/archive?year=2017&#038;month=02&#038;cat=16197'> February 2017 </option>
+	<option value='http://blogs.cisco.com/archive?year=2017&#038;month=01&#038;cat=16197'> January 2017 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=12&#038;cat=16197'> December 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=11&#038;cat=16197'> November 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=10&#038;cat=16197'> October 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=09&#038;cat=16197'> September 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=08&#038;cat=16197'> August 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=07&#038;cat=16197'> July 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=06&#038;cat=16197'> June 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=05&#038;cat=16197'> May 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=04&#038;cat=16197'> April 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=03&#038;cat=16197'> March 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=02&#038;cat=16197'> February 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2016&#038;month=01&#038;cat=16197'> January 2016 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=12&#038;cat=16197'> December 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=11&#038;cat=16197'> November 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=10&#038;cat=16197'> October 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=09&#038;cat=16197'> September 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=08&#038;cat=16197'> August 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=07&#038;cat=16197'> July 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=06&#038;cat=16197'> June 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=05&#038;cat=16197'> May 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=04&#038;cat=16197'> April 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=03&#038;cat=16197'> March 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=02&#038;cat=16197'> February 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2015&#038;month=01&#038;cat=16197'> January 2015 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=12&#038;cat=16197'> December 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=11&#038;cat=16197'> November 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=10&#038;cat=16197'> October 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=09&#038;cat=16197'> September 2014 </option>
+	<option value='http://blogs.cisco.com/archive?year=2014&#038;month=08&#038;cat=16197'> August 2014 </option>
+      </select>
+    </div>
+    <div class = "clear"></div>
+  </div>  
+</li>
+
+</ul>	</div>
+	<div class = "clear"></div>
+</div>
+</div> 
+
+
+
+
+</div>
+   
+
+<div class="sb-slidebar sb-left sb-width-custom sb-momentum-scrolling " data-sb-width="50%">
+    <nav>
+  <a class = "hamburger_login" href = "https://blogs.cisco.com:9031/sp/startSSO.ping?PartnerIdpId=cloudsso.cisco.com">Log In to Cisco.com</a>      <ul>
+                  <li><a href='http://blogs.cisco.com'><span>All Blogs</span></a></li>
+                  <li><a href='#'><span>Technologies</span></a>
+                  <ul>
+            <div class = "bordertop"></div>
+            <li><a href="http://blogs.cisco.com/analytics-automation">Analytics &amp; Automation</a></li>
+            <li><a href="http://blogs.cisco.com/cloud">Cloud</a></li>
+            <li><a href='http://blogs.cisco.com/collaboration'>Collaboration</a></li>
+            <li><a href='http://blogs.cisco.com/datacenter'>Data Center</a></li>
+            <li><a href='http://blogs.cisco.com/enterprise'>Enterprise Networks</a></li>
+            <li><a href='http://blogs.cisco.com/innovation'>Innovation</a></li>
+            <!--<li><a href='http://blogs.cisco.com/openatcisco'>Open at Cisco</a></li>-->
+            <li><a href='http://blogs.cisco.com/wireless'>Mobility</a></li>
+            <li><a href='http://blogs.cisco.com/security'>Security</a></li>
+            <li class = "sub"><a href="http://blogs.cisco.com/talos" class="nav_menu" title="">Threat Research</a></li>
+            <li><a href='http://blogs.cisco.com/smallbusiness'>Small Business</a></li>
+            <li><a href='http://blogs.cisco.com/sp'>SP360:Service Provider</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Industries</span></a>
+                    
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/education'>Education</a></li>
+            <li><a href='http://blogs.cisco.com/energy'>Energy</a></li>
+            <li><a href='http://blogs.cisco.com/financialservices'>Financial Services</a></li>
+            <li><a href='http://blogs.cisco.com/government'>Government</a></li>
+            <li><a href='http://blogs.cisco.com/healthcare'>Healthcare</a></li>
+            <li><a href='http://blogs.cisco.com/manufacturing'>Manufacturing</a></li>
+            <li><a href='http://blogs.cisco.com/retail'>Retail &amp; Hospitality</a></li>
+          </ul>
+        </li>
+                  <li><a href='#'><span>Partners</span></a>         
+          <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/partner'>Partner</a></li>
+          </ul>
+        </li>
+        <li><a href='#'><span>For the Tech Expert</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/getyourbuildon'>Architects &amp; Distinguished Engineers</a></li>
+            <li><a href='http://blogs.cisco.com/performance'>High Performance Computing</a></li>
+            <li><a href='http://blogs.cisco.com/ciscoit'>Inside Cisco IT</a></li>
+            <li><a href='http://blogs.cisco.com/cin'>TechWiseTV</a></li>
+          </ul>
+        </li>
+         <li><a href='#'><span>Get to Know Cisco</span></a>           <ul>
+            <div class = "bordertop"></div>
+            <li><a href='http://blogs.cisco.com/csr'>Corporate Social Responsibility</a></li>
+            <li><a href='http://blogs.cisco.com/cle'>Connected Life Exchange</a></li>
+            <li><a href='http://blogs.cisco.com/socialmedia'>Digital and Social Media</a></li>
+            <li><a href='http://blogs.cisco.com/digital'>Digital Transformation</a></li>
+            <li><a href='http://blogs.cisco.com/emerging'>Emerging Countries</a></li>
+            <li><a href='http://blogs.cisco.com/gov'>High Tech Policy</a></li>
+            <li><a href='http://blogs.cisco.com/diversity'>Inclusion and Diversity</a></li>
+            <li><a href='http://blogs.cisco.com/lifeatcisco'>Life at Cisco</a></li>
+            <li><a href='http://blogs.cisco.com/perspectives'>Perspectives</a></li>
+            <li><a href='http://blogs.cisco.com/news'>The Platform (News &amp; Exec Insights)</a></li>
+          </ul>
+        </li>
+        <li class = "countries"><a href='#'><span>Countries and Regions</span></a>
+          <ul>
+            <div class = "col_1">
+  <li><a href="https://apjc.thecisconetwork.com/">Asia Pacific</a>
+    <li><a href="http://gblogs.cisco.com/at/">Austria</a>
+  <li><span class = "sub_main">Belgium</span></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be">Dutch</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/be-fr">French</a></li>
+  <li><span class = "sub_main">Canada</span></li>
+    <li class = "sub"><a href="http://canadablog.cisco.com/">English</a></li>
+    <li class = "sub"><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+  <li><a href="http://gblogs.cisco.com/fin/">Finland</a>
+  </div>
+    <div class = "col_2">
+  <li><span class = "sub_main">France</a></span>
+    <li class = "sub"><a href="http://www.cisco.com/c/m/fr_fr/socialmedia/blogs.html">Cisco France Blogs</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-reseaux/">R&#233;seaux</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-datacenter/">Data Center &amp; Cloud</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-iot/">Digital Transformation &amp; IoT</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-collaboration/">Collaboration</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-security/">S&eacute;curit&eacute;</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-sp/">Service Provider</a></li>
+    <li class = "sub"><a href="http://gblogs.cisco.com/fr-smartcities/">Smart Cities</a></li>
+  
+  <li><a href="http://gblogs.cisco.com/de">Germany</a></li>
+  <li><a href="http://gblogs.cisco.com/in">India</a></li>
+  </div>
+  <div class = "col_3">
+  <li><a href="http://gblogs.cisco.com/it/">Italy</a></li>   
+  <li><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+  <li><a href="http://ciscokrblog.com/">Korea</a></li>
+  <li><span class = "sub_main">Latin America</span></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/la/">Latin America (Esp)</a></li>
+      <li class = "sub"><a href="http://gblogs.cisco.com/cansac/">Cansac</a></li> 
+  </div>
+  <div class = "col_4">  
+  <li><a href="https://ciscotechblog.nl/">Netherlands</a></li>
+  <li><a href="http://gblogs.cisco.com/no">Norway</a></li>
+  <li><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+  <li><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+  <li><a href="http://gblogs.cisco.com/ro">Romania</a></li>
+  <li><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+  <li><a href="http://gblogs.cisco.com/es">Spain</a></li>
+  <li><a href="http://gblogs.cisco.com/ch-tech/">Switzerland</a></li>
+  <li><a href="http://gblogs.cisco.com/uki/">UK &amp; Ireland</a></li>
+</div>
+<div class = "clear"></div>
+</ul>
+</li>
+      </ul>
+</nav></div>
+<footer class = "sb-slide">
+	<section id = "footer_content">
+				<ul id = "footer_social">
+			<li class = "footer_social_title">Connect</li>
+			
+			<li><a target='_blank' href='https://www.facebook.com/ciscosecurity?ref=nf'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_fb.png" height = "25" width = "25"></a></li>
+			<li><a target='_blank' href='https://twitter.com/ciscosecurity'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_tw.png"></a></li>
+			<li><a target='_blank' href='http://www.linkedin.com/company/cisco'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_li.png"></a></li>
+			<li><a target='_blank' href='https://plus.google.com/106092229730683979920'><img src = "http://blogs.cisco.com/wp-content/themes/cisco_responsive/img/footer_gp.png"></a></li>
+			<div class = "clear"></div>
+			
+		</ul>
+
+
+		<section id="footer_new">
+			<ul>
+				<li><a href="https://www.cisco.com/web/siteassets/contacts/index.html">Contacts</a>  |  </li>
+				<li><a href="https://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb">Feedback</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/help/index.html">Help</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/sitemap/index.html">Site Map</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/terms_condition.html">Terms &amp; Conditions</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/privacy.html">Privacy Statement</a>  |  </li>
+				<li><a href="https://www.cisco.com/web/siteassets/legal/privacy.html#cookies">Cookie Policy</a>  |  </li>
+    	 		<li><a href="https://www.cisco.com/web/siteassets/legal/trademark.html">Trademarks</a> <br /> </li>
+    	 	</ul>
+		</section>
+		<br class="clear" />
+    	<section id ="disclaimer">
+    		<b>Legal Disclaimer</b>
+			<p>Some of the individuals posting to this site, including the moderators, work for Cisco Systems. Opinions expressed here and in any corresponding comments are the personal opinions of the original authors, not of Cisco. The content is provided for informational purposes only and is not meant to be an endorsement or representation by Cisco or any other party. This site is available to the public. No information you consider confidential should be posted to this site. By posting you agree to be solely responsible for the content of all information you contribute, link to, or otherwise upload to the Website and release Cisco from any liability related to your use of the Website. You also grant to Cisco a worldwide, perpetual, irrevocable, royalty-free and fully-paid, transferable (including rights to sublicense) right to exercise all copyright, publicity, and moral rights with respect to any original content you provide. The comments are moderated. Comments will appear as soon as they are approved by the moderator.</p>
+    	</section>
+	</section>
+	<script>
+var ajaxurl = "https://blogs.cisco.com/wp-admin/admin-ajax.php";
+jQuery(document).ready(function($) {
+			
+	$('a.commentLikeButton').click(function(event){
+		var elemId = event.target.id;
+		var commentId = elemId.replace('clickLike','');	
+		
+		event.preventDefault();
+		
+		var nitroID= $(this).attr("data-nitro");
+		
+		
+		
+		var str = $(this).text();
+		if (str =='1 like') {
+			var total = str.replace('like','');
+		}
+		else {	
+			var total = str.replace('likes','');
+		}
+		if ($(this).hasClass( "commentlike")) {
+			var theTotal = parseInt(total);
+   			theTotal1 = Number(theTotal) + 1;
+   			if (theTotal1 === 1){
+   				$(this).text(theTotal+" like"); 
+   			}
+   			else {  		
+    			$(this).text(theTotal1+" likes"); 
+    		} 
+    		var data = {
+        		'action': 'addLike',
+				'commentID': commentId,
+				'total': theTotal1
+			};
+			
+			
+			$.post(ajaxurl, data, function(response) {
+				if (typeof nitroID !== 'undefined') {
+					commentLike(nitroID);
+				}			
+				commentLiked();		
+			});
+				
+    	}
+    	else{
+    		$(this).removeAttr("href");
+    		alert('You already liked this');
+    		/*var theTotal = parseInt(total);
+   			theTotal = Number(theTotal) - 1;
+   			if (theTotal == 1){
+   				$(this).text(theTotal+" like"); 
+   			}
+   			else {  			
+    			$(this).text(theTotal+" likes"); 
+    		} 
+    		var data = {
+        		'action': 'removeLike',
+				'commentID': commentId,
+				'total': theTotal
+			};
+			$.post(ajaxurl, data, function(response) {
+				alert('disliked');
+			});*/
+    	} 
+    	
+    	$(this).addClass('commentliked').removeClass('commentlike');
+	});
+});
+
+
+
+
+
+	</script>
+	
+	<script>
+		var ajaxurl = "https://blogs.cisco.com/wp-admin/admin-ajax.php";
+		
+		jQuery(document).ready(function($) {
+			var postID = 151920;
+			var orig_count = 1;
+			$(".twitter a").click(function() {
+
+				var theTotal = orig_count;
+   				var count = Number(theTotal) + 1;
+				var data = {
+        			'action': 'addtweet',
+					'postID': postID,
+					'total': count
+				};
+				$.post(ajaxurl, data, function(response){});
+			})
+		});
+	</script>
+
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/comment-reply.js?ver=4.7.2'></script>
+<script type='text/javascript' src='http://blogs.cisco.com/wp-includes/js/wp-embed.js?ver=4.7.2'></script>
+</footer>
+<script>//nitro.refreshNML();</script>
+
+
+
+
+</body>
+</html> 
+
+  <div id="share_bar1">
+    
+    <span class = "share_title">Share</span>
+    <div class="twitter" ><a href="https://twitter.com/intent/tweet?url=http://bit.ly/1G2UuCQ&text=Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware&via=ciscosecurity">tweet</a></div>
+    <div class="facebook" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan" data-title=" "></div>
+    <div class="googleplus" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan"data-title=" "></div>
+    <div class="linkedin" data-url="http://blogs.cisco.com/security/talos/kyle-and-stan" data-title=" "></div>
+        <div class = "share_mail"><a class="email" href="mailto:?subject=Cisco Blog: Threat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware&body=I saw this post on Cisco Threat Research blog and thought you might like to read it.%0A%0AThreat Spotlight: &#8220;Kyle and Stan&#8221; Malvertising Network Threatens Windows and Mac Users With Mutating Malware%0A%0Ahttp://blogs.cisco.com/security/talos/kyle-and-stan%0A%0A****Disclaimer****%0A%0ACisco is not responsible for the content of this email, and its contents do not necessarily reflect Cisco’s views or opinions. Cisco has not verified the email address or name of the sender."></a></div>
+    <div class = "clear"></div>
+  </div>
+  <script>
+    jQuery(document).ready(function($){
+
+
+
+      
+      $('.facebook').sharrre({
+        share: {
+          facebook: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('facebook');
+        }
+      });
+      $('.googleplus').sharrre({
+        share: {
+          googlePlus: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        urlCurl: '/wp-content/themes/cisco_responsive/sharrre.php',
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('googlePlus');
+        }
+      });
+      $('.linkedin').sharrre({
+        share: {
+          linkedin: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options){
+          api.simulateClick();
+          api.openPopup('linkedin');
+        }
+      });
+
+    });
+  </script>
+  

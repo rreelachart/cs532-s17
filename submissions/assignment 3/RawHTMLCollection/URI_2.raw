@@ -1,0 +1,273 @@
+RAW HTML FOR: http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Find A Windows Infection Quickly Part 2 - With Tools</title>
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css?v=f28df5862c" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+
+    <link rel="canonical" href="http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/amp/" />
+    
+    <meta property="og:site_name" content="909 Research" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Find A Windows Infection Quickly Part 2 - With Tools" />
+    <meta property="og:description" content="This post is a follow up to my previous post on spending the least amount of time to find out if a Windows computer is infected based on methods that will work on many typical viruses. Process Explorer (Link) This tool is like ctrl+alt+delete on steroids and the" />
+    <meta property="og:url" content="http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/" />
+    <meta property="article:published_time" content="2015-07-24T01:09:26.000Z" />
+    <meta property="article:modified_time" content="2015-07-24T09:44:33.000Z" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Find A Windows Infection Quickly Part 2 - With Tools" />
+    <meta name="twitter:description" content="This post is a follow up to my previous post on spending the least amount of time to find out if a Windows computer is infected based on methods that will work on many typical viruses. Process Explorer (Link) This tool is like ctrl+alt+delete on steroids and the" />
+    <meta name="twitter:url" content="http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="John H." />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "909 Research",
+        "logo": "http://909research.com/ghost/img/ghosticon.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "John H.",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://909research.com/content/images/2017/01/headshot_small_centered.png",
+            "width": 321,
+            "height": 356
+        },
+        "url": "http://909research.com/author/john/",
+        "sameAs": [
+            "https://twitter.com/jhub908"
+        ],
+        "description": "Community Instructor @SANSInstitute | Lead Security Analyst @GSK | Security Monitoring, Malware &amp; Engineering Nerd | GMON, GPEN, GREM | BSEE / MEng - Computer Engineering"
+    },
+    "headline": "Find A Windows Infection Quickly Part 2 - With Tools",
+    "url": "http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/",
+    "datePublished": "2015-07-24T01:09:26.000Z",
+    "dateModified": "2015-07-24T09:44:33.000Z",
+    "description": "This post is a follow up to my previous post on spending the least amount of time to find out if a Windows computer is infected based on methods that will work on many typical viruses. Process Explorer (Link) This tool is like ctrl+alt+delete on steroids and the",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "http://909research.com"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.10" />
+    <link rel="alternate" type="application/rss+xml" title="909 Research" href="http://909research.com/rss/" />
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58031419-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body class="post-template nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://909research.com/">Home</a></li>
+            <li class="nav-toolbox" role="presentation"><a href="http://909research.com/toolbox/">Toolbox</a></li>
+            <li class="nav-my-sans-courses" role="presentation"><a href="http://909research.com/sans/">My SANS Courses</a></li>
+            <li class="nav-about-contact" role="presentation"><a href="http://909research.com/about/">About / Contact</a></li>
+    </ul>
+        <a class="subscribe-button icon-feed" href="http://909research.com/rss/">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+
+
+<header class="main-header post-head no-cover">
+    <nav class="main-nav  clearfix">
+        
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+    </nav>
+</header>
+
+<main class="content" role="main">
+    <article class="post">
+
+        <header class="post-header">
+            <h1 class="post-title">Find A Windows Infection Quickly Part 2 - With Tools</h1>
+            <section class="post-meta">
+                <time class="post-date" datetime="2015-07-23">23 July 2015</time> 
+            </section>
+        </header>
+
+        <section class="post-content">
+            <p>This post is a follow up to my <a href="http://909research.com/find-a-windows-infection-quickly-without-tools/">previous post</a> on spending the least amount of time to find out if a Windows computer is infected based on methods that will work on many typical viruses.</p>
+
+<h5 id="processexplorer">Process Explorer</h5>
+
+<p>(<a href="https://technet.microsoft.com/en-us/sysinternals/bb896653">Link</a>)
+This tool is like ctrl+alt+delete on steroids and the newest version includes the ability to submit running program hashes to VirusTotal for identification. To turn this on, you'll need to go to View-> Select Columns and check the VirusTotal box and then go to Options -> VirusTotal.com -> Check VirusTotal.com and agree the the terms. You'll also obviously need to have an active internet connection. To find the badness, just look for the red rating in the VirusTotal column, easy. <br />
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-9-08-32-PM.png" alt="" /></p>
+
+<h5 id="autoruns">Autoruns</h5>
+
+<p>(<a href="https://technet.microsoft.com/en-us/sysinternals/bb963902">Link</a>) Autoruns works the same as Process Explorer in terms of using VirusTotal integration. To turn it on go to Options -> Scan Options -> Check VirusTotal.com then click Rescan. Known viruses should pop up with a higher than 0 detection ratio, and even if they aren't identified, it's often easy to find them just from the ridiculous names or red highlighting such as in the picture below of <a href="https://malwr.com/analysis/OGFlOWZjMmQ0MDg5NDY5ODljMjBiZWZmZmMyYjM4MTk/">this sample</a>.
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-6-08-33-PM.png" alt="" /></p>
+
+<h5 id="mandiantshimcacheappcompatcacheparser">Mandiant ShimCache (AppCompat Cache) Parser</h5>
+
+<p>(<a href="https://github.com/mandiant/ShimCacheParser">Link</a>) This little tool has saved me TONS of time in investigations by working easily over a network via command line and quickly giving me a list of names of executables that have been run and when (<em>note this method might not show infections that start with non .exe files, such as word doc spam, if no new exe's are used</em>). Sometimes output dates can be a bit odd looking, but in general it helps to very quickly identify the time of infection which allows you to go back to other logs and put the incident back together. </p>
+
+<p>To export your shimcache (on Windows 7), open up an Admin command prompt and type the following:</p>
+
+<p><code>reg export "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache" shimcache.reg</code></p>
+
+<p>Then, take that file to where you saved the Mandiant script and parse it out with: </p>
+
+<p><code>python shimcacheparser.py -o output.csv -r shimcache.reg</code> </p>
+
+<p>This will produce output.csv, a file you should probably sort by date or folder name and then can analyze for odd executable names. Pay particular attention to the user temporary, desktop, and download folders, these are generally where I find the infection. Typically people will download some spam exe, run it from their desktop, and that will drop something in a AppData/Local/Temp. This should be obvious because there will be several entries from the same time with questionable names. Here's an example with ShopAtHome adware.</p>
+
+<pre><code>07/14/09 01:16:17 N/A C:\Program Files\Common Files\System\wab32.dll,N/A,False
+07/14/09 01:15:38 N/A C:\Windows\System32\mf.dll,N/A,False
+03/21/14 21:13:42 N/A C:\Program Files\Common Files\VMware\Drivers\vss\comreg.exe,N/A,True
+03/21/14 20:22:54 N/A C:\Program Files\VMware\VMware Tools\TPVCGateway.exe,N/A,True
+03/21/14 20:22:54 N/A C:\Program Files\VMware\VMware Tools\TPAutoConnSvc.exe,N/A,True
+07/14/09 01:14:29 N/A C:\Windows\system32\printui.exe,N/A,True
+07/14/09 01:14:23 N/A C:\Windows\System32\mctadmin.exe,N/A,True
+07/14/09 01:14:30 N/A C:\Windows\System32\regsvr32.exe,N/A,True
+07/14/09 01:14:45 N/A C:\Program Files\Windows Mail\WinMail.exe,N/A,True
+07/12/09 07:55:40 N/A c:\a8bae8b25b3310ea7c\install.exe,N/A,True
+01/25/15 16:08:10 N/A C:\Users\IEUser\AppData\Roaming\ShopAtHome\ShopAtHomeHelper\Exec.exe N/A True
+01/25/15 16:08:36 N/A C:\Users\IEUser\AppData\Roaming\ShopAtHome\ShopAtHomeToolbar\ShopAtHomeHelperInstaller.exe N/A True
+01/25/15 16:08:14 N/A C:\Users\IEUser\AppData\Roaming\ShopAtHome\ShopAtHomeHelper\RibbonConfig.exe N/A False
+08/14/14 13:08:10 N/A C:\Users\IEUser\AppData\Local\Temp\{7EAD7ED1-4F98-47EA-AF3E-1652458B1DFD}~setup\vcredist_x86.exe,N/A,True
+08/14/14 13:08:01 N/A C:\Users\IEUser\AppData\Local\Temp\vmware-IEUser\00000265\setup.exe,N/A,True
+07/14/09 01:14:28 N/A C:\Windows\System32\powercfg.exe,N/A,True
+08/14/14 12:46:50 N/A C:\Users\IEUser\AppData\Local\Temp\upgrader.exe,N/A,True
+08/14/14 12:46:50 N/A C:\Users\IEUser\AppData\Local\Temp\storePwd.exe,N/A,True
+08/14/14 12:46:50 N/A C:\Users\IEUser\AppData\Local\Temp\unattend.cmd,N/A,False
+07/14/09 01:14:23 N/A C:\Windows\system32\mcbuilder.exe,N/A,True
+07/14/09 01:14:46 N/A C:\Windows\system32\winsat.exe,N/A,True
+07/14/09 01:14:28 N/A C:\Windows\system32\oobe\oobeldr.exe,N/A,True
+07/14/09 01:14:25 N/A C:\Windows\system32\oobe\msoobe.exe,N/A,True
+</code></pre>
+
+<h5 id="userassist">UserAssist</h5>
+
+<p>(<a href="http://www.nirsoft.net/utils/userassist_view.html">Link</a>) This tools queries the Windows registry for a list of executables that have been run by Explorer. It's an easy tool to run and visually inspect the output, see anything odd here? Here's a real infection with an <a href="https://www.hybrid-analysis.com/sample/ef5318d66a4d7a1b7d3dfc7e2258c8d1a95b82e3eb6bdd09ec269941aee1ea07?environmentId=1">example</a> I got from Payload Security. 
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-6-12-30-AM.png" alt="" /></p>
+
+<h5 id="processhacker">Process Hacker</h5>
+
+<p>(<a href="http://processhacker.sourceforge.net">Link</a>) Similar to Process Explorer and good for the same things, but has one feature I like more that can highlight rogue processes very quickly. Close all your open apps, and in the View menu check "Hide Signed Processes", doing this often leaves only the malicious executables in the list. (To do this in Process Explorer, go to Option -> Verify Image Signatures and look what isn't signed.)  Here's an example with <a href="https://www.hybrid-analysis.com/sample/06eb7166ad33bf25705ccd388d66e135a241ff4a454e3a340cb3d4c773c9b07e?environmentId=3">this</a> malware.
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-6-54-05-AM.png" alt="" title="" /> </p>
+
+<p>Process Hacker also has the side benefit of coming with the most determined process killer you can find, to use it right click a process, click Miscellaneous -> <strong>Terminator</strong>. This feature will try increasingly crazy things, including writing garbage into memory, until something kills or crashes the program you pointed it at. </p>
+
+<p><img src="/content/images/2015/07/piOjYCG.gif" alt="No Chance" /></p>
+
+<hr />
+
+<h6 id="bonusanalysistipliveprocessstrings">Bonus Analysis Tip - Live Process Strings:</h6>
+
+<p>In Process Explorer right click a process and open up Properties and go to the strings tab. Or, in Process Hacker, right click the malicious process, select Properties, go to the Memory tab, click the Strings button, and click OK on the defaults. This will give you the strings from the running process in memory which almost always includes command and control addresses, this tells you what to block, as well as the callback contents or type. In the case of the malware above, you can see multiple IP addresses, as well as the fact that it's going to at least attempt an HTTP POST request, or something that looks like one. This gives you an easy network IOC that you can look for to ensure no one else has the same infection. 
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-7-04-55-AM.png" alt="" />
+<img src="/content/images/2015/07/Screen-Shot-2015-07-23-at-7-05-42-AM.png" alt="" /></p>
+        </section>
+
+        <footer class="post-footer">
+
+
+            <figure class="author-image">
+                <a class="img" href="/author/john/" style="background-image: url(/content/images/2017/01/headshot_small_centered.png)"><span class="hidden">John H.'s Picture</span></a>
+            </figure>
+
+            <section class="author">
+                <h4><a href="/author/john/">John H.</a></h4>
+
+                    <p>Community Instructor @SANSInstitute | Lead Security Analyst @GSK | Security Monitoring, Malware &amp; Engineering Nerd | GMON, GPEN, GREM | BSEE / MEng - Computer Engineering</p>
+                <div class="author-meta">
+                    <span class="author-location icon-location">Philadelphia, USA</span>
+                    <span class="author-link icon-link"><a href="https://twitter.com/jhub908">https://twitter.com/jhub908</a></span>
+                </div>
+            </section>
+
+
+            <section class="share">
+                <h4>Share this post</h4>
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Find%20A%20Windows%20Infection%20Quickly%20Part%202%20-%20With%20Tools&amp;url=http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/"
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/"
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://909research.com/find-a-windows-infection-quickly-part-2-with-tools/"
+                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <span class="hidden">Google+</span>
+                </a>
+            </section>
+
+
+        </footer>
+
+    </article>
+</main>
+
+<aside class="read-next">
+    <a class="read-next-story no-cover" href="/how-to-use-thug-honeyclient/">
+        <section class="post">
+            <h2>How To: Use Thug Honeyclient to Investigate a Malicious Website</h2>
+            <p>One of my favorite ways to quickly and safely investigate a potentially malicious website is the Thug low-interaction honeyclient&hellip;</p>
+        </section>
+    </a>
+    <a class="read-next-story prev no-cover" href="/find-a-windows-infection-quickly-without-tools/">
+        <section class="post">
+            <h2>Find A Windows Infection Quickly Without Tools</h2>
+            <p>Note: Part 2 of this article is now posted here. After several years doing incident response, I thought it&hellip;</p>
+        </section>
+    </a>
+</aside>
+
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="http://909research.com">909 Research</a> &copy; 2017</section>
+            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- You can safely delete this line if your theme does not require jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js?v=f28df5862c"></script>
+    <script type="text/javascript" src="/assets/js/index.js?v=f28df5862c"></script>
+
+</body>
+</html>

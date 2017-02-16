@@ -1,0 +1,384 @@
+RAW HTML FOR: http://f15hb0wn.com/blog/when-alarm-isn%E2%80%99t?utm_content=buffercfe0f&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7" lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="linkedin:owner" content="mid:12707378" />
+<link rel="shortcut icon" href="http://f15hb0wn.com/sites/default/files/favicon.gif" type="image/gif" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="MobileOptimized" content="width" />
+<meta name="description" content="Vendors like to create an ocean of alarms in their products so they can dogpile after an event and claim that &quot;they caught it.&quot; This article goes through the dangers of false positives in incident response and how to address them." />
+<meta name="HandheldFriendly" content="true" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="keywords" content="Lancope Blog, DFIR, vendor" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="rights" content="All rights reserved, Charles D. Herring." />
+<link rel="canonical" href="http://f15hb0wn.com/blog/when-alarm-isn%E2%80%99t" />
+<link rel="shortlink" href="http://f15h.co/node/180" />
+<link rel="publisher" href="https://plus.google.com/114157047553796026476" />
+<title>When An Alarm Isn’t | f15hb0wn</title>
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_ax68AtNTbGI50XcC53sX4cszRXnxEEkLVncEmLXqpwc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_xw13ubQw27VU9ADjwh2caxI0zarCpMqTFLkVmHQ0VHI.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_WkIQlS2V8h4Vh16HARhGTGX8u2nA_FzvuTZ5-DXLwaQ.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_RlXxg2empscqOE7hXOP_o_L0cQyFdqpZJlW0wD6MECA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_7hiBG39AgF9pZ7caVC0xreSh2hc5gQJgPQwXvnfthFM.css" media="only screen" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_4_uzFhUXv0rM5_MTvpZT1dOW_4zxjCfAgziPSQt-UvI.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_uLsZMthPWJ7_voc5i7IDWJBwfEOV9wF0Oy_6qfSsGTQ.css" media="only screen" />
+
+<!--[if lt IE 9]>
+<link type="text/css" rel="stylesheet" href="http://f15hb0wn.com/sites/default/files/css/css_wZFYJUas45xgA4irg3xpMrboBqUhIaec-A4oIqjzmDU.css" media="screen" />
+<![endif]-->
+<script src="http://f15hb0wn.com/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script src="http://f15hb0wn.com/sites/default/files/js/js_Cigu2TPkLt6YDA0_HOCh8l4RzBVVXH5X4hS-jk0qITo.js"></script>
+<script>var switchTo5x=true;</script>
+<script src="http://w.sharethis.com/button/buttons.js"></script>
+<script>stLight.options({publisher: "3cc027c5-48a6-45d7-ae90-c829b5e1d50d"});</script>
+<script src="http://f15hb0wn.com/sites/default/files/js/js_rv_BKYv7yieH0IgHddhWHDC-bWGan8yiJbusyOpr0mw.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-34052702-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = "http://f15hb0wn.com/sites/default/files/googleanalytics/ga.js?nuteyy";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script src="http://f15hb0wn.com/sites/default/files/js/js_tzEGTRyjbSNo4GS4Eh6_ZJb5BgaDvQF9UshkdxwThp0.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"pixture_reloaded","theme_token":"F2YZbL7qi61dtocATv1wF90BdtcP16UkrJTB28WuTW0","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.js":1,"0":1,"http:\/\/w.sharethis.com\/button\/buttons.js":1,"1":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"2":1,"sites\/all\/modules\/disqus\/disqus.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/simplenews\/simplenews.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/tagclouds\/tagclouds.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/at_core\/css\/at.settings.style.headings.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/at_core\/css\/at.settings.style.image.css":1,"sites\/all\/themes\/adaptivetheme\/adaptivetheme\/at_core\/css\/at.layout.css":1,"sites\/all\/themes\/pixture_reloaded\/color\/colors.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.css":1,"sites\/all\/themes\/pixture_reloaded\/css\/pixture_reloaded.settings.style.css":1,"public:\/\/adaptivetheme\/pixture_reloaded_files\/pixture_reloaded.responsive.layout.css":1,"public:\/\/adaptivetheme\/pixture_reloaded_files\/pixture_reloaded.fonts.css":1,"public:\/\/adaptivetheme\/pixture_reloaded_files\/pixture_reloaded.responsive.styles.css":1,"public:\/\/adaptivetheme\/pixture_reloaded_files\/pixture_reloaded.lt-ie9.layout.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"100%","maxHeight":"100%","fixed":true},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"disqus":{"domain":"f15hb0wn","url":"http:\/\/f15hb0wn.com\/blog\/when-alarm-isn%E2%80%99t","title":"When An Alarm Isn\u2019t","identifier":"node\/180"},"adaptivetheme":{"pixture_reloaded":{"layout_settings":{"bigscreen":"three-col-grail","tablet_landscape":"three-col-grail","tablet_portrait":"one-col-vert"},"media_query_settings":{"bigscreen":"only screen and (min-width:1025px)","tablet_landscape":"only screen and (min-width:769px) and (max-width:1024px)","tablet_portrait":"only screen and (min-width:481px) and (max-width:768px)"}}}});</script>
+<!--[if lt IE 9]>
+<script src="http://f15hb0wn.com/sites/all/themes/adaptivetheme/adaptivetheme/at_core/scripts/html5.js?nuteyy"></script>
+<![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-180 node-type-blog atr-7.x-3.x atv-7.x-3.0 site-name-f15hb0wn section-blog color-scheme-custom pixture-reloaded bs-d bb-d mb-dd mbp-l rc-4">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="texture-overlay">
+  <div id="page" class="container page snc-n snw-n sna-l sns-n ssc-n ssw-n ssa-l sss-n btc-n btw-b bta-l bts-n ntc-n ntw-b nta-l nts-n ctc-n ctw-b cta-l cts-n ptc-n ptw-b pta-l pts-n">
+
+    <header id="header" class="clearfix" role="banner">
+      <div class="header-inner clearfix">
+
+                  <!-- start: Branding -->
+          <div id="branding" class="branding-elements clearfix">
+
+                          <div id="logo">
+                <a href="/"><img class="site-logo" typeof="foaf:Image" src="http://f15hb0wn.com/sites/default/files/animatedavatar.gif" alt="f15hb0wn" /></a>              </div>
+            
+                          <!-- start: Site name and Slogan hgroup -->
+              <div id="name-and-slogan" class="h-group" id="name-and-slogan">
+
+                                  <h1 id="site-name" id="site-name"><a href="/" title="Home page">f15hb0wn</a></h1>
+                
+                                  <h2 id="site-slogan" id="site-slogan">InfoSec rants from Charles Herring</h2>
+                
+              </div><!-- /end #name-and-slogan -->
+            
+          </div><!-- /end #branding -->
+        
+        
+      </div>
+
+    </header> <!-- /header -->
+
+    
+    <!-- Messages and Help -->
+        
+    <!-- Breadcrumbs -->
+    <div id="breadcrumb" class="clearfix"><nav class="breadcrumb-wrapper clearfix" role="navigation" aria-labelledby="breadcrumb-label"><h2 id="breadcrumb-label" class="element-invisible">You are here</h2><ol id="crumbs" class="clearfix"><li class="crumb crumb-first"><a href="/blog">Blogs</a></li><li class="crumb crumb-last"><span class="crumb-separator"> &#187; </span><a href="/blogs/charles-herring">Charles Herring&#039;s blog</a></li></ol></nav></div>
+    
+    <!-- Three column 3x33 Gpanel -->
+    
+    <div id="columns">
+      <div class="columns-inner clearfix">
+
+        <div id="content-column">
+          <div class="content-inner">
+
+            
+            <section id="main-content" role="main">
+
+                                            <header id="main-content-header" class="clearfix">
+
+                                      <h1 id="page-title">When An Alarm Isn’t</h1>
+                  
+                  
+                </header>
+                            
+                              <div id="content">
+                  <div id="block-block-3" class="block block-block no-title odd first block-count-1 block-region-content block-3" >  
+  
+  <!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+<a class="addthis_button_linkedin_counter"></a> 
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4e9475403cdb5364"></script>
+<!-- AddThis Button END -->
+  </div><div id="block-system-main" class="block block-system no-title even last block-count-2 block-region-content block-main" >  
+  
+  <article id="node-180" class="node node-blog node-promoted article odd node-with-picture node-full ia-n clearfix" about="/blog/when-alarm-isn%E2%80%99t" typeof="sioc:Post sioct:BlogPost" role="article">
+  
+  
+      <footer class="submitted with-user-picture">
+      <div class="user-picture"><a href="http://f15hb0wn.com/sites/default/files/styles/colorbox_full/public/navy_uniform.jpg?itok=RS70WfNs" title="" class="colorbox" rel="gallery-entity-id"><img typeof="foaf:Image" class="image-style-85x85" src="http://f15hb0wn.com/sites/default/files/styles/85x85/public/navy_uniform.jpg?itok=DBNnkek1" width="85" height="85" alt="Charles Herring in his navy uniform" title="In Uniform" /></a></div>      <p class="author-datetime"><span property="dc:date dc:created" content="2014-03-25T09:00:49-05:00" datatype="xsd:dateTime" rel="sioc:has_creator">Submitted by <span class="username" xml:lang="" about="/users/charles-herring" typeof="sioc:UserAccount" property="foaf:name" datatype="">Charles Herring</span> on <time datetime="2014-03-25T09:00:49-0500" pubdate="pubdate">Tue, 03/25/2014 - 09:00</time></span></p>
+    </footer>
+  
+  <div class="node-content">
+    <div class="field field-name-field-image field-type-image field-label-hidden view-mode-full"><div class="field-items"><figure class="clearfix field-item even"><a href="http://f15hb0wn.com/sites/default/files/styles/colorbox_full/public/alarm_538_222_s_c1.png?itok=mxBbemao" title="Vendors like to create an ocean of alarms in their products so they can dogpile after an event and claim that &quot;they caught it.&quot; This article goes through the dangers of false positives in incident response and how to address them.
+" class="colorbox" rel="gallery-node-180"><img typeof="foaf:Image" class="image-style-125x125" src="http://f15hb0wn.com/sites/default/files/styles/125x125/public/alarm_538_222_s_c1.png?itok=Rf8wNCD8" width="125" height="125" alt="Alarms" title="" /></a></figure></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden view-mode-full"><div class="field-items"><div class="field-item even" property="content:encoded"><p><span style="line-height: 1.5em;">Recent investigations at Target and Neiman Marcus both revealed that alarms concerning their respective breaches were sent to responders without action following. The uninitiated may scratch their heads over such a thing, but those that have spent time in network security operations know the pain of “alarm numbness.” In breaches like these, the fact that they ignored the alarms coming from the detection products reflects on their lack of confidence in them. There are several factors that lead to this type of apparent failure.</span></p>
+<h2>
+	Information Overload</h2>
+<p>There are some cases when law enforcement agencies reach out to the public and ask for “leads” in regard to specific crimes. This is not done on every crime because the number of leads produced is very high and the quality of leads is low. To process all the junk information that comes in, law enforcement has to increase staffing by several fold. It is a massive undertaking that is not sustainable for long periods of time.</p>
+<p>Security operations centers (SOCs) run into the same challenge with the events being processed. Various systems send alerts that may or may not contain actionable intelligence. In many production networks that I visit, security alarm volumes can exceed 1 million events per day. Even the largest SOC can’t possibly investigate them all.</p>
+<h2>
+	Why Volumes Are High and Quality Is Low</h2>
+<p>One of the reasons that alarm volumes are so high is a condition known as a false positive. Detection mechanisms like antivirus, advanced malware protection and intrusion detection systems get it wrong. In many environments, the false positive rate can be greater than 85%. The reasons are broken down into 1) insufficient data available to make an accurate assessment, 2) bad logic used in processing the data, or 3) broken systems in data collection or analysis.</p>
+<h3>
+	Insufficient Data to Heuristics</h3>
+<p>To make accurate assessments, sufficient evidence is needed. In many detection systems, the information collected is very limited. When a detection engine doesn’t have enough information to make a conclusive call, it has two options. The first is to not alarm. This reduces false positives but opens the door to potential false negatives (failing to alarm when it should). Many vendors prefer false positives because in the wake of a breach they can make irresponsible claims of detection while ignoring the high percentage of alarms that only generated noise. As a result they tend to use the second approach of heuristic detection.</p>
+<p>Heuristics is essentially an “educated guess.” This heuristic approach allows vendors the ability to claim detection when certainty does not exist. In one of the recent breaches, triggered alarms on the infections leading to the breach were given the generic categorization of “malware.binary,” for which the victim organization saw regular false positive noise.</p>
+<h3>
+	Bad Logic</h3>
+<p>The secondary problem in handling false positives is that the engines processing data may be flawed. This normally occurs when detection criteria is created without regard to valid conditions that will trigger it. An example is a host-based behavioral signature looking for the email worm-based behavior of reading the address book on a client. While that behavior can be associated with sending email worms or stealing contact information, it can also be associated with sync and backup software. The resulting alarms could be in the millions each day in an organization that is regularly syncing contact data.</p>
+<h3>
+	Broken Infrastructure</h3>
+<p>In complex networks it is also possible for false positives to occur when configuration is not set correctly. Detection systems rely on endpoints, infrastructure, probes, cloud services and others to work correctly. When one or more of these components fails, the entire detection capability can be degraded. Depending on how these components are configured, these failure conditions will lead to false positives, false negatives or both.</p>
+<h2>
+	Fixing the Problem</h2>
+<p>To address the trouble of false positives and to make alarms actionable, a few areas must be addressed.</p>
+<h3>
+	Tuning</h3>
+<p>The first approach is “tuning.” Tuning is taking the broad specifications of a detection product and customizing it to a specific organization. This includes steps of increasing available data, whitelisting accepted traffic, applications and files, and disabling alarms that will yield false positives. This process is largely neglected in many deployments. The requisite effort of doing this work can take weeks or months. The failure of management to invest in these operations makes the products purchased more of a problem than a help to the SOC. In addition to initial configuration, ongoing tuning must be a part of sustainable operations.</p>
+<h3>
+	Automated Response</h3>
+<p>When systems are properly tuned, automated blocking and response is possible. This not only prevents events from occurring but reduces the number of events that need to be investigated. Only statistical analysis needs to be performed on prevented events.</p>
+<h3>
+	Actually Responding</h3>
+<p>Once tuning is in place and alarms are being received, they need to be investigated. One reason that this fails to happen is that processes have not been established for handling alarms. Just as elementary schools have plans for fires (and practice them) so must an Information Security organization institute incident response (IR) planning.</p>
+<p>When organizations start building detailed incident response plans, they soon discover that they lack the necessary tools to execute on those plans. The collection of audit trails from system logs, network metadata (NetFlow) and strategic packet capture (PCAP) must be set up prior to an event occurring. If reliable evidence collection is not in place before a breach occurs, it is impossible for investigators to come to meaningful conclusions around the alarm or to answer all questions in the IR plan.</p>
+<p>Collecting the data creates the <em>possibility</em> of effective incident response, but rendering the relevant data in a useful manner can make sustainable investigations <em>plausible.</em> Incident response tools need to effectively/quickly/inexpensively answer questions contained in the incident response plan. The reduction in time on the Mean Time to Resolution (MTTR) produced by a tool directly impacts an organization’s ability to respond to alarm volumes. No amount of tuning or enforcement will make actual events go away completely, which means MTTR needs to be optimized to reduce operational costs (payroll for investigators) and ensure all events can be thoroughly investigated.</p>
+<p>Some questions to consider when evaluating tools used in incident response include:</p>
+<ul><li>
+		Do you have a way, when an event fires, to get more context in order to determine whether or not that event is real and deserves further investigation?</li>
+	<li>
+		How expensive is it to obtain that context? Do you have to go out and look at the potentially infected computer, or do you have telemetry flowing back from that computer into a system that is accessible to the SOC that they can investigate?</li>
+	<li>
+		If you have telemetry, what kind? Is it system-level telemetry that can be manipulated post breach, or is it network-level telemetry that is hard to manipulate?</li>
+	<li>
+		How close to the source are you collecting telemetry – are you capturing everything that infected host is doing or just its communications out to the Internet?</li>
+</ul><h3>
+	Auditing Response</h3>
+<p>Where response cannot be automated because of complexity, analysts must investigate. Regardless of what a vendor says, a notice coming out of a detection system is not an alarm until it generates a traceable response ticket assigned to an individual. The reason ticket generation is so essential is that it provides a mechanism for auditing investigations (to ensure steps were not skipped). Ticketing can also be used to present investigation findings to management for sign-off. This level of accountability is commonly used in resolving routine IT problems such as forgotten passwords, but remains neglected in serious security breaches.</p>
+<h2>
+	Wrap Up</h2>
+<p>The high volumes of events coming into a SOC make responding to each one impossible. Vendors tend to build products to alarm on benign events so the product doesn’t fail to alarm on real ones. To remedy these challenges, organizations need to invest the time to fully configure detection systems and build detailed response processes.</p>
+<p><em>- Special thanks to Lancope’s Tom Cross for his contribution to this article.</em></p>
+</div></div></div><section class="field field-name-field-tags field-type-taxonomy-term-reference field-label-inline clearfix view-mode-full"><h2 class="field-label">Tags:&nbsp;</h2><ul class="field-items"><li class="field-item even"><a href="/tags/lancope-blog" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">Lancope Blog</a></li><li class="field-item odd"><a href="/tags/dfir" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">DFIR</a></li><li class="field-item even"><a href="/tags/vendor" typeof="skos:Concept" property="rdfs:label skos:prefLabel" datatype="">vendor</a></li></ul></section><section class="field field-name-field-original-url field-type-link-field field-label-above view-mode-full"><h2 class="field-label">Original URL:&nbsp;</h2><div class="field-items"><div class="field-item even"><a href="http://www.lancope.com/blog/when-an-alarm-isnt/">http://www.lancope.com/blog/when-an-alarm-isnt/</a></div></div></section><div id="disqus_thread"><noscript><p><a href="http://f15hb0wn.disqus.com/?url=http%3A%2F%2Ff15hb0wn.com%2Fblog%2Fwhen-alarm-isn%25E2%2580%2599t">View the discussion thread.</a></p></noscript></div><div><span class='st_facebook_vcount' displayText='Facebook'></span>
+<span class='st_twitter_vcount' displayText='Tweet'></span>
+<span class='st_googleplus_vcount' displayText='Google +'></span>
+<span class='st_linkedin_vcount' displayText='LinkedIn'></span>
+<span class='st_sharethis_vcount' displayText='ShareThis'></span></div>  </div>
+
+      <nav class="clearfix"><ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blogs/charles-herring" title="Read Charles Herring&#039;s latest blog entries.">Charles Herring&#039;s blog</a></li></ul></nav>
+  
+  
+  <span property="dc:title" content="When An Alarm Isn’t" class="rdf-meta element-hidden"></span></article>
+
+  </div>                </div>
+              
+              <!-- Feed icons (RSS, Atom icons etc -->
+              
+            </section> <!-- /main-content -->
+
+            
+          </div>
+        </div> <!-- /content-column -->
+
+        <div class="region region-sidebar-first sidebar"><div class="region-inner clearfix"><div id="block-search-form" class="block block-search no-title odd first block-count-3 block-region-sidebar-first block-form"  role="search"><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><form action="/blog/when-alarm-isn%E2%80%99t?utm_content=buffercfe0f&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="search" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-rDHMtaT316gYosBbSktlB3q9bzSwVvQYBFaGmvij0tI" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form></div>
+  </div></div><section id="block-block-12" class="block block-block even block-count-4 block-region-sidebar-first block-12" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Charles Speaking Events</h2>
+  
+  <div class="block-content content"><p class="rtecenter"><strong>2014</strong></p>
+<p><br />
+	Apr 16 - <a href="http://infotec.org/">InfoTec Omaha</a> - Done<br />
+	Apr 26 - <a href="https://securechicago.org/upcomingevents/speakers/">BSides Chicago</a> - Done<br />
+	May 13 - <a href="http://secure360.org/schedule/hunting-attackers-with-network-audit-trails/">Secure360 St. Paul</a> - Done<br />
+	Jul 11 - <a href="http://convergeconference.org/">Converge Detroit</a> - Done<br />
+	Sep 24 - <a href="/blog/video-looking-weird-webinar-lancope">Lancope Webinar</a> - Done<br />
+	Oct 15 - <a href="http://www.lancope.com/vision/">Lancope Vision Atlanta</a> - Done<br />
+	Oct 16/17 - <a href="http://grrcon.com/">GrrCon Grand Rapids</a> - Done<br />
+	Oct 30 - <a href="http://mn.issa.org/">Minnesota ISSA</a> - Done</p>
+<p class="rtecenter"><strong>2015</strong></p>
+<p><br />
+	Jan 15 - <a href="http://www.motorcityissa.org/">Motor City ISSA</a> - Done<br />
+	Jan 29 - Insider Threats - Done<br />
+	Feb 12-13 - <a href="https://www.rebootcommunications.com/event/privsec2015/">PRIVSEC Victoria</a><br />
+	Feb 19 - <a href="http://go.lancope.com/GL_Users_Group_02.19.2015.html">SWUG Chicago</a><a><br />
+	Mar 23 - Federal SWUG DC<br />
+	May 12-13 - </a><a href="http://secure360.org/">Secure360 St. Paul</a></p>
+</div>
+  </div></section><section id="block-block-10" class="block block-block odd block-count-5 block-region-sidebar-first block-10" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Follow Charles</h2>
+  
+  <div class="block-content content"><div>
+	<a class="twitter-follow-button" data-show-count="false" data-size="large" href="https://twitter.com/charlesherring">Follow @charlesherring</a> <script>
+<!--//--><![CDATA[// ><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--><!]]>
+</script></div>
+<!-- Place this tag where you want the badge to render. -->
+<div class="g-plus" data-height="69" data-href="//plus.google.com/114157047553796026476?rel=author" data-width="180">
+	 </div>
+<!-- Place this tag after the last badge tag. --><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+
+//--><!]]>
+</script><br /><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/MemberProfile" data-text="Charles Herring" data-format="hover" data-id="http://www.linkedin.com/in/cdherring" data-related="false"></script></div>
+  </div></section><div id="block-block-2" class="block block-block no-title even block-count-6 block-region-sidebar-first block-2" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script><script>
+<!--//--><![CDATA[// ><!--
+
+new TWTR.Widget({
+  version: 2,
+  type: 'profile',
+  rpp: 3,
+  interval: 30000,
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#202020',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#000000',
+      links: '#b01d18'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: false,
+    live: false,
+    behavior: 'all'
+  }
+}).render().setUser('charlesherring').start();
+
+//--><!]]>
+</script></div>
+  </div></div><section id="block-simplenews-2" class="block block-simplenews odd block-count-7 block-region-sidebar-first block-2" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Email Notifications</h2>
+  
+  <div class="block-content content">      <p>Sign up for email delivery of new content.</p>
+  
+      <form class="simplenews-subscribe" action="/blog/when-alarm-isn%E2%80%99t?utm_content=buffercfe0f&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer" method="post" id="simplenews-block-form-2" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail">E-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-mail" name="mail" value="" size="20" maxlength="128" class="form-text required" />
+</div>
+<input type="submit" id="edit-submit--2" name="op" value="Subscribe" class="form-submit" /><input type="hidden" name="form_build_id" value="form-QcTAy3IEElGvC-rlm2SUraqVY-SFS2zjUO6fof9mrcI" />
+<input type="hidden" name="form_id" value="simplenews_block_form_2" />
+</div></form>  
+  
+  
+  </div>
+  </div></section><section id="block-blog-recent" class="block block-blog even block-count-8 block-region-sidebar-first block-recent"  role="navigation"><div class="block-inner clearfix">  
+      <h2 class="block-title">Recent blog posts</h2>
+  
+  <div class="block-content content"><div class="item-list"><ul><li class="even first"><a href="/blog/converge-2016-law-enforcement-paradigms-infosec">Converge 2016 - Law Enforcement Paradigms in InfoSec</a></li><li class="odd"><a href="/GrrCON2015">GrrCon 2015</a></li><li class="even"><a href="/process360">Secure360 2015 Resources</a></li><li class="odd"><a href="/blog/sony-breach-thoughts">Sony Breach Thoughts</a></li><li class="even"><a href="/blog/grrcon-presentation">GrrCon Presentation</a></li><li class="odd"><a href="/blog/video-looking-weird-webinar-lancope">Video: Looking for the Weird Webinar for Lancope</a></li><li class="even"><a href="/blog/converge-conference-presentation">Converge Conference Presentation</a></li><li class="odd"><a href="/blog/protecting-crown-jewels">Protecting the Crown Jewels</a></li><li class="even"><a href="/blog/coaxing-heads-security-sand">Coaxing Heads from the Security Sand</a></li><li class="odd last"><a href="/blog/school-nbad-series-nbad-relationship-anomaly-detection">School of NBAD Series: NBAD Relationship Anomaly Detection</a></li></ul></div><div class="more-link"><a href="/blog" title="Read the latest blog entries.">More</a></div></div>
+  </div></section><section id="block-tagclouds-1" class="block block-tagclouds odd last block-count-9 block-region-sidebar-first block-1" ><div class="block-inner clearfix">  
+      <h2 class="block-title">Tags</h2>
+  
+  <div class="block-content content"><span class='tagclouds-term'><a href="/tags/anomaly" class="tagclouds level2" title="">anomaly</a></span>
+<span class='tagclouds-term'><a href="/tags/antivirus" class="tagclouds level1" title="">antivirus</a></span>
+<span class='tagclouds-term'><a href="/tags/apt" class="tagclouds level1" title="">apt</a></span>
+<span class='tagclouds-term'><a href="/tags/attackers" class="tagclouds level2" title="">attackers</a></span>
+<span class='tagclouds-term'><a href="/tags/bsides" class="tagclouds level1" title="">bsides</a></span>
+<span class='tagclouds-term'><a href="/tags/cloud" class="tagclouds level1" title="">cloud</a></span>
+<span class='tagclouds-term'><a href="/tags/compliance" class="tagclouds level2" title="">Compliance</a></span>
+<span class='tagclouds-term'><a href="/tags/cybercrime" class="tagclouds level1" title="">cybercrime</a></span>
+<span class='tagclouds-term'><a href="/tags/cyberforce" class="tagclouds level1" title="">cyberforce</a></span>
+<span class='tagclouds-term'><a href="/tags/data-protection" class="tagclouds level1" title="">data protection</a></span>
+<span class='tagclouds-term'><a href="/tags/ddos" class="tagclouds level2" title="">DDoS</a></span>
+<span class='tagclouds-term'><a href="/tags/decks" class="tagclouds level1" title="">decks</a></span>
+<span class='tagclouds-term'><a href="/tags/department-defense" class="tagclouds level1" title="">department of defense</a></span>
+<span class='tagclouds-term'><a href="/tags/dfir" class="tagclouds level5" title="">DFIR</a></span>
+<span class='tagclouds-term'><a href="/tags/exploit" class="tagclouds level2" title="">exploit</a></span>
+<span class='tagclouds-term'><a href="/tags/forensics" class="tagclouds level2" title="">forensics</a></span>
+<span class='tagclouds-term'><a href="/tags/gartner" class="tagclouds level1" title="">Gartner</a></span>
+<span class='tagclouds-term'><a href="/tags/governance" class="tagclouds level1" title="">Governance</a></span>
+<span class='tagclouds-term'><a href="/tags/healthcare" class="tagclouds level1" title="">healthcare</a></span>
+<span class='tagclouds-term'><a href="/tags/heuristics" class="tagclouds level1" title="">heuristics</a></span>
+<span class='tagclouds-term'><a href="/tags/incident-response" class="tagclouds level2" title="">incident response</a></span>
+<span class='tagclouds-term'><a href="/tags/infosec" class="tagclouds level4" title="">infosec</a></span>
+<span class='tagclouds-term'><a href="/tags/insider-threat" class="tagclouds level1" title="">insider threat</a></span>
+<span class='tagclouds-term'><a href="/tags/ioc" class="tagclouds level2" title="">IOC</a></span>
+<span class='tagclouds-term'><a href="/tags/lancope-blog" class="tagclouds level6" title="">Lancope Blog</a></span>
+<span class='tagclouds-term'><a href="/tags/laptop-security" class="tagclouds level1" title="">laptop security</a></span>
+<span class='tagclouds-term'><a href="/tags/law-enforcement" class="tagclouds level1" title="">law enforcement</a></span>
+<span class='tagclouds-term'><a href="/tags/ma" class="tagclouds level2" title="">M&amp;A</a></span>
+<span class='tagclouds-term'><a href="/tags/malware" class="tagclouds level2" title="">malware</a></span>
+<span class='tagclouds-term'><a href="/tags/management" class="tagclouds level2" title="">management</a></span>
+<span class='tagclouds-term'><a href="/tags/nbad" class="tagclouds level5" title="">nbad</a></span>
+<span class='tagclouds-term'><a href="/tags/netflow" class="tagclouds level4" title="">netflow</a></span>
+<span class='tagclouds-term'><a href="/tags/network-security" class="tagclouds level4" title="">network security</a></span>
+<span class='tagclouds-term'><a href="/tags/passwords" class="tagclouds level1" title="">passwords</a></span>
+<span class='tagclouds-term'><a href="/tags/payload" class="tagclouds level1" title="">payload</a></span>
+<span class='tagclouds-term'><a href="/tags/pci" class="tagclouds level1" title="">PCI</a></span>
+<span class='tagclouds-term'><a href="/tags/perimeter-defense" class="tagclouds level1" title="">perimeter defense</a></span>
+<span class='tagclouds-term'><a href="/tags/policy" class="tagclouds level1" title="">policy</a></span>
+<span class='tagclouds-term'><a href="/tags/presentations" class="tagclouds level3" title="">presentations</a></span>
+<span class='tagclouds-term'><a href="/tags/process" class="tagclouds level1" title="">process</a></span>
+<span class='tagclouds-term'><a href="/tags/rules-engagement" class="tagclouds level1" title="">rules of engagement</a></span>
+<span class='tagclouds-term'><a href="/tags/seim" class="tagclouds level1" title="">SEIM</a></span>
+<span class='tagclouds-term'><a href="/tags/signature-detection" class="tagclouds level2" title="">signature detection</a></span>
+<span class='tagclouds-term'><a href="/tags/spear-phish" class="tagclouds level1" title="">spear phish</a></span>
+<span class='tagclouds-term'><a href="/tags/sqli" class="tagclouds level1" title="">SQLi</a></span>
+<span class='tagclouds-term'><a href="/tags/target" class="tagclouds level1" title="">target</a></span>
+<span class='tagclouds-term'><a href="/tags/therminator" class="tagclouds level1" title="">therminator</a></span>
+<span class='tagclouds-term'><a href="/tags/user-centric" class="tagclouds level2" title="">user centric</a></span>
+<span class='tagclouds-term'><a href="/tags/vendor" class="tagclouds level2" title="">vendor</a></span>
+<span class='tagclouds-term'><a href="/tags/video" class="tagclouds level1" title="">video</a></span>
+<span class='tagclouds-term'><a href="/tags/website-security" class="tagclouds level2" title="">website security</a></span>
+<span class='tagclouds-term'><a href="/tags/windows-security" class="tagclouds level2" title="">windows security</a></span>
+<span class='tagclouds-term'><a href="/tags/zero-day" class="tagclouds level2" title="">zero day</a></span>
+</div>
+  </div></section></div></div>        
+      </div>
+    </div> <!-- /columns -->
+
+    
+    <!-- four-4x25 Gpanel -->
+    
+          <footer id="footer" role="contentinfo">
+        <div id="footer-inner" class="clearfix">
+          <div class="region region-footer"><div class="region-inner clearfix"><div id="block-block-7" class="block block-block no-title odd first last block-count-10 block-region-footer block-7" ><div class="block-inner clearfix">  
+  
+  <div class="block-content content"><p>All posts on this site are the property of Charles D. Herring and all rights are reserved. Reposting blog posts without the permission of the owner is forbidden. Use of RSS feeds are for personal/private use only and may not be used for reposting articles on other websites. You are free (and welcome) to share links to the site and its content via social media or other outlets.</p>
+</div>
+  </div></div></div></div>          <p class="attribute-creator"></p>
+        </div>
+      </footer>
+    
+  </div> <!-- /page -->
+</div> <!-- /texture overlay -->
+  <div class="region region-page-bottom"><div class="region-inner clearfix"><div><a rel="nofollow" href="http://zeltus.eu/honeypot/resource.php?user=40&qlvc=cf95fc0cb0ab9a68a1406930a062d820"><span style="display: none;">HiSec</span></a></div></div></div></body>
+</html>

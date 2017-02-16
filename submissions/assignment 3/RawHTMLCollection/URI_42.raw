@@ -1,0 +1,2097 @@
+RAW HTML FOR: http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  
+   <meta name="Robots" content="index,follow" />  
+  
+  
+  <!-- highscalability -->
+
+  <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+
+  <link id="primaryStylesheet" rel="stylesheet" type="text/css" href="/display/common.css?styleId=512250&amp;RK=1338871095817&amp;CE=75"/>
+  
+  <link id="slideShowStylesheet" rel="stylesheet" type="text/css" href="/universal/styles/squarespace-gallery-slideshow.css?CE=75"/>
+  
+  
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/HighScalability" />
+  
+  
+  <!-- Google Web Fonts -->
+  <script type="text/javascript">
+    	WebFontConfig = {};
+  
+   
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <script type="text/javascript" src="/universal/yui/yahoo-dom-event/yahoo-dom-event.js?CE=75"></script>
+<script type="text/javascript" src="/universal/yui/connection/connection_core-min.js?CE=75"></script>
+<script type="text/javascript" src="/universal/yui/json/json-min.js?CE=75"></script>
+<script type="text/javascript" src="/universal/yui/animation/animation-min.js?CE=75"></script>
+<script type="text/javascript" src="/universal/yui/selector/selector.js?CE=75"></script>
+<script type="text/javascript" src="/universal/yui/element/element.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/global.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/lightbox.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/api.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/base64.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/census.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/yui2-yui3-bridge.js?CE=75"></script>
+<script type="text/javascript" src="/universal/scripts/squarespace-gallery-slideshow.js?CE=75"></script>
+
+
+  <script type="text/javascript">
+  // <![CDATA[
+
+    Squarespace.Constants.SS_AUTHKEY = encodeURIComponent("");
+    Squarespace.Constants.WEBSITE_TITLE =  "High Scalability"; 
+    
+     Squarespace.Constants.CURRENT_MODULE_ID = "4867632"; 
+    
+    
+    
+    Squarespace.Constants.ADMINISTRATION_UI =  false; 
+    
+    
+     Squarespace.Constants.OBJECT_PERMALINK = "http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html"; 
+    Squarespace.Constants.CORE_APPLICATION_DOMAIN = "squarespace.com";
+    Squarespace.Constants.CORE_V6_APPLICATION_DOMAIN = "squarespace.com";
+    Squarespace.Constants.V5_FRONTSITE = "http://five.squarespace.com";
+    Squarespace.Constants.WEBSITE_ID = "426227";
+
+    
+
+    
+
+    
+
+  // ]]>
+  </script>
+
+      <title>Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a&nbsp;Month - High Scalability - </title>
+    <meta property="og:title" content="Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a&nbsp;Month - High Scalability - " /> 
+  
+
+      <meta property="og:description" content=" 
+
+ Jeremy Edberg , the first paid employee at reddit, teaches us a lot about how to create a succe..." />
+  
+
+  
+      <meta property="og:image" content="http://farm4.staticflickr.com/3805/9595001177_d3307fdc7c_m.jpg" />
+  
+
+  <!-- End Heading -->
+
+  <script type='text/javascript'>
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type='text/javascript'>
+googletag.cmd.push(function() {
+googletag.defineSlot('/1044643/SS_HS_Ad1', [125, 125], 'div-gpt-ad-1325175098795-0').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad10', [125, 125], 'div-gpt-ad-1325175098795-1').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad11', [125, 125], 'div-gpt-ad-1325175098795-2').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad12', [125, 125], 'div-gpt-ad-1325175098795-3').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad13', [125, 125], 'div-gpt-ad-1325175098795-4').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad14', [125, 125], 'div-gpt-ad-1325175098795-5').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad15', [125, 125], 'div-gpt-ad-1325175098795-6').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad16', [125, 125], 'div-gpt-ad-1325175098795-7').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad17', [125, 125], 'div-gpt-ad-1325175098795-8').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad2', [125, 125], 'div-gpt-ad-1325175098795-9').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad3', [125, 125], 'div-gpt-ad-1325175098795-10').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad4', [125, 125], 'div-gpt-ad-1325175098795-11').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad5', [125, 125], 'div-gpt-ad-1325175098795-12').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad6', [125, 125], 'div-gpt-ad-1325175098795-13').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_ad7', [125, 125], 'div-gpt-ad-1325175098795-14').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad8', [125, 125], 'div-gpt-ad-1325175098795-15').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad9', [125, 125], 'div-gpt-ad-1325175098795-16').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad18', [125, 125], 'div-gpt-ad-1325175098795-17').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad19', [125, 125], 'div-gpt-ad-1325175098795-18').addService(googletag.pubads());
+googletag.defineSlot('/1044643/SS_HS_Ad20', [125, 125], 'div-gpt-ad-1325175098795-19').addService(googletag.pubads());
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+</script>
+
+
+  <script type="text/javascript" src="/universal/scripts/cookie-min.js"></script>
+  <script type="text/javascript" src="/universal/scripts/eu-cookie-policy.js"></script>
+
+</head>
+
+<body  id="modulePage4867632"   class="objectId34199512"  >
+
+  <script type="text/javascript">
+  YAHOO.util.Event.onDOMReady(function() {
+    if (document.location.href.indexOf("SSLogoutOk=true") != -1) {
+      new Squarespace.FixedPositionTip("Logout Successful", "You have been successfully logged out.", { xMargin: 15, yMargin: 15, icon: "/universal/images/helptip-info.png", orientation: "upper-right", viewportFixed: true, autoHide: 1800 }).show();
+    }
+  });
+</script>
+
+    
+
+  <script type="text/javascript">
+    YAHOO.util.Event.onDOMReady(function() { new Squarespace.Census.hit(); } );
+  </script>
+
+  <script type="text/javascript">
+    YAHOO.util.Event.addListener(document, "keyup", function (e) { if (!e) { e = event; } if (e.keyCode == 27) { document.location.href = "/login/?returnUrl=%2Fblog%2F2013%2F8%2F26%2Freddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html"; } });
+  </script>
+
+
+
+
+  
+
+  <div id="canvasWrapper"><div id="canvas">
+  
+  
+
+  <div id="pageHeaderWrapper"><div id="pageHeader">
+
+      <div id="navigationTop"><div id="navigationTop-sectionContent2191792" class="horizontalNavigationBar"><ul class="content-navigation">
+    
+  <li class="module active-module  " id="navigationTop-moduleContentWrapper4867632">
+
+    <div id="navigationTop-moduleContent4867632">
+
+              <a id="navigationTop-moduleLink4867632" class=" " href="/" ><span>Home</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper4850438">
+
+    <div id="navigationTop-moduleContent4850438">
+
+              <a id="navigationTop-moduleLink4850438" class=" " href="/blog/category/example" ><span>Real Life Architectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper10576114">
+
+    <div id="navigationTop-moduleContent10576114">
+
+              <a id="navigationTop-moduleLink10576114" class=" " href="http://highscalability.squarespace.com/blog/category/strategy" ><span>Strategies</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper4847294">
+
+    <div id="navigationTop-moduleContent4847294">
+
+              <a id="navigationTop-moduleLink4847294" class=" " href="/all-posts/" ><span>All Posts</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper4850431">
+
+    <div id="navigationTop-moduleContent4850431">
+
+              <a id="navigationTop-moduleLink4850431" class=" " href="/advertising/" ><span>Advertising</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5498762">
+
+    <div id="navigationTop-moduleContent5498762">
+
+              <a id="navigationTop-moduleLink5498762" class=" " href="http://astore.amazon.com/possiboutpos-20" ><span>Book Store</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper4850400">
+
+    <div id="navigationTop-moduleContent4850400">
+
+              <a id="navigationTop-moduleLink4850400" class=" " href="/start-here/" ><span>Start Here</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper4850388">
+
+    <div id="navigationTop-moduleContent4850388">
+
+              <a id="navigationTop-moduleLink4850388" class=" " href="/contact/" ><span>contact</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper15178301">
+
+    <div id="navigationTop-moduleContent15178301">
+
+              <a id="navigationTop-moduleLink15178301" class=" " href="/all-time-favorites/" ><span>All Time Favorites</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5861345">
+
+    <div id="navigationTop-moduleContent5861345">
+
+              <a id="navigationTop-moduleLink5861345" class=" " href="http://feeds.feedburner.com/HighScalability" ><span>RSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper18971493">
+
+    <div id="navigationTop-moduleContent18971493">
+
+              <a id="navigationTop-moduleLink18971493" class=" " href="https://twitter.com/highscal" ><span>Twitter</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper18971509">
+
+    <div id="navigationTop-moduleContent18971509">
+
+              <a id="navigationTop-moduleLink18971509" class=" " href="http://www.facebook.com/pages/Highscalability/441249225918692" ><span>Facebook</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper19028422">
+
+    <div id="navigationTop-moduleContent19028422">
+
+              <a id="navigationTop-moduleLink19028422" class=" " href="https://plus.google.com/b/116966782604206517628/116966782604206517628/posts" ><span>G+</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  </ul><br class="clearer"/></div></div>
+
+    
+        
+      
+  
+      <div id="bannerAreaWrapper"><div id="bannerArea">
+
+        
+        <div id="bannerWrapper">
+          <a href="http://highscalability.com/"><img id="banner" src="/storage/HSBannerTrebuchet.jpg" alt="High Scalability" title="High Scalability"/></a>
+        </div>  
+
+      
+      
+      </div></div>
+    
+    
+    
+
+      <div id="navigationBottom"><div id="navigationBottom-sectionContent2191792" class="horizontalNavigationBar"><ul class="content-navigation">
+    
+  <li class="module active-module  " id="navigationBottom-moduleContentWrapper4867632">
+
+    <div id="navigationBottom-moduleContent4867632">
+
+              <a id="navigationBottom-moduleLink4867632" class=" " href="/" ><span>Home</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper4850438">
+
+    <div id="navigationBottom-moduleContent4850438">
+
+              <a id="navigationBottom-moduleLink4850438" class=" " href="/blog/category/example" ><span>Real Life Architectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper10576114">
+
+    <div id="navigationBottom-moduleContent10576114">
+
+              <a id="navigationBottom-moduleLink10576114" class=" " href="http://highscalability.squarespace.com/blog/category/strategy" ><span>Strategies</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper4847294">
+
+    <div id="navigationBottom-moduleContent4847294">
+
+              <a id="navigationBottom-moduleLink4847294" class=" " href="/all-posts/" ><span>All Posts</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper4850431">
+
+    <div id="navigationBottom-moduleContent4850431">
+
+              <a id="navigationBottom-moduleLink4850431" class=" " href="/advertising/" ><span>Advertising</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5498762">
+
+    <div id="navigationBottom-moduleContent5498762">
+
+              <a id="navigationBottom-moduleLink5498762" class=" " href="http://astore.amazon.com/possiboutpos-20" ><span>Book Store</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper4850400">
+
+    <div id="navigationBottom-moduleContent4850400">
+
+              <a id="navigationBottom-moduleLink4850400" class=" " href="/start-here/" ><span>Start Here</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper4850388">
+
+    <div id="navigationBottom-moduleContent4850388">
+
+              <a id="navigationBottom-moduleLink4850388" class=" " href="/contact/" ><span>contact</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper15178301">
+
+    <div id="navigationBottom-moduleContent15178301">
+
+              <a id="navigationBottom-moduleLink15178301" class=" " href="/all-time-favorites/" ><span>All Time Favorites</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5861345">
+
+    <div id="navigationBottom-moduleContent5861345">
+
+              <a id="navigationBottom-moduleLink5861345" class=" " href="http://feeds.feedburner.com/HighScalability" ><span>RSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper18971493">
+
+    <div id="navigationBottom-moduleContent18971493">
+
+              <a id="navigationBottom-moduleLink18971493" class=" " href="https://twitter.com/highscal" ><span>Twitter</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper18971509">
+
+    <div id="navigationBottom-moduleContent18971509">
+
+              <a id="navigationBottom-moduleLink18971509" class=" " href="http://www.facebook.com/pages/Highscalability/441249225918692" ><span>Facebook</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper19028422">
+
+    <div id="navigationBottom-moduleContent19028422">
+
+              <a id="navigationBottom-moduleLink19028422" class=" " href="https://plus.google.com/b/116966782604206517628/116966782604206517628/posts" ><span>G+</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  </ul><br class="clearer"/></div></div>
+
+
+  </div></div>
+  
+  
+
+  
+
+  
+  <div id="pageBodyWrapper"><div id="pageBody">
+  
+  <div id="sidebar1Wrapper" class="verticalNavigationBarWrapper"><div class="iw-vnb1"><div class="iw-vnb2"><div class="iw-vnb3"><div class="iw-vnb4"><div id="sidebar1" class="verticalNavigationBar">
+
+  
+
+    <div id="sectionContent2251797" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+      
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper4876569" class="widget-wrapper  widget-type-search"><div id="moduleContent4876569">
+
+
+<!-- <form method="get" action="/display/Search">
+	<div class="search-form-pt-wrapper">
+	  <div class="search-form-pt">
+	    <span class="queryFieldWrapper"><input type="text" class="text queryField" name="searchQuery" value=""/></span>
+	    <span class="queryButtonWrapper"><input type="submit" class="button queryButton" value="&raquo;"/></span>
+	    <input type="hidden" name="moduleId" value="4876569"/>
+	    <br class="clearer"/>
+	  </div>
+	</div>
+</form> -->
+
+<form method="get" action="/display/Search">
+	<input type="hidden" name="moduleId" value="4876569"/>
+	<table class="search-form-pt-wrapper search-form-table" border="0" cellpadding="0" cellspacing="0">
+		<tr class="search-form-pt search-form-row">
+			<td class="queryFieldCell search-form-cell">
+				<span class="queryFieldWrapper">
+					<input type="text" class="text queryField" name="searchQuery" value=""/>
+				</span>
+			</td>
+			<td class="queryButtonCell search-form-cell">
+				<span class="queryButtonWrapper">
+					<input type="submit" class="button queryButton" value="&rarr;"/>
+				</span>
+			</td>
+		</tr>
+	</table> 
+</form></div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent2191792" class="sectionWrapper promotedContainer "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Top</div> 
+
+      
+        
+          <ul class="content-navigation">
+  <li class="module active-module  " id="moduleContentWrapper4867632">
+
+    <div id="moduleContent4867632">
+
+              <a id="moduleLink4867632" class=" " href="/" ><span>Home</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4850438">
+
+    <div id="moduleContent4850438">
+
+              <a id="moduleLink4850438" class=" " href="/blog/category/example" ><span>Real Life Architectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper10576114">
+
+    <div id="moduleContent10576114">
+
+              <a id="moduleLink10576114" class=" " href="http://highscalability.squarespace.com/blog/category/strategy" ><span>Strategies</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4847294">
+
+    <div id="moduleContent4847294">
+
+              <a id="moduleLink4847294" class=" " href="/all-posts/" ><span>All Posts</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4850431">
+
+    <div id="moduleContent4850431">
+
+              <a id="moduleLink4850431" class=" " href="/advertising/" ><span>Advertising</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5498762">
+
+    <div id="moduleContent5498762">
+
+              <a id="moduleLink5498762" class=" " href="http://astore.amazon.com/possiboutpos-20" ><span>Book Store</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4850400">
+
+    <div id="moduleContent4850400">
+
+              <a id="moduleLink4850400" class=" " href="/start-here/" ><span>Start Here</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4850388">
+
+    <div id="moduleContent4850388">
+
+              <a id="moduleLink4850388" class=" " href="/contact/" ><span>contact</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper15178301">
+
+    <div id="moduleContent15178301">
+
+              <a id="moduleLink15178301" class=" " href="/all-time-favorites/" ><span>All Time Favorites</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5861345">
+
+    <div id="moduleContent5861345">
+
+              <a id="moduleLink5861345" class=" " href="http://feeds.feedburner.com/HighScalability" ><span>RSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper18971493">
+
+    <div id="moduleContent18971493">
+
+              <a id="moduleLink18971493" class=" " href="https://twitter.com/highscal" ><span>Twitter</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper18971509">
+
+    <div id="moduleContent18971509">
+
+              <a id="moduleLink18971509" class=" " href="http://www.facebook.com/pages/Highscalability/441249225918692" ><span>Facebook</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper19028422">
+
+    <div id="moduleContent19028422">
+
+              <a id="moduleLink19028422" class=" " href="https://plus.google.com/b/116966782604206517628/116966782604206517628/posts" ><span>G+</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+</ul>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent2248744" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Recent Posts</div> 
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper4867742" class="widget-wrapper  widget-type-journalarchive"><div id="moduleContent4867742">
+
+
+
+
+
+
+
+  <ul class="archive-item-list-pt">
+     <li><a href="/blog/2017/2/14/sponsored-post-aerospike-gocardless-auth0-innogames-contentf.html">Sponsored Post: Aerospike, GoCardless, Auth0, InnoGames, Contentful, Stream, Scalyr, VividCortex, MemSQL, InMemory.Net, Zohocorp</a></li>  <li><a href="/blog/2017/2/13/part-3-of-thinking-serverless-dealing-with-data-and-workflow.html">Part 3 of Thinking Serverless —  Dealing with Data and Workflow Issues</a></li>  <li><a href="/blog/2017/2/10/stuff-the-internet-says-on-scalability-for-february-10th-201.html">Stuff The Internet Says On Scalability For February 10th, 2017</a></li>  <li><a href="/blog/2017/2/8/in-memory-nosql-dbms-client-in-big-data-cluster.html">In-memory noSQL DBMS Client in Big Data Cluster</a></li>  <li><a href="/blog/2017/2/6/part-2-of-thinking-serverless-platform-level-issues.html">Part 2 of Thinking Serverless —  Platform Level Issues </a></li>  <li><a href="/blog/2017/2/3/stuff-the-internet-says-on-scalability-for-february-3rd-2017.html">Stuff The Internet Says On Scalability For February 3rd, 2017</a></li>  <li><a href="/blog/2017/2/2/performance-scalability-and-high-availability-3-key-infrastr.html">Performance, Scalability, and High Availability: 3 Key Infrastructure Adaptability Requirements</a></li>  <li><a href="/blog/2017/1/31/sponsored-post-innogames-contentful-stream-loupe-new-york-ti.html">Sponsored Post: InnoGames, Contentful, Stream, Loupe, New York Times, Scalyr, VividCortex, MemSQL, InMemory.Net, Zohocorp</a></li>  <li><a href="/blog/2017/1/30/part-1-of-thinking-serverlesshow-new-approaches-address-mode.html">Part 1 of Thinking Serverless — How New Approaches Address Modern Data Processing Needs </a></li>  <li><a href="/blog/2017/1/27/stuff-the-internet-says-on-scalability-for-january-27th-2017.html">Stuff The Internet Says On Scalability For January 27th, 2017</a></li> 
+  </ul>
+
+
+
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+  
+
+</div></div></div></div></div></div>
+  <div id="sidebar2Wrapper" class="verticalNavigationBarWrapper"><div class="iw-vnb1"><div class="iw-vnb2"><div class="iw-vnb3"><div class="iw-vnb4"><div id="sidebar2" class="verticalNavigationBar">
+
+  
+
+    <div id="sectionContent2249261" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+      
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper4869210" class="widget-wrapper  widget-type-page"><div id="moduleContent4869210">
+
+
+
+
+
+  <CENTER>
+  <!-- SS_HS_Ad1 -->
+  <div id='div-gpt-ad-1325175098795-0' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-0'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad10 -->
+  <div id='div-gpt-ad-1325175098795-1' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-1'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad11 -->
+  <div id='div-gpt-ad-1325175098795-2' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-2'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad12 -->
+  <div id='div-gpt-ad-1325175098795-3' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-3'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad13 -->
+  <div id='div-gpt-ad-1325175098795-4' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-4'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad14 -->
+  <div id='div-gpt-ad-1325175098795-5' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-5'); });
+  </script>
+  </div>
+   
+  <!-- SS_HS_Ad15 -->
+  <div id='div-gpt-ad-1325175098795-6' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-6'); });
+  </script>
+  </div>
+  
+  
+  <!-- SS_HS_Ad16 -->
+  <div id='div-gpt-ad-1325175098795-7' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-7'); });
+  </script>
+  </div>
+  
+  
+  <!-- SS_HS_Ad17 -->
+  <div id='div-gpt-ad-1325175098795-8' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-8'); });
+  </script>
+  </div>
+  
+  
+  <!-- SS_HS_Ad2 -->
+  <div id='div-gpt-ad-1325175098795-9' style='width:125px; height:125px; margin: 3px;'>
+  <script type='text/javascript'>
+  googletag.cmd.push(function() { googletag.display('div-gpt-ad-1325175098795-9'); });
+  </script>
+  </div>
+  
+  
+  </CENTER>
+  
+  <center><a href="/advertising">advertise</A></center>
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent2191793" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+      
+
+      
+        
+          <ul class="content-navigation">
+  <li class="module   " id="moduleContentWrapper4708561">
+
+    <div id="moduleContent4708561">
+
+              <a id="moduleLink4708561" class=" " href="/login/?returnUrl=%2Fblog%2F2013%2F8%2F26%2Freddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html" ><span>Login</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4869034">
+
+    <div id="moduleContent4869034">
+
+              <a id="moduleLink4869034" class=" " href="/register/" ><span>Register</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper15178453">
+
+    <div id="moduleContent15178453">
+
+              <a id="moduleLink15178453" class=" " href="http://highscalability.com/all-time-favorites/" ><span>All Time Favorites</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4870172">
+
+    <div id="moduleContent4870172">
+
+              <a id="moduleLink4870172" class=" " href="http://highscalability.squarespace.com/blog/category/product" ><span>Useful Products</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4870194">
+
+    <div id="moduleContent4870194">
+
+              <a id="moduleLink4870194" class=" " href="http://highscalability.squarespace.com/blog/category/paper" ><span>Useful Papers</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4870201">
+
+    <div id="moduleContent4870201">
+
+              <a id="moduleLink4870201" class=" " href="http://highscalability.squarespace.com/blog/category/strategy" ><span>Useful Strategies</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4885586">
+
+    <div id="moduleContent4885586">
+
+              <a id="moduleLink4885586" class=" " href="/blog/category/blog" ><span>Useful Blogs</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4920227">
+
+    <div id="moduleContent4920227">
+
+              <a id="moduleLink4920227" class=" " href="http://highscalability.com/blog/category/book" ><span>Useful Books</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper12001611">
+
+    <div id="moduleContent12001611">
+
+              <a id="moduleLink12001611" class=" " href="http://highscalability.com/blog/2011/9/14/big-list-of-scalabilty-conferences.html" ><span>Useful Conferences</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper4878991">
+
+    <div id="moduleContent4878991">
+
+              <a id="moduleLink4878991" class="offsite-link " href="http://astore.amazon.com/possiboutpos-20" onclick="this.target='new';"><span>Book Store</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+</ul>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent2248734" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+      
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper4867711" class="widget-wrapper  widget-type-rss-syndicate"><div id="moduleContent4867711">
+
+
+
+  <ul class="feed-list-inline">
+    
+          <li><a href="http://feeds.feedburner.com/HighScalability" class="feed-link">High Scalability RSS</a></li>
+        
+          <li><a href="http://highscalability.com/blog/rss-comments.xml" class="feed-link">High Scalability Comments RSS</a></li>
+        
+  </ul>
+
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+  
+
+</div></div></div></div></div></div>
+  
+  
+
+  <div id="contentWrapper"><div id="content">
+    
+          
+    
+
+
+  
+
+  
+  
+      
+  <div class="journal-entry-navigation">
+
+    
+       <a class="journal-entry-navigation-prev" href="/blog/2013/8/28/sean-hulls-20-biggest-bottlenecks-that-reduce-and-slow-down.html">&laquo; Sean Hull's 20 Biggest Bottlenecks that Reduce and Slow Down Scalability</a> | 
+      <a class="journal-entry-navigation-main" href="/blog/">Main</a>
+       | <a class="journal-entry-navigation-next" href="/blog/2013/8/23/stuff-the-internet-says-on-scalability-for-august-23-2013.html">Stuff The Internet Says On Scalability For August 23, 2013 &raquo;</a> 
+
+    
+
+  </div>
+
+
+  
+  
+  <div class="single-journal-entry-wrapper">
+    
+
+
+<div class="journal-entry-wrapper post-text authored-by-highscalability category-architecture">
+<div id="item34199512" class="journal-entry">
+
+  <div class="journal-entry-float-day"><span class="name">Monday</span></div><div class="journal-entry-float-date"><span class="month">Aug</span><span class="date">26</span><span class="year">2013</span></div>
+  
+  
+  
+  <div class="journal-entry-text">
+  
+      
+      <h2 class="title">
+    
+        
+    
+        <a class="journal-entry-navigation-current" href="/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html">Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a&nbsp;Month</a>  
+     
+         
+    
+      </h2>
+      
+       <div class="journal-entry-tag journal-entry-tag-post-title"><span class="posted-on">   <img title="Date" alt="Date" class="inline-icon date-icon" rel="smalllight" src="/universal/images/transparent.png" />Monday, August 26, 2013 at 8:44AM</span> </div> 
+
+    
+  
+      
+      <div class="body">
+  
+        
+        
+        
+          <p><img src="http://farm4.staticflickr.com/3805/9595001177_d3307fdc7c_m.jpg" alt="" align="RIGHT" /></p>
+<p><span><a href="http://www.linkedin.com/in/jedberg">Jeremy Edberg</a></span><span>, the first paid employee at reddit, teaches us a lot about how to create a successful social site in a really good talk he gave at the RAMP conference. Watch it here at&nbsp;<a href="http://www.infoq.com/presentations/scaling-reddit">Scaling Reddit from 1 Million to 1 Billion&ndash;Pitfalls and Lessons</a>. </span></p>
+<p><span>Jeremy uses a virtue and sin approach. Examples of the mistakes made in scaling reddit are shared and it turns out they did a lot of good stuff too. Somewhat of a shocker is that&nbsp;</span><span>Jeremy is now a Reliability Architect at Netflix, so we get a little Netflix perspective thrown in for free.</span></p>
+<p><span>Some of the lessons that stood out most for me:&nbsp;</span></p>
+<ul>
+<li><strong>Think of SSDs as cheap RAM, not expensive disk</strong>. When reddit moved from spinning disks to SSDs for the database the number of servers was reduced from 12 to 1 with a ton of headroom. SSDs are 4x more expensive but you get 16x the performance. Worth the cost.&nbsp;</li>
+<li><strong>Give users a little bit of power, see what they do with it, and turn the good stuff into features</strong>. One of the biggest revelations for me was how much reddit learns from its users and how much it relies on users to make the site run smoothly. Users are going to tell you a lot of things you don&rsquo;t know. For example, reddit gold started as a joke in the community. They made it a product and users love it.</li>
+<li><strong>It&rsquo;s not necessary to build a scalable architecture from the start. </strong>You don&rsquo;t know what your feature set will be when you start out so you want know what your scaling problems will be. Wait until your site grows so you can learn where your scaling problems are going to be.</li>
+<li><strong>Treat&nbsp;nonlogged&nbsp;in users as second class citizens. &nbsp;</strong>By always giving logged out always cached content Akamai bears the brunt for reddit&rsquo;s traffic. Huge performance improvement.&nbsp;</li>
+</ul>
+<p>There's lots more.&nbsp;Here's my gloss of the talk where we learn many lessons from the mistakes made in the early days of scaling reddit:</p>
+<h2 dir="ltr"><span>Stats</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Traffic doubles about every 15 months.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="http://www.reddit.com/about"><span>Last month</span></a><span> reddit had: 67,328,706 unique visitors from 177 different countries view 4,692,494,641 pages. This talk ends at about the 1 billion pageview point. How different the architecture is now is unclear.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><a href="http://www.reddit.com/about/team/"><span>28 employees</span></a></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Approximately 2.4 million unique visitors per employee. (</span><a href="http://www.reddit.com/r/blog/comments/1jtsj4/reddit_myth_busters/cbi7izq%20"><span>link</span></a><span>)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Thousands of volunteer moderators</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>As of 2012 they had </span><a href="http://blog.reddit.com/2012/01/january-2012-state-of-servers.html"><span>240 servers</span></a><span> supporting 2 billion pageviews a month and 2TB of data in Postgres. All high-traffic data was moved off of EBS and onto local ephemeral disks.</span></p>
+</li>
+</ul>
+<h2 dir="ltr"><span>Origin Story </span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><strong>Reddit started in 2005</strong>. Went to Y Combinator with the idea of ordering food via text and were rejected. They came back and talked with Paul Graham and came up with the idea of building the frontpage of the internet. And that&rsquo;s reddit. At the time they did not know about Digg.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Started in a datacenter and <strong>moved functionality to EC2 over time</strong>.</p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Originally started with EC2 in 2006 to store and serve logos using S3. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>In 2007 used S3 for thumbnails. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>In 2008 EC2 used for batch processing using a VPN tunnel to the datacenter.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr">In 2009 EC2 used for the entire site. Took site down for an entire day to move the data over to EC2. Great example of <em>Data Gravity</em> that is talked about later.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 dir="ltr"><span>EC2</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Motivators for moving to EC2</strong></span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Racking and stacking is not fun. Didn&rsquo;t want to rent more cabinets and buy more servers.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Outgrew datacenter and in the early days growth was unpredictable.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Cost was beneficial for their use case of a team of 4 people. EC2 was 29% cheaper than their San Francisco datacenter.</span></p>
+</li>
+</ul>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>EC2 is not a magic bullet</strong>. You suffer from higher network latency and noisy neighbors, so plan to work around it. Benefit is that you can grow as you need to.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Keep track of resource limits on EC2</strong></p>
+<ul>
+<li>All resources have per account limits.</li>
+<li>Amazon doesn&rsquo;t even know what some of their limits are.</li>
+<li>Track limits and get them raised ahead of when you need them.</li>
+<li>Catch exceptions to notice when limits have been reached.</li>
+</ul>
+</li>
+</ul>
+<h2 dir="ltr"><span>Architecture</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Reddit architecture is straightforward</strong></span><span>. Users connect to a web tier which talks to an application tier. The application tier talks to memcache, Cassandra, and Postgres. Postgres uses a master-slave configuration. A batch system makes use of Cassandra and Postgres.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>In contrast Netflix use a service-oriented architecture where components talk to each other using REST APIs. </span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Advantages</strong></span><span>: Easier auto-scaling because just the service that is having the problem needs to scale; Easier capacity planning; Problems can be identified more easily because they are isolated behind REST calls; Effects of change are narrowed; More efficient local caching.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Disadvantages</strong></span><span>: Need multiple dev teams or devs to work on multiple services so you need more people; Need a common platform to prevent work duplication; Too much overhead for a small team just starting out.</span></p>
+</li>
+</ul>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Postgres is a great database</strong></span><span>. It makes a wonderful, really fast key-value store.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Email is a hard problem</strong>. It&rsquo;s hard to get deliverability right. Went with their own email server to begin with but today would probably go with an email service provider.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Queues were a saviour</strong>. When passing work between components put it into a queue. You get a nice little buffer. (Reddit uses <a href="http://www.rabbitmq.com/">RabbitMQ</a> for message queuing)</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Mix of both HAProxy and Nginx</strong></span><span>. Some traffic is directed to each. For load balancing went to HAProxy after trying Nginx (had load balancing breakdowns). It does L7 load balancing. Nginx was still used to terminate SSL and serve static content.</span></p>
+</li>
+</ul>
+<h2 dir="ltr"><span>Code</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Frameworks</strong></span><span>. Used the Pylons (Django was too slow), a Python based framework, from the start. Made it easy to get started. Eventually they break down because they won&rsquo;t match your use case. Ended up making a lot of changes to Pylon that made it difficult to upgrade to new versions (now fixed). Would use Pyramid (new name for Pylons) again.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Event of thread based?</strong> Thread based can size ahead of time, but the size can be wrong. Event based can handle more connections but when you hit a wall you hit a wall. Do you want to spend more time planning your thread pool size or suddenly hitting a wall?</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Open Source is good</strong></span><span>. Reddit is built on Open Source. Not having to pay for software is good, especially when getting started.</span></p>
+</li>
+</ul>
+<h2 dir="ltr"><span>Data</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Data is the most important asset your business will have</strong></span><span>. Companies like Facebook, Google and Flickr have built their companies on data. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Data gravity</strong></span><span>. Where you put your data you&rsquo;re going to need to put your application near it. The idea that all your applications are going to want to rotate around your data. Data creates a gravity well where everything need to be near it because data is the hardest thing to move. The bigger the dataset the harder it is to move. Currently it would be very expensive to move out of EC2. This is why EC2 allows you to ingress data for free and charge you to take it out. They want you to put all your data in the cloud. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Relational vs. Non-relational</strong>. Most data at reddit is key-value and it is stored in Postgres. Everything that deals with money is kept in a relational database because of transactions and easier analytics.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Postgres is bullet proof</strong></span><span>. It&rsquo;s rock solid. They never had a problem with Postgres itself. If they had a problem it was with the things around it, like the replication system written in Python. Hard to find experts in Postgres.</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Postgres was picked over Cassandra for the key-value store because Cassandra didn&rsquo;t exist at the time. Plus Postgres is very fast and now natively supports KV.</span></p>
+</li>
+</ul>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Sharding</strong></span><span>. Writes are split across four master databases: links, accounts, subreddits, comments, votes, and misc. </span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Each has slaves. The vote database has one master one slave. The comment database has one master and 12 slaves. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Avoid reading from the master if possible and direct reads to the slaves to keep the master dedicated to writes. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Client libraries would load balance across slaves and try a new slave if one was busy.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Wrote a database access layer called &lsquo;thing&rsquo;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>This approach worked for a long time. A combination of sharded databases, read slaves, and tracking read slave performance for load balancing.</span></p>
+</li>
+</ul>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Cassandra</strong></span><span>. </span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Fast writes, fast negative lookups, easy incremental scalability, no single point of failure</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>At Netflix data is distributed around to three different zones. A copy of all data is in all three zones. If a zone is lost then they can still run.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr">Switching vote data into Cassandra was a huge win at reddit. Cassandra&rsquo;s bloom filters enabled really fast negative lookups. For comments it&rsquo;s very fast to tell which comments you didn&rsquo;t vote on, so the negative answers come back quickly. (<a href="https://news.ycombinator.com/item?id=6280625">more on this topic</a>)</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 dir="ltr"><span>Social</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><strong>In 2008 reddit was open sourced</strong></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Users could read the code and know their was no vote tampering.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Users could add the features they always wanted to add and reddit would host it. This didn&rsquo;t work as people didn&rsquo;t really want to write code.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Hiring. Other people could know the code so it would be easier to hire people. This was the reasoning used to sell the idea to corporate.</span></p>
+</li>
+</ul>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>The worm incident</strong>. Somebody figured out how to write a worm by injecting extra javascript into a page. There was no intention of it getting out but get out it did. On the day one of the founders was getting married. The entire team was on a plane returning from the wedding. But a user had already responded with a patch that would stop the worm from spreading. Having the code open sourced allowed the community to help in a time of crisis.</p>
+</li>
+</ul>
+<h2 dir="ltr"><span>How does reddit make money?</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span>Sidebox ads, self-serve ads, merchandise, reddit gold, marketplace.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Note that reddit is not yet profitable (</span><a href="http://blog.reddit.com/2013/08/reddit-myth-busters_6.html"><span>link</span></a><span>). Which brings up the question is if a site like reddit can ever be profitable on the cloud?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span>Also note that reddit isn't owned by Cond&eacute; Nast anymore, so it is independent. (</span><a href="http://blog.reddit.com/2013/08/reddit-myth-busters_6.html"><span>link</span></a><span>)</span></p>
+</li>
+</ul>
+<h2 dir="ltr"><span>Mistakes</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Did not account for increased latency after moving to EC2</strong></span><span>. In the datacenter they had submillisecond access between machines so it was possible to make a 1000 calls to memache for one page load. Not so on EC2. Memcache access times increased 10x to a millisecond which made their old approach unusable. Fix was to batch calls to memcache so a large number of gets are in one request. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Promises promises</strong></span><span>. Amazon doesn&rsquo;t always deliver on promises and work around that. Design around failures instead of attempting to fix them. (There&rsquo;s no reference here, maybe EBS?)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Used bleeding edge products in production</strong></span><span>. Cassandra was use when it was still early in its development cycle. Really great now, but it was problematic.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Should have offloaded a lot more of the work to the client earlier</strong></span><span>. The server did a lot of the page rendering when it could have been pushed to the client. Facebook is the master of this. You get a rectangle with a lot of divs and API calls are made to fill out all the divs. That&rsquo;s how they wish reddit was done in the first place. It would have scaled much better. It also helps debugging as it's easy to determine which&nbsp;API calls become problems.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Not having enough monitoring and using a monitoring system that isn&rsquo;t virtualization friendly</strong></span><span>. Started with Ganglia which produced great graphs but was hard to use and rapidly change, especially in a virtual environment with instances coming and going all the time. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Did not expire data</strong>. At reddit you can see comments all the way back to the beginning of time. They&rsquo;ve started to put limits so you can&rsquo;t vote on old comments or add comments to old threads. This causes data to grow and grow over time which makes it more and more difficult to keep the hot data in the database.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Not using consistent hashing</strong></span><span>. When hashing to a cache the problem is if you need to add more cache you are stuck because all your data is in one or however many caches you are hashing too. You can&rsquo;t rebalance when growing the cache. Consistent hashing is a way around this problem. Solved by moving to Cassandra.</span></p>
+</li>
+</ul>
+<h2 dir="ltr"><span>Lessons Learned</span></h2>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span><strong>The key to scaling is finding the bottlenecks before your users do</strong></span><span>.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Using a proxy was a huge boon to scaling</strong></span><span>. User could be routed based on the URLs they were hitting. Reddit had a system that would monitor how long every URL took to service. People were put into different lanes. Slow traffic went one place and fast traffic went another. &nbsp;Splitting traffic based on the median speed of response was a huge boost.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Automate all the things</strong></span><span>. &nbsp;Your life will be so much easier if you treat your infrastructure like you treat your code. Everything should come up and configure itself automatically.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>It&rsquo;s not necessary to build a scalable architecture from the start</strong></span><span>. You don&rsquo;t know what your feature set will be when you start out so you want know what your scaling problems will be. Wait until your site grows so you can learn where your scaling problems are going to be. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Don&rsquo;t use a Service Oriented Architecture when just starting out</strong></span><span>. Keep it in mind, it&rsquo;s a good place to go when you&rsquo;re medium sized, otherwise there&rsquo;s just too much overhead.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Don&rsquo;t follow fads</strong></span><span>. Sometimes fads do work, node.js for example.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Put a limit on everything</strong></span><span>. Everything that can happen repeatedly put a high limit on it and raise or lower the limit as needed. Block users if the limit is passed. This protects the service. Example is uploading files of logos for subreddits. Users figured out they could upload really big files and harm the system. Don&rsquo;t accept huge text blobs either. Someone will figure out how to send you 5GB of text.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Plan for 3</strong></span><span>. When designing always assume there&rsquo;s going to be a whole bunch of what you are doing. Application servers, databases, caches. Always assume you are going to have more than one from the start. It will be much easier to horizontally scale in the future.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Recode Python functions in C</strong></span><span>. As reddit was scaling to get speed they pulled out the most repetitive functions from Python and recoded in C. Particularly filters, markdown rendering, and memcache calls. What&rsquo;s nice about Python is calling out to C is easy and efficient.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Stay as schemaless as possible</strong></span><span>. It makes it easy to add features. All you need to do is add new properties without having to alter tables.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Expire data</strong>. Lock out old threads and create a fully rendered page and cache it. This is how to deal with all the old data that threatens to overwhelm your database. At the same time, don&rsquo;t allow voting on old comments or adding comments to old threads. Users will rarely notice.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Think of SSDs as cheap RAM, not expensive disk</strong></span><span>. When reddit moved from spinning disks to SSDs for the database the number of servers was reduced from 12 to 1 with a ton of headroom. SSDs are 4x more expensive but you get 16x the performance. Worth the cost. Some of the biggest Cassandra nodes at Netflix and reddit are on SSDs and it made a massive improvement.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Each tool has a different use case</strong></span><span>. Memcache has no guarantees about durability, but is very fast, so the vote data is stored there to make rendering of pages as quick as possible. Cassandra is durable and fast, and gives fast negative lookups because of its bloom filter, so it was good for storing a durable copy of the votes for when the data isn't in memcache. Postgres is rock solid and relational, so it&rsquo;s a good place to store votes as a backup for Cassandra (all data in Cassandra could be generated from Postgres if necessary) and also for doing batch processing, which sometimes needed the relational capabilities.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Treat nonlogged in users as second class citizens</strong></span><span>. Logged out users were about 80% of the traffic, now it&rsquo;s closer to 50%. By always giving logged out always cached content Akamai bears the brunt for reddit&rsquo;s traffic. Huge performance improvement. Side benefit if reddit goes down and you aren&rsquo;t logged in you might never know.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Put everything into a queue</strong></span><span>. Votes, comments, thumbnail creation, precomputed queries, spam processing and corrections. Queues allow you to know when there&rsquo;s a problem by monitoring queue lengths. Side benefit is queues hide problems from users because things like vote requests are in the queue and if they aren&rsquo;t applied immediately nobody notices.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Keep data in multiple Availability Zones</strong></span><span>.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Avoid keeping state on a single instance</strong></span><span>.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Take frequent snapshots of EBS disks</strong></span><span>.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Do not keep secret keys on the instance</strong>. Amazon now <a href="http://aws.amazon.com/iam/faqs/#What_is_IAM_roles_for_EC2_instances">provides a service</a> to give you on instance keys.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Divide functions by Security Group</strong></span><span>.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Provide an API</strong></span><span>. Programmers will build on your platform. The reddit iPhone applications, for example, are built by other people using the API. </span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Be an active in your own community</strong></span><span>. Reddit users love that reddit admins are actually on the site and interacting with them.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Let users do the work for you</strong></span><span>. On a site with user input one problem is always cheating, spam, and fraud. Most of the work of moderation is done by thousands of volunteers who take care of most of the spam problem. It works amazingly well and is one of the reasons the reddit team can remain small.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><strong>Give users a little bit of power, see what they do with it, and turn the good stuff into features</strong>. For example, when the ability to add CSS to subreddits was added they saw what people were doing and added many of the common things as feature for everyone. This also makes users excited about doing stuff on reddit because they like that sense of control. Lots of other examples.</p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span><strong>Listen to your users</strong></span><span>. Users are going to tell you a lot of things you don&rsquo;t know that you probably want to know. For example, reddit gold started as a joke in the community. They made it a product and users love it.</span></p>
+<div dir="ltr"></div>
+</li>
+</ul>
+<h2 dir="ltr"><span>Related Articles</span></h2>
+<ul>
+<li><a href="https://news.ycombinator.com/item?id=6278073"> On Hacker News</a>&nbsp;/&nbsp;<a href="http://www.reddit.com//r/programming/comments/1l4izl/reddit_lessons_learned_from_mistakes_made_scaling/">On Reddit</a></li>
+<li><a href="http://highscalability.com/blog/2010/5/17/7-lessons-learned-while-building-reddit-to-270-million-page.html">7 Lessons Learned While Building Reddit To 270 Million Page Views A Month</a> </li>
+<li dir="ltr"> <a href="http://blog.reddit.com/2013/08/reddit-myth-busters_6.html"><span>reddit myth busters</span></a> </li>
+<li><a href="http://www.reddit.com/r/IAmA/comments/a2zte/i_run_reddits_servers_and_do_a_bunch_of_other/"><span>I run reddit's servers (and do a bunch of other stuff too). AMA.</span></a><span> (3 years old) </span></li>
+<li dir="ltr"> <a href="http://blog.reddit.com/2012/01/january-2012-state-of-servers.html"><span>January 2012 - State of the Servers</span></a><span> (2012) </span></li>
+<li dir="ltr"><span><a href="http://nerds.airbnb.com/reddit-netflix-and-beyond-building-scalable-and-reliable-architectures-in-the-cloud/">Reddit, Netflix, and beyond: Building Scalable and Reliable Architectures in the Cloud</a></span></li>
+<li dir="ltr"><a href="http://kev.inburke.com/kevin/reddits-database-has-two-tables/">Reddit&rsquo;s database has two tables</a></li>
+<li dir="ltr">
+<p dir="ltr"><a href="https://news.ycombinator.com/item?id=6222726%20"><span>Hacker News discussion</span></a><span> of the talk</span></p>
+</li>
+<li dir="ltr">A lot has changed. It wasn&rsquo;t looking all that good as little as 2 years ago:       
+<ul>
+<li dir="ltr"> <a href="http://www.reddit.com/r/reddit.com/comments/gj5ak/dear_admin_lets_be_frank_and_honest_about_it/"><span>Dear admin. Let's be frank and honest about it. Reddit is not healthy. No other top internet site runs as slowly, or is down as often. It's becoming a daily joke. Why don't we have a proper discussion about what needs to be done? </span></a></li>
+<a href="http://www.reddit.com/r/reddit.com/comments/gj5ak/dear_admin_lets_be_frank_and_honest_about_it/"> </a>
+<li dir="ltr"><a href="http://www.reddit.com/r/reddit.com/comments/gj5ak/dear_admin_lets_be_frank_and_honest_about_it/"> </a><a href="http://www.reddit.com/r/Python/comments/jmhdw/are_any_of_the_reddit_site_problems_pythonpylons/"><span>Are any of the reddit site problems Python/Pylons related?</span></a> </li>
+<li dir="ltr"> <a href="http://www.reddit.com/r/reddit.com/comments/cbv8k/dear_reddit_if_this_is_really_your_architecture/"><span>Dear Reddit: if this is really your architecture, it totally fails. Every single request goes through your Python app servers? Why don't you use an HTTP cache (e.g. Varnish), ESI, and a CDN to speed up the site?</span></a> </li>
+</ul>
+</li>
+</ul>
+
+        
+  
+          
+  
+         
+  
+      </div>
+
+    
+
+  </div>
+
+      <div class="journal-entry-tag journal-entry-tag-post-body">
+      <div class="journal-entry-tag-post-body-line1"><span class="posted-by">  <a href="/blog/author/highscalability"> <img title="Author" alt="Author" class="inline-icon user-registered-icon" rel="smalllight" src="/universal/images/transparent.png" />Todd Hoff</a></span> |  <span class="post-comments"><a href="/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html#comments"> <img title="Comment" alt="Comment" class="inline-icon comment-icon" rel="smalllight" src="/universal/images/transparent.png" />9 Comments</a></span> |  <span class="permalink-item"><a class="permalink" href="/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html"> <img title="Permalink" alt="Permalink" class="inline-icon permalink-icon" rel="smalllight" src="/universal/images/transparent.png" />Permalink </a></span> |  <span class="share-item"><a href="javascript:noop();" onclick="Squarespace.Interaction.shareLink(this,'%2Fblog%2F2013%2F8%2F26%2Freddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html','Reddit%3A%20Lessons%20Learned%20from%20Mistakes%20Made%20Scaling%20to%201%20Billion%20Pageviews%20a%20Month');"> <img title="Share Article" alt="Share Article" class="inline-icon share-icon" rel="smalllight" src="/universal/images/transparent.png" />Share Article </a></span> <span class="print-item"><a href="/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html?printerFriendly=true"> <img title="Print Article" alt="Print Article" class="inline-icon print-icon" rel="smalllight" src="/universal/images/transparent.png" />Print Article </a></span> <span class="email-item"><a href="/blog/recommend/34199512"> <img title="Email Article" alt="Email Article" class="inline-icon email-icon" rel="smalllight" src="/universal/images/transparent.png" />Email Article </a></span> </div>
+      <div class="journal-entry-tag-post-body-line2"><span class="posted-in">in <span class="tag-element"><a rel="tag" href="/blog/category/architecture"> <img title="Category" alt="Category" class="inline-icon category-icon" rel="smalllight" src="/universal/images/transparent.png" />architecture</a></span></span>  <span class="post-snippet-1"><iframe src="http://www.facebook.com/plugins/like.php?href=http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html&layout=standard&show_faces=true&width=450&action=like&colorscheme=light&height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true"></iframe></span> <span class="post-snippet-2"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://highscalability.com/blog/2013/8/26/reddit-lessons-learned-from-mistakes-made-scaling-to-1-billi.html" data-text="Reddit: Lessons Learned from Mistakes Made Scaling to 1 Billion Pageviews a&nbsp;Month" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></span> </div>
+      <div class="journal-entry-tag-post-body-line3"></div>
+    </div>
+  
+  
+  <div class="clearer"></div>
+
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class="journal-comment-area-wrapper">
+    <div id="comments" class="journal-comment-area">
+
+      <h3 class="caption">Reader Comments  (9) </h3>
+
+      
+        
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20345357">
+
+    <div id="item20345357" class="body">
+
+      <p>If you&#39;re asking &quot;Event or thread based&quot;  you should be fired.  Seriously, that shows profound lack of competency.</p><p>It&#39;s sad that our industry has, rather than solve the problem of concurrency, just thrown its hands up in the air collectively and decided to pay thru the nose for way too many crappy servers at Amazon running a crappy architecture.</p><p>Erlang is stable, and solved this problem 20+ years ago.  It&#39;s not that hard to learn, for any decent programmer.</p><p>It&#39;s astounding that people are this lazy.</p><p>But hey, there&#39;s easy mode now:  Just use Elixir. </p><p>Threads and Events are both attempts to evade the problem of concurrency and both of them only delay the pain while making it worse.</p><p>Why not do it right from the start?</p>
+
+    </div>
+    <div class="signature">
+
+      August 26, 2013 | 
+  <a href="/contributor/21914195" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>Engineer
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20345484">
+
+    <div id="item20345484" class="body">
+
+      <p>I was almost certain reddit was using MongoDB. Guess I was wrong.... Postgres, didn&#39;t see that one coming.</p>
+
+    </div>
+    <div class="signature">
+
+      August 26, 2013 | 
+  <a href="/contributor/21914339" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>Andey
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20345883">
+
+    <div id="item20345883" class="body">
+
+      <p>Awesome stuff. Really interesting to read about the different tactics to improve performance and speed and stay scalable. Keep it up!</p>
+
+    </div>
+    <div class="signature">
+
+      August 26, 2013 | 
+  <a href="/contributor/21914809" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>Philipp
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20346092">
+
+    <div id="item20346092" class="body">
+
+      <p>I have scaled Twicsy to serve hundreds of millions of page views per month accessing a comparable amount of data to Reddit (&gt;4 billion tweets, &gt;2 billion pic links, other metada). No, that isn&#39;t served to users, it is served mostly to bots (Google crawls about 10 million pages per day), but that&#39;s even harder because of the random nature of the access. My backend is MySQL (one server), 2 custom caching servers (custom java code for data caching), and 2 frontend servers (jetty). The key to my success is writing custom java that exploits RAM and SSD tech to the fullest, putting my server costs at less than $3k/month. I estimate if I doubled that expenditure I could scale to about 10x current traffic.</p>
+
+    </div>
+    <div class="signature">
+
+      August 26, 2013 | 
+  <a href="/contributor/21915049" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>dumbfounder
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20357534">
+
+    <div id="item20357534" class="body">
+
+      <p>Great post!  Thank you for sharing all the behind the scenes information and the story.  The lessons learned are great.  It is always amazing to me today how many people still try to build it perfect out of the box to support millions of users instead of shipping early and getting feedback and then re-factor accordingly.</p>
+
+    </div>
+    <div class="signature">
+
+      September 1, 2013 | 
+  <a href="/contributor/21928861" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>Lexi
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20358648">
+
+    <div id="item20358648" class="body">
+
+      <p>@dumbfounder<br/>&gt;No, that isn&#39;t served to users, it is served mostly to bots (Google crawls about 10 million pages per day)ty.but that&#39;s even &gt;harder because of the random nature of the access.  </p><p>LOL</p><p>Reading is extra easy comparing to  user WRITE activity. You have full control on WRITE activity (crawling).  You have to much iron comparing to your &quot;random&quot; bot traffic.</p>
+
+    </div>
+    <div class="signature">
+
+      September 2, 2013 | 
+  <a href="/contributor/21930256" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>iddqd
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20358855">
+
+    <div id="item20358855" class="body">
+
+      <p>@dumbfounder: My secret recipe for scaling web applications is assembly. Just write everything in assembly and it&#39;s faster than a hunchbacked ninja!</p>
+
+    </div>
+    <div class="signature">
+
+      September 2, 2013 | 
+  <a href="/contributor/21930550" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>trollr
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment20714139">
+
+    <div id="item20714139" class="body">
+
+      <p>4 billion page views are seriously serious, is their any other site apart from Google&#39;s empire, which handles this much traffic?</p>
+
+    </div>
+    <div class="signature">
+
+      January 6, 2014 | 
+  <a href="/contributor/22951191" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>Ishwar
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+  <div class="comment-wrapper authored-by-None">
+  <div class="comment" id="comment21637032">
+
+    <div id="item21637032" class="body">
+
+      <p>Apologizing in advance for &quot;me too&quot;, giving 1 diff as reward to reader- here goes:</p><p>Businesses start and fail on Business Model integrating with Marketing Model (or not) and the way technology executes that model (or it doesn&#39;t). The whole reason to have CS is the Applied part of Applied Science. Otherwise, the entire universe would be modular, and we be able to integrate everything with a single codebase. But it isn&#39;t, and it can&#39;t be. So form fits function...</p><p>Within a high concurrency model, or any large scale offering there are many types of business ends. So if I&#39;m <i>building</i> a brand and therefore building a user base, because, after all, I&#39;m here to learn and glean tips from the &quot;been there done that&#39;s&quot;  because I don&#39;t already have a user base the size of reddit- I will pay special attention to the starting highlights of this article, and there&#39;s just 1 diff, otherwise stellar:</p><p><b>&quot;Treat nonlogged in users as second class citizens&quot;</b> ok, very true and on point in limited context. However, do we know how much traffic we get for Nonlogged vs. Logged? In one large infrastructure I serve we are building resources for approximately 40% of our computing power to Non-logged in users, particularly those who have (apparently...) never logged in. Why? </p><p>True, our overall footprint (total infrastructure, not just front end) grew significantly  to handle the specs for this shift, getting ready to mine the behaviors of our Nonlogged in users to understand what they want and where they are willing to look BEFORE entering our system, and yet now we&#39;re ready for rapid scaling based on clear insight into these &quot;entry points.&quot; </p><p>If you want to go big or need to scale as quickly as possible, you need that kind of relationship with your existing client base, to be sure, and of course it makes complete sense to dedicate resources to understand your buyers; and yet when it comes to the pulse of your actual market base or user base there is so much more qualitative data left on the killing floor that I&#39;m embarrassed for my industry. FWIW.</p><p>(Not criticizing anyone in this article, in fact it is a great read- just raising hand for minor but IMO crucial point)</p>
+
+    </div>
+    <div class="signature">
+
+      September 28, 2016 | 
+  <a href="/contributor/29344832" title="Unregistered Commenter">
+  <img title="Unregistered Commenter" alt="Unregistered Commenter" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/user-unregistered.png) top left no-repeat;"/>bellasys
+  
+  </a>
+
+
+
+      
+        
+
+        
+
+      
+
+    </div>
+
+  </div>
+  </div>
+
+
+
+        
+
+      
+
+    </div>
+    </div>
+
+    
+      <div class="journal-add-comment-area-wrapper">
+  
+          
+            
+            
+  <script type="text/javascript">
+  // <![CDATA[
+
+    var isAddCommentsVisible = true;
+
+    function toggleReferenceMode() {
+      if (isAddCommentsVisible) {
+        hideObject(document.getElementById("add-comment-area"));
+        showObject(document.getElementById("add-reference-area"));
+      } else {
+        showObject(document.getElementById("add-comment-area"));
+        hideObject(document.getElementById("add-reference-area"));
+      }
+      isAddCommentsVisible = !isAddCommentsVisible;
+    }
+
+    E.addListener("postform", "keydown", Squarespace.SessionAuthorizationKey.acquireAuthKey, '');
+
+  // ]]>
+  </script>
+
+  <form method="post" style="margin: 0; padding: 0;" name="postform" id="postform" action="/process/CreateJournalEntryComment?moduleId=4867632&amp;entryId=34199512"> 
+
+     <input type="hidden" name="currentPage" value="1"/> 
+ 
+    <div class="notice-box" style="margin-top: 2em;" id="add-comment-area">
+
+      
+                              <h3 class="caption"><img title="Post" alt="Post" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/comment.png) top left no-repeat;"/>Post a New Comment</h3>
+          
+        
+
+        <div class="caption-text">
+
+          Enter your information below to add a new comment.
+
+          
+
+        </div>
+
+        
+
+        <script type="text/javascript" src="/universal/scripts/storable-fields.js?CE=75"></script>
+
+        
+          <div class="input-field">
+            
+            <div id="authorName_title" class="title">
+               Author: 
+
+              &nbsp;<a id="storedFieldControls" style="display: none; font-size: 9px;" href="javascript:forgetSavedFields();">(forget stored information)</a>
+            </div>
+            <input class="text" type="text" style="width: 200px;" name="authorName" id="authorName" value="" maxlength="50" tabindex="2"/>
+          </div>
+
+          <div class="input-field">
+            
+            <div id="authorEmail_title" class="title"> Author Email (optional): 
+</div>
+            <input class="text" type="text" style="width: 200px;" name="authorEmail" id="authorEmail" value="" maxlength="255" tabindex="3"/>
+          </div>
+
+          <div class="input-field">
+            
+            <div id="authorUrl_title" class="title"> Author URL (optional): 
+</div>
+            <input class="text" type="text" style="width: 200px;" name="authorUrl" id="authorUrl" value="" maxlength="255" tabindex="4"/>
+          </div>
+
+          <script type="text/javascript">
+
+            YAHOO.util.Event.addListener(window, "load", function() {
+
+              document.getElementById("storedFieldControls").style.display = (Squarespace.StorableFields.isDataSaved("authorName", "authorEmail", "authorUrl") ? "inline" : "none");
+              Squarespace.StorableFields.recall("authorName", "authorEmail", "authorUrl");
+
+            });
+
+            function forgetSavedFields() {
+
+              Squarespace.StorableFields.forget("authorName", "authorEmail", "authorUrl");
+              document.getElementById("storedFieldControls").style.display = "none";
+
+            }
+
+          </script>
+
+        
+
+        <script type="text/javascript">
+          function expandBody() { b = document.getElementById("body"); b.style.height = (b.offsetHeight + 40) + "px"; }
+          function shrinkBody() { b = document.getElementById("body"); b.style.height = (b.offsetHeight - 40) + "px"; }
+        </script>
+
+        
+        <div id="body_title" style="padding-bottom: 5px; float: left;"> Post: 
+</div>
+        <div style="padding-bottom: 5px; float: right;"><a title="Increase the size of the comment area." href="javascript:expandBody();">&#8595;</a> | <a title="Decrease the size of the comment area." href="javascript:shrinkBody();">&#8593;</a></div>
+        <div class="clearer">&nbsp;</div>
+        <div style="padding-bottom: 5px;"><textarea rows="15" cols="60" name="body" id="body" tabindex="5"></textarea></div>
+        <div style="padding-bottom: 5px;">Some HTML allowed: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;code&gt; &lt;em&gt; &lt;i&gt; &lt;strike&gt; &lt;strong&gt;</div>
+
+        
+
+        
+
+        <div class="footer">
+
+                      <div class="notice-box-alert">
+              <div class="icon"><img title="Alert" alt="Alert" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/alert.png) top left no-repeat;"/></div>
+              <div class="text">
+                <strong>Comment Moderation Enabled</strong><br/>
+                Your comment will not appear until it has been cleared by a website editor.
+              </div>
+            </div>
+          
+
+                    
+            <p style="padding-bottom: 10px;"><input class="checkbox" type="checkbox" name="followOptIn" id="followOptIn" value="true"  tabindex="6"/>
+              <span onclick="toggleNotify()" style="cursor: pointer; cursor: hand">Notify me of follow-up comments via email.</span>
+            </p>
+            <br/>
+
+          
+
+          <input type="hidden" id="authKey" name="authKey" value=""/>
+          <input style="width: 150px;" tabindex="6" class="button" type="button" name="createPostButton"  id="createPostButton"  value="Create Post"  onclick="submitContent(true);"/> &nbsp;&nbsp;
+          <input style="width: 150px;" tabindex="7" class="button" type="button" name="previewPostButton" id="previewPostButton" value="Preview Post" onclick="submitContent(false);"/>
+
+        </div>
+
+      
+
+    </div>
+
+  </form>
+
+  <script type="text/javascript">
+  // <![CDATA[
+
+    function toggleNotify() {
+      document.getElementById("followOptIn").click();
+    }
+              
+    function submitContent(isFinal) {
+      if (isFinal) {
+        document.getElementById("postform").action += "&finalize=true";
+        Squarespace.StorableFields.save("authorName", "authorEmail", "authorUrl");
+      }
+      Squarespace.Form.smartSubmit("postform");
+    }
+
+  // ]]>
+  </script>
+
+  
+
+
+  
+            
+  
+          
+  
+        
+  
+      </div>
+        
+    
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+  
+
+</div></div> <!-- Content -->
+  
+    
+  
+    </div></div> <!-- Page Body -->
+
+    
+    
+    <div id="pageFooterWrapper"><div id="pageFooter">
+  
+              Copyright &copy; 2016, Todd Hoff.  All rights reserved.
+      
+  
+      
+  
+    </div></div>
+  
+  </div></div> <!-- Canvas -->
+  
+   
+
+
+  <div class="clearer" id="bodyClearer"></div>
+
+  
+
+
+
+</body>
+</html>

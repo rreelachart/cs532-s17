@@ -1,0 +1,3429 @@
+RAW HTML FOR: http://contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html
+<!DOCTYPE html>
+<html class='v2' dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/>
+<meta content='width=100%' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='http://contagiominidump.blogspot.it/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="contagio mobile - Atom" href="http://contagiominidump.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="contagio mobile - RSS" href="http://contagiominidump.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="contagio mobile - Atom" href="https://www.blogger.com/feeds/5046096073918528715/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="contagio mobile - Atom" href="http://contagiominidump.blogspot.com/feeds/3571744422182508726/comments/default" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/4111605327-ieretrofit.js"></script>
+<![endif]-->
+<link href='http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png' rel='image_src'/>
+<meta content='http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html' property='og:url'/>
+<meta content='TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS' property='og:title'/>
+<meta content='   Riskware/Killmob!Android    Riskware/Killmob!Blackberry   Riskware/Killmob!SymbOS   Riskware/Killmob!iOS   Commercial spyware.  Functiona...' property='og:description'/>
+<meta content='http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/w1200-h630-p-k-nu/icon.png' property='og:image'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>contagio mobile: TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS</title>
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/static/v1/widgets/1691512649-css_bundle_v2.css' />
+<link type='text/css' rel='stylesheet' href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=5046096073918528715&amp;zx=b71a5ded-16dd-49c4-a72f-067dc858e232' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Simple
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#66bbdd"/>
+<Group description="Page Text" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 100% Verdana, Arial, Sans-serif;"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#222222"/>
+</Group>
+<Group description="Backgrounds" selector=".body-fauxcolumns-outer">
+<Variable name="body.background.color" description="Outer Background" type="color" default="#66bbdd"/>
+<Variable name="content.background.color" description="Main Background" type="color" default="#ffffff"/>
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent"/>
+</Group>
+<Group description="Links" selector=".main-outer">
+<Variable name="link.color" description="Link Color" type="color" default="#2288bb"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#888888"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#33aaff"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Font" type="font"
+default="normal normal 60px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#3399bb" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.text.color" description="Description Color" type="color"
+default="#777777" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal normal 14px Verdana, Arial, Sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#999999"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#f5f5f5"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#eeeeee"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, .comments h4">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal normal 22px Verdana, Arial, Sans-serif"/>
+</Group>
+<Group description="Date Header" selector=".date-header">
+<Variable name="date.header.color" description="Text Color" type="color"
+default="#000000"/>
+<Variable name="date.header.background.color" description="Background Color" type="color"
+default="transparent"/>
+</Group>
+<Group description="Post Footer" selector=".post-footer">
+<Variable name="post.footer.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="post.footer.background.color" description="Background Color" type="color"
+default="#f9f9f9"/>
+<Variable name="post.footer.border.color" description="Shadow Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Gadgets" selector="h2">
+<Variable name="widget.title.font" description="Title Font" type="font"
+default="normal bold 11px Verdana, Arial, Sans-serif"/>
+<Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#999999"/>
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="#ffffff"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="#eeeeee"/>
+<Variable name="image.text.color" description="Caption Text Color" type="color" default="#000000"/>
+</Group>
+<Group description="Accents" selector=".content-inner">
+<Variable name="body.rule.color" description="Separator Line Color" type="color" default="#eeeeee"/>
+<Variable name="tabs.border.color" description="Tabs Border Color" type="color" default="#999999"/>
+</Group>
+<Variable name="body.background" description="Body Background" type="background"
+color="#888888" default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.override" description="Body Background Override" type="string" default=""/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="url(http://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="body.background.gradient.tile" description="Body Gradient Tile" type="url"
+default="url(http://www.blogblog.com/1kt/simple/body_gradient_tile_light.png)"/>
+<Variable name="content.background.color.selector" description="Content Background Color Selector" type="string" default=".content-inner"/>
+<Variable name="content.padding" description="Content Padding" type="length" default="10px"/>
+<Variable name="content.padding.horizontal" description="Content Horizontal Padding" type="length" default="0px"/>
+<Variable name="content.shadow.spread" description="Content Shadow Spread" type="length" default="0px"/>
+<Variable name="content.shadow.spread.webkit" description="Content Shadow Spread (WebKit)" type="length" default="0px"/>
+<Variable name="content.shadow.spread.ie" description="Content Shadow Spread (IE)" type="length" default="10px"/>
+<Variable name="main.border.width" description="Main Border Width" type="length" default="0"/>
+<Variable name="header.background.gradient" description="Header Gradient" type="url" default="none"/>
+<Variable name="header.shadow.offset.left" description="Header Shadow Offset Left" type="length" default="-1px"/>
+<Variable name="header.shadow.offset.top" description="Header Shadow Offset Top" type="length" default="-1px"/>
+<Variable name="header.shadow.spread" description="Header Shadow Spread" type="length" default="1px"/>
+<Variable name="header.padding" description="Header Padding" type="length" default="10px"/>
+<Variable name="header.border.size" description="Header Border Size" type="length" default="1px"/>
+<Variable name="header.bottom.border.size" description="Header Bottom Border Size" type="length" default="0"/>
+<Variable name="header.border.horizontalsize" description="Header Horizontal Border Size" type="length" default="0"/>
+<Variable name="description.text.size" description="Description Text Size" type="string" default="140%"/>
+<Variable name="tabs.margin.top" description="Tabs Margin Top" type="length" default="0" />
+<Variable name="tabs.margin.side" description="Tabs Side Margin" type="length" default="30px" />
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="url(http://www.blogblog.com/1kt/simple/gradients_light.png)"/>
+<Variable name="tabs.border.width" description="Tabs Border Width" type="length" default="1px"/>
+<Variable name="tabs.bevel.border.width" description="Tabs Bevel Border Width" type="length" default="1px"/>
+<Variable name="date.header.padding" description="Date Header Padding" type="string" default="inherit"/>
+<Variable name="date.header.letterspacing" description="Date Header Letter Spacing" type="string" default="inherit"/>
+<Variable name="date.header.margin" description="Date Header Margin" type="string" default="inherit"/>
+<Variable name="post.margin.bottom" description="Post Bottom Margin" type="length" default="25px"/>
+<Variable name="image.border.small.size" description="Image Border Small Size" type="length" default="0px"/>
+<Variable name="image.border.large.size" description="Image Border Large Size" type="length" default="0px"/>
+<Variable name="page.width.selector" description="Page Width Selector" type="string" default=".region-inner"/>
+<Variable name="page.width" description="Page Width" type="string" default="auto"/>
+<Variable name="main.section.margin" description="Main Section Margin" type="length" default="15px"/>
+<Variable name="main.padding" description="Main Padding" type="length" default="15px"/>
+<Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px"/>
+<Variable name="main.padding.bottom" description="Main Padding Bottom" type="length" default="30px"/>
+<Variable name="paging.background"
+color="#ffffff"
+description="Background of blog paging area" type="background"
+default="transparent none no-repeat scroll top center"/>
+<Variable name="footer.bevel" description="Bevel border length of footer" type="length" default="0"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 14px 'Trebuchet MS', Trebuchet, sans-serif;
+color: #000000;
+background: #888888 url(http://1.bp.blogspot.com/-WNpS2v38f70/TgdTIIUj74I/AAAAAAAACFU/Tyn5URGKnEY/s1600/AsphaltDamaged0001_2_.jpg) repeat fixed top right;
+padding: 0 0px 0px 0px;
+}
+html body .region-inner {
+min-width: 0;
+max-width: 100%;
+width: auto;
+}
+a:link {
+text-decoration:none;
+color: #274e13;
+}
+a:visited {
+text-decoration:none;
+color: #660000;
+}
+a:hover {
+text-decoration:underline;
+color: #618f2b;
+}
+.body-fauxcolumn-outer .fauxcolumn-inner {
+background: transparent none repeat scroll top left;
+_background-image: none;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 400px;
+width: 100%;
+background: #888888 url(http://1.bp.blogspot.com/-WNpS2v38f70/TgdTIIUj74I/AAAAAAAACFU/Tyn5URGKnEY/s1600/AsphaltDamaged0001_2_.jpg) repeat fixed top right;
+}
+.body-fauxcolumn-outer .cap-top .cap-left {
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+.content-outer {
+-moz-box-shadow: 0 0 0px rgba(0, 0, 0, .0);
+-webkit-box-shadow: 0 0 0px rgba(0, 0, 0, .0);
+-goog-ms-box-shadow: 0 0 0px #333333;
+box-shadow: 0 0 0px rgba(0, 0, 0, .0);
+margin-bottom: 0px;
+}
+.content-inner {
+padding: 0px 0px;
+}
+.content-inner {
+background-color: #ffffff;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+background: #09111a url(http://3.bp.blogspot.com/-Rz6yhnEuWgo/TgbM67KjcRI/AAAAAAAACEw/HB2_mBBfTC8/s400/gradients_light.png) repeat-x scroll 0 -400px;
+_background-image: none;
+}
+.Header h1 {
+font: normal bold 50px 'Courier New', Courier, FreeMono, monospace;
+color: #cccccc;
+text-shadow: 0px 0px 0px rgba(0, 0, 0, .0);
+}
+.Header h1 a {
+color: #cccccc;
+}
+.Header .description {
+font-size: 140%;
+color: #ffffff;
+}
+.header-inner .Header .titlewrapper {
+padding: 20px 10px;
+}
+.header-inner .Header .descriptionwrapper {
+padding: 0 10px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section:first-child {
+border-top: 0 solid #ffffff;
+}
+.tabs-inner .section:first-child ul {
+margin-top: -0;
+border-top: 0 solid #ffffff;
+border-left: 0 solid #ffffff;
+border-right: 0 solid #ffffff;
+}
+.tabs-inner .widget ul {
+background: #fff9ee none repeat-x scroll 0 -100%;
+_background-image: none;
+border-bottom: 1px solid #ffffff;
+margin-top: 0;
+margin-left: -10px;
+margin-right: -10px;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+padding: .6em 1em;
+font: normal normal 12px Verdana, Arial, Sans-serif;
+color: #998877;
+border-left: 1px solid #ffffff;
+border-right: 0px solid #ffffff;
+}
+.tabs-inner .widget li:first-child a {
+border-left: none;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+color: #000000;
+background-color: #fff9ee;
+text-decoration: none;
+}
+/* Columns
+----------------------------------------------- */
+.main-outer {
+border-top: 0 solid #999999;
+}
+.fauxcolumn-left-outer .fauxcolumn-inner {
+border-right: 1px solid #999999;
+}
+.fauxcolumn-right-outer .fauxcolumn-inner {
+border-left: 4px solid #999999;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin: 0 0 1em 0;
+font: normal bold 12px Verdana, Arial, Sans-serif;
+color: #000000;
+text-transform: uppercase;
+}
+/* Widgets
+----------------------------------------------- */
+.widget .zippy {
+color: #999999;
+text-shadow: 2px 2px 1px rgba(0, 0, 0, .0);
+}
+.widget .popular-posts ul {
+list-style: none;
+}
+/* Posts
+----------------------------------------------- */
+.date-header span {
+background-color: #ffffff;
+color: #998877;
+padding: inherit;
+letter-spacing: inherit;
+margin: inherit;
+}
+.main-inner {
+padding-top: 15px;
+padding-bottom: 15px;
+}
+.main-inner .column-center-inner {
+padding: 0 10px;
+}
+.main-inner .column-center-inner .section {
+margin: 0 10px;
+}
+.post {
+margin: 0 0 60px 0;
+}
+h3.post-title, .comments h4 {
+font: normal bold 18px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+margin: .75em 0 0;
+}
+.post-body {
+font-size: 100%;
+line-height: 1.4;
+position: relative;
+}
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+padding: 0px;
+background: #ffffff;
+border: 1px solid #ffffff;
+-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .0);
+-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .0);
+box-shadow: 1px 1px 5px rgba(0, 0, 0, .0);
+}
+.post-body img, .post-body .tr-caption-container {
+padding: 0px;
+}
+.post-body .tr-caption-container {
+color: #222222;
+}
+.post-body .tr-caption-container img {
+padding: 0;
+background: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+box-shadow: 0 0 0 rgba(0, 0, 0, .0);
+}
+.post-header {
+margin: 0 0 1.5em;
+line-height: 1.6;
+font-size: 93%;
+}
+.post-footer {
+margin: 15px -2px 0;
+padding: 5px 10px;
+color: #666555;
+background-color: #eee9dd;
+border-bottom: 1px solid transparent;
+line-height: 1.6;
+font-size: 93%;
+}
+#comments .comment-author {
+padding-top: 1.5em;
+border-top: 1px solid #999999;
+background-position: 0 1.5em;
+}
+#comments .comment-author:first-child {
+padding-top: 0;
+border-top: none;
+}
+.avatar-image-container {
+margin: .2em 0 0;
+}
+#comments .avatar-image-container img {
+border: 1px solid #ffffff;
+}
+/* Accents
+---------------------------------------------- */
+.section-columns td.columns-cell {
+border-left: 1px solid #999999;
+}
+.blog-pager {
+background: transparent none no-repeat scroll top center;
+}
+.blog-pager-older-link, .home-link,
+.blog-pager-newer-link {
+background-color: #ffffff;
+padding: 5px;
+}
+.footer-outer {
+border-top: 0 dashed #bbbbbb;
+}
+/* Mobile
+----------------------------------------------- */
+.mobile .content-outer {
+-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .0);
+box-shadow: 0 0 3px rgba(0, 0, 0, .0);
+padding: 0 0px;
+}
+body.mobile .AdSense {
+margin: 0 -0px;
+}
+.mobile .tabs-inner .widget ul {
+margin-left: 0;
+margin-right: 0;
+}
+.mobile .post {
+margin: 0;
+}
+.mobile .main-inner .column-center-inner .section {
+margin: 0;
+}
+.mobile .date-header span {
+padding: 0.1em 10px;
+margin: 0 -10px;
+}
+.mobile h3.post-title {
+margin: 0;
+}
+.mobile .blog-pager {
+background: transparent;
+}
+.mobile .footer-outer {
+border-top: none;
+}
+.mobile .main-inner, .mobile .footer-inner {
+background-color: #ffffff;
+}
+.mobile-index-contents {
+color: #000000;
+}
+.mobile-link-button {
+background-color: #274e13;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .body-fauxcolumn-outer .cap-top {
+background-size: 100% auto;
+}
+.mobile .tabs-inner .section:first-child {
+border-top: none;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background-color: #fff9ee;
+color: #000000;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #ffffff;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 1200px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1200px;
+max-width: 1200px;
+_width: 1200px;
+}
+.main-inner .columns {
+padding-left: 0;
+padding-right: 350px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 0;
+right: 350px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("0") -
+parseInt("350px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 0;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 350px;
+}
+.main-inner .column-left-outer {
+width: 0;
+right: 100%;
+margin-left: -0;
+}
+.main-inner .column-right-outer {
+width: 350px;
+margin-right: -350px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 100%;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">function a(){var b=window.location.href,c=b.split("?");switch(c.length){case 1:return b+"?m=1";case 2:return 0<=c[1].search("(^|&)m=")?null:b+"&m=1";default:return null}}var d=navigator.userAgent;if(-1!=d.indexOf("Mobile")&&-1!=d.indexOf("WebKit")&&-1==d.indexOf("iPad")||-1!=d.indexOf("Opera Mini")||-1!=d.indexOf("IEMobile")){var e=a();e&&window.location.replace(e)};
+</script></head>
+<script src='//static.getclicky.com/js' type='text/javascript'></script>
+<script type='text/javascript'>try{ clicky.init(100816271); }catch(e){}</script>
+<noscript><p><img alt='Clicky' height='1' src='//in.getclicky.com/100816271ns.gif' width='1'/></p></noscript>
+<body class='loading'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' data-version='1' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
+        if (gapi.iframes && gapi.iframes.getContext) {
+          gapi.iframes.getContext().openChild({
+              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d5046096073918528715\x26blogName\x3dcontagio+mobile\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dDARK\x26layoutType\x3dLAYOUTS\x26searchRoot\x3dhttp://contagiominidump.blogspot.com/search\x26blogLocale\x3den\x26v\x3d2\x26homepageUrl\x3dhttp://contagiominidump.blogspot.com/\x26targetPostID\x3d3571744422182508726\x26blogPostOrPageUrl\x3dhttp://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html\x26vt\x3d2390708229229184693',
+              where: document.getElementById("navbar-iframe-container"),
+              id: "navbar-iframe"
+          });
+        }
+      });
+    </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div id='header-inner'>
+<a href='http://contagiominidump.blogspot.it/' style='display: block'>
+<img alt='contagio mobile' height='168px; ' id='Header1_headerimg' src='http://3.bp.blogspot.com/-zAN-ozZ_qjw/ThvQx7yyMHI/AAAAAAAACR0/OijWKRSlX6M/s1600/contagiomobile.jpg' style='display: block' width='1114px; '/>
+</a>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'><div class='widget HTML' data-version='1' id='HTML9'>
+<div class='widget-content'>
+<br /><a href="http://contagiominidump.blogspot.com/?m=1">Mobile and printer friendly</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=HTML&widgetId=HTML9&action=editWidget&sectionId=crosscol' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML9"));' target='configHTML9' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<div class='tabs no-items section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='blog-posts hfeed'>
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Saturday, July 13, 2013</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry'>
+<a name='3571744422182508726'></a>
+<h3 class='post-title entry-title'>
+<a href='http://contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html'>TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS</a>
+</h3>
+<div class='post-header-line-1'></div>
+<div class='post-body entry-content'>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13.333333969116211px;">
+<br />
+Riskware/Killmob!Android&nbsp;</div>
+<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13.333333969116211px;">
+Riskware/Killmob!Blackberry</div>
+<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13.333333969116211px;">
+Riskware/Killmob!SymbOS</div>
+<div style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 13.333333969116211px;">
+Riskware/Killmob!iOS</div>
+<br />
+Commercial spyware.<br />
+Functionality inlcudes (judging by the files - see more<br />
+<a href="http://killermobile.com/manuals/TRa.pdf">http://killermobile.com/manuals/TRa.pdf</a><br />
+<div>
+<br /></div>
+<div>
+Schedule Days<br />
+Schedule Time<br />
+Data Setting<br />
+Report Call Logs<br />
+Report Contacts<br />
+Report SMS<br />
+Report Gmail<br />
+Report Web Browser<br />
+Report New Photos<br />
+Report New Videos<br />
+Call Record<br />
+Call Record Strategy<br />
+Record Format<br />
+Report Whatsapp Chats<br />
+Report Viber Chats<br />
+Report Skype Chats<br />
+Report Facebook Chats<br />
+Report Facebook Photos<br />
+Spy Call Number(s)<br />
+Do not record Spy Calls<br />
+Report GPS location<br />
+Recover via GMail<br />
+Enable GMail recovery<br />
+<br />
+<a href="http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png" imageanchor="1" style="clear: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png" /></a><a href="http://www.mediafire.com/download/3i51a6e56i75beu/TRacer.zip">Download all files (Email me if you need the password)</a><br />
+<br />
+<br />
+Files included<br />
+<br />
+File: TRa7.0.sis<br />
+MD5: &nbsp;d55c0e339a2cbb91132f53c5ecaf4fd5<br />
+Size: 266200<br />
+<br />
+File: Tracer-1.cod<br />
+MD5: &nbsp;df01e4ea2433dc08bce21b7b44a604eb<br />
+Size: 43240<br />
+<br />
+File: TRacer.apk.1<br />
+MD5: &nbsp;1c37f184a707d2c7c6d79cabeda2df69<br />
+Size: 7938460<br />
+<br />
+File: com.timecompiler.Tracer_0.0.1-958_iphoneos-arm.deb<br />
+MD5: &nbsp;fbb4a02d9921cb303d70c147bd8e270c<br />
+Size: 2669126<br />
+<br />
+<a href="http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><br /></a>
+<div>
+<br /></div>
+<div>
+<br /></div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+</span>
+<span class='post-timestamp'>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-labels'>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-155774452'>
+<a href='https://www.blogger.com/post-edit.g?blogID=5046096073918528715&postID=3571744422182508726&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='https://resources.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'></div>
+<div class='post-footer-line post-footer-line-3'></div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>3 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = [{'id': '3804080119473137074', 'body': 'Is this legal?', 'timestamp': '1373822163572', 'permalink': 'http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment\x3d1373822163572#c3804080119473137074', 'author': {'name': 'Unknown', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/01821879179272629168'}, 'displayTime': 'July 14, 2013 at 10:16 AM', 'deleteclass': 'item-control blog-admin pid-1899474309'}, {'id': '7829553411470120605', 'body': 'Hello, does anybody know why the TRacer apk also needs Superuser.apk? The phone must be rooted in order for the TRacer apk to be installed?\x3cbr /\x3eThanks', 'timestamp': '1374230414666', 'permalink': 'http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment\x3d1374230414666#c7829553411470120605', 'author': {'name': 'Madalina', 'avatarUrl': '//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA\x3ds35', 'profileUrl': 'https://www.blogger.com/profile/03889630744858970303'}, 'displayTime': 'July 19, 2013 at 3:40 AM', 'deleteclass': 'item-control blog-admin pid-336488972'}, {'id': '6129337708909023888', 'body': 'The phone must be rooted in order \x3ca href\x3d\x22http://www.tiendasaldo.com\x22 rel\x3d\x22nofollow\x22\x3eMoviles android baratos\x3c/a\x3e   for the TRacer apk to be installed?', 'timestamp': '1374559630872', 'permalink': 'http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment\x3d1374559630872#c6129337708909023888', 'author': {'name': 'Elizabeth J. Neal', 'avatarUrl': '//lh3.googleusercontent.com/-h6kGJJMyjQE/AAAAAAAAAAI/AAAAAAAAABM/M2ImVZ2JOkE/s35-c/photo.jpg', 'profileUrl': 'https://www.blogger.com/profile/01824134730760179008'}, 'displayTime': 'July 22, 2013 at 11:07 PM', 'deleteclass': 'item-control blog-admin pid-1764632221'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '5046096073918528715', 'postId': '3571744422182508726', 'feed': 'http://contagiominidump.blogspot.com/feeds/3571744422182508726/comments/default', 'authorName': 'Mila', 'authorUrl': 'https://www.blogger.com/profile/09472209631979859691', 'baseUri': 'https://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          replybox.src = '';
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+  </script>
+<div id='comment-holder'>
+<div id='bc_0_4C' kind='c'><div id='bc_0_4CT'><div id='bc_0_3T' class='comment-thread' kind='r'  t='0' u='0'><ol id='bc_0_3TB'><li id='bc_0_0B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c3804080119473137074' class='comment-block'><div id='bc_0_0M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/01821879179272629168'>Unknown</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment=1373822163572#c3804080119473137074'>July 14, 2013 at 10:16 AM</a></span></div><p id='bc_0_0MC' class='comment-content'>Is this legal?</p><span id='bc_0_0MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1899474309'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=5046096073918528715&amp;postID=3804080119473137074'>Delete</a></span></span></div><div id='bc_0_0BR' class='comment-replies'></div><div id='bc_0_0B_box' class='comment-replybox-single'></div></li><li id='bc_0_1B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/zFdxGE77vvD2w5xHy6jkVuElKv-U9_9qLkRYK8OnbDeJPtjSZ82UPq5w6hJ-SA=s35'></img></div><div id='c7829553411470120605' class='comment-block'><div id='bc_0_1M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/03889630744858970303'>Madalina</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment=1374230414666#c7829553411470120605'>July 19, 2013 at 3:40 AM</a></span></div><p id='bc_0_1MC' class='comment-content'>Hello, does anybody know why the TRacer apk also needs Superuser.apk? The phone must be rooted in order for the TRacer apk to be installed?<br />Thanks</p><span id='bc_0_1MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-336488972'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=5046096073918528715&amp;postID=7829553411470120605'>Delete</a></span></span></div><div id='bc_0_1BR' class='comment-replies'></div><div id='bc_0_1B_box' class='comment-replybox-single'></div></li><li id='bc_0_2B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/-h6kGJJMyjQE/AAAAAAAAAAI/AAAAAAAAABM/M2ImVZ2JOkE/s35-c/photo.jpg'></img></div><div id='c6129337708909023888' class='comment-block'><div id='bc_0_2M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='https://www.blogger.com/profile/01824134730760179008'>Elizabeth J. Neal</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html?showComment=1374559630872#c6129337708909023888'>July 22, 2013 at 11:07 PM</a></span></div><p id='bc_0_2MC' class='comment-content'>The phone must be rooted in order <a href="http://www.tiendasaldo.com" rel="nofollow">Moviles android baratos</a>   for the TRacer apk to be installed?</p><span id='bc_0_2MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1764632221'><a o='d' target='_self' href='https://www.blogger.com/delete-comment.g?blogID=5046096073918528715&amp;postID=6129337708909023888'>Delete</a></span></span></div><div id='bc_0_2BR' class='comment-replies'></div><div id='bc_0_2B_box' class='comment-replybox-single'></div></li></ol><div id='bc_0_3I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Add comment</a></div><div id='bc_0_3T_box' class='comment-replybox-thread'></div><div id='bc_0_3L' class='loadmore loaded' kind='rb'><a href='javascript:;' target='_self'>Load more...</a></div></div></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=5046096073918528715&postID=3571744422182508726' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/1003877814-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://contagiominidump.blogspot.it/2013/09/android-liena-smsagentc-smtp-malware.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://contagiominidump.blogspot.it/2013/06/backdoorandroidosobada.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://contagiominidump.blogspot.it/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://contagiominidump.blogspot.com/feeds/3571744422182508726/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div>
+</div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-right-1'>
+<div class='widget Profile' data-version='1' id='Profile1'>
+<h2>Shared by</h2>
+<div class='widget-content'>
+<dl class='profile-datablock'>
+<dt class='profile-data'>
+<a class='profile-name-link g-profile' href='https://www.blogger.com/profile/09472209631979859691' rel='author' style='background-image: url(//www.blogger.com/img/logo-16.png);'>
+Mila
+</a>
+</dt>
+<dd class='profile-textblock'>@ you can find my email address in my profile</dd>
+</dl>
+<a class='profile-link' href='https://www.blogger.com/profile/09472209631979859691' rel='author'>View my complete profile</a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Image' data-version='1' id='Image1'>
+<div class='widget-content'>
+<img alt='' height='340' id='Image1_img' src='http://2.bp.blogspot.com/-DhAMD3KTbAI/ThucN-fB8NI/AAAAAAAACRc/KJVvoaz3oSg/s340/electrostationMila.jpg' width='272'/>
+<br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Image1"));' target='configImage1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' data-version='1' id='HTML2'>
+<h2 class='title'>About contagiominidump</h2>
+<div class='widget-content'>
+<span style="font-weight: bold;">aka "take a sample, leave a sample"</span>
+
+
+
+Contagio mobile mini-dump is a part of <a style="font-weight: bold;" href="http://contagiodump.blogspot.com/">contagiodump.blogspot.com</a><span style="font-weight: bold;">.</span>
+
+
+Contagio mobile mini-dump offers an upload dropbox for you to share your mobile malware samples. You can also download any samples individually or <a href="http://4.bp.blogspot.com/-63xjcW3iEa4/Thuf0-wn5tI/AAAAAAAACRg/aWewDxFlTbs/s1600/allmobile.png">in one zip</a>.
+
+
+
+
+<a style="font-weight: bold;" href="http://www.mediafire.com/?78npy8h7h0g9y">CLICK HERE TO DOWNLOAD ALL</a>
+
+
+
+
+<span style="color: rgb(0, 0, 0);"><span style="color: rgb(255, 0, 0);">Note:</span>   </span><span style="font-size:large;"><span style="font-size:small;"><b>use <span style="color:blue;">infected</span> for the password on posts before Sept. 2102 or email for the password scheme for newer samples</b></span></span>
+<a style="clear: left; margin-bottom: 1em; float: left; margin-right: 1em;" href="http://www.linkedin.com/pub/mila-parkour/23/1a4/887">
+</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2016-01-01T00:00:00-08:00&amp;updated-max=2017-01-01T00:00:00-08:00&amp;max-results=14'>
+2016
+</a>
+<span class='post-count' dir='ltr'>(14)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2016_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2016_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2016_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2016_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2015-01-01T00:00:00-08:00&amp;updated-max=2016-01-01T00:00:00-08:00&amp;max-results=28'>
+2015
+</a>
+<span class='post-count' dir='ltr'>(28)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2015_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2014-01-01T00:00:00-08:00&amp;updated-max=2015-01-01T00:00:00-08:00&amp;max-results=49'>
+2014
+</a>
+<span class='post-count' dir='ltr'>(49)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2014_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2013-01-01T00:00:00-08:00&amp;updated-max=2014-01-01T00:00:00-08:00&amp;max-results=46'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(46)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>
+
+        &#9660;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+<ul class='posts'>
+<li><a href='http://contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html'>TRracer - commercial spyware / PUA samples for And...</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2013_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2012-01-01T00:00:00-08:00&amp;updated-max=2013-01-01T00:00:00-08:00&amp;max-results=50'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(56)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2012_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/search?updated-min=2011-01-01T00:00:00-08:00&amp;updated-max=2012-01-01T00:00:00-08:00&amp;max-results=50'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(55)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+        &#9658;&#160;
+      
+</span>
+</a>
+<a class='post-count-link' href='http://contagiominidump.blogspot.it/2011_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogList' data-version='1' id='BlogList1'>
+<h2 class='title'>Blog List</h2>
+<div class='widget-content'>
+<div class='blog-list-container' id='BlogList1_container'>
+<ul id='BlogList1_blogs'>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.lookout.com' target='_blank'>
+The Official Lookout Blog</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://now.avg.com' target='_blank'>
+AVG | Top Threats</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.trendmicro.com/trendlabs-security-intelligence' target='_blank'>
+Security Intelligence | TrendLab...</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='https://tthtlc.wordpress.com' target='_blank'>
+Life in Linux Kernel</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://contagiodump.blogspot.com/' target='_blank'>
+contagio</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.freewarelovers.com/android' target='_blank'>
+Adobe reader w old versions for Android</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://rogunix.com/docs/Android/Malware/' target='_blank'>
+Rogunix.com - Mobile malware links</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.csc.ncsu.edu/faculty/jiang/' target='_blank'>
+Xuxian Jiang @ NC State University</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.kinetoo.com/feed/' target='_blank'>
+Kinetoo: the smartphone samurai's log</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.avgmobilation.com/securitycenter' target='_blank'>
+AVG Mobilation | News and Media Releases | Android Security</a>
+</div>
+<div class='item-content'>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogList1"));' target='configBlogList1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div><div class='widget HTML' data-version='1' id='HTML7'>
+<h2 class='title'>Take a sample, Leave a Sample.</h2>
+<div class='widget-content'>
+<span style="font-weight: bold;">UPLOAD BOX </span><div><b>please upload ONLY mobile malware samples and save them in zip files with password infected. Thank you<br /></b>You can also email your samples (see profile for email address) <script type="text/javascript">var mf_dropbox_width=-1;var mf_dropbox_id="027bb496c82636cd75a6b481080a84e5b0d4ebc9508581b66fa3dd201ff52ce9";</script><script src="http://www.mediafire.com/dropbox/dropbox.js" type="text/javascript"></script></div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=HTML&widgetId=HTML7&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML7"));' target='configHTML7' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Text' data-version='1' id='Text1'>
+<h2 class='title'>Malware List</h2>
+<div class='widget-content'>
+<ul><li>See the categories for the malware listed on this blog.<br/><br/></li><li>Items listed below are old and were posted on contagio before -  <a href="http://contagiominidump.blogspot.com/2011/07/take-sample-leave-sample-mobile-malware.html">HERE</a><br/>Android.Bgserv<br/>BasebridgeA<br/>BasebridgeB<br/>CollectionofJavamobilemalware<br/>CollectionofSymbianmalware<br/>DDreamLight<br/>Doombot_1.sis<br/>DroidDreamvariants<br/>DroidKungFu.A<br/>DroidKungFu.B<br/>Dust.exePocketPCfileinfector2004<br/>Fake10086<br/>FSCGAD_1.00.8.apk<br/>Geinimi.1299167838 swampy.sexpos.apk<br/>Holy***kingBible<br/>iCalendar<br/>ikeeBiphone<br/>iMatch<br/>JavaMobileMalwareSMSsender.zip<br/>jSMSHider<br/>MonkeyJump2.0.apk<br/>Mosquito.1_1.sis<br/>myournetpower.SuperSolo.apk<br/>Palm:Phage<br/>PJApps variants<br/>PMCryptic.exeWindowsCEmalware-2008<br/>PMSW_V1.8_.apk<br/>pornoplayer.apk<br/>RZStudio<br/>SMS_Replicator_Secret.apk<br/>SMStrojan-Tank_3d.jar<br/>SymbianCabir<br/>SymbOS_Zitmo.ACERT.SIS<br/>Trojan.Palm.Liberty<br/>Trojan.Palm.Vapor<br/>Trojan-SMSforAndroidFakePlayerRUapk<br/><br/></li></ul><br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Text&widgetId=Text1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Text1"));' target='configText1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogSearch' data-version='1' id='BlogSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='BlogSearch1_form'>
+<form action='http://contagiominidump.blogspot.it/search' class='gsc-search-box'>
+<table cellpadding='0' cellspacing='0' class='gsc-search-box'>
+<tbody>
+<tr>
+<td class='gsc-input'>
+<input autocomplete='off' class='gsc-input' name='q' size='10' title='search' type='text' value=''/>
+</td>
+<td class='gsc-search-button'>
+<input class='gsc-search-button' title='search' type='submit' value='Search'/>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=BlogSearch&widgetId=BlogSearch1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogSearch1"));' target='configBlogSearch1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Label' data-version='1' id='Label1'>
+<h2>Categories</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Adware'>Adware</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/airpush'>airpush</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Androguard'>Androguard</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/android'>android</a>
+<span dir='ltr'>(87)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Android%20icon%20vulnerability'>Android icon vulnerability</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Android-steek'>Android-steek</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Android.Titan.1'>Android.Titan.1</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/androrat'>androrat</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Angry%20Birds'>Angry Birds</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/anserverbot'>anserverbot</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Apkquq'>Apkquq</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/appbuyer'>appbuyer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Appinventor'>Appinventor</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/APT'>APT</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Armour'>Armour</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Arspam'>Arspam</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Assassins%20Creed'>Assassins Creed</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/AVpass'>AVpass</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/awware'>awware</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Backdoor.AndroidOS.Obad.a'>Backdoor.AndroidOS.Obad.a</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Backflash'>Backflash</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Badnews'>Badnews</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/BankBot.34'>BankBot.34</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Banker'>Banker</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Banking'>Banking</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/basebridge'>basebridge</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/BatteryDoctor'>BatteryDoctor</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Beita'>Beita</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/blackberry'>blackberry</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/bootkit'>bootkit</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/botnet'>botnet</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Cajino'>Cajino</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Carberp%3B%20Android'>Carberp; Android</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/CarrierIQ'>CarrierIQ</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Chathook'>Chathook</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/CI4%20SMS%20Bot'>CI4 SMS Bot</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/clickfraud'>clickfraud</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Cloud%20Atlas'>Cloud Atlas</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/coinkrypt'>coinkrypt</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/ConnectSMS'>ConnectSMS</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/coolreaper'>coolreaper</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Copy9'>Copy9</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Counterclank'>Counterclank</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Crisis'>Crisis</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Crosate'>Crosate</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/cryptolocker'>cryptolocker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/CVE-2014-3153'>CVE-2014-3153</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/CVE-2015-3636'>CVE-2015-3636</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DDoS'>DDoS</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/deathring'>deathring</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Dendroid'>Dendroid</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/dialer'>dialer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DKFBootKit'>DKFBootKit</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Dougalek.A'>Dougalek.A</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Drive-by'>Drive-by</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DriveByDownload'>DriveByDownload</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/droiddeluxe'>droiddeluxe</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DroidDreamLight'>DroidDreamLight</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DroidJack'>DroidJack</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DroidKungFu'>DroidKungFu</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Droidpak'>Droidpak</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DropDialer'>DropDialer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/DSEncrypt'>DSEncrypt</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Enesoluty'>Enesoluty</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/exploit'>exploit</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Exprespam'>Exprespam</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Extension'>Extension</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/fake%20angry'>fake angry</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/fake%20AV'>fake AV</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fake%20banker'>Fake banker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fake%20Installer'>Fake Installer</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fake%20Vertu'>Fake Vertu</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeApp.AL'>FakeApp.AL</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeAV'>FakeAV</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakebank'>Fakebank</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakebanker'>Fakebanker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakedaum'>Fakedaum</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakedefender'>Fakedefender</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeGooglePlay'>FakeGooglePlay</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakeguard'>Fakeguard</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeJobOffer'>FakeJobOffer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakelash'>Fakelash</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeLookout.A.'>FakeLookout.A.</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakemart'>Fakemart</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeNotify'>FakeNotify</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakeplay'>Fakeplay</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FakeRegSMS.B'>FakeRegSMS.B</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Faketaobao'>Faketaobao</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Faketimer'>Faketimer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/faketoken'>faketoken</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fakeupdate'>Fakeupdate</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Feejar'>Feejar</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FindAndCall'>FindAndCall</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/FinFisher'>FinFisher</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Finspy'>Finspy</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fonefee'>Fonefee</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Fraud'>Fraud</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Gamex'>Gamex</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Gazon'>Gazon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Geinimi'>Geinimi</a>
+<span dir='ltr'>(11)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Gepew'>Gepew</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/ggtracker'>ggtracker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Godless'>Godless</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Godwon'>Godwon</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Gone%20in%2060'>Gone in 60</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Hacking%20team'>Hacking team</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/HeHe'>HeHe</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/HGSpy.A'>HGSpy.A</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Hideicon'>Hideicon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/HijackRAT'>HijackRAT</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/HTML'>HTML</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Hummingbad'>Hummingbad</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/iBanking'>iBanking</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/iKee'>iKee</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Inception'>Inception</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/infostealer'>infostealer</a>
+<span dir='ltr'>(19)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/instagram'>instagram</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/iOS'>iOS</a>
+<span dir='ltr'>(4)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/iphone'>iphone</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Jollyserv'>Jollyserv</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/KeyRaider%3B%20iOS'>KeyRaider; iOS</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Kmin'>Kmin</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Koler'>Koler</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Koler.C'>Koler.C</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Korean'>Korean</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/LeNa'>LeNa</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/LeNa.b'>LeNa.b</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Lien.A'>Lien.A</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/locker'>locker</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Loozfon'>Loozfon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Lotoor'>Lotoor</a>
+<span dir='ltr'>(4)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Luckycat'>Luckycat</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Malapp'>Malapp</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Marcher'>Marcher</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/MMarketPay'>MMarketPay</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/MobiDash'>MobiDash</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/modular'>modular</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Moghava'>Moghava</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/MouaBad.P'>MouaBad.P</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Mouabad.s'>Mouabad.s</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/mRat'>mRat</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Nickyspy'>Nickyspy</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/NotCompatible'>NotCompatible</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/NotCompatible.C'>NotCompatible.C</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Oldboot'>Oldboot</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Oldboot.B'>Oldboot.B</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/opfake'>opfake</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/OSX'>OSX</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/overlay'>overlay</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Phospy'>Phospy</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Phosty'>Phosty</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Pincer'>Pincer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/PJApps'>PJApps</a>
+<span dir='ltr'>(6)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Plankton'>Plankton</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/podec'>podec</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/poisoncake'>poisoncake</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/pokemonGo'>pokemonGo</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Proxy'>Proxy</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Qicsomos'>Qicsomos</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/ransomware'>ransomware</a>
+<span dir='ltr'>(8)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Repane'>Repane</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Roidsec'>Roidsec</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/root%20exploit'>root exploit</a>
+<span dir='ltr'>(6)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Rootsmart'>Rootsmart</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Russian'>Russian</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Samsapo.A'>Samsapo.A</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Sberbank'>Sberbank</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Scipiex'>Scipiex</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SecApk'>SecApk</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Selfmite'>Selfmite</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/simhosy'>simhosy</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Simplelocker'>Simplelocker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SimpleTemai'>SimpleTemai</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/simplocker'>simplocker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Sinpon'>Sinpon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Skullkey'>Skullkey</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/sm'>sm</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Smack'>Smack</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/sms'>sms</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMS%20worm'>SMS worm</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMS-trojan'>SMS-trojan</a>
+<span dir='ltr'>(20)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMSAgent.C'>SMSAgent.C</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMSbot-Google'>SMSbot-Google</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMSSilense'>SMSSilense</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SMSzombie'>SMSzombie</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SocialPath'>SocialPath</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/spad'>spad</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SpamSoldier'>SpamSoldier</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Spy%20App'>Spy App</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Spy%20banker'>Spy banker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Spyera'>Spyera</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/spyeye'>spyeye</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/spyware.'>spyware.</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Ssuci'>Ssuci</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/steek'>steek</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Stels'>Stels</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Stiniter'>Stiniter</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Sumzand'>Sumzand</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/SymbianOS'>SymbianOS</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Tascudap'>Tascudap</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Tetus'>Tetus</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/TGLoader'>TGLoader</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/The%20Interview'>The Interview</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Tigerbot'>Tigerbot</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Toll%20Fraud'>Toll Fraud</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/tools'>tools</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Tor'>Tor</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Triada'>Triada</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Uracto'>Uracto</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Usbcleaver'>Usbcleaver</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Uten'>Uten</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/vdloader'>vdloader</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Viber'>Viber</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/vmvol'>vmvol</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/waps'>waps</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Whatsup'>Whatsup</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/windows'>windows</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/wirelurker'>wirelurker</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Worm'>Worm</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Wroba'>Wroba</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/xbot'>xbot</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Xiny'>Xiny</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/xsser'>xsser</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/YiSpecter%3B%20iphone%3BiOS'>YiSpecter; iphone;iOS</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/YZHC'>YZHC</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Zerghelper'>Zerghelper</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/Zertsecurity'>Zertsecurity</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://contagiominidump.blogspot.it/search/label/zitmo'>zitmo</a>
+<span dir='ltr'>(3)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Subscribe' data-version='1' id='Subscribe2'>
+<div style='white-space:nowrap'>
+<h2 class='title'>Subscribe To</h2>
+<div class='widget-content'>
+<div class='subscribe-wrapper subscribe-type-POST'>
+<div class='subscribe expanded subscribe-type-POST' id='SW_READER_LIST_Subscribe2POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe2POST"));'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fcontagiominidump.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=http%3A%2F%2Fcontagiominidump.blogspot.com%2Ffeeds%2Fposts%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://contagiominidump.blogspot.com/feeds/posts/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+                  Atom
+                </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe2POST' onclick='return(_SW_toggleReaderList(event, "Subscribe2POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe2POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Posts
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div class='subscribe-wrapper subscribe-type-PER_POST'>
+<div class='subscribe expanded subscribe-type-PER_POST' id='SW_READER_LIST_Subscribe2PER_POST' style='display:none;'>
+<div class='top'>
+<span class='inner' onclick='return(_SW_toggleReaderList(event, "Subscribe2PER_POST"));'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+<div class='feed-reader-links'>
+<a class='feed-reader-link' href='https://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fcontagiominidump.blogspot.com%2Ffeeds%2F3571744422182508726%2Fcomments%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-netvibes.png'/>
+</a>
+<a class='feed-reader-link' href='https://add.my.yahoo.com/content?url=http%3A%2F%2Fcontagiominidump.blogspot.com%2Ffeeds%2F3571744422182508726%2Fcomments%2Fdefault' target='_blank'>
+<img src='https://img1.blogblog.com/img/widgets/subscribe-yahoo.png'/>
+</a>
+<a class='feed-reader-link' href='http://contagiominidump.blogspot.com/feeds/3571744422182508726/comments/default' target='_blank'>
+<img align='absmiddle' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+                  Atom
+                </a>
+</div>
+</div>
+<div class='bottom'></div>
+</div>
+<div class='subscribe' id='SW_READER_LIST_CLOSED_Subscribe2PER_POST' onclick='return(_SW_toggleReaderList(event, "Subscribe2PER_POST"));'>
+<div class='top'>
+<span class='inner'>
+<img class='subscribe-dropdown-arrow' src='https://img2.blogblog.com/img/widgets/arrow_dropdown.gif'/>
+<span onclick='return(_SW_toggleReaderList(event, "Subscribe2PER_POST"));'>
+<img align='absmiddle' alt='' border='0' class='feed-icon' src='https://img1.blogblog.com/img/icon_feed12.png'/>
+Comments
+</span>
+</span>
+</div>
+<div class='bottom'></div>
+</div>
+</div>
+<div style='clear:both'></div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Subscribe&widgetId=Subscribe2&action=editWidget&sectionId=sidebar-right-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Subscribe2"));' target='configSubscribe2' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='sidebar no-items section' id='sidebar-right-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='sidebar no-items section' id='sidebar-right-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class='sidebar no-items section' id='sidebar-right-3'></div>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot no-items section' id='footer-1'></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot no-items section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'><div class='widget FollowByEmail' data-version='1' id='FollowByEmail1'>
+<h2 class='title'>Follow by Email</h2>
+<div class='widget-content'>
+<div class='follow-by-email-inner'>
+<form action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("https://feedburner.google.com/fb/a/mailverify?uri=ContagioMobile", "popupwindow", "scrollbars=yes,width=550,height=520"); return true' target='popupwindow'>
+<table width='100%'>
+<tr>
+<td>
+<input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+</td>
+<td width='64px'>
+<input class='follow-by-email-submit' type='submit' value='Submit'/>
+</td>
+</tr>
+</table>
+<input name='uri' type='hidden' value='ContagioMobile'/>
+<input name='loc' type='hidden' value='en_US'/>
+</form>
+</div>
+</div>
+<span class='item-control blog-admin'>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=FollowByEmail&widgetId=FollowByEmail1&action=editWidget&sectionId=footer-2-2' onclick='return _WidgetManager._PopupConfig(document.getElementById("FollowByEmail1"));' target='configFollowByEmail1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</span>
+</div><div class='widget HTML' data-version='1' id='HTML6'>
+<div class='widget-content'>
+<script type="text/javascript">
+var FJHost = ((document.location.protocol == 'https:') ? 
+ "https://ssllog." : "http://log.");
+document.write(unescape("%3Cscript src='" + FJHost + 
+ "feedjit.com/pg/fj/2ee6cb4e354a5e75/'" + 
+ " type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try { var FJ = FJNew(); FJ.logHit(); } catch(err) {}
+</script>
+javascript:void(0)
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=HTML&widgetId=HTML6&action=editWidget&sectionId=footer-2-2' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML6"));' target='configHTML6' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' data-version='1' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+contagio 2011. Powered by <a href='https://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=5046096073918528715&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<!-- Place this tag in your head or just before your close body tag -->
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
+
+
+<!-- 'It is your responsibility to notify your visitors about cookies used on your blog. See http://www.blogger.com/go/cookiechoices for more details.' -->
+<script src="/js/cookiechoices.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function(event) {
+    window.cookieChoices && cookieChoices.showCookieConsentBar && cookieChoices.showCookieConsentBar(
+        (window.cookieOptions && cookieOptions.msg) || 'This site uses cookies from Google to deliver its services, to personalize ads and to analyze traffic. Information about your use of this site is shared with Google. By using this site, you agree to its use of cookies.',
+        (window.cookieOptions && cookieOptions.close) || 'Got it',
+        (window.cookieOptions && cookieOptions.learn) || 'Learn More',
+        (window.cookieOptions && cookieOptions.link) || 'https://www.blogger.com/go/blogspot-cookies');
+  });
+</script>
+
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/1016236460-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY4X7mmcwKPnyNjj-pzc4MwY4iQHCQ:1487271642829';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d5046096073918528715','//contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html','5046096073918528715');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '5046096073918528715', 'bloggerUrl': 'https://www.blogger.com', 'title': 'contagio mobile', 'pageType': 'item', 'postId': '3571744422182508726', 'url': 'http://contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html', 'canonicalUrl': 'http://contagiominidump.blogspot.com/2013/07/trracer-commercial-spyware-pua-samples.html', 'homepageUrl': 'http://contagiominidump.blogspot.it/', 'searchUrl': 'http://contagiominidump.blogspot.it/search', 'canonicalHomepageUrl': 'http://contagiominidump.blogspot.com/', 'blogspotFaviconUrl': 'http://contagiominidump.blogspot.it/favicon.ico', 'hasCustomDomain': false, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': '', 'useUniversalAnalytics': false, 'pageName': 'TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS', 'pageTitle': 'contagio mobile: TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22contagio mobile - Atom\x22 href\x3d\x22http://contagiominidump.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22contagio mobile - RSS\x22 href\x3d\x22http://contagiominidump.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22contagio mobile - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/5046096073918528715/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22contagio mobile - Atom\x22 href\x3d\x22http://contagiominidump.blogspot.com/feeds/3571744422182508726/comments/default\x22 /\x3e\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s72-c/icon.png', 'postImageUrl': 'http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png', 'mobileHeadScript': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/4111605327-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/eff5653f58240139', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Google+', 'key': 'googlePlus', 'shareMessage': 'Share to Google+', 'target': 'googleplus'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}}}, {'name': 'features', 'data': {'enhancedSourcesets': 'false', 'unsupported_browser_message': 'false'}}, {'name': 'messages', 'data': {'linkCopiedToClipboard': 'Link copied to clipboard!', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'TRracer - commercial spyware / PUA samples for Android, Blackberry, SymbOS, iOS', 'description': '   Riskware/Killmob!Android&#160;   Riskware/Killmob!Blackberry   Riskware/Killmob!SymbOS   Riskware/Killmob!iOS   Commercial spyware.  Functiona...', 'featuredImage': 'http://1.bp.blogspot.com/-YQg96khIDYc/UeHCbkItqYI/AAAAAAAAIMk/O6okT5Ha164/s1600/icon.png', 'url': 'http://contagiominidump.blogspot.it/2013/07/trracer-commercial-spyware-pua-samples.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isSearch': false, 'isLabelSearch': false, 'postId': 3571744422182508726}}]);
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'crosscol', null, document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '3571744422182508726', 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/1130279207-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar-right-1', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'sidebar-right-1', null, document.getElementById('Image1'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar-right-1', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-right-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'sidebar-right-1', null, document.getElementById('BlogList1'), {'numItemsToShow': 0, 'totalItems': 10}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML7', 'sidebar-right-1', null, document.getElementById('HTML7'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar-right-1', null, document.getElementById('Text1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'sidebar-right-1', null, document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar-right-1', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_SubscribeView', new _WidgetInfo('Subscribe2', 'sidebar-right-1', null, document.getElementById('Subscribe2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail1', 'footer-2-2', null, document.getElementById('FollowByEmail1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'footer-2-2', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

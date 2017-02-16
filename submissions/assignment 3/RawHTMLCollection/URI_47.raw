@@ -1,0 +1,339 @@
+RAW HTML FOR: http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>Heuristics to detect malware distributed via Web | Unintended Results</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://joxeankoret.com/blog/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://joxeankoret.com/blog/wp-content/themes/twentytwelve/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Unintended Results &raquo; Feed" href="http://joxeankoret.com/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unintended Results &raquo; Comments Feed" href="http://joxeankoret.com/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unintended Results &raquo; Heuristics to detect malware distributed via Web Comments Feed" href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/joxeankoret.com\/blog\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='twentytwelve-fonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='twentytwelve-style-css'  href='http://joxeankoret.com/blog/wp-content/themes/twentytwelve/style.css?ver=4.7.2' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='http://joxeankoret.com/blog/wp-content/themes/twentytwelve/css/ie.css?ver=20121010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://joxeankoret.com/blog/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://joxeankoret.com/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='http://joxeankoret.com/blog/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://joxeankoret.com/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://joxeankoret.com/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='A vulnerability that wasn&#8217;t' href='http://joxeankoret.com/blog/2014/05/02/a-vulnerability-that-wasnt/' />
+<link rel='next' title='Diaphora, a program diffing plugin for IDA Pro' href='http://joxeankoret.com/blog/2015/03/13/diaphora-a-program-diffing-plugin-for-ida-pro/' />
+<meta name="generator" content="WordPress 4.7.2" />
+<link rel="canonical" href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/" />
+<link rel='shortlink' href='http://joxeankoret.com/blog/?p=12562' />
+<link rel="alternate" type="application/json+oembed" href="http://joxeankoret.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjoxeankoret.com%2Fblog%2F2014%2F08%2F19%2Fheuristics-to-detect-malware-distributed-via-web%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://joxeankoret.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fjoxeankoret.com%2Fblog%2F2014%2F08%2F19%2Fheuristics-to-detect-malware-distributed-via-web%2F&#038;format=xml" />
+<link rel="stylesheet" type="text/css" href="http://joxeankoret.com/blog/wp-content/plugins/highlight-source-pro/all.css" /><!--[if IE]><link rel="stylesheet" type="text/css" href="http://joxeankoret.com/blog/wp-content/plugins/highlight-source-pro/ie.css" /><![endif]--><script type="text/javascript">
+(function(url){
+	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+	var addEvent = function(evt, handler) {
+		if (window.addEventListener) {
+			document.addEventListener(evt, handler, false);
+		} else if (window.attachEvent) {
+			document.attachEvent('on' + evt, handler);
+		}
+	};
+	var removeEvent = function(evt, handler) {
+		if (window.removeEventListener) {
+			document.removeEventListener(evt, handler, false);
+		} else if (window.detachEvent) {
+			document.detachEvent('on' + evt, handler);
+		}
+	};
+	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+	var logHuman = function() {
+		var wfscr = document.createElement('script');
+		wfscr.type = 'text/javascript';
+		wfscr.async = true;
+		wfscr.src = url + '&r=' + Math.random();
+		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+		for (var i = 0; i < evts.length; i++) {
+			removeEvent(evts[i], logHuman);
+		}
+	};
+	for (var i = 0; i < evts.length; i++) {
+		addEvent(evts[i], logHuman);
+	}
+})('//joxeankoret.com/blog/?wordfence_logHuman=1&hid=A6614BF36CCFED6AE319F53FFDC4C99C');
+</script></head>
+
+<body class="post-template-default single single-post postid-12562 single-format-standard custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="http://joxeankoret.com/blog/" title="Unintended Results" rel="home">Unintended Results</a></h1>
+			<h2 class="site-description">Or maybe not</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+			<div class="nav-menu"><ul>
+<li ><a href="http://joxeankoret.com/blog/">Home</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+			
+				
+	<article id="post-12562" class="post-12562 post type-post status-publish format-standard hentry category-uncategorized">
+				<header class="entry-header">
+			
+						<h1 class="entry-title">Heuristics to detect malware distributed via Web</h1>
+										<div class="comments-link">
+					<a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#comments">4 Replies</a>				</div><!-- .comments-link -->
+					</header><!-- .entry-header -->
+
+				<div class="entry-content">
+			<p>Two years ago I started a project, for fun, to try to catch as much malware and URLs related to malware as possible. I have written about <a href="http://joxeankoret.com/blog/2012/08/25/finding-malware-spam-in-twitter/">this</a> <a href="http://joxeankoret.com/blog/2013/01/26/malware-urls/">before</a>. In this post I&#8217;ll explain the heuristics I use for trying to classify URLs as malicious with &#8220;Malware Intelligence&#8221; (the name of the system that generates the daily <a href="http://malwareurls.joxeankoret.com">Malware URLs feed</a>). What a normal user sees in any of the 2 text files offered are simply domains or URLs that I classified as &#8220;malicious&#8221;. But, how does &#8220;Malware Intelligence&#8221; classifies them as malicious? What heuristics, techniques, etc&#8230; does it use?</p>
+<p><span id="more-12562"></span></p>
+<p><b>Malware Intelligence</b></p>
+<p>The server processes in Malware Intelligence take URLs from many sources for later analysis. Some sources are public and others are not. Each URL is put in a queue and, from time to time, a process called &#8220;URLAna&#8221; performs some checks to determine if the URL seems to be malicious or not. The tool URLAna will call smaller tools that will return a score: a score bigger than 0 means that something was found. A score of 0, nothing bad was found. If after running each mini-tool against the URL or domain its score is bigger than 4, then, the URL is considered &#8220;malicious&#8221;. I do not use negative scores at all because I consider them a bad idea (for this project).</p>
+<p>Both hourly and daily, statistics are gathered about the number of URLs detected, when, how, etc&#8230; These statistics and many more features can be seen in the (private) Malware Intelligence&#8217;s web page. Let&#8217;s see one graphic from the statistics web page about the number of URLs classified as malicious by each heuristic before actually explaining them:</p>
+<div id="attachment_12570" style="width: 681px" class="wp-caption aligncenter"><a href="http://joxeankoret.com/blog/wp-content/uploads/2014/08/heur_stats.png"><img class="size-full wp-image-12570" src="http://joxeankoret.com/blog/wp-content/uploads/2014/08/heur_stats.png" alt="Heuristics statistics" width="671" height="401" srcset="http://joxeankoret.com/blog/wp-content/uploads/2014/08/heur_stats.png 671w, http://joxeankoret.com/blog/wp-content/uploads/2014/08/heur_stats-300x179.png 300w, http://joxeankoret.com/blog/wp-content/uploads/2014/08/heur_stats-624x372.png 624w" sizes="(max-width: 671px) 100vw, 671px" /></a><p class="wp-caption-text">Statistics for each heuristic used by the Malware Intelligence&#8217;s process URLAna.</p></div>
+<p><strong>Unknown domain</strong></p>
+<p>As we can see in the picture, the heuristic that catches more bad URLs is &#8220;Unknown domain&#8221;: typically ~60% of URLs. This heuristic simply does the following:</p>
+<ul>
+<li>Download the Alexa&#8217;s Top 1 Million domains and save them to a database.</li>
+<li>Add (but do not delete) new domains daily.</li>
+<li>Possible false positives and manually excluded domains goes also to this table.</li>
+<li>When URLAna calls this process I simply check if the domain is in this daily updated table. If it isn&#8217;t, I consider it &#8220;suspicious&#8221; and give back a score of 1.</li>
+</ul>
+<p>This heuristic doesn&#8217;t say that anything is bad. It simply says that &#8220;this is unknown and could be bad&#8221;. However, in my experience, blocking domains outside the Alexa&#8217;s Top 1 Million blocks more than 60% of distributed malware.</p>
+<p>And, well, this is how I can &#8220;detect&#8221; more than half of the malicious URLs Malware Intelligence processes daily. Let&#8217;s continue with the next high scoring heuristic: &#8220;Thirdy Party Services&#8221;.</p>
+<p><strong>Thirdy party services</strong></p>
+<p>This heuristic uses 3rd party services, as it&#8217;s clear from its name. Namely, the following:</p>
+<ol>
+<li><a href="http://www.surbl.org/">Surbl:</a> Extracted from their web: &#8220;<span style="color: #000000;">SURBLs are lists of </span><cite style="color: #000000;">web sites</cite><span style="color: #000000;"> that have appeared in unsolicited messages</span>&#8220;. This service offers an API I use to check if the domain is &#8220;bad&#8221;. If Surbl reports &#8220;something&#8221; about the URL, a score of 1 is added to the URLs.</li>
+<li><a href="http://www.spamhaus.org/">SpamHaus</a>: This is a well known service for downloading long lists of known spammers but, also, they add to the lists malware domains. As with Surbl, it exports an API that I use to check if the domain is considered &#8220;bad&#8221;. If so, it scores +1.</li>
+<li><a href="https://developers.google.com/safe-browsing/">Google Safe Browsing</a>: This is a Google project that let&#8217;s you check if one URL or domain is/was considered bad by their own automated malware analysis systems. As with the previous cases, they export an API that I make use of. However, GSB is more focused on malware than in spam and, as so, I add, directly, a score of 4 points if GSB says that something was found for that URL.</li>
+</ol>
+<p>And that&#8217;s all about this easy to implement mini tool. This heuristic is the 2nd one detecting malicious URLs. However, compare the percentages: the &#8220;unknown domain&#8221; rule detects ~60% of malicious URLs, this one ~15%. Notice the difference? Each time you add a new heuristic to detect more malicious URLs you will discover that the amount of work required for adding only a few ones is huge (and I&#8217;m ignoring the fact that there is actually <strong>a lot of work</strong> behind all these 3 services) Don&#8217;t believe me? Let&#8217;s continue seeing more heuristics, some rather easy and others not <em>that</em> easy and comparing the results&#8230;</p>
+<p><strong>Obfuscated domain (or URL)</strong></p>
+<p>The 3rd one at the podium is this rule. It&#8217;s as simply as the following: if the URL or the domain are obfuscated, then its score is increased by 1. Simple, isn&#8217;t it? Yes, as soon as you have defined &#8220;what is obfuscated&#8221; and coded it. In my case, I simply make use of 2 not so complex rules:</p>
+<ol>
+<li>If there are more than 6 continuous vowels or consonants, I consider it obfuscated. In either the domain, sub-domain or in the URI.</li>
+<li>For domains longer than 8 characters if the set with the minimum of either vowels or consonants multiplied by 3 and adding 2 is lower than the total of the other set, I consider it malicious.</li>
+</ol>
+<p>Complicated? Not so complex when you have 40 million known bad URLs to test with. Hard at first: this is one of the first heuristics I added and one of the more I modified. At first. Why? Let&#8217;s take a look to one good URL from Google:</p>
+<p>https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm</p>
+<p>This (damn) URL is the link for the Web Developer extension for Chrome. One question: do you consider this URL obfuscated or not? I would say yes. Is malicious? No.</p>
+<p><strong>Content analysis: packed file</strong></p>
+<p>The 4th heuristic(s) at the top is this one. This heuristic, only applied for PE and ELF files analyses with <a href="http://pyew.googlecode.com">Pyew</a> the program (by the way, a URL pointing directly to a program automatically scores +1) and determines if it&#8217;s:</p>
+<ol>
+<li>Packed.</li>
+<li>Packed and obfuscated.</li>
+</ol>
+<p>Pyew already have one of these heuristic implemented (the obfuscation related one). The other heuristic use is implemented (only for PE files) by the Python library <a href="https://code.google.com/p/pefile/">pefile</a>, by Ero Carrera. There is no magic here: a somewhat &#8220;big&#8221; binary with very little functions or with code that when analysing produces too many errors and, still, have one, a few or even no detected function at all is considered probably bad. If the application is &#8220;packed&#8221;, its score is increased by 1. If it&#8217;s obfuscated, by 2. However, this heuristic, the one that tries to detect obfuscation (and anti-emulations, etc&#8230;), catches like ~50 files per day. Only. Do you want to enhance it to also detect anti-disassembling, for example? Perhaps you get 51 files per day. It can be that my heuristic is bad but I would not recommend spending too much time on it.</p>
+<p><strong>ClamAV found malware</strong></p>
+<p>As simply as it sounds: ClamAV found malware in the contents of that URL. That&#8217;s all, it simply adds 3 points to the total score in case something was found. I use the Python bindings for ClamAV called <a href="https://pypi.python.org/pypi/pyClamd/">pyclamd</a>. I can use one more AV engines/products. Or perhaps a lot of them. Or perhaps another 3rd party &#8220;free&#8221; service like <a href="https://www.metascan-online.com/">OpSwat Metascan</a> (or <a href="http://www.virustotal.com">VirusTotal</a>, which is better) but&#8230; how many URLs are detected this way? A big number of them but not so many. Do you want to add also false positives from more than one AV vendor? I don&#8217;t. But this is only my opinion.</p>
+<p><strong>Similar malware</strong></p>
+<p>This heuristic uses a set of algorithms to cluster unknown malware executables (PE &amp; ELF). It uses Pyew and the algorithms implemented in the Pyew&#8217;s tool <a href="https://code.google.com/p/pyew/source/browse/gcluster.py">gcluster</a>. If the file (contents) under analysis is an executable file and via these graph based malware clusterization algorithms it looks too similar (or equal) to a previously known malware I add 3 points to the score of the URL. &lt;SPAM&gt;Similar but more new and advanced algorithms were implemented in the <a href="https://camal.coseinc.com">CAMAL</a> <a href="https://camal.coseinc.com/publish/cluster_kryptik_one_not_detected.html">clustering</a> <a href="https://camal.coseinc.com/publish/cluster_infected_goodware.html">engine</a>, a commercial product&lt;/SPAM&gt;.</p>
+<p>While this heuristic is working, take a look to the percentage of new malware URLs discovered: 3.5% of the total. A lot of work for just the 3.5%. May be it&#8217;s a problem of my algorithms, I don&#8217;t know. But&#8230; I don&#8217;t think.</p>
+<p><strong>Similar domain</strong></p>
+<p>A rather simplistic, even when it seems not, heuristic: if the domain looks too similar to one domain in the first 100.000 records of the Alexa&#8217;s Top 1 Million the score is increased by 1. Why? What about a domain named yutuve? What about guugle? Likely being used in a phising campaign or distributing malware.</p>
+<p>At first the heuristic used a pure Python implementation of the <a href="https://pypi.python.org/pypi/soundex/1.0">soundex algorithm</a>. After a while I switched to the SOUNDEX function in MySQL. Results of this heuristic: 3.3%. At least it wasn&#8217;t that hard to implement&#8230;</p>
+<p><strong>All the other heuristics</strong></p>
+<p>There are other 2 heuristics I implemented, I still use but I do no maintain and I have no interest in maintaining them at all:</p>
+<ol>
+<li>Suspicious JavaScript. Basically, a pattern matching technique finding for &#8220;eval&#8221;, &#8220;document.write&#8221;, &#8220;setInterval&#8221;, &#8220;unescape&#8221;, etc&#8230; If the patterns are discovered the score is increased by 1. I decided not to loose time adding more &#8220;advanced&#8221; malicious JavaScript heuristics. The reason? Because it would require a lot of work that must be updated daily. Too much work for a &#8220;just for fun&#8221; project.</li>
+<li>Known bad URL parameter. Pattern matching, again. During some time I had a system to group and extract some of the most common special URL parameter and file names and then use them as another evidence. I do not maintain this list any more for the same reasons as the previous heuristic. If you want to see some examples: the rules &#8220;/bot.exe&#8221; or &#8220;/.*(update|install).*flash.*player.*\.exe&#8221; were the ones finding more samples.</li>
+</ol>
+<p><strong>Conclusions and possible future work</strong></p>
+<p>Detecting malicious content is not easy and requires a lot of work. Detecting more than 50% of the (dumb) malicious URLs and samples is easy. Detecting something bigger than 70% is a big work. Detecting something similar to 75% requires, in my very subjective opinion, more effort than what you spent for detecting all the previous 70% of samples. If you ever blamed $AV for not detecting this or that relatively new malware sample, please think about all the work that must be done to catch that new family.</p>
+<p>As for possible future improvements of Malware Intelligence, if at all, I&#8217;m thinking about integrating one more tool of mine: <a href="https://github.com/joxeankoret/multiav">MultiAV</a>. It&#8217;s a simple interface to various AV products using the command line scanners to get the detection over a file, directory, etc&#8230; Also, I have other heuristics on mind, but no one of them is easy and this is a project that I do during my spare time when I feel like spending some hours on it.</p>
+<p>The source code for URLAna, as an independent tool, will be published (once I clean it up and all the code specific to my system is removed) in the next months (when I have time). In any case, with all the details given in this blog post one can implement it (surely better than my prototype-that-grown-a-lot) easily.</p>
+<p>I hope you liked this post and that you find it useful. Perhaps it may even help you improving your analysis systems or you can borrow some ideas for another project 😉 Also, if you have any idea to improve that system I would be very happy to read/heard about it 🙂</p>
+<p>Cheers!</p>
+<p>&nbsp;</p>
+					</div><!-- .entry-content -->
+		
+		<footer class="entry-meta">
+			This entry was posted in <a href="http://joxeankoret.com/blog/category/uncategorized/" rel="category tag">Uncategorized</a> on <a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/" title="6:11 pm" rel="bookmark"><time class="entry-date" datetime="2014-08-19T18:11:01+00:00">August 19, 2014</time></a><span class="by-author"> by <span class="author vcard"><a class="url fn n" href="http://joxeankoret.com/blog/author/joxean/" title="View all posts by joxean" rel="author">joxean</a></span></span>.								</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+
+				<nav class="nav-single">
+					<h3 class="assistive-text">Post navigation</h3>
+					<span class="nav-previous"><a href="http://joxeankoret.com/blog/2014/05/02/a-vulnerability-that-wasnt/" rel="prev"><span class="meta-nav">&larr;</span> A vulnerability that wasn&#8217;t</a></span>
+					<span class="nav-next"><a href="http://joxeankoret.com/blog/2015/03/13/diaphora-a-program-diffing-plugin-for-ida-pro/" rel="next">Diaphora, a program diffing plugin for IDA Pro <span class="meta-nav">&rarr;</span></a></span>
+				</nav><!-- .nav-single -->
+
+				
+<div id="comments" class="comments-area">
+
+	
+			<h2 class="comments-title">
+			4 thoughts on &ldquo;<span>Heuristics to detect malware distributed via Web</span>&rdquo;		</h2>
+
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-14542">
+		<article id="comment-14542" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/30fb081232d18facc948af097fd33850?s=44&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/30fb081232d18facc948af097fd33850?s=88&amp;d=mm&amp;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Txalin</b> </cite><a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#comment-14542"><time datetime="2014-08-22T08:32:25+00:00">August 22, 2014 at 8:32 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Very good article, i found some ideas from your work to be applied, thanks!! And also, some suggestions if you don&#8217;t mind 😛</p>
+<p>Regarding the Third party services, i suggest you as an improve what i do in my custom blacklist (private use only, too ugly to show in public). What i do in first steps is to check URL against <a href="http://www.urlvoid.com" rel="nofollow">http://www.urlvoid.com</a> and assign weights based on the number of detections (if it has been detected by just one blacklist == weight 1, if has been detected by 10 blacklists == weight 10, etc&#8230; ), and also i do the same with virustotal. The main idea is to avoid trigger the alarm if one url has been detected by just one av engine. Overall i could say that it works quite well.</p>
+<p>Regards</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-20797">
+		<article id="comment-20797" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/a72e83ed56c110b41beef3d4b6041e83?s=44&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a72e83ed56c110b41beef3d4b6041e83?s=88&amp;d=mm&amp;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Ajit kumar</b> </cite><a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#comment-20797"><time datetime="2014-09-07T13:48:46+00:00">September 7, 2014 at 1:48 pm</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hi Joxean Koret,</p>
+<p>Very nice and detail article. I am working on similar tasks.</p>
+<p>So thinking to give a try to implement this.</p>
+<p>With Regards.<br />
+Ajit</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-64755">
+		<article id="comment-64755" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/e30b38f7533fe027deca939d0bedea9f?s=44&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e30b38f7533fe027deca939d0bedea9f?s=88&amp;d=mm&amp;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">Borja</b> </cite><a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#comment-64755"><time datetime="2015-01-02T07:39:35+00:00">January 2, 2015 at 7:39 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>Hi Joxean,<br />
+I&#8217;m developing a similar system for find malware urls. I get the urls form twitter, youtube and google plus, but i don&#8217;t find malware url only 1 or 2 in a week. If you can say me your url sources, i wil be very grateful. </p>
+<p>Thanks, and  i think that this is an amazing job.</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-133951">
+		<article id="comment-133951" class="comment">
+			<header class="comment-meta comment-author vcard">
+				<img alt='' src='http://0.gravatar.com/avatar/078e1f0b96724ea798ce0e29eaaa5c07?s=44&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/078e1f0b96724ea798ce0e29eaaa5c07?s=88&amp;d=mm&amp;r=g 2x' class='avatar avatar-44 photo' height='44' width='44' /><cite><b class="fn">chen</b> </cite><a href="http://joxeankoret.com/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#comment-133951"><time datetime="2016-12-25T07:16:47+00:00">December 25, 2016 at 7:16 am</time></a>			</header><!-- .comment-meta -->
+
+			
+			<section class="comment-content comment">
+				<p>hi&#8217; very nice article, can you please explain me the test you used for Obfuscated domain (or URL)<br />
+thanks</p>
+							</section><!-- .comment-content -->
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+	</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+		
+	
+		<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/2014/08/19/heuristics-to-detect-malware-distributed-via-web/#respond" style="display:none;">Cancel reply</a></small></h3>			<form action="http://joxeankoret.com/blog/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+				<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="text" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='12562' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a8330249b6" /></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="185"/></p>			</form>
+			</div><!-- #respond -->
+	
+</div><!-- #comments .comments-area -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+			<aside id="linkcat-2" class="widget widget_links"><h3 class="widget-title">Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://blog.48bits.com">48bits</a></li>
+<li><a href="http://www.reversemode.com">Reverse Mode</a></li>
+
+	</ul>
+</aside>
+<aside id="meta-3" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://joxeankoret.com/blog/wp-login.php">Log in</a></li>
+			<li><a href="http://joxeankoret.com/blog/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://joxeankoret.com/blog/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside><aside id="tag_cloud-3" class="widget widget_tag_cloud"><h3 class="widget-title">Tags</h3><div class="tagcloud"><a href='http://joxeankoret.com/blog/tag/abstract-syntax-tree/' class='tag-link-27 tag-link-position-1' title='1 topic' style='font-size: 8pt;'>abstract syntax tree</a>
+<a href='http://joxeankoret.com/blog/tag/antiemulation/' class='tag-link-17 tag-link-position-2' title='1 topic' style='font-size: 8pt;'>antiemulation</a>
+<a href='http://joxeankoret.com/blog/tag/ast-checkers/' class='tag-link-28 tag-link-position-3' title='1 topic' style='font-size: 8pt;'>ast checkers</a>
+<a href='http://joxeankoret.com/blog/tag/bug-finding-tools/' class='tag-link-26 tag-link-position-4' title='1 topic' style='font-size: 8pt;'>bug finding tools</a>
+<a href='http://joxeankoret.com/blog/tag/deeptoad/' class='tag-link-42 tag-link-position-5' title='1 topic' style='font-size: 8pt;'>DeepToad</a>
+<a href='http://joxeankoret.com/blog/tag/exploiting-techniques/' class='tag-link-33 tag-link-position-6' title='1 topic' style='font-size: 8pt;'>exploiting techniques</a>
+<a href='http://joxeankoret.com/blog/tag/fuzzy-hashing/' class='tag-link-41 tag-link-position-7' title='1 topic' style='font-size: 8pt;'>Fuzzy hashing</a>
+<a href='http://joxeankoret.com/blog/tag/idapro/' class='tag-link-32 tag-link-position-8' title='1 topic' style='font-size: 8pt;'>IDAPro</a>
+<a href='http://joxeankoret.com/blog/tag/malware/' class='tag-link-40 tag-link-position-9' title='3 topics' style='font-size: 22pt;'>Malware</a>
+<a href='http://joxeankoret.com/blog/tag/obfuscated/' class='tag-link-21 tag-link-position-10' title='1 topic' style='font-size: 8pt;'>obfuscated</a>
+<a href='http://joxeankoret.com/blog/tag/oracle/' class='tag-link-5 tag-link-position-11' title='1 topic' style='font-size: 8pt;'>Oracle</a>
+<a href='http://joxeankoret.com/blog/tag/pdf/' class='tag-link-19 tag-link-position-12' title='1 topic' style='font-size: 8pt;'>pdf</a>
+<a href='http://joxeankoret.com/blog/tag/pin/' class='tag-link-45 tag-link-position-13' title='1 topic' style='font-size: 8pt;'>PIN</a>
+<a href='http://joxeankoret.com/blog/tag/pyew/' class='tag-link-38 tag-link-position-14' title='1 topic' style='font-size: 8pt;'>pyew</a>
+<a href='http://joxeankoret.com/blog/tag/reverse-engineering/' class='tag-link-43 tag-link-position-15' title='1 topic' style='font-size: 8pt;'>Reverse Engineering</a>
+<a href='http://joxeankoret.com/blog/tag/static-analysis/' class='tag-link-25 tag-link-position-16' title='1 topic' style='font-size: 8pt;'>static analysis</a>
+<a href='http://joxeankoret.com/blog/tag/tools/' class='tag-link-16 tag-link-position-17' title='1 topic' style='font-size: 8pt;'>tools</a>
+<a href='http://joxeankoret.com/blog/tag/vulnerabilities/' class='tag-link-44 tag-link-position-18' title='2 topics' style='font-size: 16.4pt;'>vulnerabilities</a></div>
+</aside>		</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+						<a href="https://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type='text/javascript' src='http://joxeankoret.com/blog/wp-content/plugins/akismet/_inc/form.js?ver=3.2'></script>
+<script type='text/javascript' src='http://joxeankoret.com/blog/wp-content/themes/twentytwelve/js/navigation.js?ver=20140711'></script>
+<script type='text/javascript' src='http://joxeankoret.com/blog/wp-includes/js/wp-embed.min.js?ver=4.7.2'></script>
+</body>
+</html>

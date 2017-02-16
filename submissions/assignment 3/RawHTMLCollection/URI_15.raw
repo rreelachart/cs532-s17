@@ -1,0 +1,872 @@
+RAW HTML FOR: http://blog.sqrrl.com/the-threat-hunting-reference-model-part-2-the-hunting-loop
+<!doctype html><!-- start coded_template: id:358937273 path:generated_layouts/362440045.html --><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en">        <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en">               <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="George Aquila">
+    <meta name="description" content="In part 2 of our cyber threat hunting reference model series we dive into the hunting loop, a four-stage process to find hidden threats proactively">
+    <meta name="generator" content="HubSpot">
+    <title>The Threat Hunting Reference Model Part 2: The Hunting Loop</title>
+    <link rel="shortcut icon" href="http://blog.sqrrl.com/hs-fs/hub/305377/file-360886677-ico/favicon-1.ico?t=1487189727753">
+
+    
+    
+    <script src="https://static.hsstatic.net/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script>
+    <script type="text/javascript">hsjQuery = window['jQuery']</script>
+    <link href="https://static.hsstatic.net/content_shared_assets/static-1.4036/css/public_common.css" rel="stylesheet">
+    <meta property="og:description" content="In part 2 of our cyber threat hunting reference model series we dive into the hunting loop, a four-stage process to find hidden threats proactively">
+    <meta property="og:title" content="The Threat Hunting Reference Model Part 2: The Hunting Loop">
+    <meta name="twitter:description" content="In part 2 of our cyber threat hunting reference model series we dive into the hunting loop, a four-stage process to find hidden threats proactively">
+    <meta name="twitter:title" content="The Threat Hunting Reference Model Part 2: The Hunting Loop">
+
+
+    
+    
+
+    
+<!--  Added by GoogleAnalytics integration -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39119828-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<!-- /Added by GoogleAnalytics integration -->
+
+    
+
+
+    <!--[if lt IE 9]>
+    <script src="https://static.hsstatic.net/content_shared_assets/static-1.4036/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Roboto:400,100,700,500,300,900italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+<meta property="og:image" content="http://cdn2.hubspot.net/hubfs/305377/HuntingLoopBlack.png#keepProtocol">
+<meta name="twitter:image" content="http://cdn2.hubspot.net/hubfs/305377/HuntingLoopBlack.png#keepProtocol">
+
+<meta property="og:url" content="http://blog.sqrrl.com/the-threat-hunting-reference-model-part-2-the-hunting-loop">
+
+<link rel="canonical" href="http://blog.sqrrl.com/the-threat-hunting-reference-model-part-2-the-hunting-loop">
+
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="http://blog.sqrrl.com/rss.xml">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="blog.sqrrl.com">
+<meta name="twitter:site" content="@SqrrlData">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<link href="//cdn2.hubspot.net/hub/-1/hub_generated/style_manager/1472825336927/hubspot_default/shared/responsive/layout.min.css" rel="stylesheet">
+<link href="http://blog.sqrrl.com/hs-fs/hub/305377/hub_generated/style_manager/1420345159398/custom/styles/default/hs_default_custom_style.min.css" rel="stylesheet">
+<link rel="stylesheet" href="http://blog.sqrrl.com/hs-fs/hub/305377/hub_generated/style_manager/1387820628141/custom/page/custom-stylemanager/Sqrrl_Theme.min.css">
+<link rel="stylesheet" href="http://blog.sqrrl.com/hs-fs/hub/305377/hub_generated/template_assets/1480367849880/custom/page/web_page_basic/header_style.min.css">
+
+
+
+    <!-- The style tag has been deprecated. Attached stylesheets are included in the required_head_tags page variable. -->
+
+
+</head>
+<body class="   hs-content-id-3456359514 hs-blog-post hs-content-path-the-threat-hunting-reference-model-part-2-the-hunt hs-content-name-the-threat-hunting-reference-model-part-2-the-hunt hs-blog-name-main-blog hs-blog-id-599291371" style="">
+    <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+                <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:360939437 path:generated_global_groups/358932463.html -->
+<div class="" data-global-widget-path="generated_global_groups/358932463.html">        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div class="span6 widget-span widget-type-rich_text custom_header_logo" style="" data-widget-type="rich_text" data-x="0" data-w="6">
+                <div class="cell-wrapper layout-widget-wrapper">
+                    <span id="hs_cos_wrapper_module_13826777134773" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><div><a href="http://sqrrl.com" target="_blank" data-mce-target="_blank"><img style="float: left;" src="http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=180&amp;height=60&amp;name=logo.jpg" alt="logo" width="180" height="60" align="left" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=90&amp;height=30&amp;name=logo.jpg 90w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=180&amp;height=60&amp;name=logo.jpg 180w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=270&amp;height=90&amp;name=logo.jpg 270w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=360&amp;height=120&amp;name=logo.jpg 360w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=450&amp;height=150&amp;name=logo.jpg 450w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356646094-jpg/images/logo.jpg?t=1487189727753&amp;width=540&amp;height=180&amp;name=logo.jpg 540w" sizes="(max-width: 180px) 100vw, 180px"></a></div>
+<p><br>Target. Hunt. Disrupt.</p></span>
+                </div><!--end layout-widget-wrapper -->
+            </div><!--end widget-span -->
+            <div class="span6 widget-span widget-type-rich_text custom_header_links" style="" data-widget-type="rich_text" data-x="6" data-w="6">
+                <div class="cell-wrapper layout-widget-wrapper">
+                    <span id="hs_cos_wrapper_module_13826777134785" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p style="text-align: left;"><span style="color: #000000;"><a href="http://blog.sqrrl.com/" target="_blank"><span style="color: #000000;">BLOG</span></a>&nbsp;<a href="http://sqrrl.com/call-to-action/demo/" target="_blank"><span style="color: #000000;">REQUEST A DEMO</span></a>&nbsp;<a href="http://info.sqrrl.com/trial-software-vm-1"><span style="color: #000000;">TEST DRIVE VM</span></a>&nbsp;<a href="http://sqrrl.com/company/contact-us/" target="_blank"><span style="color: #000000;">CONTACT US</span></a><span style="font-size: 13px;">&nbsp;</span><a style="font-size: inherit;" href="http://sqrrl.com/company/blog/" target="_blank"><span style="color: #000000;"><br></span></a></span></p></span>
+                </div><!--end layout-widget-wrapper -->
+            </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+        <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+        <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-menu custom_header_menu" style="" data-widget-type="menu" data-x="0" data-w="12">
+                <div class="cell-wrapper layout-widget-wrapper">
+                    <span id="hs_cos_wrapper_module_13826777134786" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_13826777134786" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="Custom Header Menu">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="http://sqrrl.com/" target="_blank">Home</a></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/product/sqrrl-enterprise">Product</a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/product/sqrrl-enterprise/">Sqrrl Enterprise</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://info.sqrrl.com/trial-software-vm">Test Drive VM</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/product/architecture/">Technology</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/solutions/use-cases/">Solutions</a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children"><a href="http://sqrrl.com/solutions/use-cases/">Use Cases</a>
+     <ul class="hs-menu-children-wrapper">
+      <li class="hs-menu-item hs-menu-depth-3"><a href="http://sqrrl.com/solutions/cyber-threat-hunting/">Cyber Threat Hunting</a></li>
+     </ul></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/partners/">Partners</a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/partners">Technology</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/partners">Service</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/services/sqrrl-enterprise-support/">Services</a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/services/sqrrl-enterprise-support/">Sqrrl Enterprise Support</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/services/consulting/">Consulting</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/resources/ask-an-expert/">Resources </a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/resources/ask-an-expert#videos">Videos</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/ask-an-expert/#webinars">Webinars</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/resources/ask-an-expert#datasheets">Datasheets</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/resources/ask-an-expert#paper">Papers</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/resources/ask-an-expert#presentation">Presentations</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/resources/ask-an-expert#quickstart">Quickstarts</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children"><a href="http://sqrrl.com/company/overview/">Company</a>
+   <ul class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/company/overview/">Overview</a></li>
+    <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children"><a href="http://staging.sqrrl.com/company/team/management">Team</a>
+     <ul class="hs-menu-children-wrapper">
+      <li class="hs-menu-item hs-menu-depth-3"><a href="http://sqrrl.com/company/team/management/">Management</a></li>
+      <li class="hs-menu-item hs-menu-depth-3"><a href="http://sqrrl.com/company/team/founders/">Founders</a></li>
+      <li class="hs-menu-item hs-menu-depth-3"><a href="http://sqrrl.com/company/team/board-of-directors/">Board of Directors</a></li>
+      <li class="hs-menu-item hs-menu-depth-3"><a href="http://sqrrl.com/company/team/investors/">Investors</a></li>
+     </ul></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/company/blog/">Blog</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/company/news/">News Room</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/company/careers/">Careers</a></li>
+    <li class="hs-menu-item hs-menu-depth-2"><a href="http://sqrrl.com/company/contact-us/">Contact Us</a></li>
+   </ul></li>
+ </ul>
+</div></span>
+                </div><!--end layout-widget-wrapper -->
+            </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+</div><!-- end coded_template: id:360939437 path:generated_global_groups/358932463.html -->
+
+                    </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+            </div><!--end widget-span -->
+    </div><!--end row-->
+    </div><!--end row-wrapper -->
+
+    </div><!--end header -->
+</div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+    <div class="body-container container-fluid">
+
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+                <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-raw_jinja hs-blog-header" style="" data-widget-type="raw_jinja" data-x="0" data-w="12">
+<h1>Sqrrl Blog</h1></div><!--end widget-span -->
+
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+                <div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+                <div class="row-fluid ">
+                    <div class="span8 widget-span widget-type-cell custom_blog_content" style="" data-widget-type="cell" data-x="0" data-w="8">
+
+                        <div class="row-fluid-wrapper row-depth-2 row-number-1 ">
+                        <div class="row-fluid ">
+                            <div class="span12 widget-span widget-type-blog_content " style="" data-widget-type="blog_content" data-x="0" data-w="12">
+<div class="blog-section">
+    <div class="blog-post-wrapper cell-wrapper">
+                <div class="section post-header">
+            <p>
+                Oct 28, 2015 12:39:00 PM
+            </p>
+            <h2>
+                <a href="http://blog.sqrrl.com/the-threat-hunting-reference-model-part-2-the-hunting-loop" id="hubspot-name" class="link hubspot-editable" data-hubspot-form-id="name" data-hubspot-name="Blog Title"><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">The Threat Hunting Reference Model Part 2: The Hunting Loop</span></a>
+            </h2>
+        </div>
+
+        <div class="section post-body">
+            <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><p dir="ltr"><span>In our previous post, part 1 of this blog series, we profiled </span><a href="http://blog.sqrrl.com/the-cyber-hunting-maturity-model"><span>the various stages of an organization’s hunting maturity scale</span></a><span>. Cyber threat hunting is a proactive&nbsp;security approach for organizations to detect advanced threats in their networks. Until recently, most security teams have relied on traditional rule- and signature-based solutions&nbsp;that produce floods of&nbsp;alerts and notifications, and typically only analyze data sets after an indicator of a breach had been discovered as a part of forensic investigations.</span></p>
+<p>The Threat Hunting process is meant to be iterative. You will never be able to fully secure your network after just a single hunt. To avoid one-off, potentially ineffective hunting trips, it's important for your team to implement a formal cyber hunting process. The following four stages make up a model process for successful hunting.</p>
+<!--more-->
+<p style="text-align: center;"><img src="http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=415&amp;name=HuntingLoopBlack.png" alt="HuntingLoopBlack.png" width="415" style="width: 415px;" srcset="http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=208&amp;name=HuntingLoopBlack.png 208w, http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=415&amp;name=HuntingLoopBlack.png 415w, http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=623&amp;name=HuntingLoopBlack.png 623w, http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=830&amp;name=HuntingLoopBlack.png 830w, http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=1038&amp;name=HuntingLoopBlack.png 1038w, http://blog.sqrrl.com/hs-fs/hubfs/HuntingLoopBlack.png?t=1487189727753&amp;width=1245&amp;name=HuntingLoopBlack.png 1245w" sizes="(max-width: 415px) 100vw, 415px"></p>
+<p dir="ltr"><span>The hunting loop illustrates that hunting is most effective when it’s habitual and adaptable. Let’s break it down step by step, beginning with hunting starting points, or what we call "</span>trailheads"<span>:</span></p>
+<p dir="ltr"><span>A hunt starts with <strong>creating a </strong></span><strong>hypothesis</strong><span>, or an educated guess, about some type of activity that might be going on in your IT environment</span><span>. </span><span>An example of a hypothesis could be that users who have recently traveled abroad are at elevated risk of being targeted by state-sponsored threat actors, so you might begin your hunt by planning to look for signs of new malware on their laptops or assuming that their accounts are being misused around your network. Hypotheses are typically formulated by analysts based on any number of factors, including friendly and threat intelligence. There are various ways that a hunter might form a hypothesis. Often this involves laying out attack models and the possible tactics a threat might use, determining what would already be covered by automated alerting systems, and then formulating a hunting investigation of what else might be happening. </span></p>
+<p dir="ltr"><span>A hunter follows up on hypotheses by&nbsp;<strong>investigating via various </strong></span><strong>tools and techniques</strong><span>, including Linked Data Search and visualization. Effective tools will leverage both raw and linked data analysis techniques such as visualization, statistical analysis or machine learning to fuse disparate cybersecurity datasets. Linked Data Analysis is particularly effective at laying out the data necessary to address the hypotheses in an understandable way, and so is a critical component for a hunting platform. Linked data can even add weights and directionality to visualizations, making it easier to search large data sets and use more powerful analytics. Many other complementary techniques exist, including row-oriented techniques such as stack counting and datapoint clustering. Analysts can use these techniques to discover new malicious patterns in their data and reconstruct complex attack paths to reveal an attacker's&nbsp;<strong><a href="http://blog.sqrrl.com/a-framework-for-cyber-threat-hunting-part-3-the-value-of-hunting-ttps">Tactics, Techniques, and Procedures (TTPs)</a></strong>.</span></p>
+<p dir="ltr"><span>Various tools and techniques are used in&nbsp;<strong>uncovering</strong>&nbsp;<strong>new malicious </strong></span><strong>patterns of behavior and adversary<span>&nbsp;TTPs</span></strong><span>. This step is the definitive success criteria for a hunt. An example of this process could be that a previous investigation revealed that a user account has been behaving anomalously, with the account sending an unusually high amount of outbound traffic. After conducting a Linked Data investigation, it is discovered that the user’s account was initially compromised via an exploit targeting a third party service provider of the organization. New hypotheses and analytics are developed to specifically discover other user accounts affiliated with similar third party service providers. </span></p>
+<p dir="ltr"><span>Finally</span><span>, </span><span>successful hunts form the basis for <strong>informing</strong></span> <span><strong>and</strong> <strong>enriching automated</strong></span><strong> analytics</strong><span>. Don’t waste your team’s time doing the same hunts over and over. Once you find a technique that works to bring threats to light, automate it so that your team can continue to focus on the next new hunt. Information from hunts can be used to improve existing detection mechanisms, which might include updating SIEM rules or detection signatures. For example, you may uncover information that leads to new threat intelligence or indicators of compromise. You might even create some </span><span>friendly intelligence</span><span>, that is, information <span style="font-size: 16px;">a</span></span><span style="font-size: 16px;">bout your own environment and how it is meant to operate, such as network maps, software inventories, lists of authorized web servers, etc. The more you know about your own network, the better you can defend it, so it makes sense to try to record and leverage new findings as you encounter them on your hunts.</span></p>
+<p dir="ltr">The hunting loop is a simple but effective step by step process that can radically enhance an organization’s control over its own network defense. As noted above, hunting is most effective when it is used together with other more traditional security systems, complementing the detection efforts and perimeter security that most organizations already have in place. <a href="http://blog.sqrrl.com/the-threat-hunting-reference-model-part-3-the-hunt-matrix">In the third and final part of this blog series</a> we will profile how the hunting loop is executed at <a href="http://blog.sqrrl.com/the-cyber-hunting-maturity-model" style="font-size: inherit;">various stages of an organization’s hunting maturity</a>. For more general information on threat hunting, be sure to check out our Threat Hunting eBook below.</p>
+<p dir="ltr" style="text-align: center;"><!--HubSpot Call-to-Action Code --> 
+<span class="hs-cta-wrapper" id="hs-cta-wrapper-07112381-cd1d-421b-b145-0bb2c47f7ada"> <span class="hs-cta-node hs-cta-07112381-cd1d-421b-b145-0bb2c47f7ada" id="hs-cta-07112381-cd1d-421b-b145-0bb2c47f7ada"> 
+  <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--> <a href="http://cta-redirect.hubspot.com/cta/redirect/305377/07112381-cd1d-421b-b145-0bb2c47f7ada"><img class="hs-cta-img" id="hs-cta-img-07112381-cd1d-421b-b145-0bb2c47f7ada" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/305377/07112381-cd1d-421b-b145-0bb2c47f7ada.png" alt="Download the eBook"></a> </span> <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script> <script type="text/javascript">
+        hbspt.cta.load(305377, '07112381-cd1d-421b-b145-0bb2c47f7ada', {});
+    </script> </span> 
+<!-- end HubSpot Call-to-Action Code --></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><a href="http://blog.sqrrl.com/the-cyber-hunting-maturity-model">←Read Part 1 of this series</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span>&nbsp;</span><a href="http://blog.sqrrl.com/the-threat-hunting-reference-model-part-3-the-hunt-matrix">Read Part 3 of this series&nbsp;<span id="docs-internal-guid-41c6339d-fe75-26df-ab53-1c4a6e92eeb2"><span>→</span></span></a></p></span>
+        </div>
+        
+             <p id="hubspot-topic_data"> Topics:
+                
+                    <a class="topic-link" href="http://blog.sqrrl.com/topic/cybersecurity">Cybersecurity</a>,
+                
+                    <a class="topic-link" href="http://blog.sqrrl.com/topic/cyber-hunting">Cyber Hunting</a>,
+                
+                    <a class="topic-link" href="http://blog.sqrrl.com/topic/linked-data-analysis">Linked data analysis</a>,
+                
+                    <a class="topic-link" href="http://blog.sqrrl.com/topic/threat-hunting">Threat Hunting</a>,
+                
+                    <a class="topic-link" href="http://blog.sqrrl.com/topic/cyber-threat-hunting">Cyber Threat Hunting</a>
+                
+             </p>
+        
+    	<div class="custom_social_bar">
+		<span id="hs_cos_wrapper_social_sharing" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_social_sharing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="social_sharing"><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Dfacebook" target="_blank" style="width:24px;border-width:0px;border:0px;"><img src="https://static.hubspot.com/final/img/common/icons/social/facebook-24x24.png" class="hs-image-widget hs-image-social-sharing-24" style="max-height:24px;max-width:24px;border-width:0px;border:0px;" width="24" hspace="0" alt="Share on Facebook"></a>&nbsp;<a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Dlinkedin" target="_blank" style="width:24px;border-width:0px;border:0px;"><img src="https://static.hubspot.com/final/img/common/icons/social/linkedin-24x24.png" class="hs-image-widget hs-image-social-sharing-24" style="max-height:24px;max-width:24px;border-width:0px;border:0px;" width="24" hspace="0" alt="Share on LinkedIn"></a>&nbsp;<a href="https://twitter.com/intent/tweet?original_referer=http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Dtwitter&amp;url=http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Dtwitter&amp;source=tweetbutton&amp;text=The+Threat+Hunting+Reference+Model+Part+2%3A+The+Hunting+Loop" target="_blank" style="width:24px;border-width:0px;border:0px;"><img src="https://static.hubspot.com/final/img/common/icons/social/twitter-24x24.png" class="hs-image-widget hs-image-social-sharing-24" style="max-height:24px;max-width:24px;border-width:0px;border:0px;" width="24" hspace="0" alt="Share on Twitter"></a>&nbsp;<a href="https://plus.google.com/share?url=http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Dgoogle_plus" target="_blank" style="width:24px;border-width:0px;border:0px;"><img src="https://static.hubspot.com/final/img/common/icons/social/googleplus-24x24.png" class="hs-image-widget hs-image-social-sharing-24" style="max-height:24px;max-width:24px;border-width:0px;border:0px;" width="24" hspace="0" alt="Share on Google+"></a>&nbsp;<a href="mailto:?subject=Check out http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Demail &amp;body=Check out http%3A%2F%2Fblog.sqrrl.com%2Fthe-threat-hunting-reference-model-part-2-the-hunting-loop%3Futm_medium%3Dsocial%26utm_source%3Demail" target="_blank" style="width:24px;border-width:0px;border:0px;"><img src="https://static.hubspot.com/final/img/common/icons/social/email-24x24.png" class="hs-image-widget hs-image-social-sharing-24" style="max-height:24px;max-width:24px;border-width:0px;border:0px;" width="24" hspace="0" alt="Share on Email"></a></span>                                           
+		</div>
+
+    </div>
+    <a id="comments"></a>  
+</div></div>
+
+                        </div><!--end row-->
+                        </div><!--end row-wrapper -->
+                        <div class="row-fluid-wrapper row-depth-2 row-number-2 ">
+                        <div class="row-fluid ">
+                            <div class="span12 widget-span widget-type-blog_comments " style="" data-widget-type="blog_comments" data-x="0" data-w="12">
+                                <div class="cell-wrapper layout-widget-wrapper">
+                                    <span id="hs_cos_wrapper_blog_comments" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_comments" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_comments">
+<div class="section post-footer">
+    <div id="comments-listing" class="new-comments">
+    
+    </div>
+    
+</div>
+
+</span>
+                                </div><!--end layout-widget-wrapper -->
+                            </div><!--end widget-span -->
+                        </div><!--end row-->
+                        </div><!--end row-wrapper -->
+                    </div><!--end widget-span -->
+                <div class="span4 widget-span widget-type-cell custom_blog_right" style="" data-widget-type="cell" data-x="8" data-w="4">
+
+                    <div class="row-fluid-wrapper row-depth-2 row-number-3 ">
+                    <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_module_14005292770813956" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><div style="text-align: center;"><span style="font-family: helvetica;">&nbsp;<a href="https://twitter.com/SqrrlData"><img src="http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=twitter.png" alt="" width="25" height="29" border="0" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=twitter.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=twitter.png 25w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=38&amp;height=44&amp;name=twitter.png 38w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=50&amp;height=58&amp;name=twitter.png 50w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=63&amp;height=73&amp;name=twitter.png 63w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357557012-png/Social_Icons_Hexagon/twitter.png?t=1487189727753&amp;width=75&amp;height=87&amp;name=twitter.png 75w" sizes="(max-width: 25px) 100vw, 25px"></a><span>&nbsp;&nbsp;</span><a href="https://www.facebook.com/SqrrlData"><img src="http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=facebook.png" alt="" width="25" height="29" border="0" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=facebook.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=facebook.png 25w, http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=38&amp;height=44&amp;name=facebook.png 38w, http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=50&amp;height=58&amp;name=facebook.png 50w, http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=63&amp;height=73&amp;name=facebook.png 63w, http://blog.sqrrl.com/hs-fs/hub/305377/file-355534908-png/Social_Icons_Hexagon/facebook.png?t=1487189727753&amp;width=75&amp;height=87&amp;name=facebook.png 75w" sizes="(max-width: 25px) 100vw, 25px"></a><span>&nbsp;&nbsp;</span><a href="https://www.linkedin.com/company/sqrrl"><img src="http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=linkedin.png" alt="" width="25" height="29" border="0" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=linkedin.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=linkedin.png 25w, http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=38&amp;height=44&amp;name=linkedin.png 38w, http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=50&amp;height=58&amp;name=linkedin.png 50w, http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=63&amp;height=73&amp;name=linkedin.png 63w, http://blog.sqrrl.com/hs-fs/hub/305377/file-359043515-png/Social_Icons_Hexagon/linkedin.png?t=1487189727753&amp;width=75&amp;height=87&amp;name=linkedin.png 75w" sizes="(max-width: 25px) 100vw, 25px"></a><span>&nbsp;&nbsp;</span><a href="https://plus.google.com/116795302724746825954/posts"><img src="http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=google.png" alt="" width="25" height="29" border="0" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=google.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=25&amp;height=29&amp;name=google.png 25w, http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=38&amp;height=44&amp;name=google.png 38w, http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=50&amp;height=58&amp;name=google.png 50w, http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=63&amp;height=73&amp;name=google.png 63w, http://blog.sqrrl.com/hs-fs/hub/305377/file-354424554-png/Social_Icons_Hexagon/google.png?t=1487189727753&amp;width=75&amp;height=87&amp;name=google.png 75w" sizes="(max-width: 25px) 100vw, 25px"></a><span>&nbsp;</span></span></div></span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                    <div class="row-fluid-wrapper row-depth-2 row-number-4 ">
+                    <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-blog_subscribe custom_blog_subscribe" style="" data-widget-type="blog_subscribe" data-x="0" data-w="12">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_blog_subscription" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_subscribe"><h3 id="hs_cos_wrapper_blog_subscription_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Subscribe to Email Updates</h3>
+
+<div id="hs_form_target_blog_subscription"></div>
+
+  
+ 
+
+
+</span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                    <div class="row-fluid-wrapper row-depth-2 row-number-5 ">
+                    <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-space " style="" data-widget-type="space" data-x="0" data-w="12">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_module_14038966713831418" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                    <div class="row-fluid-wrapper row-depth-2 row-number-6 ">
+                    <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-post_listing " style="" data-widget-type="post_listing" data-x="0" data-w="12">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_top_posts" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_listing"><div class="block">
+  <h3>Recent</h3>
+  <div class="widget-module">
+    <ul>
+      
+      <li>
+        
+        <a href="http://blog.sqrrl.com/threat-hunter-profile-deirdre-morrison">Threat Hunter Profile - Deirdre Morrison</a>
+      </li>
+      
+      <li>
+        
+        <a href="http://blog.sqrrl.com/threat-hunter-profile-hem-karlapalem">Threat Hunter Profile - Hem Karlapalem</a>
+      </li>
+      
+      <li>
+        
+        <a href="http://blog.sqrrl.com/the-hunters-den-command-and-control">The Hunter's Den: Command and Control</a>
+      </li>
+      
+      <li>
+        
+        <a href="http://blog.sqrrl.com/threat-hunter-profile-katie-horne">Threat Hunter Profile - Katie Horne</a>
+      </li>
+      
+      <li>
+        
+        <a href="http://blog.sqrrl.com/demystifying-threat-hunting-concepts">Demystifying Threat Hunting&nbsp;Concepts</a>
+      </li>
+      
+    </ul>
+  </div>
+</div></span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                    <div class="row-fluid-wrapper row-depth-2 row-number-7 ">
+                    <div class="row-fluid ">
+                        <div class="span12 widget-span widget-type-post_filter " style="" data-widget-type="post_filter" data-x="0" data-w="12">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_post_filter" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_post_filter" style="" data-hs-cos-general-type="widget" data-hs-cos-type="post_filter"><div class="block">
+  <h3>Archive</h3>
+  <div class="widget-module">
+    <ul>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2017/02">February 2017 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2017/01">January 2017 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/12">December 2016 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/11">November 2016 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/10">October 2016 <span class="filter-link-count" dir="ltr">(7)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/09">September 2016 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/08">August 2016 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/07">July 2016 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/06">June 2016 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/05">May 2016 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/04">April 2016 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/03">March 2016 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/02">February 2016 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2016/01">January 2016 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/12">December 2015 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/11">November 2015 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/10">October 2015 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/09">September 2015 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/08">August 2015 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/07">July 2015 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/06">June 2015 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/05">May 2015 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/04">April 2015 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/03">March 2015 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/02">February 2015 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2015/01">January 2015 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/12">December 2014 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/11">November 2014 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/10">October 2014 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/08">August 2014 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/07">July 2014 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/06">June 2014 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/05">May 2014 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/04">April 2014 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/02">February 2014 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2014/01">January 2014 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/12">December 2013 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/11">November 2013 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/10">October 2013 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/09">September 2013 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/08">August 2013 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/07">July 2013 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/06">June 2013 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/05">May 2013 <span class="filter-link-count" dir="ltr">(6)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/04">April 2013 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/03">March 2013 <span class="filter-link-count" dir="ltr">(4)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/02">February 2013 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2013/01">January 2013 <span class="filter-link-count" dir="ltr">(2)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/12">December 2012 <span class="filter-link-count" dir="ltr">(3)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/11">November 2012 <span class="filter-link-count" dir="ltr">(5)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/10">October 2012 <span class="filter-link-count" dir="ltr">(9)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/09">September 2012 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/08">August 2012 <span class="filter-link-count" dir="ltr">(15)</span></a>
+        </li>
+      
+        <li>
+          <a href="http://blog.sqrrl.com/archive/2012/07">July 2012 <span class="filter-link-count" dir="ltr">(1)</span></a>
+        </li>
+      
+    </ul>
+    
+  </div>
+</div>
+</span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+    </div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
+
+        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+                <div class="row-fluid ">
+                    <div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<!-- start coded_template: id:357819309 path:generated_global_groups/358937078.html -->
+<div class="">        <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+        <div class="row-fluid ">
+            <div class="span12 widget-span widget-type-cell custom_footer_top" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+                <div class="row-fluid ">
+                    <div class="span3 widget-span widget-type-rich_text custom_footer_socialicon" style="" data-widget-type="rich_text" data-x="0" data-w="3">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_13826777344048" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><a href="https://twitter.com/SqrrlData" target="_blank" data-mce-target="_blank"><img style="margin: 0px 10px 5px 0px;" src="http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=twitter.png" alt="twitter" width="26" height="29" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=twitter.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=twitter.png 26w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=39&amp;height=44&amp;name=twitter.png 39w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=52&amp;height=58&amp;name=twitter.png 52w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=65&amp;height=73&amp;name=twitter.png 65w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357936783-png/images/twitter.png?t=1487189727753&amp;width=78&amp;height=87&amp;name=twitter.png 78w" sizes="(max-width: 26px) 100vw, 26px"></a><a href="http://www.facebook.com/SqrrlData" target="_blank" data-mce-target="_blank"><img style="margin: 0px 10px 5px 0px;" src="http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=facebook.png" alt="facebook" width="26" height="29" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=facebook.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=facebook.png 26w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=39&amp;height=44&amp;name=facebook.png 39w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=52&amp;height=58&amp;name=facebook.png 52w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=65&amp;height=73&amp;name=facebook.png 65w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356838029-png/images/facebook.png?t=1487189727753&amp;width=78&amp;height=87&amp;name=facebook.png 78w" sizes="(max-width: 26px) 100vw, 26px"></a><a href="https://plus.google.com/116795302724746825954/posts"><img style="margin: 0px 10px 5px 0px;" src="http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=googleplus.png" alt="googleplus" width="26" height="29" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=googleplus.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=googleplus.png 26w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=39&amp;height=44&amp;name=googleplus.png 39w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=52&amp;height=58&amp;name=googleplus.png 52w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=65&amp;height=73&amp;name=googleplus.png 65w, http://blog.sqrrl.com/hs-fs/hub/305377/file-356828559-png/images/googleplus.png?t=1487189727753&amp;width=78&amp;height=87&amp;name=googleplus.png 78w" sizes="(max-width: 26px) 100vw, 26px"></a><a href="https://www.linkedin.com/company/2649984"><img style="margin: 0px 10px 5px 0px;" src="http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=linkedin.png" alt="linkedin" width="26" height="29" srcset="http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=13&amp;height=15&amp;name=linkedin.png 13w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=26&amp;height=29&amp;name=linkedin.png 26w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=39&amp;height=44&amp;name=linkedin.png 39w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=52&amp;height=58&amp;name=linkedin.png 52w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=65&amp;height=73&amp;name=linkedin.png 65w, http://blog.sqrrl.com/hs-fs/hub/305377/file-357947118-png/images/linkedin.png?t=1487189727753&amp;width=78&amp;height=87&amp;name=linkedin.png 78w" sizes="(max-width: 26px) 100vw, 26px"></a></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                    <div class="span9 widget-span widget-type-space " style="" data-widget-type="space" data-x="3" data-w="9">
+                        <div class="cell-wrapper layout-widget-wrapper">
+                            <span id="hs_cos_wrapper_module_13826777344049" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_space" style="" data-hs-cos-general-type="widget" data-hs-cos-type="space"></span>
+                        </div><!--end layout-widget-wrapper -->
+                    </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+            </div><!--end widget-span -->
+    </div><!--end row-->
+    </div><!--end row-wrapper -->
+    <div class="row-fluid-wrapper row-depth-0 row-number-1 ">
+    <div class="row-fluid ">
+        <div class="span12 widget-span widget-type-cell custom_footer_content" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+            <div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+            <div class="row-fluid ">
+                <div class="span3 widget-span widget-type-rich_text custom_footer_links" style="" data-widget-type="rich_text" data-x="0" data-w="3">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_138267773440411" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5><a href="http://sqrrl.com/product/sqrrl-enterprise/" target="_blank">Product</a></h5>
+<p><a href="http://sqrrl.com/product/sqrrl-enterprise/" target="_blank">Sqrrl Enterprise</a></p>
+<p><a href="http://sqrrl.com/product/use-cases/">Use Cases</a></p>
+<p><a href="http://info.sqrrl.com/trial-software-vm-1">Test Drive VM</a></p>
+<p><a href="http://sqrrl.com/product/architecture/">Technology</a></p></span>
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+                <div class="span3 widget-span widget-type-rich_text custom_footer_links" style="" data-widget-type="rich_text" data-x="3" data-w="3">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_138267773440413" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5><a href="http://sqrrl.com/partners/" target="_blank">Partners</a></h5>
+<p><a href="http://sqrrl.com/partners/" target="_blank">Technology</a></p>
+<p><a href="http://sqrrl.com/partners/" target="_blank">Service</a></p></span>
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+                <div class="span2 widget-span widget-type-rich_text custom_footer_links" style="" data-widget-type="rich_text" data-x="6" data-w="2">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_138267773440414" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5><a href="http://sqrrl.com/services/sqrrl-enterprise-support/" target="_blank">Services</a></h5>
+<p><a href="http://sqrrl.com/services/sqrrl-enterprise-support/" target="_blank">Sqrrl Enterprise Support</a></p>
+<p><a style="font-size: inherit;" href="http://sqrrl.com/services/consulting/" target="_blank">Consulting</a></p></span>
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+                <div class="span2 widget-span widget-type-rich_text custom_footer_links" style="" data-widget-type="rich_text" data-x="8" data-w="2">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_138267773440415" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5><a href="http://sqrrl.com/resources/ask-an-expert/" target="_blank">Resources</a></h5>
+<p><a href="http://sqrrl.com/resources/ask-an-expert/#videos" target="_blank">Videos</a></p>
+<p><a href="http://sqrrl.com/resources/ask-an-expert/#webinars" target="_blank">Webinars</a></p>
+<p><a href="http://sqrrl.com/resources/ask-an-expert/#datasheets" target="_blank">Datasheets</a></p>
+<p><a href="http://sqrrl.com/resources/ask-an-expert/#papers" target="_blank">Papers</a></p>
+<p><a href="http://sqrrl.com/resources/ask-an-expert/#presentations" target="_blank">Presentations</a></p></span>
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+                <div class="span2 widget-span widget-type-rich_text custom_footer_links" style="" data-widget-type="rich_text" data-x="10" data-w="2">
+                    <div class="cell-wrapper layout-widget-wrapper">
+                        <span id="hs_cos_wrapper_module_138267773440416" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h5><a href="http://sqrrl.com/company/overview/" target="_blank">Company</a></h5>
+<p><a href="http://sqrrl.com/company/overview/" target="_blank">Overview</a></p>
+<p><a href="http://sqrrl.com/company/team/management/" target="_blank">Team</a></p>
+<p><a href="http://sqrrl.com/company/blog/" target="_blank">Blog</a></p>
+<p><a href="http://sqrrl.com/company/news/">Newsroom</a></p>
+<p><a href="http://sqrrl.com/company/careers/" target="_blank">Careers</a></p>
+<p><a href="http://sqrrl.com/company/contact-us/" target="_blank">Contact Us</a></p></span>
+                    </div><!--end layout-widget-wrapper -->
+                </div><!--end widget-span -->
+            </div><!--end row-->
+            </div><!--end row-wrapper -->
+            <div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+            <div class="row-fluid ">
+                <div class="span12 widget-span widget-type-cell custom_footer_bottom" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+                    <div class="row-fluid-wrapper row-depth-2 row-number-1 ">
+                    <div class="row-fluid ">
+                        <div class="span4 widget-span widget-type-rich_text custom_footer_copyright" style="" data-widget-type="rich_text" data-x="0" data-w="4">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_module_138267773440418" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>© 2014 Sqrrl Data, Inc. All rights reserved.</p></span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                        <div class="span8 widget-span widget-type-menu custom_footer_menu" style="" data-widget-type="menu" data-x="4" data-w="8">
+                            <div class="cell-wrapper layout-widget-wrapper">
+                                <span id="hs_cos_wrapper_module_138267773440419" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_138267773440419" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="Custom Footer Menu">
+ <ul>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="http://sqrrl.com/company/contact-us/" target="_blank">Contact Us </a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="http://sqrrl.com/company/careers/" target="_blank">Careers</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="http://sqrrl.com/privacy-policy/" target="_blank">Privacy Policy</a></li>
+  <li class="hs-menu-item hs-menu-depth-1"><a href="http://sqrrl.com/terms/" target="_blank">Terms</a></li>
+ </ul>
+</div></span>
+                            </div><!--end layout-widget-wrapper -->
+                        </div><!--end widget-span -->
+                    </div><!--end row-->
+                    </div><!--end row-wrapper -->
+                </div><!--end widget-span -->
+        </div><!--end row-->
+        </div><!--end row-wrapper -->
+    </div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div><!-- end coded_template: id:357819309 path:generated_global_groups/358937078.html -->
+
+                    </div><!--end widget-span -->
+                </div><!--end row-->
+                </div><!--end row-wrapper -->
+            </div><!--end widget-span -->
+    </div><!--end row-->
+    </div><!--end row-wrapper -->
+
+    </div><!--end footer -->
+</div><!--end footer wrapper -->
+
+
+    
+<script type="text/javascript" src="https://static.hsstatic.net/content_shared_assets/static-1.4036/js/public_common.js"></script>
+
+      <script>
+          var _hscLegacy = false;
+      </script>
+      <!--[if lte IE 8]>
+      <script>
+          _hscLegacy = true;
+      </script>
+      <![endif]-->
+      <script type="text/javascript">
+          (function($) {
+              var commentsEmbedContext = {
+                  portalId: 305377,
+                  collectionId: 599291371,
+                  contentId: 3456359514,
+                  target: '#comments-listing.new-comments',
+                  showComments: true,
+                  showForm: true,
+                  commentVerificationText: "Your comment has been received.",
+                  embedScriptEnv: "prod",
+                  apiEnv: "prod",
+                  isLegacyBrowser: _hscLegacy,
+                  contentTitle: "The Threat Hunting Reference Model Part 2: The Hunting Loop",
+                  contentCreatedAt: "1446050340000",
+                  contentPermalink: "http:\/\/blog.sqrrl.com\/the-threat-hunting-reference-model-part-2-the-hunting-loop",
+                  contentAuthorEmail: "george@sqrrl.com",
+                  contentAuthorName: "George Aquila",
+                  captchaRequired: true,
+                  captchaKey: "6Lc3uMsSAAAAAMjk4NIvPQK9_-ZLk2wBokFCo5Qt",
+                  maxThreadDepth: 3,
+                  formId: "5a2f3fe8-277d-4717-b2e3-9d6bfd0cb069"
+              };
+              function loadComments() {
+                  if (window.hubspot && typeof window.hubspot.loadCommentsEmbed === 'function') {
+                      hubspot.loadCommentsEmbed(commentsEmbedContext.embedScriptEnv, function() {
+                          if (typeof window.hsEmbedComments === 'function') {
+                              window.hsEmbedComments(commentsEmbedContext);
+                          }
+                      }, _hscLegacy);
+                  } else {
+                    setTimeout(loadComments, 50);
+                  }
+              }
+              loadComments();
+          })(window.hsjQuery || jQuery);
+      </script>
+    
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+ 
+<script src="https://js.hsforms.net/forms/v2.js"></script>
+
+  <script>
+      hbspt.forms.create({
+          portalId: '305377',
+          formId: '3b8069bb-bfb4-4aca-a180-795a413dc9f0',
+          formInstanceId: '3691',
+          pageId: 3456359514,
+          pageName: 'The Threat Hunting Reference Model Part 2: The Hunting Loop',
+          contentType: 'blog-post',
+          
+          redirectUrl: 'http://blog.sqrrl.com/the-threat-hunting-reference-model-part-2-the-hunting-loop?hsFormKey=fc99522e02fe50b6907446f4dc1d1fc5#blog_subscription',
+          
+          
+          css: '',
+          target: '#hs_form_target_blog_subscription',
+          
+          formData: {
+            cssClass: 'hs-form stacked'
+          }
+      });
+  </script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "http:\/\/blog.sqrrl.com\/the-threat-hunting-reference-model-part-2-the-hunting-loop"]);
+_hsq.push(["setPageId", "3456359514"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 3456359514,
+    "legacyPageId": "3456359514",
+    "contentGroupId": 599291371,
+    "abTestId": null,
+    "languageVariantId": 3456359514,
+    "languageCode": null
+}]);
+_hsq.push(["setTargetedContentMetadata", []]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/305377.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1487271771200,
+    page_id: 3456359514,
+    content_group_id: 599291371,
+    portal_id: 305377,
+    app_hs_base_url: "https://app.hubspot.com",
+    language: "en"
+}
+</script>
+
+
+
+
+
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script type="text/javascript">
+  window.___gcfg = {
+    lang: 'en-US',
+    parsetags: 'onload'
+  };
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/platform.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+    <!-- Generated by the HubSpot Template Builder - template version 1.03 -->
+
+<!-- end coded_template: id:358937273 path:generated_layouts/362440045.html -->
+</body></html>
