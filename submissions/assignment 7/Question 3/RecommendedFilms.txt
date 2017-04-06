@@ -1,0 +1,22 @@
+[(5.000000000000001, u'1500'), (5.000000000000001, u'1201'), (5.0, u'814'), (5.0, u'1653'), (5.0, u'1536')]
+[(1.0, u'1329'), (1.0, u'1325'), (1.0, u'1320'), (1.0, u'1309'), (1.0, u'1308')]
+1500
+Santa with Muscles (1996)
+1201
+Marlene Dietrich: Shadow and Light (1996) 
+814
+Great Day in Harlem, A (1994)
+1653
+Entertaining Angels: The Dorothy Day Story (1996)
+1536
+Aiqing wansui (1994)
+1329
+Low Life, The (1994)
+1325
+August (1996)
+1320
+Homage (1995)
+1309
+Very Natural Thing, A (1974)
+1308
+Babyfever (1994)
