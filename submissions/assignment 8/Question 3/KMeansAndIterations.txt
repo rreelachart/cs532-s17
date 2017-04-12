@@ -1,0 +1,56 @@
+Centroid Value: 5
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+		['Steel City Rust', 'Cast Iron Songs', '|[Tu queres ver isto]|', 'The Great Adventure 2016', 'kaleidoscopekanvas-KK', "Morgan's Blog", 'Hello', 'The Ideal Copy', 'from a voice plantation', 'What Am I Doing?', "Room 19's Blog 2016", 'Broken Biscuit Records', 'The Professional Daydreamer', 'Azul Valentina', 'Wyoming Beat']
+		['Bleak Bliss', 'MTJR RANTS & RAVES ON MUSIC', 'Unexpectedly Bart (King!)', 'Primitive Offerings', 'Indie Top 20 - The Blog!', 'turnitup!', 'Lo importante es que estes t\xc3\xba bien', 'Kid F', 'The Music Binge', 'F-Measure']
+		['Cuz Music Rocks', 'On Warmer Music', "Paul's Winnipeg", 'Oh Yes J\xc3\xb3nsi!!', 'A to Zappa - Song of the day', 'DaveCromwell Writes', 'The Girl at the Rock Show', 'Playing Favorites', 'GYPSY RHAPSODY', 'Music-Drop Magazine', 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'The Jeopardy of Contentment', 'Boggle Me Thursday', 'Mile In Mine', 'Subterranean Noise', 'The Perfect Vent', '*Sixeyes: by Alan Williamson', 'Sonology', 'Dust and Water Studios', 'Encore', 'In the Frame Film Reviews', "i'm in too truthful a mood"]
+		['Music Album Torrent Download Link Suggestions', 'ELLIA TOWNSEND A2', 'Web Science and Digital Libraries Research Group', 'Fran Brighton', 'THE BEAUTIFUL TRASH ART', 'music of the moment', 'Bonjour Girl', 'Rebecca Wood 9282 A2 Advanced Portfolio', 'Myopiamuse', 'the traveling neighborhood', 'tumbleweed', 'My Name Is Blue Canary', 'Mystic Chords Of Memory', 'The Themes of My Life', 'Out of my Mind', 'Helen McCookerybook', 'Cafe Epoque', 'Parish Radio', 'earenjoy', 'Cherry Area', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies', "It'll Glow On You", "She's mad but she's magic. There's no lie in her fire.", "isyeli's", 'Label Goes Here', 'PALMIRA A PISTA TRES']
+		['Stereo Pills', 'Green Eggs and Ham Mondays 8-10am', 'GLI Press', 'Chemical Robert!', 'A H T A P O T', 'Did Not Chart', 'IoTube     :)', '@65 Sounding Booth', 'Desolation Row Records', "The World's First Internet Baby", 'Who needs a TV?', 'Abu Everyday', 'Me fala uma m\xc3\xbasica boa a\xc3\xad', 'A layer of chips', 'Swinging Singles Club', 'sweeping the kitchen', 'One Stunning Single Egg', 'Unfini...', 'The Stark Online', '\xce\x9c\xce\x95\xce\xa3\xce\x91 \xce\xa3\xce\xa4\xce\x97 \xce\x92\xce\xa1\xce\xa9\xce\x9c\xce\x99\xce\x91', 'Out And Down In The Colonies']
+Centroid Value: 10
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+		['Cuz Music Rocks', "Paul's Winnipeg", 'A to Zappa - Song of the day', '|[Tu queres ver isto]|', 'THE BEAUTIFUL TRASH ART', 'DaveCromwell Writes', 'The Girl at the Rock Show', 'Playing Favorites', 'Eli Jace | The Mind Is A Terrible Thing To Paste', 'My Name Is Blue Canary', 'Mystic Chords Of Memory', '*Sixeyes: by Alan Williamson', 'Dust and Water Studios', 'earenjoy', 'The Music Binge', 'Encore', 'PALMIRA A PISTA TRES', 'In the Frame Film Reviews']
+		['Stereo Pills', 'Indie Top 20 - The Blog!', "The World's First Internet Baby", 'A layer of chips', 'Swinging Singles Club', 'F-Measure']
+		['Unexpectedly Bart (King!)', 'turnitup!', 'The Great Adventure 2016', 'Music-Drop Magazine']
+		['Music Album Torrent Download Link Suggestions', 'ELLIA TOWNSEND A2', 'Web Science and Digital Libraries Research Group', 'Mile In Mine', 'Out of my Mind', 'Helen McCookerybook', 'Parish Radio', 'Broken Biscuit Records', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+		['Oh Yes J\xc3\xb3nsi!!', 'Boggle Me Thursday', 'The Ideal Copy', 'The Professional Daydreamer', "isyeli's", 'Out And Down In The Colonies']
+		['music of the moment', 'Myopiamuse', 'the traveling neighborhood', "Morgan's Blog", 'tumbleweed', 'Subterranean Noise', 'The Perfect Vent', 'Cafe Epoque', 'Sonology', 'What Am I Doing?', 'Kid F', "Room 19's Blog 2016", 'Unfini...', 'Cherry Area', 'Azul Valentina', "She's mad but she's magic. There's no lie in her fire.", 'Label Goes Here', "i'm in too truthful a mood"]
+		['Bleak Bliss', 'Primitive Offerings', 'Bonjour Girl', 'Rebecca Wood 9282 A2 Advanced Portfolio', 'Hello', 'sweeping the kitchen']
+		['On Warmer Music', 'Steel City Rust', 'Did Not Chart', 'Cast Iron Songs', 'GYPSY RHAPSODY', 'Desolation Row Records', 'The Jeopardy of Contentment', 'from a voice plantation', 'The Stark Online', "It'll Glow On You", 'Wyoming Beat']
+		['Fran Brighton', 'Green Eggs and Ham Mondays 8-10am', 'GLI Press', 'Chemical Robert!', 'A H T A P O T', 'IoTube     :)', '@65 Sounding Booth', 'Who needs a TV?', 'Abu Everyday', 'Me fala uma m\xc3\xbasica boa a\xc3\xad', 'The Themes of My Life', 'One Stunning Single Egg', '\xce\x9c\xce\x95\xce\xa3\xce\x91 \xce\xa3\xce\xa4\xce\x97 \xce\x92\xce\xa1\xce\xa9\xce\x9c\xce\x99\xce\x91']
+		['MTJR RANTS & RAVES ON MUSIC', 'kaleidoscopekanvas-KK', 'Lo importante es que estes t\xc3\xba bien']
+Centroid Value: 20
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+		['Unexpectedly Bart (King!)', 'Green Eggs and Ham Mondays 8-10am', 'turnitup!', 'kaleidoscopekanvas-KK', 'Music-Drop Magazine', 'Me fala uma m\xc3\xbasica boa a\xc3\xad']
+		["Paul's Winnipeg", 'Dust and Water Studios', 'F-Measure', 'In the Frame Film Reviews']
+		["Morgan's Blog", 'The Perfect Vent', 'What Am I Doing?', 'Azul Valentina', "She's mad but she's magic. There's no lie in her fire."]
+		['Mystic Chords Of Memory', '*Sixeyes: by Alan Williamson', 'Kid F', 'Broken Biscuit Records', 'Cherry Area']
+		['Music Album Torrent Download Link Suggestions', 'ELLIA TOWNSEND A2', 'Rebecca Wood 9282 A2 Advanced Portfolio', 'Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies']
+		['GLI Press', 'Did Not Chart', 'A layer of chips', "i'm in too truthful a mood"]
+		['Bonjour Girl', 'Myopiamuse', 'Eli Jace | The Mind Is A Terrible Thing To Paste']
+		['A H T A P O T', 'IoTube     :)', 'Abu Everyday', 'sweeping the kitchen']
+		['Fran Brighton', 'Stereo Pills', 'THE BEAUTIFUL TRASH ART', "The World's First Internet Baby", 'Who needs a TV?', 'Out of my Mind', 'Helen McCookerybook', 'Swinging Singles Club', 'earenjoy', 'PALMIRA A PISTA TRES']
+		['music of the moment', 'The Themes of My Life', 'One Stunning Single Egg', "isyeli's", 'Label Goes Here']
+		['Web Science and Digital Libraries Research Group', 'Oh Yes J\xc3\xb3nsi!!', 'the traveling neighborhood', 'Boggle Me Thursday', 'Parish Radio', 'Out And Down In The Colonies']
+		['tumbleweed', 'Unfini...']
+		['Cast Iron Songs', 'The Great Adventure 2016', 'Hello', 'The Ideal Copy', 'from a voice plantation', "Room 19's Blog 2016", 'The Professional Daydreamer', 'Wyoming Beat']
+		['A to Zappa - Song of the day', 'The Girl at the Rock Show', 'Playing Favorites', 'Encore']
+		['Indie Top 20 - The Blog!', 'Sonology']
+		['On Warmer Music', '@65 Sounding Booth', 'GYPSY RHAPSODY', 'Desolation Row Records', 'My Name Is Blue Canary', 'The Jeopardy of Contentment', "It'll Glow On You"]
+		['Primitive Offerings']
+		['Bleak Bliss', 'MTJR RANTS & RAVES ON MUSIC', 'Lo importante es que estes t\xc3\xba bien']
+		['Steel City Rust', 'Chemical Robert!', '|[Tu queres ver isto]|', 'DaveCromwell Writes', 'Mile In Mine', 'Subterranean Noise', 'Cafe Epoque', '\xce\x9c\xce\x95\xce\xa3\xce\x91 \xce\xa3\xce\xa4\xce\x97 \xce\x92\xce\xa1\xce\xa9\xce\x9c\xce\x99\xce\x91']
+		['Cuz Music Rocks', 'The Music Binge', 'The Stark Online']
