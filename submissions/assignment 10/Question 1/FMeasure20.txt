@@ -1,0 +1,21 @@
+k=20
+PALMIRA A PISTA TRES	0.0160565786974
+Boggle Me Thursday	0.0171782044484
+Unexpectedly Bart (King!)	0.0230328178092
+Fran Brighton	0.0231957980049
+Parish Radio	0.0247776979083
+Abu Everyday	0.025624902688
+IoTube     :)	0.0313823670467
+Room 19's Blog 2016	0.0322352581205
+|[Tu queres ver isto]|	0.0335574483771
+Azul Valentina	0.0345469000882
+Oh Yes Jónsi!!	0.0413451732917
+What Am I Doing?	0.0414348051018
+Hello	0.0439654050148
+A H T A P O T	0.0456548114699
+earenjoy	0.0466991805878
+Me fala uma música boa aí	0.048317746845
+She's mad but she's magic. There's no lie in her fire.	0.048991199787
+the traveling neighborhood	0.0495984933977
+One Stunning Single Egg	0.0499339527169
+music of the moment	0.049957048262
